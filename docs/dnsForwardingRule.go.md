@@ -1,28 +1,28 @@
-# `dnsForwardingRule` Submodule <a name="`dnsForwardingRule` Submodule" id="@cdktf/provider-hcp.dnsForwardingRule"></a>
+# `dnsForwardingRule` Submodule <a name="`dnsForwardingRule` Submodule" id="@cdktn/provider-hcp.dnsForwardingRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DnsForwardingRule <a name="DnsForwardingRule" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule"></a>
+### DnsForwardingRule <a name="DnsForwardingRule" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/dns_forwarding_rule hcp_dns_forwarding_rule}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/dnsforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/dnsforwardingrule"
 
 dnsforwardingrule.NewDnsForwardingRule(scope Construct, id *string, config DnsForwardingRuleConfig) DnsForwardingRule
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig">DnsForwardingRuleConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig">DnsForwardingRuleConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig">DnsForwardingRuleConfig</a>
+- *Type:* <a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig">DnsForwardingRuleConfig</a>
 
 ---
 
@@ -50,37 +50,37 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.hasResourceMove">HasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.importFrom">ImportFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.putTimeouts">PutTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.resetProjectId">ResetProjectId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.resetProjectId">ResetProjectId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.toString"></a>
 
 ```go
 func ToString() *string
@@ -88,25 +88,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -114,7 +114,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -122,7 +122,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -130,19 +130,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -150,7 +150,7 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.addMoveTarget"></a>
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.addMoveTarget"></a>
 
 ```go
 func AddMoveTarget(moveTarget *string)
@@ -158,7 +158,7 @@ func AddMoveTarget(moveTarget *string)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -166,151 +166,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.hasResourceMove"></a>
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.hasResourceMove"></a>
 
 ```go
 func HasResourceMove() interface{}
 ```
 
-##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.importFrom"></a>
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.importFrom"></a>
 
 ```go
 func ImportFrom(id *string, provider TerraformProvider)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.importFrom.parameter.id"></a>
 
 - *Type:* *string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.importFrom.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.moveFromId"></a>
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.moveFromId"></a>
 
 ```go
 func MoveFromId(id *string)
@@ -320,7 +320,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.moveFromId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -328,7 +328,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.moveTo"></a>
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.moveTo"></a>
 
 ```go
 func MoveTo(moveTarget *string, index interface{})
@@ -336,7 +336,7 @@ func MoveTo(moveTarget *string, index interface{})
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.moveTo.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -344,7 +344,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.moveTo.parameter.index"></a>
 
 - *Type:* interface{}
 
@@ -352,7 +352,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.moveToId"></a>
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.moveToId"></a>
 
 ```go
 func MoveToId(id *string)
@@ -360,7 +360,7 @@ func MoveToId(id *string)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.moveToId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -368,31 +368,31 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `PutTimeouts` <a name="PutTimeouts" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.putTimeouts"></a>
+##### `PutTimeouts` <a name="PutTimeouts" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.putTimeouts"></a>
 
 ```go
 func PutTimeouts(value DnsForwardingRuleTimeouts)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts">DnsForwardingRuleTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts">DnsForwardingRuleTimeouts</a>
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetProjectId` <a name="ResetProjectId" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.resetProjectId"></a>
+##### `ResetProjectId` <a name="ResetProjectId" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.resetProjectId"></a>
 
 ```go
 func ResetProjectId()
 ```
 
-##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.resetTimeouts"></a>
+##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.resetTimeouts"></a>
 
 ```go
 func ResetTimeouts()
@@ -402,17 +402,17 @@ func ResetTimeouts()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DnsForwardingRule resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTN code for importing a DnsForwardingRule resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/dnsforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/dnsforwardingrule"
 
 dnsforwardingrule.DnsForwardingRule_IsConstruct(x interface{}) *bool
 ```
@@ -433,7 +433,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -441,45 +441,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/dnsforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/dnsforwardingrule"
 
 dnsforwardingrule.DnsForwardingRule_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.isTerraformResource"></a>
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/dnsforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/dnsforwardingrule"
 
 dnsforwardingrule.DnsForwardingRule_IsTerraformResource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/dnsforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/dnsforwardingrule"
 
 dnsforwardingrule.DnsForwardingRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
-Generates CDKTF code for importing a DnsForwardingRule resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a DnsForwardingRule resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -487,7 +487,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -495,7 +495,7 @@ The construct id used in the generated config for the DnsForwardingRule to impor
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
@@ -505,9 +505,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ? Optional instance of the provider where the DnsForwardingRule to import is found.
 
@@ -517,43 +517,43 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.createdAt">CreatedAt</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.selfLink">SelfLink</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.state">State</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference">DnsForwardingRuleTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.dnsForwardingIdInput">DnsForwardingIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.domainNameInput">DomainNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.hvnIdInput">HvnIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.inboundEndpointIpsInput">InboundEndpointIpsInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.projectIdInput">ProjectIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.ruleIdInput">RuleIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.dnsForwardingId">DnsForwardingId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.domainName">DomainName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.hvnId">HvnId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.inboundEndpointIps">InboundEndpointIps</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.projectId">ProjectId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.ruleId">RuleId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.cdktfStack">CdktfStack</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.createdAt">CreatedAt</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.selfLink">SelfLink</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.state">State</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference">DnsForwardingRuleTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.dnsForwardingIdInput">DnsForwardingIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.domainNameInput">DomainNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.hvnIdInput">HvnIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.inboundEndpointIpsInput">InboundEndpointIpsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.projectIdInput">ProjectIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.ruleIdInput">RuleIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.dnsForwardingId">DnsForwardingId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.domainName">DomainName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.hvnId">HvnId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.inboundEndpointIps">InboundEndpointIps</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.projectId">ProjectId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.ruleId">RuleId</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.node"></a>
 
 ```go
 func Node() Node
@@ -565,17 +565,17 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -585,7 +585,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -595,7 +595,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -605,7 +605,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -615,17 +615,17 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.connection"></a>
 
 ```go
 func Connection() interface{}
@@ -635,7 +635,7 @@ func Connection() interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -645,7 +645,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -655,37 +655,37 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.provisioners"></a>
 
 ```go
 func Provisioners() *[]interface{}
@@ -695,7 +695,7 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `CreatedAt`<sup>Required</sup> <a name="CreatedAt" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.createdAt"></a>
+##### `CreatedAt`<sup>Required</sup> <a name="CreatedAt" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.createdAt"></a>
 
 ```go
 func CreatedAt() *string
@@ -705,7 +705,7 @@ func CreatedAt() *string
 
 ---
 
-##### `SelfLink`<sup>Required</sup> <a name="SelfLink" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.selfLink"></a>
+##### `SelfLink`<sup>Required</sup> <a name="SelfLink" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.selfLink"></a>
 
 ```go
 func SelfLink() *string
@@ -715,7 +715,7 @@ func SelfLink() *string
 
 ---
 
-##### `State`<sup>Required</sup> <a name="State" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.state"></a>
+##### `State`<sup>Required</sup> <a name="State" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.state"></a>
 
 ```go
 func State() *string
@@ -725,17 +725,17 @@ func State() *string
 
 ---
 
-##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.timeouts"></a>
+##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.timeouts"></a>
 
 ```go
 func Timeouts() DnsForwardingRuleTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference">DnsForwardingRuleTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference">DnsForwardingRuleTimeoutsOutputReference</a>
 
 ---
 
-##### `DnsForwardingIdInput`<sup>Optional</sup> <a name="DnsForwardingIdInput" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.dnsForwardingIdInput"></a>
+##### `DnsForwardingIdInput`<sup>Optional</sup> <a name="DnsForwardingIdInput" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.dnsForwardingIdInput"></a>
 
 ```go
 func DnsForwardingIdInput() *string
@@ -745,7 +745,7 @@ func DnsForwardingIdInput() *string
 
 ---
 
-##### `DomainNameInput`<sup>Optional</sup> <a name="DomainNameInput" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.domainNameInput"></a>
+##### `DomainNameInput`<sup>Optional</sup> <a name="DomainNameInput" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.domainNameInput"></a>
 
 ```go
 func DomainNameInput() *string
@@ -755,7 +755,7 @@ func DomainNameInput() *string
 
 ---
 
-##### `HvnIdInput`<sup>Optional</sup> <a name="HvnIdInput" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.hvnIdInput"></a>
+##### `HvnIdInput`<sup>Optional</sup> <a name="HvnIdInput" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.hvnIdInput"></a>
 
 ```go
 func HvnIdInput() *string
@@ -765,7 +765,7 @@ func HvnIdInput() *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -775,7 +775,7 @@ func IdInput() *string
 
 ---
 
-##### `InboundEndpointIpsInput`<sup>Optional</sup> <a name="InboundEndpointIpsInput" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.inboundEndpointIpsInput"></a>
+##### `InboundEndpointIpsInput`<sup>Optional</sup> <a name="InboundEndpointIpsInput" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.inboundEndpointIpsInput"></a>
 
 ```go
 func InboundEndpointIpsInput() *[]*string
@@ -785,7 +785,7 @@ func InboundEndpointIpsInput() *[]*string
 
 ---
 
-##### `ProjectIdInput`<sup>Optional</sup> <a name="ProjectIdInput" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.projectIdInput"></a>
+##### `ProjectIdInput`<sup>Optional</sup> <a name="ProjectIdInput" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.projectIdInput"></a>
 
 ```go
 func ProjectIdInput() *string
@@ -795,7 +795,7 @@ func ProjectIdInput() *string
 
 ---
 
-##### `RuleIdInput`<sup>Optional</sup> <a name="RuleIdInput" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.ruleIdInput"></a>
+##### `RuleIdInput`<sup>Optional</sup> <a name="RuleIdInput" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.ruleIdInput"></a>
 
 ```go
 func RuleIdInput() *string
@@ -805,7 +805,7 @@ func RuleIdInput() *string
 
 ---
 
-##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.timeoutsInput"></a>
+##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.timeoutsInput"></a>
 
 ```go
 func TimeoutsInput() interface{}
@@ -815,7 +815,7 @@ func TimeoutsInput() interface{}
 
 ---
 
-##### `DnsForwardingId`<sup>Required</sup> <a name="DnsForwardingId" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.dnsForwardingId"></a>
+##### `DnsForwardingId`<sup>Required</sup> <a name="DnsForwardingId" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.dnsForwardingId"></a>
 
 ```go
 func DnsForwardingId() *string
@@ -825,7 +825,7 @@ func DnsForwardingId() *string
 
 ---
 
-##### `DomainName`<sup>Required</sup> <a name="DomainName" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.domainName"></a>
+##### `DomainName`<sup>Required</sup> <a name="DomainName" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.domainName"></a>
 
 ```go
 func DomainName() *string
@@ -835,7 +835,7 @@ func DomainName() *string
 
 ---
 
-##### `HvnId`<sup>Required</sup> <a name="HvnId" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.hvnId"></a>
+##### `HvnId`<sup>Required</sup> <a name="HvnId" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.hvnId"></a>
 
 ```go
 func HvnId() *string
@@ -845,7 +845,7 @@ func HvnId() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.id"></a>
 
 ```go
 func Id() *string
@@ -855,7 +855,7 @@ func Id() *string
 
 ---
 
-##### `InboundEndpointIps`<sup>Required</sup> <a name="InboundEndpointIps" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.inboundEndpointIps"></a>
+##### `InboundEndpointIps`<sup>Required</sup> <a name="InboundEndpointIps" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.inboundEndpointIps"></a>
 
 ```go
 func InboundEndpointIps() *[]*string
@@ -865,7 +865,7 @@ func InboundEndpointIps() *[]*string
 
 ---
 
-##### `ProjectId`<sup>Required</sup> <a name="ProjectId" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.projectId"></a>
+##### `ProjectId`<sup>Required</sup> <a name="ProjectId" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.projectId"></a>
 
 ```go
 func ProjectId() *string
@@ -875,7 +875,7 @@ func ProjectId() *string
 
 ---
 
-##### `RuleId`<sup>Required</sup> <a name="RuleId" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.ruleId"></a>
+##### `RuleId`<sup>Required</sup> <a name="RuleId" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.ruleId"></a>
 
 ```go
 func RuleId() *string
@@ -889,11 +889,11 @@ func RuleId() *string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -905,20 +905,20 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DnsForwardingRuleConfig <a name="DnsForwardingRuleConfig" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig"></a>
+### DnsForwardingRuleConfig <a name="DnsForwardingRuleConfig" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/dnsforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/dnsforwardingrule"
 
 &dnsforwardingrule.DnsForwardingRuleConfig {
 	Connection: interface{},
 	Count: interface{},
-	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
-	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
-	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
-	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
+	DependsOn: *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable,
+	ForEach: github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator,
+	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
+	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	DnsForwardingId: *string,
 	DomainName: *string,
@@ -927,7 +927,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/dnsforwardingrule"
 	RuleId: *string,
 	Id: *string,
 	ProjectId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp/v10.dnsForwardingRule.DnsForwardingRuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11.dnsForwardingRule.DnsForwardingRuleTimeouts,
 }
 ```
 
@@ -935,25 +935,25 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/dnsforwardingrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.dnsForwardingId">DnsForwardingId</a></code> | <code>*string</code> | The ID of the DNS forwarding configuration this rule belongs to. |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.domainName">DomainName</a></code> | <code>*string</code> | The domain name for which DNS forwarding rule needs to be created. |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.hvnId">HvnId</a></code> | <code>*string</code> | The ID of the HVN that this DNS forwarding rule belongs to. |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.inboundEndpointIps">InboundEndpointIps</a></code> | <code>*[]*string</code> | The IP addresses of the target customer network inbound endpoints to which the DNS requests for the above domain will be forwarded. |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.ruleId">RuleId</a></code> | <code>*string</code> | The ID of the DNS forwarding rule. |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/dns_forwarding_rule#id DnsForwardingRule#id}. |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | The ID of the HCP project where the DNS forwarding rule is located. |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts">DnsForwardingRuleTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.dnsForwardingId">DnsForwardingId</a></code> | <code>*string</code> | The ID of the DNS forwarding configuration this rule belongs to. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.domainName">DomainName</a></code> | <code>*string</code> | The domain name for which DNS forwarding rule needs to be created. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.hvnId">HvnId</a></code> | <code>*string</code> | The ID of the HVN that this DNS forwarding rule belongs to. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.inboundEndpointIps">InboundEndpointIps</a></code> | <code>*[]*string</code> | The IP addresses of the target customer network inbound endpoints to which the DNS requests for the above domain will be forwarded. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.ruleId">RuleId</a></code> | <code>*string</code> | The ID of the DNS forwarding rule. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/dns_forwarding_rule#id DnsForwardingRule#id}. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | The ID of the HCP project where the DNS forwarding rule is located. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts">DnsForwardingRuleTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -963,7 +963,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -973,47 +973,47 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
 ```
 
-- *Type:* *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable
+- *Type:* *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -1023,7 +1023,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `DnsForwardingId`<sup>Required</sup> <a name="DnsForwardingId" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.dnsForwardingId"></a>
+##### `DnsForwardingId`<sup>Required</sup> <a name="DnsForwardingId" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.dnsForwardingId"></a>
 
 ```go
 DnsForwardingId *string
@@ -1037,7 +1037,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `DomainName`<sup>Required</sup> <a name="DomainName" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.domainName"></a>
+##### `DomainName`<sup>Required</sup> <a name="DomainName" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.domainName"></a>
 
 ```go
 DomainName *string
@@ -1051,7 +1051,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `HvnId`<sup>Required</sup> <a name="HvnId" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.hvnId"></a>
+##### `HvnId`<sup>Required</sup> <a name="HvnId" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.hvnId"></a>
 
 ```go
 HvnId *string
@@ -1065,7 +1065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `InboundEndpointIps`<sup>Required</sup> <a name="InboundEndpointIps" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.inboundEndpointIps"></a>
+##### `InboundEndpointIps`<sup>Required</sup> <a name="InboundEndpointIps" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.inboundEndpointIps"></a>
 
 ```go
 InboundEndpointIps *[]*string
@@ -1079,7 +1079,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `RuleId`<sup>Required</sup> <a name="RuleId" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.ruleId"></a>
+##### `RuleId`<sup>Required</sup> <a name="RuleId" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.ruleId"></a>
 
 ```go
 RuleId *string
@@ -1093,7 +1093,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.id"></a>
 
 ```go
 Id *string
@@ -1108,7 +1108,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `ProjectId`<sup>Optional</sup> <a name="ProjectId" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.projectId"></a>
+##### `ProjectId`<sup>Optional</sup> <a name="ProjectId" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.projectId"></a>
 
 ```go
 ProjectId *string
@@ -1125,13 +1125,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.timeouts"></a>
+##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.timeouts"></a>
 
 ```go
 Timeouts DnsForwardingRuleTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts">DnsForwardingRuleTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts">DnsForwardingRuleTimeouts</a>
 
 timeouts block.
 
@@ -1139,12 +1139,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### DnsForwardingRuleTimeouts <a name="DnsForwardingRuleTimeouts" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts"></a>
+### DnsForwardingRuleTimeouts <a name="DnsForwardingRuleTimeouts" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/dnsforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/dnsforwardingrule"
 
 &dnsforwardingrule.DnsForwardingRuleTimeouts {
 	Create: *string,
@@ -1158,14 +1158,14 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/dnsforwardingrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/dns_forwarding_rule#create DnsForwardingRule#create}. |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/dns_forwarding_rule#default DnsForwardingRule#default}. |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/dns_forwarding_rule#delete DnsForwardingRule#delete}. |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/dns_forwarding_rule#read DnsForwardingRule#read}. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/dns_forwarding_rule#create DnsForwardingRule#create}. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/dns_forwarding_rule#default DnsForwardingRule#default}. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/dns_forwarding_rule#delete DnsForwardingRule#delete}. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/dns_forwarding_rule#read DnsForwardingRule#read}. |
 
 ---
 
-##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts.property.create"></a>
+##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts.property.create"></a>
 
 ```go
 Create *string
@@ -1177,7 +1177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Default`<sup>Optional</sup> <a name="Default" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts.property.default"></a>
+##### `Default`<sup>Optional</sup> <a name="Default" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts.property.default"></a>
 
 ```go
 Default *string
@@ -1189,7 +1189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts.property.delete"></a>
+##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts.property.delete"></a>
 
 ```go
 Delete *string
@@ -1201,7 +1201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Read`<sup>Optional</sup> <a name="Read" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts.property.read"></a>
+##### `Read`<sup>Optional</sup> <a name="Read" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts.property.read"></a>
 
 ```go
 Read *string
@@ -1215,32 +1215,32 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### DnsForwardingRuleTimeoutsOutputReference <a name="DnsForwardingRuleTimeoutsOutputReference" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference"></a>
+### DnsForwardingRuleTimeoutsOutputReference <a name="DnsForwardingRuleTimeoutsOutputReference" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/dnsforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/dnsforwardingrule"
 
 dnsforwardingrule.NewDnsForwardingRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DnsForwardingRuleTimeoutsOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -1252,153 +1252,153 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.resetDefault">ResetDefault</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.resetRead">ResetRead</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.resetDefault">ResetDefault</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.resetRead">ResetRead</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -1406,13 +1406,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -1422,25 +1422,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetCreate` <a name="ResetCreate" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.resetCreate"></a>
+##### `ResetCreate` <a name="ResetCreate" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.resetCreate"></a>
 
 ```go
 func ResetCreate()
 ```
 
-##### `ResetDefault` <a name="ResetDefault" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.resetDefault"></a>
+##### `ResetDefault` <a name="ResetDefault" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.resetDefault"></a>
 
 ```go
 func ResetDefault()
 ```
 
-##### `ResetDelete` <a name="ResetDelete" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.resetDelete"></a>
+##### `ResetDelete` <a name="ResetDelete" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.resetDelete"></a>
 
 ```go
 func ResetDelete()
 ```
 
-##### `ResetRead` <a name="ResetRead" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.resetRead"></a>
+##### `ResetRead` <a name="ResetRead" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.resetRead"></a>
 
 ```go
 func ResetRead()
@@ -1451,21 +1451,21 @@ func ResetRead()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.defaultInput">DefaultInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.readInput">ReadInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.default">Default</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.read">Read</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.defaultInput">DefaultInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.readInput">ReadInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.default">Default</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.read">Read</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -1479,7 +1479,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -1489,7 +1489,7 @@ func Fqn() *string
 
 ---
 
-##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.createInput"></a>
+##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.createInput"></a>
 
 ```go
 func CreateInput() *string
@@ -1499,7 +1499,7 @@ func CreateInput() *string
 
 ---
 
-##### `DefaultInput`<sup>Optional</sup> <a name="DefaultInput" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.defaultInput"></a>
+##### `DefaultInput`<sup>Optional</sup> <a name="DefaultInput" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.defaultInput"></a>
 
 ```go
 func DefaultInput() *string
@@ -1509,7 +1509,7 @@ func DefaultInput() *string
 
 ---
 
-##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.deleteInput"></a>
+##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.deleteInput"></a>
 
 ```go
 func DeleteInput() *string
@@ -1519,7 +1519,7 @@ func DeleteInput() *string
 
 ---
 
-##### `ReadInput`<sup>Optional</sup> <a name="ReadInput" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.readInput"></a>
+##### `ReadInput`<sup>Optional</sup> <a name="ReadInput" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.readInput"></a>
 
 ```go
 func ReadInput() *string
@@ -1529,7 +1529,7 @@ func ReadInput() *string
 
 ---
 
-##### `Create`<sup>Required</sup> <a name="Create" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.create"></a>
+##### `Create`<sup>Required</sup> <a name="Create" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.create"></a>
 
 ```go
 func Create() *string
@@ -1539,7 +1539,7 @@ func Create() *string
 
 ---
 
-##### `Default`<sup>Required</sup> <a name="Default" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.default"></a>
+##### `Default`<sup>Required</sup> <a name="Default" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.default"></a>
 
 ```go
 func Default() *string
@@ -1549,7 +1549,7 @@ func Default() *string
 
 ---
 
-##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.delete"></a>
+##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.delete"></a>
 
 ```go
 func Delete() *string
@@ -1559,7 +1559,7 @@ func Delete() *string
 
 ---
 
-##### `Read`<sup>Required</sup> <a name="Read" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.read"></a>
+##### `Read`<sup>Required</sup> <a name="Read" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.read"></a>
 
 ```go
 func Read() *string
@@ -1569,7 +1569,7 @@ func Read() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}

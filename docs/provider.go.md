@@ -1,28 +1,28 @@
-# `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-hcp.provider"></a>
+# `provider` Submodule <a name="`provider` Submodule" id="@cdktn/provider-hcp.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### HcpProvider <a name="HcpProvider" id="@cdktf/provider-hcp.provider.HcpProvider"></a>
+### HcpProvider <a name="HcpProvider" id="@cdktn/provider-hcp.provider.HcpProvider"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs hcp}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-hcp.provider.HcpProvider.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-hcp.provider.HcpProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/provider"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/provider"
 
 provider.NewHcpProvider(scope Construct, id *string, config HcpProviderConfig) HcpProvider
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig">HcpProviderConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-hcp.provider.HcpProviderConfig">HcpProviderConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-hcp.provider.HcpProvider.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-hcp.provider.HcpProvider.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-hcp.provider.HcpProvider.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-hcp.provider.HcpProvider.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-hcp.provider.HcpProvider.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-hcp.provider.HcpProvider.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-hcp.provider.HcpProviderConfig">HcpProviderConfig</a>
+- *Type:* <a href="#@cdktn/provider-hcp.provider.HcpProviderConfig">HcpProviderConfig</a>
 
 ---
 
@@ -50,25 +50,25 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetAlias">ResetAlias</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetClientId">ResetClientId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetClientSecret">ResetClientSecret</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetCredentialFile">ResetCredentialFile</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetGeography">ResetGeography</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetProjectId">ResetProjectId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetSkipStatusCheck">ResetSkipStatusCheck</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetWorkloadIdentity">ResetWorkloadIdentity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.resetAlias">ResetAlias</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.resetClientId">ResetClientId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.resetClientSecret">ResetClientSecret</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.resetCredentialFile">ResetCredentialFile</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.resetGeography">ResetGeography</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.resetProjectId">ResetProjectId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.resetSkipStatusCheck">ResetSkipStatusCheck</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.resetWorkloadIdentity">ResetWorkloadIdentity</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-hcp.provider.HcpProvider.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-hcp.provider.HcpProvider.toString"></a>
 
 ```go
 func ToString() *string
@@ -76,25 +76,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-hcp.provider.HcpProvider.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-hcp.provider.HcpProvider.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-hcp.provider.HcpProvider.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-hcp.provider.HcpProvider.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-hcp.provider.HcpProvider.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-hcp.provider.HcpProvider.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-hcp.provider.HcpProvider.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-hcp.provider.HcpProvider.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -102,7 +102,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-hcp.provider.HcpProvider.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-hcp.provider.HcpProvider.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -110,7 +110,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-hcp.provider.HcpProvider.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-hcp.provider.HcpProvider.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -118,19 +118,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-hcp.provider.HcpProvider.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-hcp.provider.HcpProvider.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-hcp.provider.HcpProvider.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-hcp.provider.HcpProvider.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-hcp.provider.HcpProvider.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-hcp.provider.HcpProvider.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -138,49 +138,49 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `ResetAlias` <a name="ResetAlias" id="@cdktf/provider-hcp.provider.HcpProvider.resetAlias"></a>
+##### `ResetAlias` <a name="ResetAlias" id="@cdktn/provider-hcp.provider.HcpProvider.resetAlias"></a>
 
 ```go
 func ResetAlias()
 ```
 
-##### `ResetClientId` <a name="ResetClientId" id="@cdktf/provider-hcp.provider.HcpProvider.resetClientId"></a>
+##### `ResetClientId` <a name="ResetClientId" id="@cdktn/provider-hcp.provider.HcpProvider.resetClientId"></a>
 
 ```go
 func ResetClientId()
 ```
 
-##### `ResetClientSecret` <a name="ResetClientSecret" id="@cdktf/provider-hcp.provider.HcpProvider.resetClientSecret"></a>
+##### `ResetClientSecret` <a name="ResetClientSecret" id="@cdktn/provider-hcp.provider.HcpProvider.resetClientSecret"></a>
 
 ```go
 func ResetClientSecret()
 ```
 
-##### `ResetCredentialFile` <a name="ResetCredentialFile" id="@cdktf/provider-hcp.provider.HcpProvider.resetCredentialFile"></a>
+##### `ResetCredentialFile` <a name="ResetCredentialFile" id="@cdktn/provider-hcp.provider.HcpProvider.resetCredentialFile"></a>
 
 ```go
 func ResetCredentialFile()
 ```
 
-##### `ResetGeography` <a name="ResetGeography" id="@cdktf/provider-hcp.provider.HcpProvider.resetGeography"></a>
+##### `ResetGeography` <a name="ResetGeography" id="@cdktn/provider-hcp.provider.HcpProvider.resetGeography"></a>
 
 ```go
 func ResetGeography()
 ```
 
-##### `ResetProjectId` <a name="ResetProjectId" id="@cdktf/provider-hcp.provider.HcpProvider.resetProjectId"></a>
+##### `ResetProjectId` <a name="ResetProjectId" id="@cdktn/provider-hcp.provider.HcpProvider.resetProjectId"></a>
 
 ```go
 func ResetProjectId()
 ```
 
-##### `ResetSkipStatusCheck` <a name="ResetSkipStatusCheck" id="@cdktf/provider-hcp.provider.HcpProvider.resetSkipStatusCheck"></a>
+##### `ResetSkipStatusCheck` <a name="ResetSkipStatusCheck" id="@cdktn/provider-hcp.provider.HcpProvider.resetSkipStatusCheck"></a>
 
 ```go
 func ResetSkipStatusCheck()
 ```
 
-##### `ResetWorkloadIdentity` <a name="ResetWorkloadIdentity" id="@cdktf/provider-hcp.provider.HcpProvider.resetWorkloadIdentity"></a>
+##### `ResetWorkloadIdentity` <a name="ResetWorkloadIdentity" id="@cdktn/provider-hcp.provider.HcpProvider.resetWorkloadIdentity"></a>
 
 ```go
 func ResetWorkloadIdentity()
@@ -190,17 +190,17 @@ func ResetWorkloadIdentity()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.isTerraformProvider">IsTerraformProvider</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a HcpProvider resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.isTerraformProvider">IsTerraformProvider</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTN code for importing a HcpProvider resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.provider.HcpProvider.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.provider.HcpProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/provider"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/provider"
 
 provider.HcpProvider_IsConstruct(x interface{}) *bool
 ```
@@ -221,7 +221,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.provider.HcpProvider.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-hcp.provider.HcpProvider.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -229,45 +229,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.provider.HcpProvider.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.provider.HcpProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/provider"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/provider"
 
 provider.HcpProvider_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.provider.HcpProvider.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-hcp.provider.HcpProvider.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-hcp.provider.HcpProvider.isTerraformProvider"></a>
+##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktn/provider-hcp.provider.HcpProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/provider"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/provider"
 
 provider.HcpProvider_IsTerraformProvider(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.provider.HcpProvider.isTerraformProvider.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-hcp.provider.HcpProvider.isTerraformProvider.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.provider.HcpProvider.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.provider.HcpProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/provider"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/provider"
 
 provider.HcpProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
-Generates CDKTF code for importing a HcpProvider resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a HcpProvider resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-hcp.provider.HcpProvider.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-hcp.provider.HcpProvider.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -275,7 +275,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-hcp.provider.HcpProvider.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-hcp.provider.HcpProvider.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -283,7 +283,7 @@ The construct id used in the generated config for the HcpProvider to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-hcp.provider.HcpProvider.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-hcp.provider.HcpProvider.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
@@ -293,9 +293,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-hcp.provider.HcpProvider.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-hcp.provider.HcpProvider.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ? Optional instance of the provider where the HcpProvider to import is found.
 
@@ -305,34 +305,34 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.metaAttributes">MetaAttributes</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.terraformProviderSource">TerraformProviderSource</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.alias">Alias</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.aliasInput">AliasInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.clientIdInput">ClientIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.clientSecretInput">ClientSecretInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.credentialFileInput">CredentialFileInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.geographyInput">GeographyInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.projectIdInput">ProjectIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.skipStatusCheckInput">SkipStatusCheckInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.workloadIdentityInput">WorkloadIdentityInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.clientId">ClientId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.credentialFile">CredentialFile</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.geography">Geography</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.projectId">ProjectId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.skipStatusCheck">SkipStatusCheck</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.workloadIdentity">WorkloadIdentity</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.property.cdktfStack">CdktfStack</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.property.metaAttributes">MetaAttributes</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.property.terraformProviderSource">TerraformProviderSource</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.property.alias">Alias</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.property.aliasInput">AliasInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.property.clientIdInput">ClientIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.property.clientSecretInput">ClientSecretInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.property.credentialFileInput">CredentialFileInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.property.geographyInput">GeographyInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.property.projectIdInput">ProjectIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.property.skipStatusCheckInput">SkipStatusCheckInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.property.workloadIdentityInput">WorkloadIdentityInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.property.clientId">ClientId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.property.credentialFile">CredentialFile</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.property.geography">Geography</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.property.projectId">ProjectId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.property.skipStatusCheck">SkipStatusCheck</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.property.workloadIdentity">WorkloadIdentity</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-hcp.provider.HcpProvider.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-hcp.provider.HcpProvider.property.node"></a>
 
 ```go
 func Node() Node
@@ -344,17 +344,17 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-hcp.provider.HcpProvider.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-hcp.provider.HcpProvider.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-hcp.provider.HcpProvider.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-hcp.provider.HcpProvider.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -364,7 +364,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-hcp.provider.HcpProvider.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-hcp.provider.HcpProvider.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -374,7 +374,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `MetaAttributes`<sup>Required</sup> <a name="MetaAttributes" id="@cdktf/provider-hcp.provider.HcpProvider.property.metaAttributes"></a>
+##### `MetaAttributes`<sup>Required</sup> <a name="MetaAttributes" id="@cdktn/provider-hcp.provider.HcpProvider.property.metaAttributes"></a>
 
 ```go
 func MetaAttributes() *map[string]interface{}
@@ -384,7 +384,7 @@ func MetaAttributes() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-hcp.provider.HcpProvider.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-hcp.provider.HcpProvider.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -394,17 +394,17 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-hcp.provider.HcpProvider.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-hcp.provider.HcpProvider.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `TerraformProviderSource`<sup>Optional</sup> <a name="TerraformProviderSource" id="@cdktf/provider-hcp.provider.HcpProvider.property.terraformProviderSource"></a>
+##### `TerraformProviderSource`<sup>Optional</sup> <a name="TerraformProviderSource" id="@cdktn/provider-hcp.provider.HcpProvider.property.terraformProviderSource"></a>
 
 ```go
 func TerraformProviderSource() *string
@@ -414,7 +414,7 @@ func TerraformProviderSource() *string
 
 ---
 
-##### `Alias`<sup>Optional</sup> <a name="Alias" id="@cdktf/provider-hcp.provider.HcpProvider.property.alias"></a>
+##### `Alias`<sup>Optional</sup> <a name="Alias" id="@cdktn/provider-hcp.provider.HcpProvider.property.alias"></a>
 
 ```go
 func Alias() *string
@@ -424,7 +424,7 @@ func Alias() *string
 
 ---
 
-##### `AliasInput`<sup>Optional</sup> <a name="AliasInput" id="@cdktf/provider-hcp.provider.HcpProvider.property.aliasInput"></a>
+##### `AliasInput`<sup>Optional</sup> <a name="AliasInput" id="@cdktn/provider-hcp.provider.HcpProvider.property.aliasInput"></a>
 
 ```go
 func AliasInput() *string
@@ -434,7 +434,7 @@ func AliasInput() *string
 
 ---
 
-##### `ClientIdInput`<sup>Optional</sup> <a name="ClientIdInput" id="@cdktf/provider-hcp.provider.HcpProvider.property.clientIdInput"></a>
+##### `ClientIdInput`<sup>Optional</sup> <a name="ClientIdInput" id="@cdktn/provider-hcp.provider.HcpProvider.property.clientIdInput"></a>
 
 ```go
 func ClientIdInput() *string
@@ -444,7 +444,7 @@ func ClientIdInput() *string
 
 ---
 
-##### `ClientSecretInput`<sup>Optional</sup> <a name="ClientSecretInput" id="@cdktf/provider-hcp.provider.HcpProvider.property.clientSecretInput"></a>
+##### `ClientSecretInput`<sup>Optional</sup> <a name="ClientSecretInput" id="@cdktn/provider-hcp.provider.HcpProvider.property.clientSecretInput"></a>
 
 ```go
 func ClientSecretInput() *string
@@ -454,7 +454,7 @@ func ClientSecretInput() *string
 
 ---
 
-##### `CredentialFileInput`<sup>Optional</sup> <a name="CredentialFileInput" id="@cdktf/provider-hcp.provider.HcpProvider.property.credentialFileInput"></a>
+##### `CredentialFileInput`<sup>Optional</sup> <a name="CredentialFileInput" id="@cdktn/provider-hcp.provider.HcpProvider.property.credentialFileInput"></a>
 
 ```go
 func CredentialFileInput() *string
@@ -464,7 +464,7 @@ func CredentialFileInput() *string
 
 ---
 
-##### `GeographyInput`<sup>Optional</sup> <a name="GeographyInput" id="@cdktf/provider-hcp.provider.HcpProvider.property.geographyInput"></a>
+##### `GeographyInput`<sup>Optional</sup> <a name="GeographyInput" id="@cdktn/provider-hcp.provider.HcpProvider.property.geographyInput"></a>
 
 ```go
 func GeographyInput() *string
@@ -474,7 +474,7 @@ func GeographyInput() *string
 
 ---
 
-##### `ProjectIdInput`<sup>Optional</sup> <a name="ProjectIdInput" id="@cdktf/provider-hcp.provider.HcpProvider.property.projectIdInput"></a>
+##### `ProjectIdInput`<sup>Optional</sup> <a name="ProjectIdInput" id="@cdktn/provider-hcp.provider.HcpProvider.property.projectIdInput"></a>
 
 ```go
 func ProjectIdInput() *string
@@ -484,7 +484,7 @@ func ProjectIdInput() *string
 
 ---
 
-##### `SkipStatusCheckInput`<sup>Optional</sup> <a name="SkipStatusCheckInput" id="@cdktf/provider-hcp.provider.HcpProvider.property.skipStatusCheckInput"></a>
+##### `SkipStatusCheckInput`<sup>Optional</sup> <a name="SkipStatusCheckInput" id="@cdktn/provider-hcp.provider.HcpProvider.property.skipStatusCheckInput"></a>
 
 ```go
 func SkipStatusCheckInput() interface{}
@@ -494,7 +494,7 @@ func SkipStatusCheckInput() interface{}
 
 ---
 
-##### `WorkloadIdentityInput`<sup>Optional</sup> <a name="WorkloadIdentityInput" id="@cdktf/provider-hcp.provider.HcpProvider.property.workloadIdentityInput"></a>
+##### `WorkloadIdentityInput`<sup>Optional</sup> <a name="WorkloadIdentityInput" id="@cdktn/provider-hcp.provider.HcpProvider.property.workloadIdentityInput"></a>
 
 ```go
 func WorkloadIdentityInput() interface{}
@@ -504,7 +504,7 @@ func WorkloadIdentityInput() interface{}
 
 ---
 
-##### `ClientId`<sup>Optional</sup> <a name="ClientId" id="@cdktf/provider-hcp.provider.HcpProvider.property.clientId"></a>
+##### `ClientId`<sup>Optional</sup> <a name="ClientId" id="@cdktn/provider-hcp.provider.HcpProvider.property.clientId"></a>
 
 ```go
 func ClientId() *string
@@ -514,7 +514,7 @@ func ClientId() *string
 
 ---
 
-##### `ClientSecret`<sup>Optional</sup> <a name="ClientSecret" id="@cdktf/provider-hcp.provider.HcpProvider.property.clientSecret"></a>
+##### `ClientSecret`<sup>Optional</sup> <a name="ClientSecret" id="@cdktn/provider-hcp.provider.HcpProvider.property.clientSecret"></a>
 
 ```go
 func ClientSecret() *string
@@ -524,7 +524,7 @@ func ClientSecret() *string
 
 ---
 
-##### `CredentialFile`<sup>Optional</sup> <a name="CredentialFile" id="@cdktf/provider-hcp.provider.HcpProvider.property.credentialFile"></a>
+##### `CredentialFile`<sup>Optional</sup> <a name="CredentialFile" id="@cdktn/provider-hcp.provider.HcpProvider.property.credentialFile"></a>
 
 ```go
 func CredentialFile() *string
@@ -534,7 +534,7 @@ func CredentialFile() *string
 
 ---
 
-##### `Geography`<sup>Optional</sup> <a name="Geography" id="@cdktf/provider-hcp.provider.HcpProvider.property.geography"></a>
+##### `Geography`<sup>Optional</sup> <a name="Geography" id="@cdktn/provider-hcp.provider.HcpProvider.property.geography"></a>
 
 ```go
 func Geography() *string
@@ -544,7 +544,7 @@ func Geography() *string
 
 ---
 
-##### `ProjectId`<sup>Optional</sup> <a name="ProjectId" id="@cdktf/provider-hcp.provider.HcpProvider.property.projectId"></a>
+##### `ProjectId`<sup>Optional</sup> <a name="ProjectId" id="@cdktn/provider-hcp.provider.HcpProvider.property.projectId"></a>
 
 ```go
 func ProjectId() *string
@@ -554,7 +554,7 @@ func ProjectId() *string
 
 ---
 
-##### `SkipStatusCheck`<sup>Optional</sup> <a name="SkipStatusCheck" id="@cdktf/provider-hcp.provider.HcpProvider.property.skipStatusCheck"></a>
+##### `SkipStatusCheck`<sup>Optional</sup> <a name="SkipStatusCheck" id="@cdktn/provider-hcp.provider.HcpProvider.property.skipStatusCheck"></a>
 
 ```go
 func SkipStatusCheck() interface{}
@@ -564,7 +564,7 @@ func SkipStatusCheck() interface{}
 
 ---
 
-##### `WorkloadIdentity`<sup>Optional</sup> <a name="WorkloadIdentity" id="@cdktf/provider-hcp.provider.HcpProvider.property.workloadIdentity"></a>
+##### `WorkloadIdentity`<sup>Optional</sup> <a name="WorkloadIdentity" id="@cdktn/provider-hcp.provider.HcpProvider.property.workloadIdentity"></a>
 
 ```go
 func WorkloadIdentity() interface{}
@@ -578,11 +578,11 @@ func WorkloadIdentity() interface{}
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProvider.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-hcp.provider.HcpProvider.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-hcp.provider.HcpProvider.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -594,12 +594,12 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### HcpProviderConfig <a name="HcpProviderConfig" id="@cdktf/provider-hcp.provider.HcpProviderConfig"></a>
+### HcpProviderConfig <a name="HcpProviderConfig" id="@cdktn/provider-hcp.provider.HcpProviderConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-hcp.provider.HcpProviderConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-hcp.provider.HcpProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/provider"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/provider"
 
 &provider.HcpProviderConfig {
 	Alias: *string,
@@ -617,18 +617,18 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/provider"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.alias">Alias</a></code> | <code>*string</code> | Alias name. |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.clientId">ClientId</a></code> | <code>*string</code> | The OAuth2 Client ID for API operations. |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | The OAuth2 Client Secret for API operations. |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.credentialFile">CredentialFile</a></code> | <code>*string</code> | The path to an HCP credential file to use to authenticate the provider to HCP. |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.geography">Geography</a></code> | <code>*string</code> | The geography in which HCP resources should be created. Default is `us`. |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | The default project in which resources should be created. |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.skipStatusCheck">SkipStatusCheck</a></code> | <code>interface{}</code> | When set to true, the provider will skip checking the HCP status page for service outages or returning warnings. |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.workloadIdentity">WorkloadIdentity</a></code> | <code>interface{}</code> | workload_identity block. |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProviderConfig.property.alias">Alias</a></code> | <code>*string</code> | Alias name. |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProviderConfig.property.clientId">ClientId</a></code> | <code>*string</code> | The OAuth2 Client ID for API operations. |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProviderConfig.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | The OAuth2 Client Secret for API operations. |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProviderConfig.property.credentialFile">CredentialFile</a></code> | <code>*string</code> | The path to an HCP credential file to use to authenticate the provider to HCP. |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProviderConfig.property.geography">Geography</a></code> | <code>*string</code> | The geography in which HCP resources should be created. Default is `us`. |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProviderConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | The default project in which resources should be created. |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProviderConfig.property.skipStatusCheck">SkipStatusCheck</a></code> | <code>interface{}</code> | When set to true, the provider will skip checking the HCP status page for service outages or returning warnings. |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProviderConfig.property.workloadIdentity">WorkloadIdentity</a></code> | <code>interface{}</code> | workload_identity block. |
 
 ---
 
-##### `Alias`<sup>Optional</sup> <a name="Alias" id="@cdktf/provider-hcp.provider.HcpProviderConfig.property.alias"></a>
+##### `Alias`<sup>Optional</sup> <a name="Alias" id="@cdktn/provider-hcp.provider.HcpProviderConfig.property.alias"></a>
 
 ```go
 Alias *string
@@ -642,7 +642,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ClientId`<sup>Optional</sup> <a name="ClientId" id="@cdktf/provider-hcp.provider.HcpProviderConfig.property.clientId"></a>
+##### `ClientId`<sup>Optional</sup> <a name="ClientId" id="@cdktn/provider-hcp.provider.HcpProviderConfig.property.clientId"></a>
 
 ```go
 ClientId *string
@@ -656,7 +656,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ClientSecret`<sup>Optional</sup> <a name="ClientSecret" id="@cdktf/provider-hcp.provider.HcpProviderConfig.property.clientSecret"></a>
+##### `ClientSecret`<sup>Optional</sup> <a name="ClientSecret" id="@cdktn/provider-hcp.provider.HcpProviderConfig.property.clientSecret"></a>
 
 ```go
 ClientSecret *string
@@ -670,7 +670,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `CredentialFile`<sup>Optional</sup> <a name="CredentialFile" id="@cdktf/provider-hcp.provider.HcpProviderConfig.property.credentialFile"></a>
+##### `CredentialFile`<sup>Optional</sup> <a name="CredentialFile" id="@cdktn/provider-hcp.provider.HcpProviderConfig.property.credentialFile"></a>
 
 ```go
 CredentialFile *string
@@ -686,7 +686,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Geography`<sup>Optional</sup> <a name="Geography" id="@cdktf/provider-hcp.provider.HcpProviderConfig.property.geography"></a>
+##### `Geography`<sup>Optional</sup> <a name="Geography" id="@cdktn/provider-hcp.provider.HcpProviderConfig.property.geography"></a>
 
 ```go
 Geography *string
@@ -700,7 +700,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ProjectId`<sup>Optional</sup> <a name="ProjectId" id="@cdktf/provider-hcp.provider.HcpProviderConfig.property.projectId"></a>
+##### `ProjectId`<sup>Optional</sup> <a name="ProjectId" id="@cdktn/provider-hcp.provider.HcpProviderConfig.property.projectId"></a>
 
 ```go
 ProjectId *string
@@ -714,7 +714,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `SkipStatusCheck`<sup>Optional</sup> <a name="SkipStatusCheck" id="@cdktf/provider-hcp.provider.HcpProviderConfig.property.skipStatusCheck"></a>
+##### `SkipStatusCheck`<sup>Optional</sup> <a name="SkipStatusCheck" id="@cdktn/provider-hcp.provider.HcpProviderConfig.property.skipStatusCheck"></a>
 
 ```go
 SkipStatusCheck interface{}
@@ -728,7 +728,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `WorkloadIdentity`<sup>Optional</sup> <a name="WorkloadIdentity" id="@cdktf/provider-hcp.provider.HcpProviderConfig.property.workloadIdentity"></a>
+##### `WorkloadIdentity`<sup>Optional</sup> <a name="WorkloadIdentity" id="@cdktn/provider-hcp.provider.HcpProviderConfig.property.workloadIdentity"></a>
 
 ```go
 WorkloadIdentity interface{}
@@ -742,12 +742,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### HcpProviderWorkloadIdentity <a name="HcpProviderWorkloadIdentity" id="@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity"></a>
+### HcpProviderWorkloadIdentity <a name="HcpProviderWorkloadIdentity" id="@cdktn/provider-hcp.provider.HcpProviderWorkloadIdentity"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-hcp.provider.HcpProviderWorkloadIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/provider"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/provider"
 
 &provider.HcpProviderWorkloadIdentity {
 	ResourceName: *string,
@@ -760,13 +760,13 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/provider"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity.property.resourceName">ResourceName</a></code> | <code>*string</code> | The resource_name of the Workload Identity Provider to exchange the token with. |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity.property.token">Token</a></code> | <code>*string</code> | The JWT token retrieved from an OpenID Connect (OIDC) or OAuth2 provider. |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity.property.tokenFile">TokenFile</a></code> | <code>*string</code> | The path to a file containing a JWT token retrieved from an OpenID Connect (OIDC) or OAuth2 provider. |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProviderWorkloadIdentity.property.resourceName">ResourceName</a></code> | <code>*string</code> | The resource_name of the Workload Identity Provider to exchange the token with. |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProviderWorkloadIdentity.property.token">Token</a></code> | <code>*string</code> | The JWT token retrieved from an OpenID Connect (OIDC) or OAuth2 provider. |
+| <code><a href="#@cdktn/provider-hcp.provider.HcpProviderWorkloadIdentity.property.tokenFile">TokenFile</a></code> | <code>*string</code> | The path to a file containing a JWT token retrieved from an OpenID Connect (OIDC) or OAuth2 provider. |
 
 ---
 
-##### `ResourceName`<sup>Required</sup> <a name="ResourceName" id="@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity.property.resourceName"></a>
+##### `ResourceName`<sup>Required</sup> <a name="ResourceName" id="@cdktn/provider-hcp.provider.HcpProviderWorkloadIdentity.property.resourceName"></a>
 
 ```go
 ResourceName *string
@@ -780,7 +780,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Token`<sup>Optional</sup> <a name="Token" id="@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity.property.token"></a>
+##### `Token`<sup>Optional</sup> <a name="Token" id="@cdktn/provider-hcp.provider.HcpProviderWorkloadIdentity.property.token"></a>
 
 ```go
 Token *string
@@ -796,7 +796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `TokenFile`<sup>Optional</sup> <a name="TokenFile" id="@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity.property.tokenFile"></a>
+##### `TokenFile`<sup>Optional</sup> <a name="TokenFile" id="@cdktn/provider-hcp.provider.HcpProviderWorkloadIdentity.property.tokenFile"></a>
 
 ```go
 TokenFile *string

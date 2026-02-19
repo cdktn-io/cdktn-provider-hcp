@@ -1,15 +1,15 @@
-# `waypointAction` Submodule <a name="`waypointAction` Submodule" id="@cdktf/provider-hcp.waypointAction"></a>
+# `waypointAction` Submodule <a name="`waypointAction` Submodule" id="@cdktn/provider-hcp.waypointAction"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### WaypointAction <a name="WaypointAction" id="@cdktf/provider-hcp.waypointAction.WaypointAction"></a>
+### WaypointAction <a name="WaypointAction" id="@cdktn/provider-hcp.waypointAction.WaypointAction"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_action hcp_waypoint_action}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-hcp.waypointAction.WaypointAction.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-hcp.waypointAction.WaypointAction.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_hcp import waypoint_action
+from cdktn_provider_hcp import waypoint_action
 
 waypointAction.WaypointAction(
   scope: Construct,
@@ -30,23 +30,23 @@ waypointAction.WaypointAction(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the Action. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.request">request</a></code> | <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequest">WaypointActionRequest</a></code> | The kind of HTTP request this should trigger. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.description">description</a></code> | <code>str</code> | A description of the Action. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.projectId">project_id</a></code> | <code>str</code> | The ID of the HCP project where the Action is located. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the Action. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.request">request</a></code> | <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequest">WaypointActionRequest</a></code> | The kind of HTTP request this should trigger. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.description">description</a></code> | <code>str</code> | A description of the Action. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.projectId">project_id</a></code> | <code>str</code> | The ID of the HCP project where the Action is located. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -54,7 +54,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -64,49 +64,49 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
-
----
-
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.count"></a>
-
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.dependsOn"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.count"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
-
----
-
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.forEach"></a>
-
-- *Type:* cdktf.ITerraformIterator
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.lifecycle"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.dependsOn"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
-
----
-
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.provider"></a>
-
-- *Type:* cdktf.TerraformProvider
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.provisioners"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.forEach"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.name"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.lifecycle"></a>
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.provider"></a>
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.provisioners"></a>
+
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.name"></a>
 
 - *Type:* str
 
@@ -116,9 +116,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `request`<sup>Required</sup> <a name="request" id="@cdktf/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.request"></a>
+##### `request`<sup>Required</sup> <a name="request" id="@cdktn/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.request"></a>
 
-- *Type:* <a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequest">WaypointActionRequest</a>
+- *Type:* <a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequest">WaypointActionRequest</a>
 
 The kind of HTTP request this should trigger.
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.description"></a>
 
 - *Type:* str
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `project_id`<sup>Optional</sup> <a name="project_id" id="@cdktf/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.projectId"></a>
+##### `project_id`<sup>Optional</sup> <a name="project_id" id="@cdktn/provider-hcp.waypointAction.WaypointAction.Initializer.parameter.projectId"></a>
 
 - *Type:* str
 
@@ -150,36 +150,36 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.putRequest">put_request</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.resetDescription">reset_description</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.resetProjectId">reset_project_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.putRequest">put_request</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.resetProjectId">reset_project_id</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-hcp.waypointAction.WaypointAction.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-hcp.waypointAction.WaypointAction.toString"></a>
 
 ```python
 def to_string() -> str
@@ -187,7 +187,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-hcp.waypointAction.WaypointAction.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-hcp.waypointAction.WaypointAction.addOverride"></a>
 
 ```python
 def add_override(
@@ -196,19 +196,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-hcp.waypointAction.WaypointAction.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-hcp.waypointAction.WaypointAction.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-hcp.waypointAction.WaypointAction.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-hcp.waypointAction.WaypointAction.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-hcp.waypointAction.WaypointAction.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-hcp.waypointAction.WaypointAction.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -218,7 +218,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-hcp.waypointAction.WaypointAction.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-hcp.waypointAction.WaypointAction.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -226,7 +226,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-hcp.waypointAction.WaypointAction.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-hcp.waypointAction.WaypointAction.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -234,19 +234,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-hcp.waypointAction.WaypointAction.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-hcp.waypointAction.WaypointAction.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-hcp.waypointAction.WaypointAction.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-hcp.waypointAction.WaypointAction.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-hcp.waypointAction.WaypointAction.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-hcp.waypointAction.WaypointAction.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -254,7 +254,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-hcp.waypointAction.WaypointAction.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-hcp.waypointAction.WaypointAction.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -264,7 +264,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-hcp.waypointAction.WaypointAction.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-hcp.waypointAction.WaypointAction.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -272,7 +272,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointAction.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointAction.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -280,13 +280,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointAction.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointAction.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointAction.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointAction.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -294,13 +294,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointAction.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointAction.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointAction.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointAction.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -308,13 +308,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointAction.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointAction.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointAction.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointAction.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -322,13 +322,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointAction.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointAction.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointAction.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointAction.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -336,13 +336,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointAction.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointAction.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointAction.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointAction.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -350,13 +350,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointAction.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointAction.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointAction.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointAction.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -364,13 +364,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointAction.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointAction.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointAction.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointAction.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -378,13 +378,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointAction.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointAction.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointAction.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointAction.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -392,19 +392,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointAction.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointAction.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-hcp.waypointAction.WaypointAction.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-hcp.waypointAction.WaypointAction.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-hcp.waypointAction.WaypointAction.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-hcp.waypointAction.WaypointAction.importFrom"></a>
 
 ```python
 def import_from(
@@ -413,19 +413,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-hcp.waypointAction.WaypointAction.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-hcp.waypointAction.WaypointAction.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-hcp.waypointAction.WaypointAction.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-hcp.waypointAction.WaypointAction.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointAction.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointAction.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -433,13 +433,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointAction.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointAction.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-hcp.waypointAction.WaypointAction.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-hcp.waypointAction.WaypointAction.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -451,7 +451,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-hcp.waypointAction.WaypointAction.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-hcp.waypointAction.WaypointAction.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -459,7 +459,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-hcp.waypointAction.WaypointAction.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-hcp.waypointAction.WaypointAction.moveTo"></a>
 
 ```python
 def move_to(
@@ -470,7 +470,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-hcp.waypointAction.WaypointAction.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-hcp.waypointAction.WaypointAction.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -478,7 +478,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-hcp.waypointAction.WaypointAction.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-hcp.waypointAction.WaypointAction.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -486,7 +486,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-hcp.waypointAction.WaypointAction.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-hcp.waypointAction.WaypointAction.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -496,7 +496,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-hcp.waypointAction.WaypointAction.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-hcp.waypointAction.WaypointAction.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -504,7 +504,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_request` <a name="put_request" id="@cdktf/provider-hcp.waypointAction.WaypointAction.putRequest"></a>
+##### `put_request` <a name="put_request" id="@cdktn/provider-hcp.waypointAction.WaypointAction.putRequest"></a>
 
 ```python
 def put_request(
@@ -513,9 +513,9 @@ def put_request(
 ) -> None
 ```
 
-###### `agent`<sup>Optional</sup> <a name="agent" id="@cdktf/provider-hcp.waypointAction.WaypointAction.putRequest.parameter.agent"></a>
+###### `agent`<sup>Optional</sup> <a name="agent" id="@cdktn/provider-hcp.waypointAction.WaypointAction.putRequest.parameter.agent"></a>
 
-- *Type:* <a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgent">WaypointActionRequestAgent</a>
+- *Type:* <a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgent">WaypointActionRequestAgent</a>
 
 Agent mode allows users to define the agent to use for the request.
 
@@ -523,9 +523,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `custom`<sup>Optional</sup> <a name="custom" id="@cdktf/provider-hcp.waypointAction.WaypointAction.putRequest.parameter.custom"></a>
+###### `custom`<sup>Optional</sup> <a name="custom" id="@cdktn/provider-hcp.waypointAction.WaypointAction.putRequest.parameter.custom"></a>
 
-- *Type:* <a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustom">WaypointActionRequestCustom</a>
+- *Type:* <a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustom">WaypointActionRequestCustom</a>
 
 Custom mode allows users to define the HTTP method, the request body, etc.
 
@@ -533,13 +533,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `reset_description` <a name="reset_description" id="@cdktf/provider-hcp.waypointAction.WaypointAction.resetDescription"></a>
+##### `reset_description` <a name="reset_description" id="@cdktn/provider-hcp.waypointAction.WaypointAction.resetDescription"></a>
 
 ```python
 def reset_description() -> None
 ```
 
-##### `reset_project_id` <a name="reset_project_id" id="@cdktf/provider-hcp.waypointAction.WaypointAction.resetProjectId"></a>
+##### `reset_project_id` <a name="reset_project_id" id="@cdktn/provider-hcp.waypointAction.WaypointAction.resetProjectId"></a>
 
 ```python
 def reset_project_id() -> None
@@ -549,17 +549,17 @@ def reset_project_id() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a WaypointAction resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a WaypointAction resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-hcp.waypointAction.WaypointAction.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-hcp.waypointAction.WaypointAction.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_hcp import waypoint_action
+from cdktn_provider_hcp import waypoint_action
 
 waypointAction.WaypointAction.is_construct(
   x: typing.Any
@@ -582,7 +582,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.waypointAction.WaypointAction.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-hcp.waypointAction.WaypointAction.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -590,42 +590,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-hcp.waypointAction.WaypointAction.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-hcp.waypointAction.WaypointAction.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_hcp import waypoint_action
+from cdktn_provider_hcp import waypoint_action
 
 waypointAction.WaypointAction.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.waypointAction.WaypointAction.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-hcp.waypointAction.WaypointAction.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-hcp.waypointAction.WaypointAction.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-hcp.waypointAction.WaypointAction.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_hcp import waypoint_action
+from cdktn_provider_hcp import waypoint_action
 
 waypointAction.WaypointAction.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.waypointAction.WaypointAction.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-hcp.waypointAction.WaypointAction.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-hcp.waypointAction.WaypointAction.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-hcp.waypointAction.WaypointAction.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_hcp import waypoint_action
+from cdktn_provider_hcp import waypoint_action
 
 waypointAction.WaypointAction.generate_config_for_import(
   scope: Construct,
@@ -635,9 +635,9 @@ waypointAction.WaypointAction.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a WaypointAction resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a WaypointAction resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-hcp.waypointAction.WaypointAction.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-hcp.waypointAction.WaypointAction.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -645,7 +645,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-hcp.waypointAction.WaypointAction.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-hcp.waypointAction.WaypointAction.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -653,7 +653,7 @@ The construct id used in the generated config for the WaypointAction to import.
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-hcp.waypointAction.WaypointAction.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-hcp.waypointAction.WaypointAction.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
@@ -663,9 +663,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-hcp.waypointAction.WaypointAction.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-hcp.waypointAction.WaypointAction.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the WaypointAction to import is found.
 
@@ -675,34 +675,34 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.property.organizationId">organization_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.property.request">request</a></code> | <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference">WaypointActionRequestOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.property.projectIdInput">project_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.property.requestInput">request_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequest">WaypointActionRequest</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.property.organizationId">organization_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.property.request">request</a></code> | <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference">WaypointActionRequestOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.property.projectIdInput">project_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.property.requestInput">request_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequest">WaypointActionRequest</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-hcp.waypointAction.WaypointAction.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-hcp.waypointAction.WaypointAction.property.node"></a>
 
 ```python
 node: Node
@@ -714,17 +714,17 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-hcp.waypointAction.WaypointAction.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-hcp.waypointAction.WaypointAction.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-hcp.waypointAction.WaypointAction.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-hcp.waypointAction.WaypointAction.property.fqn"></a>
 
 ```python
 fqn: str
@@ -734,7 +734,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-hcp.waypointAction.WaypointAction.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-hcp.waypointAction.WaypointAction.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -744,7 +744,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-hcp.waypointAction.WaypointAction.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-hcp.waypointAction.WaypointAction.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -754,7 +754,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-hcp.waypointAction.WaypointAction.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-hcp.waypointAction.WaypointAction.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -764,37 +764,37 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-hcp.waypointAction.WaypointAction.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-hcp.waypointAction.WaypointAction.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-hcp.waypointAction.WaypointAction.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-hcp.waypointAction.WaypointAction.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-hcp.waypointAction.WaypointAction.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-hcp.waypointAction.WaypointAction.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-hcp.waypointAction.WaypointAction.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-hcp.waypointAction.WaypointAction.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -804,47 +804,47 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-hcp.waypointAction.WaypointAction.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-hcp.waypointAction.WaypointAction.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-hcp.waypointAction.WaypointAction.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-hcp.waypointAction.WaypointAction.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-hcp.waypointAction.WaypointAction.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-hcp.waypointAction.WaypointAction.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-hcp.waypointAction.WaypointAction.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-hcp.waypointAction.WaypointAction.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-hcp.waypointAction.WaypointAction.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-hcp.waypointAction.WaypointAction.property.id"></a>
 
 ```python
 id: str
@@ -854,7 +854,7 @@ id: str
 
 ---
 
-##### `organization_id`<sup>Required</sup> <a name="organization_id" id="@cdktf/provider-hcp.waypointAction.WaypointAction.property.organizationId"></a>
+##### `organization_id`<sup>Required</sup> <a name="organization_id" id="@cdktn/provider-hcp.waypointAction.WaypointAction.property.organizationId"></a>
 
 ```python
 organization_id: str
@@ -864,17 +864,17 @@ organization_id: str
 
 ---
 
-##### `request`<sup>Required</sup> <a name="request" id="@cdktf/provider-hcp.waypointAction.WaypointAction.property.request"></a>
+##### `request`<sup>Required</sup> <a name="request" id="@cdktn/provider-hcp.waypointAction.WaypointAction.property.request"></a>
 
 ```python
 request: WaypointActionRequestOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference">WaypointActionRequestOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference">WaypointActionRequestOutputReference</a>
 
 ---
 
-##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-hcp.waypointAction.WaypointAction.property.descriptionInput"></a>
+##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-hcp.waypointAction.WaypointAction.property.descriptionInput"></a>
 
 ```python
 description_input: str
@@ -884,7 +884,7 @@ description_input: str
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-hcp.waypointAction.WaypointAction.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-hcp.waypointAction.WaypointAction.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -894,7 +894,7 @@ name_input: str
 
 ---
 
-##### `project_id_input`<sup>Optional</sup> <a name="project_id_input" id="@cdktf/provider-hcp.waypointAction.WaypointAction.property.projectIdInput"></a>
+##### `project_id_input`<sup>Optional</sup> <a name="project_id_input" id="@cdktn/provider-hcp.waypointAction.WaypointAction.property.projectIdInput"></a>
 
 ```python
 project_id_input: str
@@ -904,17 +904,17 @@ project_id_input: str
 
 ---
 
-##### `request_input`<sup>Optional</sup> <a name="request_input" id="@cdktf/provider-hcp.waypointAction.WaypointAction.property.requestInput"></a>
+##### `request_input`<sup>Optional</sup> <a name="request_input" id="@cdktn/provider-hcp.waypointAction.WaypointAction.property.requestInput"></a>
 
 ```python
 request_input: IResolvable | WaypointActionRequest
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequest">WaypointActionRequest</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequest">WaypointActionRequest</a>
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-hcp.waypointAction.WaypointAction.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-hcp.waypointAction.WaypointAction.property.description"></a>
 
 ```python
 description: str
@@ -924,7 +924,7 @@ description: str
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-hcp.waypointAction.WaypointAction.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-hcp.waypointAction.WaypointAction.property.name"></a>
 
 ```python
 name: str
@@ -934,7 +934,7 @@ name: str
 
 ---
 
-##### `project_id`<sup>Required</sup> <a name="project_id" id="@cdktf/provider-hcp.waypointAction.WaypointAction.property.projectId"></a>
+##### `project_id`<sup>Required</sup> <a name="project_id" id="@cdktn/provider-hcp.waypointAction.WaypointAction.property.projectId"></a>
 
 ```python
 project_id: str
@@ -948,11 +948,11 @@ project_id: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointAction.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointAction.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-hcp.waypointAction.WaypointAction.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-hcp.waypointAction.WaypointAction.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -964,12 +964,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### WaypointActionConfig <a name="WaypointActionConfig" id="@cdktf/provider-hcp.waypointAction.WaypointActionConfig"></a>
+### WaypointActionConfig <a name="WaypointActionConfig" id="@cdktn/provider-hcp.waypointAction.WaypointActionConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-hcp.waypointAction.WaypointActionConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-hcp.waypointAction.WaypointActionConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_hcp import waypoint_action
+from cdktn_provider_hcp import waypoint_action
 
 waypointAction.WaypointActionConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -990,91 +990,91 @@ waypointAction.WaypointActionConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionConfig.property.name">name</a></code> | <code>str</code> | The name of the Action. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionConfig.property.request">request</a></code> | <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequest">WaypointActionRequest</a></code> | The kind of HTTP request this should trigger. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionConfig.property.description">description</a></code> | <code>str</code> | A description of the Action. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionConfig.property.projectId">project_id</a></code> | <code>str</code> | The ID of the HCP project where the Action is located. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionConfig.property.name">name</a></code> | <code>str</code> | The name of the Action. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionConfig.property.request">request</a></code> | <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequest">WaypointActionRequest</a></code> | The kind of HTTP request this should trigger. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionConfig.property.description">description</a></code> | <code>str</code> | A description of the Action. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionConfig.property.projectId">project_id</a></code> | <code>str</code> | The ID of the HCP project where the Action is located. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-hcp.waypointAction.WaypointActionConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-hcp.waypointAction.WaypointActionConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-hcp.waypointAction.WaypointActionConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-hcp.waypointAction.WaypointActionConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-hcp.waypointAction.WaypointActionConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-hcp.waypointAction.WaypointActionConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-hcp.waypointAction.WaypointActionConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-hcp.waypointAction.WaypointActionConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-hcp.waypointAction.WaypointActionConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-hcp.waypointAction.WaypointActionConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-hcp.waypointAction.WaypointActionConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-hcp.waypointAction.WaypointActionConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-hcp.waypointAction.WaypointActionConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-hcp.waypointAction.WaypointActionConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-hcp.waypointAction.WaypointActionConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-hcp.waypointAction.WaypointActionConfig.property.name"></a>
 
 ```python
 name: str
@@ -1088,13 +1088,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `request`<sup>Required</sup> <a name="request" id="@cdktf/provider-hcp.waypointAction.WaypointActionConfig.property.request"></a>
+##### `request`<sup>Required</sup> <a name="request" id="@cdktn/provider-hcp.waypointAction.WaypointActionConfig.property.request"></a>
 
 ```python
 request: WaypointActionRequest
 ```
 
-- *Type:* <a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequest">WaypointActionRequest</a>
+- *Type:* <a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequest">WaypointActionRequest</a>
 
 The kind of HTTP request this should trigger.
 
@@ -1102,7 +1102,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-hcp.waypointAction.WaypointActionConfig.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-hcp.waypointAction.WaypointActionConfig.property.description"></a>
 
 ```python
 description: str
@@ -1116,7 +1116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `project_id`<sup>Optional</sup> <a name="project_id" id="@cdktf/provider-hcp.waypointAction.WaypointActionConfig.property.projectId"></a>
+##### `project_id`<sup>Optional</sup> <a name="project_id" id="@cdktn/provider-hcp.waypointAction.WaypointActionConfig.property.projectId"></a>
 
 ```python
 project_id: str
@@ -1130,12 +1130,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### WaypointActionRequest <a name="WaypointActionRequest" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequest"></a>
+### WaypointActionRequest <a name="WaypointActionRequest" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequest"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequest.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequest.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_hcp import waypoint_action
+from cdktn_provider_hcp import waypoint_action
 
 waypointAction.WaypointActionRequest(
   agent: WaypointActionRequestAgent = None,
@@ -1147,18 +1147,18 @@ waypointAction.WaypointActionRequest(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequest.property.agent">agent</a></code> | <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgent">WaypointActionRequestAgent</a></code> | Agent mode allows users to define the agent to use for the request. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequest.property.custom">custom</a></code> | <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustom">WaypointActionRequestCustom</a></code> | Custom mode allows users to define the HTTP method, the request body, etc. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequest.property.agent">agent</a></code> | <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgent">WaypointActionRequestAgent</a></code> | Agent mode allows users to define the agent to use for the request. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequest.property.custom">custom</a></code> | <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustom">WaypointActionRequestCustom</a></code> | Custom mode allows users to define the HTTP method, the request body, etc. |
 
 ---
 
-##### `agent`<sup>Optional</sup> <a name="agent" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequest.property.agent"></a>
+##### `agent`<sup>Optional</sup> <a name="agent" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequest.property.agent"></a>
 
 ```python
 agent: WaypointActionRequestAgent
 ```
 
-- *Type:* <a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgent">WaypointActionRequestAgent</a>
+- *Type:* <a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgent">WaypointActionRequestAgent</a>
 
 Agent mode allows users to define the agent to use for the request.
 
@@ -1166,13 +1166,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `custom`<sup>Optional</sup> <a name="custom" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequest.property.custom"></a>
+##### `custom`<sup>Optional</sup> <a name="custom" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequest.property.custom"></a>
 
 ```python
 custom: WaypointActionRequestCustom
 ```
 
-- *Type:* <a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustom">WaypointActionRequestCustom</a>
+- *Type:* <a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustom">WaypointActionRequestCustom</a>
 
 Custom mode allows users to define the HTTP method, the request body, etc.
 
@@ -1180,12 +1180,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### WaypointActionRequestAgent <a name="WaypointActionRequestAgent" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgent"></a>
+### WaypointActionRequestAgent <a name="WaypointActionRequestAgent" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgent"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgent.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgent.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_hcp import waypoint_action
+from cdktn_provider_hcp import waypoint_action
 
 waypointAction.WaypointActionRequestAgent(
   group: str,
@@ -1199,14 +1199,14 @@ waypointAction.WaypointActionRequestAgent(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgent.property.group">group</a></code> | <code>str</code> | The name of the group that the operation is in. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgent.property.operationId">operation_id</a></code> | <code>str</code> | The identifying name of the operation in the agent config file. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgent.property.actionRunId">action_run_id</a></code> | <code>str</code> | An optional action run id. If specified the agent will interact with the actions subsystem. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgent.property.body">body</a></code> | <code>str</code> | Arguments to the operation, specified as JSON. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgent.property.group">group</a></code> | <code>str</code> | The name of the group that the operation is in. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgent.property.operationId">operation_id</a></code> | <code>str</code> | The identifying name of the operation in the agent config file. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgent.property.actionRunId">action_run_id</a></code> | <code>str</code> | An optional action run id. If specified the agent will interact with the actions subsystem. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgent.property.body">body</a></code> | <code>str</code> | Arguments to the operation, specified as JSON. |
 
 ---
 
-##### `group`<sup>Required</sup> <a name="group" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgent.property.group"></a>
+##### `group`<sup>Required</sup> <a name="group" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgent.property.group"></a>
 
 ```python
 group: str
@@ -1220,7 +1220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `operation_id`<sup>Required</sup> <a name="operation_id" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgent.property.operationId"></a>
+##### `operation_id`<sup>Required</sup> <a name="operation_id" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgent.property.operationId"></a>
 
 ```python
 operation_id: str
@@ -1234,7 +1234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `action_run_id`<sup>Optional</sup> <a name="action_run_id" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgent.property.actionRunId"></a>
+##### `action_run_id`<sup>Optional</sup> <a name="action_run_id" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgent.property.actionRunId"></a>
 
 ```python
 action_run_id: str
@@ -1248,7 +1248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `body`<sup>Optional</sup> <a name="body" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgent.property.body"></a>
+##### `body`<sup>Optional</sup> <a name="body" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgent.property.body"></a>
 
 ```python
 body: str
@@ -1262,12 +1262,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### WaypointActionRequestCustom <a name="WaypointActionRequestCustom" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustom"></a>
+### WaypointActionRequestCustom <a name="WaypointActionRequestCustom" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustom"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustom.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustom.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_hcp import waypoint_action
+from cdktn_provider_hcp import waypoint_action
 
 waypointAction.WaypointActionRequestCustom(
   method: str,
@@ -1281,14 +1281,14 @@ waypointAction.WaypointActionRequestCustom(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustom.property.method">method</a></code> | <code>str</code> | The HTTP method to use for the request. Must be one of: 'GET', 'POST', 'PUT', 'DELETE', or 'PATCH'. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustom.property.body">body</a></code> | <code>str</code> | The body to be submitted with the request. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustom.property.headers">headers</a></code> | <code>typing.Mapping[str]</code> | Key value headers to send with the request. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustom.property.url">url</a></code> | <code>str</code> | The full URL this request should make when invoked. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustom.property.method">method</a></code> | <code>str</code> | The HTTP method to use for the request. Must be one of: 'GET', 'POST', 'PUT', 'DELETE', or 'PATCH'. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustom.property.body">body</a></code> | <code>str</code> | The body to be submitted with the request. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustom.property.headers">headers</a></code> | <code>typing.Mapping[str]</code> | Key value headers to send with the request. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustom.property.url">url</a></code> | <code>str</code> | The full URL this request should make when invoked. |
 
 ---
 
-##### `method`<sup>Required</sup> <a name="method" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustom.property.method"></a>
+##### `method`<sup>Required</sup> <a name="method" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustom.property.method"></a>
 
 ```python
 method: str
@@ -1302,7 +1302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `body`<sup>Optional</sup> <a name="body" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustom.property.body"></a>
+##### `body`<sup>Optional</sup> <a name="body" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustom.property.body"></a>
 
 ```python
 body: str
@@ -1316,7 +1316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `headers`<sup>Optional</sup> <a name="headers" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustom.property.headers"></a>
+##### `headers`<sup>Optional</sup> <a name="headers" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustom.property.headers"></a>
 
 ```python
 headers: typing.Mapping[str]
@@ -1330,7 +1330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `url`<sup>Optional</sup> <a name="url" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustom.property.url"></a>
+##### `url`<sup>Optional</sup> <a name="url" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustom.property.url"></a>
 
 ```python
 url: str
@@ -1346,12 +1346,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### WaypointActionRequestAgentOutputReference <a name="WaypointActionRequestAgentOutputReference" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference"></a>
+### WaypointActionRequestAgentOutputReference <a name="WaypointActionRequestAgentOutputReference" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_hcp import waypoint_action
+from cdktn_provider_hcp import waypoint_action
 
 waypointAction.WaypointActionRequestAgentOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -1361,20 +1361,20 @@ waypointAction.WaypointActionRequestAgentOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1386,31 +1386,31 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.resetActionRunId">reset_action_run_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.resetBody">reset_body</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.resetActionRunId">reset_action_run_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.resetBody">reset_body</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -1418,13 +1418,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -1432,13 +1432,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -1446,13 +1446,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -1460,13 +1460,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -1474,13 +1474,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -1488,13 +1488,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -1502,13 +1502,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -1516,13 +1516,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -1530,13 +1530,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -1544,13 +1544,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -1560,13 +1560,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1576,13 +1576,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_action_run_id` <a name="reset_action_run_id" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.resetActionRunId"></a>
+##### `reset_action_run_id` <a name="reset_action_run_id" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.resetActionRunId"></a>
 
 ```python
 def reset_action_run_id() -> None
 ```
 
-##### `reset_body` <a name="reset_body" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.resetBody"></a>
+##### `reset_body` <a name="reset_body" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.resetBody"></a>
 
 ```python
 def reset_body() -> None
@@ -1593,21 +1593,21 @@ def reset_body() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.actionRunIdInput">action_run_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.bodyInput">body_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.groupInput">group_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.operationIdInput">operation_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.actionRunId">action_run_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.body">body</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.group">group</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.operationId">operation_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgent">WaypointActionRequestAgent</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.actionRunIdInput">action_run_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.bodyInput">body_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.groupInput">group_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.operationIdInput">operation_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.actionRunId">action_run_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.body">body</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.group">group</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.operationId">operation_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgent">WaypointActionRequestAgent</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -1621,7 +1621,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1631,7 +1631,7 @@ fqn: str
 
 ---
 
-##### `action_run_id_input`<sup>Optional</sup> <a name="action_run_id_input" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.actionRunIdInput"></a>
+##### `action_run_id_input`<sup>Optional</sup> <a name="action_run_id_input" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.actionRunIdInput"></a>
 
 ```python
 action_run_id_input: str
@@ -1641,7 +1641,7 @@ action_run_id_input: str
 
 ---
 
-##### `body_input`<sup>Optional</sup> <a name="body_input" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.bodyInput"></a>
+##### `body_input`<sup>Optional</sup> <a name="body_input" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.bodyInput"></a>
 
 ```python
 body_input: str
@@ -1651,7 +1651,7 @@ body_input: str
 
 ---
 
-##### `group_input`<sup>Optional</sup> <a name="group_input" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.groupInput"></a>
+##### `group_input`<sup>Optional</sup> <a name="group_input" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.groupInput"></a>
 
 ```python
 group_input: str
@@ -1661,7 +1661,7 @@ group_input: str
 
 ---
 
-##### `operation_id_input`<sup>Optional</sup> <a name="operation_id_input" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.operationIdInput"></a>
+##### `operation_id_input`<sup>Optional</sup> <a name="operation_id_input" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.operationIdInput"></a>
 
 ```python
 operation_id_input: str
@@ -1671,7 +1671,7 @@ operation_id_input: str
 
 ---
 
-##### `action_run_id`<sup>Required</sup> <a name="action_run_id" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.actionRunId"></a>
+##### `action_run_id`<sup>Required</sup> <a name="action_run_id" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.actionRunId"></a>
 
 ```python
 action_run_id: str
@@ -1681,7 +1681,7 @@ action_run_id: str
 
 ---
 
-##### `body`<sup>Required</sup> <a name="body" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.body"></a>
+##### `body`<sup>Required</sup> <a name="body" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.body"></a>
 
 ```python
 body: str
@@ -1691,7 +1691,7 @@ body: str
 
 ---
 
-##### `group`<sup>Required</sup> <a name="group" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.group"></a>
+##### `group`<sup>Required</sup> <a name="group" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.group"></a>
 
 ```python
 group: str
@@ -1701,7 +1701,7 @@ group: str
 
 ---
 
-##### `operation_id`<sup>Required</sup> <a name="operation_id" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.operationId"></a>
+##### `operation_id`<sup>Required</sup> <a name="operation_id" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.operationId"></a>
 
 ```python
 operation_id: str
@@ -1711,23 +1711,23 @@ operation_id: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | WaypointActionRequestAgent
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgent">WaypointActionRequestAgent</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgent">WaypointActionRequestAgent</a>
 
 ---
 
 
-### WaypointActionRequestCustomOutputReference <a name="WaypointActionRequestCustomOutputReference" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference"></a>
+### WaypointActionRequestCustomOutputReference <a name="WaypointActionRequestCustomOutputReference" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_hcp import waypoint_action
+from cdktn_provider_hcp import waypoint_action
 
 waypointAction.WaypointActionRequestCustomOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -1737,20 +1737,20 @@ waypointAction.WaypointActionRequestCustomOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1762,32 +1762,32 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.resetBody">reset_body</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.resetHeaders">reset_headers</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.resetUrl">reset_url</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.resetBody">reset_body</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.resetHeaders">reset_headers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.resetUrl">reset_url</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -1795,13 +1795,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -1809,13 +1809,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -1823,13 +1823,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -1837,13 +1837,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -1851,13 +1851,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -1865,13 +1865,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -1879,13 +1879,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -1893,13 +1893,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -1907,13 +1907,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -1921,13 +1921,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -1937,13 +1937,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1953,19 +1953,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_body` <a name="reset_body" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.resetBody"></a>
+##### `reset_body` <a name="reset_body" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.resetBody"></a>
 
 ```python
 def reset_body() -> None
 ```
 
-##### `reset_headers` <a name="reset_headers" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.resetHeaders"></a>
+##### `reset_headers` <a name="reset_headers" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.resetHeaders"></a>
 
 ```python
 def reset_headers() -> None
 ```
 
-##### `reset_url` <a name="reset_url" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.resetUrl"></a>
+##### `reset_url` <a name="reset_url" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.resetUrl"></a>
 
 ```python
 def reset_url() -> None
@@ -1976,21 +1976,21 @@ def reset_url() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.bodyInput">body_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.headersInput">headers_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.methodInput">method_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.urlInput">url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.body">body</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.headers">headers</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.method">method</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.url">url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustom">WaypointActionRequestCustom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.bodyInput">body_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.headersInput">headers_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.methodInput">method_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.urlInput">url_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.body">body</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.headers">headers</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.method">method</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.url">url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustom">WaypointActionRequestCustom</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2004,7 +2004,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2014,7 +2014,7 @@ fqn: str
 
 ---
 
-##### `body_input`<sup>Optional</sup> <a name="body_input" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.bodyInput"></a>
+##### `body_input`<sup>Optional</sup> <a name="body_input" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.bodyInput"></a>
 
 ```python
 body_input: str
@@ -2024,7 +2024,7 @@ body_input: str
 
 ---
 
-##### `headers_input`<sup>Optional</sup> <a name="headers_input" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.headersInput"></a>
+##### `headers_input`<sup>Optional</sup> <a name="headers_input" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.headersInput"></a>
 
 ```python
 headers_input: typing.Mapping[str]
@@ -2034,7 +2034,7 @@ headers_input: typing.Mapping[str]
 
 ---
 
-##### `method_input`<sup>Optional</sup> <a name="method_input" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.methodInput"></a>
+##### `method_input`<sup>Optional</sup> <a name="method_input" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.methodInput"></a>
 
 ```python
 method_input: str
@@ -2044,7 +2044,7 @@ method_input: str
 
 ---
 
-##### `url_input`<sup>Optional</sup> <a name="url_input" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.urlInput"></a>
+##### `url_input`<sup>Optional</sup> <a name="url_input" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.urlInput"></a>
 
 ```python
 url_input: str
@@ -2054,7 +2054,7 @@ url_input: str
 
 ---
 
-##### `body`<sup>Required</sup> <a name="body" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.body"></a>
+##### `body`<sup>Required</sup> <a name="body" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.body"></a>
 
 ```python
 body: str
@@ -2064,7 +2064,7 @@ body: str
 
 ---
 
-##### `headers`<sup>Required</sup> <a name="headers" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.headers"></a>
+##### `headers`<sup>Required</sup> <a name="headers" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.headers"></a>
 
 ```python
 headers: typing.Mapping[str]
@@ -2074,7 +2074,7 @@ headers: typing.Mapping[str]
 
 ---
 
-##### `method`<sup>Required</sup> <a name="method" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.method"></a>
+##### `method`<sup>Required</sup> <a name="method" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.method"></a>
 
 ```python
 method: str
@@ -2084,7 +2084,7 @@ method: str
 
 ---
 
-##### `url`<sup>Required</sup> <a name="url" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.url"></a>
+##### `url`<sup>Required</sup> <a name="url" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.url"></a>
 
 ```python
 url: str
@@ -2094,23 +2094,23 @@ url: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | WaypointActionRequestCustom
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustom">WaypointActionRequestCustom</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustom">WaypointActionRequestCustom</a>
 
 ---
 
 
-### WaypointActionRequestOutputReference <a name="WaypointActionRequestOutputReference" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference"></a>
+### WaypointActionRequestOutputReference <a name="WaypointActionRequestOutputReference" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_hcp import waypoint_action
+from cdktn_provider_hcp import waypoint_action
 
 waypointAction.WaypointActionRequestOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2120,20 +2120,20 @@ waypointAction.WaypointActionRequestOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2145,33 +2145,33 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.putAgent">put_agent</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.putCustom">put_custom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.resetAgent">reset_agent</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.resetCustom">reset_custom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.putAgent">put_agent</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.putCustom">put_custom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.resetAgent">reset_agent</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.resetCustom">reset_custom</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2179,13 +2179,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2193,13 +2193,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2207,13 +2207,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2221,13 +2221,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2235,13 +2235,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2249,13 +2249,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2263,13 +2263,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2277,13 +2277,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2291,13 +2291,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2305,13 +2305,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2321,13 +2321,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2337,7 +2337,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `put_agent` <a name="put_agent" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.putAgent"></a>
+##### `put_agent` <a name="put_agent" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.putAgent"></a>
 
 ```python
 def put_agent(
@@ -2348,7 +2348,7 @@ def put_agent(
 ) -> None
 ```
 
-###### `group`<sup>Required</sup> <a name="group" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.putAgent.parameter.group"></a>
+###### `group`<sup>Required</sup> <a name="group" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.putAgent.parameter.group"></a>
 
 - *Type:* str
 
@@ -2358,7 +2358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `operation_id`<sup>Required</sup> <a name="operation_id" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.putAgent.parameter.operationId"></a>
+###### `operation_id`<sup>Required</sup> <a name="operation_id" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.putAgent.parameter.operationId"></a>
 
 - *Type:* str
 
@@ -2368,7 +2368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `action_run_id`<sup>Optional</sup> <a name="action_run_id" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.putAgent.parameter.actionRunId"></a>
+###### `action_run_id`<sup>Optional</sup> <a name="action_run_id" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.putAgent.parameter.actionRunId"></a>
 
 - *Type:* str
 
@@ -2378,7 +2378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `body`<sup>Optional</sup> <a name="body" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.putAgent.parameter.body"></a>
+###### `body`<sup>Optional</sup> <a name="body" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.putAgent.parameter.body"></a>
 
 - *Type:* str
 
@@ -2388,7 +2388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `put_custom` <a name="put_custom" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.putCustom"></a>
+##### `put_custom` <a name="put_custom" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.putCustom"></a>
 
 ```python
 def put_custom(
@@ -2399,7 +2399,7 @@ def put_custom(
 ) -> None
 ```
 
-###### `method`<sup>Required</sup> <a name="method" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.putCustom.parameter.method"></a>
+###### `method`<sup>Required</sup> <a name="method" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.putCustom.parameter.method"></a>
 
 - *Type:* str
 
@@ -2409,7 +2409,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `body`<sup>Optional</sup> <a name="body" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.putCustom.parameter.body"></a>
+###### `body`<sup>Optional</sup> <a name="body" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.putCustom.parameter.body"></a>
 
 - *Type:* str
 
@@ -2419,7 +2419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `headers`<sup>Optional</sup> <a name="headers" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.putCustom.parameter.headers"></a>
+###### `headers`<sup>Optional</sup> <a name="headers" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.putCustom.parameter.headers"></a>
 
 - *Type:* typing.Mapping[str]
 
@@ -2429,7 +2429,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `url`<sup>Optional</sup> <a name="url" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.putCustom.parameter.url"></a>
+###### `url`<sup>Optional</sup> <a name="url" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.putCustom.parameter.url"></a>
 
 - *Type:* str
 
@@ -2439,13 +2439,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `reset_agent` <a name="reset_agent" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.resetAgent"></a>
+##### `reset_agent` <a name="reset_agent" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.resetAgent"></a>
 
 ```python
 def reset_agent() -> None
 ```
 
-##### `reset_custom` <a name="reset_custom" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.resetCustom"></a>
+##### `reset_custom` <a name="reset_custom" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.resetCustom"></a>
 
 ```python
 def reset_custom() -> None
@@ -2456,17 +2456,17 @@ def reset_custom() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.agent">agent</a></code> | <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference">WaypointActionRequestAgentOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.custom">custom</a></code> | <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference">WaypointActionRequestCustomOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.agentInput">agent_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgent">WaypointActionRequestAgent</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.customInput">custom_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustom">WaypointActionRequestCustom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequest">WaypointActionRequest</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.agent">agent</a></code> | <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference">WaypointActionRequestAgentOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.custom">custom</a></code> | <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference">WaypointActionRequestCustomOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.agentInput">agent_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgent">WaypointActionRequestAgent</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.customInput">custom_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustom">WaypointActionRequestCustom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequest">WaypointActionRequest</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2480,7 +2480,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2490,53 +2490,53 @@ fqn: str
 
 ---
 
-##### `agent`<sup>Required</sup> <a name="agent" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.agent"></a>
+##### `agent`<sup>Required</sup> <a name="agent" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.agent"></a>
 
 ```python
 agent: WaypointActionRequestAgentOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference">WaypointActionRequestAgentOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference">WaypointActionRequestAgentOutputReference</a>
 
 ---
 
-##### `custom`<sup>Required</sup> <a name="custom" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.custom"></a>
+##### `custom`<sup>Required</sup> <a name="custom" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.custom"></a>
 
 ```python
 custom: WaypointActionRequestCustomOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference">WaypointActionRequestCustomOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference">WaypointActionRequestCustomOutputReference</a>
 
 ---
 
-##### `agent_input`<sup>Optional</sup> <a name="agent_input" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.agentInput"></a>
+##### `agent_input`<sup>Optional</sup> <a name="agent_input" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.agentInput"></a>
 
 ```python
 agent_input: IResolvable | WaypointActionRequestAgent
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgent">WaypointActionRequestAgent</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestAgent">WaypointActionRequestAgent</a>
 
 ---
 
-##### `custom_input`<sup>Optional</sup> <a name="custom_input" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.customInput"></a>
+##### `custom_input`<sup>Optional</sup> <a name="custom_input" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.customInput"></a>
 
 ```python
 custom_input: IResolvable | WaypointActionRequestCustom
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustom">WaypointActionRequestCustom</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequestCustom">WaypointActionRequestCustom</a>
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | WaypointActionRequest
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequest">WaypointActionRequest</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-hcp.waypointAction.WaypointActionRequest">WaypointActionRequest</a>
 
 ---
 
