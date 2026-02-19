@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WaypointAgentGroupConfig extends cdktf.TerraformMetaArguments {
+export interface WaypointAgentGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * A description of the Agent Group.
   *
@@ -41,7 +41,7 @@ export interface WaypointAgentGroupConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_agent_group hcp_waypoint_agent_group}
 */
-export class WaypointAgentGroup extends cdktf.TerraformResource {
+export class WaypointAgentGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -52,14 +52,14 @@ export class WaypointAgentGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WaypointAgentGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WaypointAgentGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WaypointAgentGroup to import
   * @param importFromId The id of the existing WaypointAgentGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_agent_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WaypointAgentGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_waypoint_agent_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_waypoint_agent_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -166,35 +166,35 @@ export class WaypointAgentGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      name: cdktf.stringToTerraform(this._name),
-      organization_id: cdktf.stringToTerraform(this._organizationId),
-      project_id: cdktf.stringToTerraform(this._projectId),
+      description: cdktn.stringToTerraform(this._description),
+      name: cdktn.stringToTerraform(this._name),
+      organization_id: cdktn.stringToTerraform(this._organizationId),
+      project_id: cdktn.stringToTerraform(this._projectId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       organization_id: {
-        value: cdktf.stringToHclTerraform(this._organizationId),
+        value: cdktn.stringToHclTerraform(this._organizationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WaypointActionConfig extends cdktf.TerraformMetaArguments {
+export interface WaypointActionConfig extends cdktn.TerraformMetaArguments {
   /**
   * A description of the Action.
   *
@@ -64,46 +64,46 @@ export interface WaypointActionRequestAgent {
   readonly operationId: string;
 }
 
-export function waypointActionRequestAgentToTerraform(struct?: WaypointActionRequestAgent | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function waypointActionRequestAgentToTerraform(struct?: WaypointActionRequestAgent | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action_run_id: cdktf.stringToTerraform(struct!.actionRunId),
-    body: cdktf.stringToTerraform(struct!.body),
-    group: cdktf.stringToTerraform(struct!.group),
-    operation_id: cdktf.stringToTerraform(struct!.operationId),
+    action_run_id: cdktn.stringToTerraform(struct!.actionRunId),
+    body: cdktn.stringToTerraform(struct!.body),
+    group: cdktn.stringToTerraform(struct!.group),
+    operation_id: cdktn.stringToTerraform(struct!.operationId),
   }
 }
 
 
-export function waypointActionRequestAgentToHclTerraform(struct?: WaypointActionRequestAgent | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function waypointActionRequestAgentToHclTerraform(struct?: WaypointActionRequestAgent | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action_run_id: {
-      value: cdktf.stringToHclTerraform(struct!.actionRunId),
+      value: cdktn.stringToHclTerraform(struct!.actionRunId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     body: {
-      value: cdktf.stringToHclTerraform(struct!.body),
+      value: cdktn.stringToHclTerraform(struct!.body),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     group: {
-      value: cdktf.stringToHclTerraform(struct!.group),
+      value: cdktn.stringToHclTerraform(struct!.group),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operation_id: {
-      value: cdktf.stringToHclTerraform(struct!.operationId),
+      value: cdktn.stringToHclTerraform(struct!.operationId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -114,19 +114,19 @@ export function waypointActionRequestAgentToHclTerraform(struct?: WaypointAction
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WaypointActionRequestAgentOutputReference extends cdktf.ComplexObject {
+export class WaypointActionRequestAgentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WaypointActionRequestAgent | cdktf.IResolvable | undefined {
+  public get internalValue(): WaypointActionRequestAgent | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -151,7 +151,7 @@ export class WaypointActionRequestAgentOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WaypointActionRequestAgent | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WaypointActionRequestAgent | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -160,7 +160,7 @@ export class WaypointActionRequestAgentOutputReference extends cdktf.ComplexObje
       this._group = undefined;
       this._operationId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -259,46 +259,46 @@ export interface WaypointActionRequestCustom {
   readonly url?: string;
 }
 
-export function waypointActionRequestCustomToTerraform(struct?: WaypointActionRequestCustom | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function waypointActionRequestCustomToTerraform(struct?: WaypointActionRequestCustom | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    body: cdktf.stringToTerraform(struct!.body),
-    headers: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.headers),
-    method: cdktf.stringToTerraform(struct!.method),
-    url: cdktf.stringToTerraform(struct!.url),
+    body: cdktn.stringToTerraform(struct!.body),
+    headers: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.headers),
+    method: cdktn.stringToTerraform(struct!.method),
+    url: cdktn.stringToTerraform(struct!.url),
   }
 }
 
 
-export function waypointActionRequestCustomToHclTerraform(struct?: WaypointActionRequestCustom | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function waypointActionRequestCustomToHclTerraform(struct?: WaypointActionRequestCustom | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     body: {
-      value: cdktf.stringToHclTerraform(struct!.body),
+      value: cdktn.stringToHclTerraform(struct!.body),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     headers: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.headers),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.headers),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     method: {
-      value: cdktf.stringToHclTerraform(struct!.method),
+      value: cdktn.stringToHclTerraform(struct!.method),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -309,19 +309,19 @@ export function waypointActionRequestCustomToHclTerraform(struct?: WaypointActio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WaypointActionRequestCustomOutputReference extends cdktf.ComplexObject {
+export class WaypointActionRequestCustomOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WaypointActionRequestCustom | cdktf.IResolvable | undefined {
+  public get internalValue(): WaypointActionRequestCustom | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -346,7 +346,7 @@ export class WaypointActionRequestCustomOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WaypointActionRequestCustom | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WaypointActionRequestCustom | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -355,7 +355,7 @@ export class WaypointActionRequestCustomOutputReference extends cdktf.ComplexObj
       this._method = undefined;
       this._url = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -445,9 +445,9 @@ export interface WaypointActionRequest {
   readonly custom?: WaypointActionRequestCustom;
 }
 
-export function waypointActionRequestToTerraform(struct?: WaypointActionRequest | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function waypointActionRequestToTerraform(struct?: WaypointActionRequest | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -457,9 +457,9 @@ export function waypointActionRequestToTerraform(struct?: WaypointActionRequest 
 }
 
 
-export function waypointActionRequestToHclTerraform(struct?: WaypointActionRequest | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function waypointActionRequestToHclTerraform(struct?: WaypointActionRequest | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -481,19 +481,19 @@ export function waypointActionRequestToHclTerraform(struct?: WaypointActionReque
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WaypointActionRequestOutputReference extends cdktf.ComplexObject {
+export class WaypointActionRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WaypointActionRequest | cdktf.IResolvable | undefined {
+  public get internalValue(): WaypointActionRequest | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -510,14 +510,14 @@ export class WaypointActionRequestOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WaypointActionRequest | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WaypointActionRequest | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._agent.internalValue = undefined;
       this._custom.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -565,7 +565,7 @@ export class WaypointActionRequestOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_action hcp_waypoint_action}
 */
-export class WaypointAction extends cdktf.TerraformResource {
+export class WaypointAction extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -576,14 +576,14 @@ export class WaypointAction extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WaypointAction resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WaypointAction resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WaypointAction to import
   * @param importFromId The id of the existing WaypointAction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_action#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WaypointAction to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_waypoint_action", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_waypoint_action", importId: importFromId, provider });
       }
 
   // ===========
@@ -697,9 +697,9 @@ export class WaypointAction extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      name: cdktf.stringToTerraform(this._name),
-      project_id: cdktf.stringToTerraform(this._projectId),
+      description: cdktn.stringToTerraform(this._description),
+      name: cdktn.stringToTerraform(this._name),
+      project_id: cdktn.stringToTerraform(this._projectId),
       request: waypointActionRequestToTerraform(this._request.internalValue),
     };
   }
@@ -707,19 +707,19 @@ export class WaypointAction extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataHcpPackerRunTaskConfig extends cdktf.TerraformMetaArguments {
+export interface DataHcpPackerRunTaskConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/packer_run_task#id DataHcpPackerRunTask#id}
   *
@@ -42,25 +42,25 @@ export interface DataHcpPackerRunTaskTimeouts {
   readonly default?: string;
 }
 
-export function dataHcpPackerRunTaskTimeoutsToTerraform(struct?: DataHcpPackerRunTaskTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataHcpPackerRunTaskTimeoutsToTerraform(struct?: DataHcpPackerRunTaskTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default: cdktf.stringToTerraform(struct!.default),
+    default: cdktn.stringToTerraform(struct!.default),
   }
 }
 
 
-export function dataHcpPackerRunTaskTimeoutsToHclTerraform(struct?: DataHcpPackerRunTaskTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataHcpPackerRunTaskTimeoutsToHclTerraform(struct?: DataHcpPackerRunTaskTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default: {
-      value: cdktf.stringToHclTerraform(struct!.default),
+      value: cdktn.stringToHclTerraform(struct!.default),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -71,19 +71,19 @@ export function dataHcpPackerRunTaskTimeoutsToHclTerraform(struct?: DataHcpPacke
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataHcpPackerRunTaskTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataHcpPackerRunTaskTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataHcpPackerRunTaskTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataHcpPackerRunTaskTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -96,13 +96,13 @@ export class DataHcpPackerRunTaskTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataHcpPackerRunTaskTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataHcpPackerRunTaskTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._default = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -133,7 +133,7 @@ export class DataHcpPackerRunTaskTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/packer_run_task hcp_packer_run_task}
 */
-export class DataHcpPackerRunTask extends cdktf.TerraformDataSource {
+export class DataHcpPackerRunTask extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -144,14 +144,14 @@ export class DataHcpPackerRunTask extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataHcpPackerRunTask resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataHcpPackerRunTask resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataHcpPackerRunTask to import
   * @param importFromId The id of the existing DataHcpPackerRunTask that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/packer_run_task#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataHcpPackerRunTask to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_packer_run_task", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_packer_run_task", importId: importFromId, provider });
       }
 
   // ===========
@@ -259,8 +259,8 @@ export class DataHcpPackerRunTask extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      project_id: cdktf.stringToTerraform(this._projectId),
+      id: cdktn.stringToTerraform(this._id),
+      project_id: cdktn.stringToTerraform(this._projectId),
       timeouts: dataHcpPackerRunTaskTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -268,13 +268,13 @@ export class DataHcpPackerRunTask extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

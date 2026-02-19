@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataHcpConsulAgentHelmConfigConfig extends cdktf.TerraformMetaArguments {
+export interface DataHcpConsulAgentHelmConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * The ID of the HCP Consul cluster.
   *
@@ -23,7 +23,7 @@ export interface DataHcpConsulAgentHelmConfigConfig extends cdktf.TerraformMetaA
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/consul_agent_helm_config#expose_gossip_ports DataHcpConsulAgentHelmConfig#expose_gossip_ports}
   */
-  readonly exposeGossipPorts?: boolean | cdktf.IResolvable;
+  readonly exposeGossipPorts?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/consul_agent_helm_config#id DataHcpConsulAgentHelmConfig#id}
   *
@@ -60,25 +60,25 @@ export interface DataHcpConsulAgentHelmConfigTimeouts {
   readonly default?: string;
 }
 
-export function dataHcpConsulAgentHelmConfigTimeoutsToTerraform(struct?: DataHcpConsulAgentHelmConfigTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataHcpConsulAgentHelmConfigTimeoutsToTerraform(struct?: DataHcpConsulAgentHelmConfigTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default: cdktf.stringToTerraform(struct!.default),
+    default: cdktn.stringToTerraform(struct!.default),
   }
 }
 
 
-export function dataHcpConsulAgentHelmConfigTimeoutsToHclTerraform(struct?: DataHcpConsulAgentHelmConfigTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataHcpConsulAgentHelmConfigTimeoutsToHclTerraform(struct?: DataHcpConsulAgentHelmConfigTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default: {
-      value: cdktf.stringToHclTerraform(struct!.default),
+      value: cdktn.stringToHclTerraform(struct!.default),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -89,19 +89,19 @@ export function dataHcpConsulAgentHelmConfigTimeoutsToHclTerraform(struct?: Data
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataHcpConsulAgentHelmConfigTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataHcpConsulAgentHelmConfigTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataHcpConsulAgentHelmConfigTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataHcpConsulAgentHelmConfigTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -114,13 +114,13 @@ export class DataHcpConsulAgentHelmConfigTimeoutsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataHcpConsulAgentHelmConfigTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataHcpConsulAgentHelmConfigTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._default = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -151,7 +151,7 @@ export class DataHcpConsulAgentHelmConfigTimeoutsOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/consul_agent_helm_config hcp_consul_agent_helm_config}
 */
-export class DataHcpConsulAgentHelmConfig extends cdktf.TerraformDataSource {
+export class DataHcpConsulAgentHelmConfig extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -162,14 +162,14 @@ export class DataHcpConsulAgentHelmConfig extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataHcpConsulAgentHelmConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataHcpConsulAgentHelmConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataHcpConsulAgentHelmConfig to import
   * @param importFromId The id of the existing DataHcpConsulAgentHelmConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/consul_agent_helm_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataHcpConsulAgentHelmConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_consul_agent_helm_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_consul_agent_helm_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -230,11 +230,11 @@ export class DataHcpConsulAgentHelmConfig extends cdktf.TerraformDataSource {
   }
 
   // expose_gossip_ports - computed: false, optional: true, required: false
-  private _exposeGossipPorts?: boolean | cdktf.IResolvable; 
+  private _exposeGossipPorts?: boolean | cdktn.IResolvable; 
   public get exposeGossipPorts() {
     return this.getBooleanAttribute('expose_gossip_ports');
   }
-  public set exposeGossipPorts(value: boolean | cdktf.IResolvable) {
+  public set exposeGossipPorts(value: boolean | cdktn.IResolvable) {
     this._exposeGossipPorts = value;
   }
   public resetExposeGossipPorts() {
@@ -312,11 +312,11 @@ export class DataHcpConsulAgentHelmConfig extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_id: cdktf.stringToTerraform(this._clusterId),
-      expose_gossip_ports: cdktf.booleanToTerraform(this._exposeGossipPorts),
-      id: cdktf.stringToTerraform(this._id),
-      kubernetes_endpoint: cdktf.stringToTerraform(this._kubernetesEndpoint),
-      project_id: cdktf.stringToTerraform(this._projectId),
+      cluster_id: cdktn.stringToTerraform(this._clusterId),
+      expose_gossip_ports: cdktn.booleanToTerraform(this._exposeGossipPorts),
+      id: cdktn.stringToTerraform(this._id),
+      kubernetes_endpoint: cdktn.stringToTerraform(this._kubernetesEndpoint),
+      project_id: cdktn.stringToTerraform(this._projectId),
       timeouts: dataHcpConsulAgentHelmConfigTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -324,31 +324,31 @@ export class DataHcpConsulAgentHelmConfig extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cluster_id: {
-        value: cdktf.stringToHclTerraform(this._clusterId),
+        value: cdktn.stringToHclTerraform(this._clusterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       expose_gossip_ports: {
-        value: cdktf.booleanToHclTerraform(this._exposeGossipPorts),
+        value: cdktn.booleanToHclTerraform(this._exposeGossipPorts),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kubernetes_endpoint: {
-        value: cdktf.stringToHclTerraform(this._kubernetesEndpoint),
+        value: cdktn.stringToHclTerraform(this._kubernetesEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

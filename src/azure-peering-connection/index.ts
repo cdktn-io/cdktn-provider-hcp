@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,17 +7,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AzurePeeringConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface AzurePeeringConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Whether the forwarded traffic originating from the peered VNet is allowed in the HVN
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/azure_peering_connection#allow_forwarded_traffic AzurePeeringConnection#allow_forwarded_traffic}
   */
-  readonly allowForwardedTraffic?: boolean | cdktf.IResolvable;
+  readonly allowForwardedTraffic?: boolean | cdktn.IResolvable;
   /**
   * The `self_link` of the HashiCorp Virtual Network (HVN).
   *
@@ -72,7 +72,7 @@ export interface AzurePeeringConnectionConfig extends cdktf.TerraformMetaArgumen
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/azure_peering_connection#use_remote_gateways AzurePeeringConnection#use_remote_gateways}
   */
-  readonly useRemoteGateways?: boolean | cdktf.IResolvable;
+  readonly useRemoteGateways?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -95,39 +95,39 @@ export interface AzurePeeringConnectionTimeouts {
   readonly delete?: string;
 }
 
-export function azurePeeringConnectionTimeoutsToTerraform(struct?: AzurePeeringConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurePeeringConnectionTimeoutsToTerraform(struct?: AzurePeeringConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    default: cdktf.stringToTerraform(struct!.default),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    default: cdktn.stringToTerraform(struct!.default),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function azurePeeringConnectionTimeoutsToHclTerraform(struct?: AzurePeeringConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurePeeringConnectionTimeoutsToHclTerraform(struct?: AzurePeeringConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     default: {
-      value: cdktf.stringToHclTerraform(struct!.default),
+      value: cdktn.stringToHclTerraform(struct!.default),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -138,19 +138,19 @@ export function azurePeeringConnectionTimeoutsToHclTerraform(struct?: AzurePeeri
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AzurePeeringConnectionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AzurePeeringConnectionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AzurePeeringConnectionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AzurePeeringConnectionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -171,7 +171,7 @@ export class AzurePeeringConnectionTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AzurePeeringConnectionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AzurePeeringConnectionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -179,7 +179,7 @@ export class AzurePeeringConnectionTimeoutsOutputReference extends cdktf.Complex
       this._default = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -244,7 +244,7 @@ export class AzurePeeringConnectionTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/azure_peering_connection hcp_azure_peering_connection}
 */
-export class AzurePeeringConnection extends cdktf.TerraformResource {
+export class AzurePeeringConnection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -255,14 +255,14 @@ export class AzurePeeringConnection extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AzurePeeringConnection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AzurePeeringConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AzurePeeringConnection to import
   * @param importFromId The id of the existing AzurePeeringConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/azure_peering_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AzurePeeringConnection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_azure_peering_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_azure_peering_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -310,11 +310,11 @@ export class AzurePeeringConnection extends cdktf.TerraformResource {
   // ==========
 
   // allow_forwarded_traffic - computed: true, optional: true, required: false
-  private _allowForwardedTraffic?: boolean | cdktf.IResolvable; 
+  private _allowForwardedTraffic?: boolean | cdktn.IResolvable; 
   public get allowForwardedTraffic() {
     return this.getBooleanAttribute('allow_forwarded_traffic');
   }
-  public set allowForwardedTraffic(value: boolean | cdktf.IResolvable) {
+  public set allowForwardedTraffic(value: boolean | cdktn.IResolvable) {
     this._allowForwardedTraffic = value;
   }
   public resetAllowForwardedTraffic() {
@@ -473,11 +473,11 @@ export class AzurePeeringConnection extends cdktf.TerraformResource {
   }
 
   // use_remote_gateways - computed: true, optional: true, required: false
-  private _useRemoteGateways?: boolean | cdktf.IResolvable; 
+  private _useRemoteGateways?: boolean | cdktn.IResolvable; 
   public get useRemoteGateways() {
     return this.getBooleanAttribute('use_remote_gateways');
   }
-  public set useRemoteGateways(value: boolean | cdktf.IResolvable) {
+  public set useRemoteGateways(value: boolean | cdktn.IResolvable) {
     this._useRemoteGateways = value;
   }
   public resetUseRemoteGateways() {
@@ -510,16 +510,16 @@ export class AzurePeeringConnection extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_forwarded_traffic: cdktf.booleanToTerraform(this._allowForwardedTraffic),
-      hvn_link: cdktf.stringToTerraform(this._hvnLink),
-      id: cdktf.stringToTerraform(this._id),
-      peer_resource_group_name: cdktf.stringToTerraform(this._peerResourceGroupName),
-      peer_subscription_id: cdktf.stringToTerraform(this._peerSubscriptionId),
-      peer_tenant_id: cdktf.stringToTerraform(this._peerTenantId),
-      peer_vnet_name: cdktf.stringToTerraform(this._peerVnetName),
-      peer_vnet_region: cdktf.stringToTerraform(this._peerVnetRegion),
-      peering_id: cdktf.stringToTerraform(this._peeringId),
-      use_remote_gateways: cdktf.booleanToTerraform(this._useRemoteGateways),
+      allow_forwarded_traffic: cdktn.booleanToTerraform(this._allowForwardedTraffic),
+      hvn_link: cdktn.stringToTerraform(this._hvnLink),
+      id: cdktn.stringToTerraform(this._id),
+      peer_resource_group_name: cdktn.stringToTerraform(this._peerResourceGroupName),
+      peer_subscription_id: cdktn.stringToTerraform(this._peerSubscriptionId),
+      peer_tenant_id: cdktn.stringToTerraform(this._peerTenantId),
+      peer_vnet_name: cdktn.stringToTerraform(this._peerVnetName),
+      peer_vnet_region: cdktn.stringToTerraform(this._peerVnetRegion),
+      peering_id: cdktn.stringToTerraform(this._peeringId),
+      use_remote_gateways: cdktn.booleanToTerraform(this._useRemoteGateways),
       timeouts: azurePeeringConnectionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -527,61 +527,61 @@ export class AzurePeeringConnection extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allow_forwarded_traffic: {
-        value: cdktf.booleanToHclTerraform(this._allowForwardedTraffic),
+        value: cdktn.booleanToHclTerraform(this._allowForwardedTraffic),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       hvn_link: {
-        value: cdktf.stringToHclTerraform(this._hvnLink),
+        value: cdktn.stringToHclTerraform(this._hvnLink),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peer_resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._peerResourceGroupName),
+        value: cdktn.stringToHclTerraform(this._peerResourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peer_subscription_id: {
-        value: cdktf.stringToHclTerraform(this._peerSubscriptionId),
+        value: cdktn.stringToHclTerraform(this._peerSubscriptionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peer_tenant_id: {
-        value: cdktf.stringToHclTerraform(this._peerTenantId),
+        value: cdktn.stringToHclTerraform(this._peerTenantId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peer_vnet_name: {
-        value: cdktf.stringToHclTerraform(this._peerVnetName),
+        value: cdktn.stringToHclTerraform(this._peerVnetName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peer_vnet_region: {
-        value: cdktf.stringToHclTerraform(this._peerVnetRegion),
+        value: cdktn.stringToHclTerraform(this._peerVnetRegion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peering_id: {
-        value: cdktf.stringToHclTerraform(this._peeringId),
+        value: cdktn.stringToHclTerraform(this._peeringId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       use_remote_gateways: {
-        value: cdktf.booleanToHclTerraform(this._useRemoteGateways),
+        value: cdktn.booleanToHclTerraform(this._useRemoteGateways),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

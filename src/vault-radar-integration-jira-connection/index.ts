@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VaultRadarIntegrationJiraConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface VaultRadarIntegrationJiraConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * The Jira base URL. Example: https://acme.atlassian.net
   *
@@ -47,7 +47,7 @@ export interface VaultRadarIntegrationJiraConnectionConfig extends cdktf.Terrafo
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_radar_integration_jira_connection hcp_vault_radar_integration_jira_connection}
 */
-export class VaultRadarIntegrationJiraConnection extends cdktf.TerraformResource {
+export class VaultRadarIntegrationJiraConnection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -58,14 +58,14 @@ export class VaultRadarIntegrationJiraConnection extends cdktf.TerraformResource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VaultRadarIntegrationJiraConnection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VaultRadarIntegrationJiraConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VaultRadarIntegrationJiraConnection to import
   * @param importFromId The id of the existing VaultRadarIntegrationJiraConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_radar_integration_jira_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VaultRadarIntegrationJiraConnection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_vault_radar_integration_jira_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_vault_radar_integration_jira_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -185,42 +185,42 @@ export class VaultRadarIntegrationJiraConnection extends cdktf.TerraformResource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      base_url: cdktf.stringToTerraform(this._baseUrl),
-      email: cdktf.stringToTerraform(this._email),
-      name: cdktf.stringToTerraform(this._name),
-      project_id: cdktf.stringToTerraform(this._projectId),
-      token: cdktf.stringToTerraform(this._token),
+      base_url: cdktn.stringToTerraform(this._baseUrl),
+      email: cdktn.stringToTerraform(this._email),
+      name: cdktn.stringToTerraform(this._name),
+      project_id: cdktn.stringToTerraform(this._projectId),
+      token: cdktn.stringToTerraform(this._token),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       base_url: {
-        value: cdktf.stringToHclTerraform(this._baseUrl),
+        value: cdktn.stringToHclTerraform(this._baseUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       email: {
-        value: cdktf.stringToHclTerraform(this._email),
+        value: cdktn.stringToHclTerraform(this._email),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       token: {
-        value: cdktf.stringToHclTerraform(this._token),
+        value: cdktn.stringToHclTerraform(this._token),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VaultSecretsIntegrationConfluentConfig extends cdktf.TerraformMetaArguments {
+export interface VaultSecretsIntegrationConfluentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Capabilities enabled for the integration. See the Vault Secrets documentation for the list of supported capabilities per provider.
   *
@@ -52,32 +52,32 @@ export interface VaultSecretsIntegrationConfluentStaticCredentialDetails {
   readonly cloudApiSecret: string;
 }
 
-export function vaultSecretsIntegrationConfluentStaticCredentialDetailsToTerraform(struct?: VaultSecretsIntegrationConfluentStaticCredentialDetails | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultSecretsIntegrationConfluentStaticCredentialDetailsToTerraform(struct?: VaultSecretsIntegrationConfluentStaticCredentialDetails | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cloud_api_key_id: cdktf.stringToTerraform(struct!.cloudApiKeyId),
-    cloud_api_secret: cdktf.stringToTerraform(struct!.cloudApiSecret),
+    cloud_api_key_id: cdktn.stringToTerraform(struct!.cloudApiKeyId),
+    cloud_api_secret: cdktn.stringToTerraform(struct!.cloudApiSecret),
   }
 }
 
 
-export function vaultSecretsIntegrationConfluentStaticCredentialDetailsToHclTerraform(struct?: VaultSecretsIntegrationConfluentStaticCredentialDetails | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultSecretsIntegrationConfluentStaticCredentialDetailsToHclTerraform(struct?: VaultSecretsIntegrationConfluentStaticCredentialDetails | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cloud_api_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.cloudApiKeyId),
+      value: cdktn.stringToHclTerraform(struct!.cloudApiKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cloud_api_secret: {
-      value: cdktf.stringToHclTerraform(struct!.cloudApiSecret),
+      value: cdktn.stringToHclTerraform(struct!.cloudApiSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -88,19 +88,19 @@ export function vaultSecretsIntegrationConfluentStaticCredentialDetailsToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VaultSecretsIntegrationConfluentStaticCredentialDetailsOutputReference extends cdktf.ComplexObject {
+export class VaultSecretsIntegrationConfluentStaticCredentialDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VaultSecretsIntegrationConfluentStaticCredentialDetails | cdktf.IResolvable | undefined {
+  public get internalValue(): VaultSecretsIntegrationConfluentStaticCredentialDetails | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -117,14 +117,14 @@ export class VaultSecretsIntegrationConfluentStaticCredentialDetailsOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VaultSecretsIntegrationConfluentStaticCredentialDetails | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VaultSecretsIntegrationConfluentStaticCredentialDetails | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._cloudApiKeyId = undefined;
       this._cloudApiSecret = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -166,7 +166,7 @@ export class VaultSecretsIntegrationConfluentStaticCredentialDetailsOutputRefere
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_secrets_integration_confluent hcp_vault_secrets_integration_confluent}
 */
-export class VaultSecretsIntegrationConfluent extends cdktf.TerraformResource {
+export class VaultSecretsIntegrationConfluent extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -177,14 +177,14 @@ export class VaultSecretsIntegrationConfluent extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VaultSecretsIntegrationConfluent resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VaultSecretsIntegrationConfluent resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VaultSecretsIntegrationConfluent to import
   * @param importFromId The id of the existing VaultSecretsIntegrationConfluent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_secrets_integration_confluent#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VaultSecretsIntegrationConfluent to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_vault_secrets_integration_confluent", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_vault_secrets_integration_confluent", importId: importFromId, provider });
       }
 
   // ===========
@@ -227,7 +227,7 @@ export class VaultSecretsIntegrationConfluent extends cdktf.TerraformResource {
   // capabilities - computed: false, optional: false, required: true
   private _capabilities?: string[]; 
   public get capabilities() {
-    return cdktf.Fn.tolist(this.getListAttribute('capabilities'));
+    return cdktn.Fn.tolist(this.getListAttribute('capabilities'));
   }
   public set capabilities(value: string[]) {
     this._capabilities = value;
@@ -303,9 +303,9 @@ export class VaultSecretsIntegrationConfluent extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      capabilities: cdktf.listMapper(cdktf.stringToTerraform, false)(this._capabilities),
-      name: cdktf.stringToTerraform(this._name),
-      project_id: cdktf.stringToTerraform(this._projectId),
+      capabilities: cdktn.listMapper(cdktn.stringToTerraform, false)(this._capabilities),
+      name: cdktn.stringToTerraform(this._name),
+      project_id: cdktn.stringToTerraform(this._projectId),
       static_credential_details: vaultSecretsIntegrationConfluentStaticCredentialDetailsToTerraform(this._staticCredentialDetails.internalValue),
     };
   }
@@ -313,19 +313,19 @@ export class VaultSecretsIntegrationConfluent extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       capabilities: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._capabilities),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._capabilities),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

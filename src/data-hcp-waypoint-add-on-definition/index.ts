@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataHcpWaypointAddOnDefinitionConfig extends cdktf.TerraformMetaArguments {
+export interface DataHcpWaypointAddOnDefinitionConfig extends cdktn.TerraformMetaArguments {
   /**
   * The ID of the Add-on Definition.
   *
@@ -38,8 +38,8 @@ export interface DataHcpWaypointAddOnDefinitionTerraformCloudWorkspaceDetails {
 }
 
 export function dataHcpWaypointAddOnDefinitionTerraformCloudWorkspaceDetailsToTerraform(struct?: DataHcpWaypointAddOnDefinitionTerraformCloudWorkspaceDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -48,8 +48,8 @@ export function dataHcpWaypointAddOnDefinitionTerraformCloudWorkspaceDetailsToTe
 
 
 export function dataHcpWaypointAddOnDefinitionTerraformCloudWorkspaceDetailsToHclTerraform(struct?: DataHcpWaypointAddOnDefinitionTerraformCloudWorkspaceDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -57,14 +57,14 @@ export function dataHcpWaypointAddOnDefinitionTerraformCloudWorkspaceDetailsToHc
   return attrs;
 }
 
-export class DataHcpWaypointAddOnDefinitionTerraformCloudWorkspaceDetailsOutputReference extends cdktf.ComplexObject {
+export class DataHcpWaypointAddOnDefinitionTerraformCloudWorkspaceDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -97,8 +97,8 @@ export interface DataHcpWaypointAddOnDefinitionVariableOptions {
 }
 
 export function dataHcpWaypointAddOnDefinitionVariableOptionsToTerraform(struct?: DataHcpWaypointAddOnDefinitionVariableOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -107,8 +107,8 @@ export function dataHcpWaypointAddOnDefinitionVariableOptionsToTerraform(struct?
 
 
 export function dataHcpWaypointAddOnDefinitionVariableOptionsToHclTerraform(struct?: DataHcpWaypointAddOnDefinitionVariableOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -116,7 +116,7 @@ export function dataHcpWaypointAddOnDefinitionVariableOptionsToHclTerraform(stru
   return attrs;
 }
 
-export class DataHcpWaypointAddOnDefinitionVariableOptionsOutputReference extends cdktf.ComplexObject {
+export class DataHcpWaypointAddOnDefinitionVariableOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -125,7 +125,7 @@ export class DataHcpWaypointAddOnDefinitionVariableOptionsOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -165,14 +165,14 @@ export class DataHcpWaypointAddOnDefinitionVariableOptionsOutputReference extend
   }
 }
 
-export class DataHcpWaypointAddOnDefinitionVariableOptionsList extends cdktf.ComplexList {
+export class DataHcpWaypointAddOnDefinitionVariableOptionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -187,7 +187,7 @@ export class DataHcpWaypointAddOnDefinitionVariableOptionsList extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/waypoint_add_on_definition hcp_waypoint_add_on_definition}
 */
-export class DataHcpWaypointAddOnDefinition extends cdktf.TerraformDataSource {
+export class DataHcpWaypointAddOnDefinition extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -198,14 +198,14 @@ export class DataHcpWaypointAddOnDefinition extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataHcpWaypointAddOnDefinition resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataHcpWaypointAddOnDefinition resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataHcpWaypointAddOnDefinition to import
   * @param importFromId The id of the existing DataHcpWaypointAddOnDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/waypoint_add_on_definition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataHcpWaypointAddOnDefinition to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_waypoint_add_on_definition", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_waypoint_add_on_definition", importId: importFromId, provider });
       }
 
   // ===========
@@ -355,28 +355,28 @@ export class DataHcpWaypointAddOnDefinition extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      project_id: cdktf.stringToTerraform(this._projectId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      project_id: cdktn.stringToTerraform(this._projectId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

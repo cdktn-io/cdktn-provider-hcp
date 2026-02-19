@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataHcpServicePrincipalConfig extends cdktf.TerraformMetaArguments {
+export interface DataHcpServicePrincipalConfig extends cdktn.TerraformMetaArguments {
   /**
   * The service principal's resource name in format `iam/project/<project_id>/service-principal/<name>` or `iam/organization/<organization_id>/service-principal/<name>`
   *
@@ -23,7 +23,7 @@ export interface DataHcpServicePrincipalConfig extends cdktf.TerraformMetaArgume
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/service_principal hcp_service_principal}
 */
-export class DataHcpServicePrincipal extends cdktf.TerraformDataSource {
+export class DataHcpServicePrincipal extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -34,14 +34,14 @@ export class DataHcpServicePrincipal extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataHcpServicePrincipal resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataHcpServicePrincipal resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataHcpServicePrincipal to import
   * @param importFromId The id of the existing DataHcpServicePrincipal that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/service_principal#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataHcpServicePrincipal to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_service_principal", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_service_principal", importId: importFromId, provider });
       }
 
   // ===========
@@ -107,14 +107,14 @@ export class DataHcpServicePrincipal extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      resource_name: cdktf.stringToTerraform(this._resourceName),
+      resource_name: cdktn.stringToTerraform(this._resourceName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       resource_name: {
-        value: cdktf.stringToHclTerraform(this._resourceName),
+        value: cdktn.stringToHclTerraform(this._resourceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

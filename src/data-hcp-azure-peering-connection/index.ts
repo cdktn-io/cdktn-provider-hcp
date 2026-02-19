@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataHcpAzurePeeringConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface DataHcpAzurePeeringConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * The `self_link` of the HashiCorp Virtual Network (HVN).
   *
@@ -36,7 +36,7 @@ export interface DataHcpAzurePeeringConnectionConfig extends cdktf.TerraformMeta
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/azure_peering_connection#wait_for_active_state DataHcpAzurePeeringConnection#wait_for_active_state}
   */
-  readonly waitForActiveState?: boolean | cdktf.IResolvable;
+  readonly waitForActiveState?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -51,25 +51,25 @@ export interface DataHcpAzurePeeringConnectionTimeouts {
   readonly read?: string;
 }
 
-export function dataHcpAzurePeeringConnectionTimeoutsToTerraform(struct?: DataHcpAzurePeeringConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataHcpAzurePeeringConnectionTimeoutsToTerraform(struct?: DataHcpAzurePeeringConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataHcpAzurePeeringConnectionTimeoutsToHclTerraform(struct?: DataHcpAzurePeeringConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataHcpAzurePeeringConnectionTimeoutsToHclTerraform(struct?: DataHcpAzurePeeringConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -80,19 +80,19 @@ export function dataHcpAzurePeeringConnectionTimeoutsToHclTerraform(struct?: Dat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataHcpAzurePeeringConnectionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataHcpAzurePeeringConnectionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataHcpAzurePeeringConnectionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataHcpAzurePeeringConnectionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -105,13 +105,13 @@ export class DataHcpAzurePeeringConnectionTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataHcpAzurePeeringConnectionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataHcpAzurePeeringConnectionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -142,7 +142,7 @@ export class DataHcpAzurePeeringConnectionTimeoutsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/azure_peering_connection hcp_azure_peering_connection}
 */
-export class DataHcpAzurePeeringConnection extends cdktf.TerraformDataSource {
+export class DataHcpAzurePeeringConnection extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -153,14 +153,14 @@ export class DataHcpAzurePeeringConnection extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataHcpAzurePeeringConnection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataHcpAzurePeeringConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataHcpAzurePeeringConnection to import
   * @param importFromId The id of the existing DataHcpAzurePeeringConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/azure_peering_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataHcpAzurePeeringConnection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_azure_peering_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_azure_peering_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -319,11 +319,11 @@ export class DataHcpAzurePeeringConnection extends cdktf.TerraformDataSource {
   }
 
   // wait_for_active_state - computed: false, optional: true, required: false
-  private _waitForActiveState?: boolean | cdktf.IResolvable; 
+  private _waitForActiveState?: boolean | cdktn.IResolvable; 
   public get waitForActiveState() {
     return this.getBooleanAttribute('wait_for_active_state');
   }
-  public set waitForActiveState(value: boolean | cdktf.IResolvable) {
+  public set waitForActiveState(value: boolean | cdktn.IResolvable) {
     this._waitForActiveState = value;
   }
   public resetWaitForActiveState() {
@@ -356,10 +356,10 @@ export class DataHcpAzurePeeringConnection extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      hvn_link: cdktf.stringToTerraform(this._hvnLink),
-      id: cdktf.stringToTerraform(this._id),
-      peering_id: cdktf.stringToTerraform(this._peeringId),
-      wait_for_active_state: cdktf.booleanToTerraform(this._waitForActiveState),
+      hvn_link: cdktn.stringToTerraform(this._hvnLink),
+      id: cdktn.stringToTerraform(this._id),
+      peering_id: cdktn.stringToTerraform(this._peeringId),
+      wait_for_active_state: cdktn.booleanToTerraform(this._waitForActiveState),
       timeouts: dataHcpAzurePeeringConnectionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -367,25 +367,25 @@ export class DataHcpAzurePeeringConnection extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       hvn_link: {
-        value: cdktf.stringToHclTerraform(this._hvnLink),
+        value: cdktn.stringToHclTerraform(this._hvnLink),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peering_id: {
-        value: cdktf.stringToHclTerraform(this._peeringId),
+        value: cdktn.stringToHclTerraform(this._peeringId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       wait_for_active_state: {
-        value: cdktf.booleanToHclTerraform(this._waitForActiveState),
+        value: cdktn.booleanToHclTerraform(this._waitForActiveState),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

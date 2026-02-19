@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DnsForwardingConfig extends cdktf.TerraformMetaArguments {
+export interface DnsForwardingConfig extends cdktn.TerraformMetaArguments {
   /**
   * The connection type for DNS forwarding.
   *
@@ -87,38 +87,38 @@ export interface DnsForwardingForwardingRule {
 }
 
 export function dnsForwardingForwardingRuleToTerraform(struct?: DnsForwardingForwardingRuleOutputReference | DnsForwardingForwardingRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    domain_name: cdktf.stringToTerraform(struct!.domainName),
-    inbound_endpoint_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.inboundEndpointIps),
-    rule_id: cdktf.stringToTerraform(struct!.ruleId),
+    domain_name: cdktn.stringToTerraform(struct!.domainName),
+    inbound_endpoint_ips: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.inboundEndpointIps),
+    rule_id: cdktn.stringToTerraform(struct!.ruleId),
   }
 }
 
 
 export function dnsForwardingForwardingRuleToHclTerraform(struct?: DnsForwardingForwardingRuleOutputReference | DnsForwardingForwardingRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     domain_name: {
-      value: cdktf.stringToHclTerraform(struct!.domainName),
+      value: cdktn.stringToHclTerraform(struct!.domainName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     inbound_endpoint_ips: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.inboundEndpointIps),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.inboundEndpointIps),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     rule_id: {
-      value: cdktf.stringToHclTerraform(struct!.ruleId),
+      value: cdktn.stringToHclTerraform(struct!.ruleId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -129,14 +129,14 @@ export function dnsForwardingForwardingRuleToHclTerraform(struct?: DnsForwarding
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DnsForwardingForwardingRuleOutputReference extends cdktf.ComplexObject {
+export class DnsForwardingForwardingRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -231,46 +231,46 @@ export interface DnsForwardingTimeouts {
   readonly read?: string;
 }
 
-export function dnsForwardingTimeoutsToTerraform(struct?: DnsForwardingTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsForwardingTimeoutsToTerraform(struct?: DnsForwardingTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    default: cdktf.stringToTerraform(struct!.default),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    default: cdktn.stringToTerraform(struct!.default),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dnsForwardingTimeoutsToHclTerraform(struct?: DnsForwardingTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsForwardingTimeoutsToHclTerraform(struct?: DnsForwardingTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     default: {
-      value: cdktf.stringToHclTerraform(struct!.default),
+      value: cdktn.stringToHclTerraform(struct!.default),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -281,19 +281,19 @@ export function dnsForwardingTimeoutsToHclTerraform(struct?: DnsForwardingTimeou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DnsForwardingTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DnsForwardingTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DnsForwardingTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DnsForwardingTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -318,7 +318,7 @@ export class DnsForwardingTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DnsForwardingTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DnsForwardingTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -327,7 +327,7 @@ export class DnsForwardingTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -409,7 +409,7 @@ export class DnsForwardingTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/dns_forwarding hcp_dns_forwarding}
 */
-export class DnsForwarding extends cdktf.TerraformResource {
+export class DnsForwarding extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -420,14 +420,14 @@ export class DnsForwarding extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DnsForwarding resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DnsForwarding resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DnsForwarding to import
   * @param importFromId The id of the existing DnsForwarding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/dns_forwarding#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DnsForwarding to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_dns_forwarding", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_dns_forwarding", importId: importFromId, provider });
       }
 
   // ===========
@@ -605,12 +605,12 @@ export class DnsForwarding extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      connection_type: cdktf.stringToTerraform(this._connectionType),
-      dns_forwarding_id: cdktf.stringToTerraform(this._dnsForwardingId),
-      hvn_id: cdktf.stringToTerraform(this._hvnId),
-      id: cdktf.stringToTerraform(this._id),
-      peering_id: cdktf.stringToTerraform(this._peeringId),
-      project_id: cdktf.stringToTerraform(this._projectId),
+      connection_type: cdktn.stringToTerraform(this._connectionType),
+      dns_forwarding_id: cdktn.stringToTerraform(this._dnsForwardingId),
+      hvn_id: cdktn.stringToTerraform(this._hvnId),
+      id: cdktn.stringToTerraform(this._id),
+      peering_id: cdktn.stringToTerraform(this._peeringId),
+      project_id: cdktn.stringToTerraform(this._projectId),
       forwarding_rule: dnsForwardingForwardingRuleToTerraform(this._forwardingRule.internalValue),
       timeouts: dnsForwardingTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -619,37 +619,37 @@ export class DnsForwarding extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       connection_type: {
-        value: cdktf.stringToHclTerraform(this._connectionType),
+        value: cdktn.stringToHclTerraform(this._connectionType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dns_forwarding_id: {
-        value: cdktf.stringToHclTerraform(this._dnsForwardingId),
+        value: cdktn.stringToHclTerraform(this._dnsForwardingId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hvn_id: {
-        value: cdktf.stringToHclTerraform(this._hvnId),
+        value: cdktn.stringToHclTerraform(this._hvnId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peering_id: {
-        value: cdktf.stringToHclTerraform(this._peeringId),
+        value: cdktn.stringToHclTerraform(this._peeringId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

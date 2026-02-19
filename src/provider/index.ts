@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,7 +7,7 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
@@ -47,7 +47,7 @@ export interface HcpProviderConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#skip_status_check HcpProvider#skip_status_check}
   */
-  readonly skipStatusCheck?: boolean | cdktf.IResolvable;
+  readonly skipStatusCheck?: boolean | cdktn.IResolvable;
   /**
   * Alias name
   *
@@ -59,7 +59,7 @@ export interface HcpProviderConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#workload_identity HcpProvider#workload_identity}
   */
-  readonly workloadIdentity?: HcpProviderWorkloadIdentity[] | cdktf.IResolvable;
+  readonly workloadIdentity?: HcpProviderWorkloadIdentity[] | cdktn.IResolvable;
 }
 export interface HcpProviderWorkloadIdentity {
   /**
@@ -82,39 +82,39 @@ export interface HcpProviderWorkloadIdentity {
   readonly tokenFile?: string;
 }
 
-export function hcpProviderWorkloadIdentityToTerraform(struct?: HcpProviderWorkloadIdentity | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function hcpProviderWorkloadIdentityToTerraform(struct?: HcpProviderWorkloadIdentity | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    resource_name: cdktf.stringToTerraform(struct!.resourceName),
-    token: cdktf.stringToTerraform(struct!.token),
-    token_file: cdktf.stringToTerraform(struct!.tokenFile),
+    resource_name: cdktn.stringToTerraform(struct!.resourceName),
+    token: cdktn.stringToTerraform(struct!.token),
+    token_file: cdktn.stringToTerraform(struct!.tokenFile),
   }
 }
 
 
-export function hcpProviderWorkloadIdentityToHclTerraform(struct?: HcpProviderWorkloadIdentity | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function hcpProviderWorkloadIdentityToHclTerraform(struct?: HcpProviderWorkloadIdentity | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     resource_name: {
-      value: cdktf.stringToHclTerraform(struct!.resourceName),
+      value: cdktn.stringToHclTerraform(struct!.resourceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     token: {
-      value: cdktf.stringToHclTerraform(struct!.token),
+      value: cdktn.stringToHclTerraform(struct!.token),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     token_file: {
-      value: cdktf.stringToHclTerraform(struct!.tokenFile),
+      value: cdktn.stringToHclTerraform(struct!.tokenFile),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -129,7 +129,7 @@ export function hcpProviderWorkloadIdentityToHclTerraform(struct?: HcpProviderWo
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs hcp}
 */
-export class HcpProvider extends cdktf.TerraformProvider {
+export class HcpProvider extends cdktn.TerraformProvider {
 
   // =================
   // STATIC PROPERTIES
@@ -140,14 +140,14 @@ export class HcpProvider extends cdktf.TerraformProvider {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a HcpProvider resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a HcpProvider resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the HcpProvider to import
   * @param importFromId The id of the existing HcpProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the HcpProvider to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp", importId: importFromId, provider });
       }
 
   // ===========
@@ -266,11 +266,11 @@ export class HcpProvider extends cdktf.TerraformProvider {
   }
 
   // skip_status_check - computed: false, optional: true, required: false
-  private _skipStatusCheck?: boolean | cdktf.IResolvable; 
+  private _skipStatusCheck?: boolean | cdktn.IResolvable; 
   public get skipStatusCheck() {
     return this._skipStatusCheck;
   }
-  public set skipStatusCheck(value: boolean | cdktf.IResolvable | undefined) {
+  public set skipStatusCheck(value: boolean | cdktn.IResolvable | undefined) {
     this._skipStatusCheck = value;
   }
   public resetSkipStatusCheck() {
@@ -298,11 +298,11 @@ export class HcpProvider extends cdktf.TerraformProvider {
   }
 
   // workload_identity - computed: false, optional: true, required: false
-  private _workloadIdentity?: HcpProviderWorkloadIdentity[] | cdktf.IResolvable; 
+  private _workloadIdentity?: HcpProviderWorkloadIdentity[] | cdktn.IResolvable; 
   public get workloadIdentity() {
     return this._workloadIdentity;
   }
-  public set workloadIdentity(value: HcpProviderWorkloadIdentity[] | cdktf.IResolvable | undefined) {
+  public set workloadIdentity(value: HcpProviderWorkloadIdentity[] | cdktn.IResolvable | undefined) {
     this._workloadIdentity = value;
   }
   public resetWorkloadIdentity() {
@@ -319,63 +319,63 @@ export class HcpProvider extends cdktf.TerraformProvider {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      client_id: cdktf.stringToTerraform(this._clientId),
-      client_secret: cdktf.stringToTerraform(this._clientSecret),
-      credential_file: cdktf.stringToTerraform(this._credentialFile),
-      geography: cdktf.stringToTerraform(this._geography),
-      project_id: cdktf.stringToTerraform(this._projectId),
-      skip_status_check: cdktf.booleanToTerraform(this._skipStatusCheck),
-      alias: cdktf.stringToTerraform(this._alias),
-      workload_identity: cdktf.listMapper(hcpProviderWorkloadIdentityToTerraform, true)(this._workloadIdentity),
+      client_id: cdktn.stringToTerraform(this._clientId),
+      client_secret: cdktn.stringToTerraform(this._clientSecret),
+      credential_file: cdktn.stringToTerraform(this._credentialFile),
+      geography: cdktn.stringToTerraform(this._geography),
+      project_id: cdktn.stringToTerraform(this._projectId),
+      skip_status_check: cdktn.booleanToTerraform(this._skipStatusCheck),
+      alias: cdktn.stringToTerraform(this._alias),
+      workload_identity: cdktn.listMapper(hcpProviderWorkloadIdentityToTerraform, true)(this._workloadIdentity),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       client_id: {
-        value: cdktf.stringToHclTerraform(this._clientId),
+        value: cdktn.stringToHclTerraform(this._clientId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_secret: {
-        value: cdktf.stringToHclTerraform(this._clientSecret),
+        value: cdktn.stringToHclTerraform(this._clientSecret),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       credential_file: {
-        value: cdktf.stringToHclTerraform(this._credentialFile),
+        value: cdktn.stringToHclTerraform(this._credentialFile),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       geography: {
-        value: cdktf.stringToHclTerraform(this._geography),
+        value: cdktn.stringToHclTerraform(this._geography),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       skip_status_check: {
-        value: cdktf.booleanToHclTerraform(this._skipStatusCheck),
+        value: cdktn.booleanToHclTerraform(this._skipStatusCheck),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       alias: {
-        value: cdktf.stringToHclTerraform(this._alias),
+        value: cdktn.stringToHclTerraform(this._alias),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workload_identity: {
-        value: cdktf.listMapperHcl(hcpProviderWorkloadIdentityToHclTerraform, true)(this._workloadIdentity),
+        value: cdktn.listMapperHcl(hcpProviderWorkloadIdentityToHclTerraform, true)(this._workloadIdentity),
         isBlock: true,
         type: "list",
         storageClassType: "HcpProviderWorkloadIdentityList",

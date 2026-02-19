@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VaultSecretsAppConfig extends cdktf.TerraformMetaArguments {
+export interface VaultSecretsAppConfig extends cdktn.TerraformMetaArguments {
   /**
   * The Vault Secrets App name.
   *
@@ -41,7 +41,7 @@ export interface VaultSecretsAppConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_secrets_app hcp_vault_secrets_app}
 */
-export class VaultSecretsApp extends cdktf.TerraformResource {
+export class VaultSecretsApp extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -52,14 +52,14 @@ export class VaultSecretsApp extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VaultSecretsApp resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VaultSecretsApp resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VaultSecretsApp to import
   * @param importFromId The id of the existing VaultSecretsApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_secrets_app#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VaultSecretsApp to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_vault_secrets_app", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_vault_secrets_app", importId: importFromId, provider });
       }
 
   // ===========
@@ -162,7 +162,7 @@ export class VaultSecretsApp extends cdktf.TerraformResource {
   // sync_names - computed: false, optional: true, required: false
   private _syncNames?: string[]; 
   public get syncNames() {
-    return cdktf.Fn.tolist(this.getListAttribute('sync_names'));
+    return cdktn.Fn.tolist(this.getListAttribute('sync_names'));
   }
   public set syncNames(value: string[]) {
     this._syncNames = value;
@@ -181,35 +181,35 @@ export class VaultSecretsApp extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      app_name: cdktf.stringToTerraform(this._appName),
-      description: cdktf.stringToTerraform(this._description),
-      project_id: cdktf.stringToTerraform(this._projectId),
-      sync_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._syncNames),
+      app_name: cdktn.stringToTerraform(this._appName),
+      description: cdktn.stringToTerraform(this._description),
+      project_id: cdktn.stringToTerraform(this._projectId),
+      sync_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._syncNames),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       app_name: {
-        value: cdktf.stringToHclTerraform(this._appName),
+        value: cdktn.stringToHclTerraform(this._appName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sync_names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._syncNames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._syncNames),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VaultSecretsDynamicSecretConfig extends cdktf.TerraformMetaArguments {
+export interface VaultSecretsDynamicSecretConfig extends cdktn.TerraformMetaArguments {
   /**
   * Vault Secrets application name that owns the secret.
   *
@@ -70,25 +70,25 @@ export interface VaultSecretsDynamicSecretAwsAssumeRole {
   readonly iamRoleArn: string;
 }
 
-export function vaultSecretsDynamicSecretAwsAssumeRoleToTerraform(struct?: VaultSecretsDynamicSecretAwsAssumeRole | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultSecretsDynamicSecretAwsAssumeRoleToTerraform(struct?: VaultSecretsDynamicSecretAwsAssumeRole | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    iam_role_arn: cdktf.stringToTerraform(struct!.iamRoleArn),
+    iam_role_arn: cdktn.stringToTerraform(struct!.iamRoleArn),
   }
 }
 
 
-export function vaultSecretsDynamicSecretAwsAssumeRoleToHclTerraform(struct?: VaultSecretsDynamicSecretAwsAssumeRole | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultSecretsDynamicSecretAwsAssumeRoleToHclTerraform(struct?: VaultSecretsDynamicSecretAwsAssumeRole | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     iam_role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.iamRoleArn),
+      value: cdktn.stringToHclTerraform(struct!.iamRoleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -99,19 +99,19 @@ export function vaultSecretsDynamicSecretAwsAssumeRoleToHclTerraform(struct?: Va
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VaultSecretsDynamicSecretAwsAssumeRoleOutputReference extends cdktf.ComplexObject {
+export class VaultSecretsDynamicSecretAwsAssumeRoleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VaultSecretsDynamicSecretAwsAssumeRole | cdktf.IResolvable | undefined {
+  public get internalValue(): VaultSecretsDynamicSecretAwsAssumeRole | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -124,13 +124,13 @@ export class VaultSecretsDynamicSecretAwsAssumeRoleOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VaultSecretsDynamicSecretAwsAssumeRole | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VaultSecretsDynamicSecretAwsAssumeRole | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._iamRoleArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -163,25 +163,25 @@ export interface VaultSecretsDynamicSecretGcpImpersonateServiceAccount {
   readonly serviceAccountEmail: string;
 }
 
-export function vaultSecretsDynamicSecretGcpImpersonateServiceAccountToTerraform(struct?: VaultSecretsDynamicSecretGcpImpersonateServiceAccount | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultSecretsDynamicSecretGcpImpersonateServiceAccountToTerraform(struct?: VaultSecretsDynamicSecretGcpImpersonateServiceAccount | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    service_account_email: cdktf.stringToTerraform(struct!.serviceAccountEmail),
+    service_account_email: cdktn.stringToTerraform(struct!.serviceAccountEmail),
   }
 }
 
 
-export function vaultSecretsDynamicSecretGcpImpersonateServiceAccountToHclTerraform(struct?: VaultSecretsDynamicSecretGcpImpersonateServiceAccount | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultSecretsDynamicSecretGcpImpersonateServiceAccountToHclTerraform(struct?: VaultSecretsDynamicSecretGcpImpersonateServiceAccount | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     service_account_email: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAccountEmail),
+      value: cdktn.stringToHclTerraform(struct!.serviceAccountEmail),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -192,19 +192,19 @@ export function vaultSecretsDynamicSecretGcpImpersonateServiceAccountToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VaultSecretsDynamicSecretGcpImpersonateServiceAccountOutputReference extends cdktf.ComplexObject {
+export class VaultSecretsDynamicSecretGcpImpersonateServiceAccountOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VaultSecretsDynamicSecretGcpImpersonateServiceAccount | cdktf.IResolvable | undefined {
+  public get internalValue(): VaultSecretsDynamicSecretGcpImpersonateServiceAccount | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -217,13 +217,13 @@ export class VaultSecretsDynamicSecretGcpImpersonateServiceAccountOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VaultSecretsDynamicSecretGcpImpersonateServiceAccount | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VaultSecretsDynamicSecretGcpImpersonateServiceAccount | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._serviceAccountEmail = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -251,7 +251,7 @@ export class VaultSecretsDynamicSecretGcpImpersonateServiceAccountOutputReferenc
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_secrets_dynamic_secret hcp_vault_secrets_dynamic_secret}
 */
-export class VaultSecretsDynamicSecret extends cdktf.TerraformResource {
+export class VaultSecretsDynamicSecret extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -262,14 +262,14 @@ export class VaultSecretsDynamicSecret extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VaultSecretsDynamicSecret resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VaultSecretsDynamicSecret resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VaultSecretsDynamicSecret to import
   * @param importFromId The id of the existing VaultSecretsDynamicSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_secrets_dynamic_secret#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VaultSecretsDynamicSecret to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_vault_secrets_dynamic_secret", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_vault_secrets_dynamic_secret", importId: importFromId, provider });
       }
 
   // ===========
@@ -440,21 +440,21 @@ export class VaultSecretsDynamicSecret extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      app_name: cdktf.stringToTerraform(this._appName),
+      app_name: cdktn.stringToTerraform(this._appName),
       aws_assume_role: vaultSecretsDynamicSecretAwsAssumeRoleToTerraform(this._awsAssumeRole.internalValue),
-      default_ttl: cdktf.stringToTerraform(this._defaultTtl),
+      default_ttl: cdktn.stringToTerraform(this._defaultTtl),
       gcp_impersonate_service_account: vaultSecretsDynamicSecretGcpImpersonateServiceAccountToTerraform(this._gcpImpersonateServiceAccount.internalValue),
-      integration_name: cdktf.stringToTerraform(this._integrationName),
-      name: cdktf.stringToTerraform(this._name),
-      project_id: cdktf.stringToTerraform(this._projectId),
-      secret_provider: cdktf.stringToTerraform(this._secretProvider),
+      integration_name: cdktn.stringToTerraform(this._integrationName),
+      name: cdktn.stringToTerraform(this._name),
+      project_id: cdktn.stringToTerraform(this._projectId),
+      secret_provider: cdktn.stringToTerraform(this._secretProvider),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       app_name: {
-        value: cdktf.stringToHclTerraform(this._appName),
+        value: cdktn.stringToHclTerraform(this._appName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -466,7 +466,7 @@ export class VaultSecretsDynamicSecret extends cdktf.TerraformResource {
         storageClassType: "VaultSecretsDynamicSecretAwsAssumeRole",
       },
       default_ttl: {
-        value: cdktf.stringToHclTerraform(this._defaultTtl),
+        value: cdktn.stringToHclTerraform(this._defaultTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -478,25 +478,25 @@ export class VaultSecretsDynamicSecret extends cdktf.TerraformResource {
         storageClassType: "VaultSecretsDynamicSecretGcpImpersonateServiceAccount",
       },
       integration_name: {
-        value: cdktf.stringToHclTerraform(this._integrationName),
+        value: cdktn.stringToHclTerraform(this._integrationName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret_provider: {
-        value: cdktf.stringToHclTerraform(this._secretProvider),
+        value: cdktn.stringToHclTerraform(this._secretProvider),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IamWorkloadIdentityProviderConfig extends cdktf.TerraformMetaArguments {
+export interface IamWorkloadIdentityProviderConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/iam_workload_identity_provider#aws IamWorkloadIdentityProvider#aws}
   */
@@ -54,25 +54,25 @@ export interface IamWorkloadIdentityProviderAws {
   readonly accountId: string;
 }
 
-export function iamWorkloadIdentityProviderAwsToTerraform(struct?: IamWorkloadIdentityProviderAws | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iamWorkloadIdentityProviderAwsToTerraform(struct?: IamWorkloadIdentityProviderAws | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account_id: cdktf.stringToTerraform(struct!.accountId),
+    account_id: cdktn.stringToTerraform(struct!.accountId),
   }
 }
 
 
-export function iamWorkloadIdentityProviderAwsToHclTerraform(struct?: IamWorkloadIdentityProviderAws | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iamWorkloadIdentityProviderAwsToHclTerraform(struct?: IamWorkloadIdentityProviderAws | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account_id: {
-      value: cdktf.stringToHclTerraform(struct!.accountId),
+      value: cdktn.stringToHclTerraform(struct!.accountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -83,19 +83,19 @@ export function iamWorkloadIdentityProviderAwsToHclTerraform(struct?: IamWorkloa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IamWorkloadIdentityProviderAwsOutputReference extends cdktf.ComplexObject {
+export class IamWorkloadIdentityProviderAwsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IamWorkloadIdentityProviderAws | cdktf.IResolvable | undefined {
+  public get internalValue(): IamWorkloadIdentityProviderAws | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -108,13 +108,13 @@ export class IamWorkloadIdentityProviderAwsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IamWorkloadIdentityProviderAws | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IamWorkloadIdentityProviderAws | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._accountId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -153,32 +153,32 @@ export interface IamWorkloadIdentityProviderOidc {
   readonly issuerUri: string;
 }
 
-export function iamWorkloadIdentityProviderOidcToTerraform(struct?: IamWorkloadIdentityProviderOidc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iamWorkloadIdentityProviderOidcToTerraform(struct?: IamWorkloadIdentityProviderOidc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_audiences: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedAudiences),
-    issuer_uri: cdktf.stringToTerraform(struct!.issuerUri),
+    allowed_audiences: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedAudiences),
+    issuer_uri: cdktn.stringToTerraform(struct!.issuerUri),
   }
 }
 
 
-export function iamWorkloadIdentityProviderOidcToHclTerraform(struct?: IamWorkloadIdentityProviderOidc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iamWorkloadIdentityProviderOidcToHclTerraform(struct?: IamWorkloadIdentityProviderOidc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_audiences: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedAudiences),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedAudiences),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     issuer_uri: {
-      value: cdktf.stringToHclTerraform(struct!.issuerUri),
+      value: cdktn.stringToHclTerraform(struct!.issuerUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -189,19 +189,19 @@ export function iamWorkloadIdentityProviderOidcToHclTerraform(struct?: IamWorklo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IamWorkloadIdentityProviderOidcOutputReference extends cdktf.ComplexObject {
+export class IamWorkloadIdentityProviderOidcOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IamWorkloadIdentityProviderOidc | cdktf.IResolvable | undefined {
+  public get internalValue(): IamWorkloadIdentityProviderOidc | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -218,14 +218,14 @@ export class IamWorkloadIdentityProviderOidcOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IamWorkloadIdentityProviderOidc | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IamWorkloadIdentityProviderOidc | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._allowedAudiences = undefined;
       this._issuerUri = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -240,7 +240,7 @@ export class IamWorkloadIdentityProviderOidcOutputReference extends cdktf.Comple
   // allowed_audiences - computed: true, optional: true, required: false
   private _allowedAudiences?: string[]; 
   public get allowedAudiences() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_audiences'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_audiences'));
   }
   public set allowedAudiences(value: string[]) {
     this._allowedAudiences = value;
@@ -270,7 +270,7 @@ export class IamWorkloadIdentityProviderOidcOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/iam_workload_identity_provider hcp_iam_workload_identity_provider}
 */
-export class IamWorkloadIdentityProvider extends cdktf.TerraformResource {
+export class IamWorkloadIdentityProvider extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -281,14 +281,14 @@ export class IamWorkloadIdentityProvider extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IamWorkloadIdentityProvider resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IamWorkloadIdentityProvider resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IamWorkloadIdentityProvider to import
   * @param importFromId The id of the existing IamWorkloadIdentityProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/iam_workload_identity_provider#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IamWorkloadIdentityProvider to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_iam_workload_identity_provider", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_iam_workload_identity_provider", importId: importFromId, provider });
       }
 
   // ===========
@@ -434,11 +434,11 @@ export class IamWorkloadIdentityProvider extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       aws: iamWorkloadIdentityProviderAwsToTerraform(this._aws.internalValue),
-      conditional_access: cdktf.stringToTerraform(this._conditionalAccess),
-      description: cdktf.stringToTerraform(this._description),
-      name: cdktf.stringToTerraform(this._name),
+      conditional_access: cdktn.stringToTerraform(this._conditionalAccess),
+      description: cdktn.stringToTerraform(this._description),
+      name: cdktn.stringToTerraform(this._name),
       oidc: iamWorkloadIdentityProviderOidcToTerraform(this._oidc.internalValue),
-      service_principal: cdktf.stringToTerraform(this._servicePrincipal),
+      service_principal: cdktn.stringToTerraform(this._servicePrincipal),
     };
   }
 
@@ -451,19 +451,19 @@ export class IamWorkloadIdentityProvider extends cdktf.TerraformResource {
         storageClassType: "IamWorkloadIdentityProviderAws",
       },
       conditional_access: {
-        value: cdktf.stringToHclTerraform(this._conditionalAccess),
+        value: cdktn.stringToHclTerraform(this._conditionalAccess),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -475,7 +475,7 @@ export class IamWorkloadIdentityProvider extends cdktf.TerraformResource {
         storageClassType: "IamWorkloadIdentityProviderOidc",
       },
       service_principal: {
-        value: cdktf.stringToHclTerraform(this._servicePrincipal),
+        value: cdktn.stringToHclTerraform(this._servicePrincipal),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VaultClusterConfig extends cdktf.TerraformMetaArguments {
+export interface VaultClusterConfig extends cdktn.TerraformMetaArguments {
   /**
   * The ID of the HCP Vault cluster.
   *
@@ -69,7 +69,7 @@ export interface VaultClusterConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#public_endpoint VaultCluster#public_endpoint}
   */
-  readonly publicEndpoint?: boolean | cdktf.IResolvable;
+  readonly publicEndpoint?: boolean | cdktn.IResolvable;
   /**
   * Tier of the HCP Vault cluster. Valid options for tiers - `dev`, `standard_small`, `standard_medium`, `standard_large`, `plus_small`, `plus_medium`, `plus_large`. See [pricing information](https://www.hashicorp.com/products/vault/pricing). Changing a cluster's size or tier is only available to admins. See [Scale a cluster](https://registry.terraform.io/providers/hashicorp/hcp/latest/docs/guides/vault-scaling).
   *
@@ -87,7 +87,7 @@ export interface VaultClusterConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#ip_allowlist VaultCluster#ip_allowlist}
   */
-  readonly ipAllowlist?: VaultClusterIpAllowlistStruct[] | cdktf.IResolvable;
+  readonly ipAllowlist?: VaultClusterIpAllowlistStruct[] | cdktn.IResolvable;
   /**
   * major_version_upgrade_config block
   *
@@ -203,7 +203,7 @@ export interface VaultClusterAuditLogConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#http_compression VaultCluster#http_compression}
   */
-  readonly httpCompression?: boolean | cdktf.IResolvable;
+  readonly httpCompression?: boolean | cdktn.IResolvable;
   /**
   * HTTP headers for streaming audit logs
   *
@@ -267,199 +267,199 @@ export interface VaultClusterAuditLogConfig {
 }
 
 export function vaultClusterAuditLogConfigToTerraform(struct?: VaultClusterAuditLogConfigOutputReference | VaultClusterAuditLogConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cloudwatch_access_key_id: cdktf.stringToTerraform(struct!.cloudwatchAccessKeyId),
-    cloudwatch_region: cdktf.stringToTerraform(struct!.cloudwatchRegion),
-    cloudwatch_secret_access_key: cdktf.stringToTerraform(struct!.cloudwatchSecretAccessKey),
-    datadog_api_key: cdktf.stringToTerraform(struct!.datadogApiKey),
-    datadog_region: cdktf.stringToTerraform(struct!.datadogRegion),
-    elasticsearch_endpoint: cdktf.stringToTerraform(struct!.elasticsearchEndpoint),
-    elasticsearch_password: cdktf.stringToTerraform(struct!.elasticsearchPassword),
-    elasticsearch_user: cdktf.stringToTerraform(struct!.elasticsearchUser),
-    grafana_endpoint: cdktf.stringToTerraform(struct!.grafanaEndpoint),
-    grafana_password: cdktf.stringToTerraform(struct!.grafanaPassword),
-    grafana_user: cdktf.stringToTerraform(struct!.grafanaUser),
-    http_basic_password: cdktf.stringToTerraform(struct!.httpBasicPassword),
-    http_basic_user: cdktf.stringToTerraform(struct!.httpBasicUser),
-    http_bearer_token: cdktf.stringToTerraform(struct!.httpBearerToken),
-    http_codec: cdktf.stringToTerraform(struct!.httpCodec),
-    http_compression: cdktf.booleanToTerraform(struct!.httpCompression),
-    http_headers: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.httpHeaders),
-    http_method: cdktf.stringToTerraform(struct!.httpMethod),
-    http_payload_prefix: cdktf.stringToTerraform(struct!.httpPayloadPrefix),
-    http_payload_suffix: cdktf.stringToTerraform(struct!.httpPayloadSuffix),
-    http_uri: cdktf.stringToTerraform(struct!.httpUri),
-    newrelic_account_id: cdktf.stringToTerraform(struct!.newrelicAccountId),
-    newrelic_license_key: cdktf.stringToTerraform(struct!.newrelicLicenseKey),
-    newrelic_region: cdktf.stringToTerraform(struct!.newrelicRegion),
-    splunk_hecendpoint: cdktf.stringToTerraform(struct!.splunkHecendpoint),
-    splunk_token: cdktf.stringToTerraform(struct!.splunkToken),
+    cloudwatch_access_key_id: cdktn.stringToTerraform(struct!.cloudwatchAccessKeyId),
+    cloudwatch_region: cdktn.stringToTerraform(struct!.cloudwatchRegion),
+    cloudwatch_secret_access_key: cdktn.stringToTerraform(struct!.cloudwatchSecretAccessKey),
+    datadog_api_key: cdktn.stringToTerraform(struct!.datadogApiKey),
+    datadog_region: cdktn.stringToTerraform(struct!.datadogRegion),
+    elasticsearch_endpoint: cdktn.stringToTerraform(struct!.elasticsearchEndpoint),
+    elasticsearch_password: cdktn.stringToTerraform(struct!.elasticsearchPassword),
+    elasticsearch_user: cdktn.stringToTerraform(struct!.elasticsearchUser),
+    grafana_endpoint: cdktn.stringToTerraform(struct!.grafanaEndpoint),
+    grafana_password: cdktn.stringToTerraform(struct!.grafanaPassword),
+    grafana_user: cdktn.stringToTerraform(struct!.grafanaUser),
+    http_basic_password: cdktn.stringToTerraform(struct!.httpBasicPassword),
+    http_basic_user: cdktn.stringToTerraform(struct!.httpBasicUser),
+    http_bearer_token: cdktn.stringToTerraform(struct!.httpBearerToken),
+    http_codec: cdktn.stringToTerraform(struct!.httpCodec),
+    http_compression: cdktn.booleanToTerraform(struct!.httpCompression),
+    http_headers: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.httpHeaders),
+    http_method: cdktn.stringToTerraform(struct!.httpMethod),
+    http_payload_prefix: cdktn.stringToTerraform(struct!.httpPayloadPrefix),
+    http_payload_suffix: cdktn.stringToTerraform(struct!.httpPayloadSuffix),
+    http_uri: cdktn.stringToTerraform(struct!.httpUri),
+    newrelic_account_id: cdktn.stringToTerraform(struct!.newrelicAccountId),
+    newrelic_license_key: cdktn.stringToTerraform(struct!.newrelicLicenseKey),
+    newrelic_region: cdktn.stringToTerraform(struct!.newrelicRegion),
+    splunk_hecendpoint: cdktn.stringToTerraform(struct!.splunkHecendpoint),
+    splunk_token: cdktn.stringToTerraform(struct!.splunkToken),
   }
 }
 
 
 export function vaultClusterAuditLogConfigToHclTerraform(struct?: VaultClusterAuditLogConfigOutputReference | VaultClusterAuditLogConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cloudwatch_access_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.cloudwatchAccessKeyId),
+      value: cdktn.stringToHclTerraform(struct!.cloudwatchAccessKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cloudwatch_region: {
-      value: cdktf.stringToHclTerraform(struct!.cloudwatchRegion),
+      value: cdktn.stringToHclTerraform(struct!.cloudwatchRegion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cloudwatch_secret_access_key: {
-      value: cdktf.stringToHclTerraform(struct!.cloudwatchSecretAccessKey),
+      value: cdktn.stringToHclTerraform(struct!.cloudwatchSecretAccessKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     datadog_api_key: {
-      value: cdktf.stringToHclTerraform(struct!.datadogApiKey),
+      value: cdktn.stringToHclTerraform(struct!.datadogApiKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     datadog_region: {
-      value: cdktf.stringToHclTerraform(struct!.datadogRegion),
+      value: cdktn.stringToHclTerraform(struct!.datadogRegion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     elasticsearch_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.elasticsearchEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.elasticsearchEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     elasticsearch_password: {
-      value: cdktf.stringToHclTerraform(struct!.elasticsearchPassword),
+      value: cdktn.stringToHclTerraform(struct!.elasticsearchPassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     elasticsearch_user: {
-      value: cdktf.stringToHclTerraform(struct!.elasticsearchUser),
+      value: cdktn.stringToHclTerraform(struct!.elasticsearchUser),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     grafana_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.grafanaEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.grafanaEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     grafana_password: {
-      value: cdktf.stringToHclTerraform(struct!.grafanaPassword),
+      value: cdktn.stringToHclTerraform(struct!.grafanaPassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     grafana_user: {
-      value: cdktf.stringToHclTerraform(struct!.grafanaUser),
+      value: cdktn.stringToHclTerraform(struct!.grafanaUser),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_basic_password: {
-      value: cdktf.stringToHclTerraform(struct!.httpBasicPassword),
+      value: cdktn.stringToHclTerraform(struct!.httpBasicPassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_basic_user: {
-      value: cdktf.stringToHclTerraform(struct!.httpBasicUser),
+      value: cdktn.stringToHclTerraform(struct!.httpBasicUser),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_bearer_token: {
-      value: cdktf.stringToHclTerraform(struct!.httpBearerToken),
+      value: cdktn.stringToHclTerraform(struct!.httpBearerToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_codec: {
-      value: cdktf.stringToHclTerraform(struct!.httpCodec),
+      value: cdktn.stringToHclTerraform(struct!.httpCodec),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_compression: {
-      value: cdktf.booleanToHclTerraform(struct!.httpCompression),
+      value: cdktn.booleanToHclTerraform(struct!.httpCompression),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     http_headers: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.httpHeaders),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.httpHeaders),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     http_method: {
-      value: cdktf.stringToHclTerraform(struct!.httpMethod),
+      value: cdktn.stringToHclTerraform(struct!.httpMethod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_payload_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.httpPayloadPrefix),
+      value: cdktn.stringToHclTerraform(struct!.httpPayloadPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_payload_suffix: {
-      value: cdktf.stringToHclTerraform(struct!.httpPayloadSuffix),
+      value: cdktn.stringToHclTerraform(struct!.httpPayloadSuffix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_uri: {
-      value: cdktf.stringToHclTerraform(struct!.httpUri),
+      value: cdktn.stringToHclTerraform(struct!.httpUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     newrelic_account_id: {
-      value: cdktf.stringToHclTerraform(struct!.newrelicAccountId),
+      value: cdktn.stringToHclTerraform(struct!.newrelicAccountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     newrelic_license_key: {
-      value: cdktf.stringToHclTerraform(struct!.newrelicLicenseKey),
+      value: cdktn.stringToHclTerraform(struct!.newrelicLicenseKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     newrelic_region: {
-      value: cdktf.stringToHclTerraform(struct!.newrelicRegion),
+      value: cdktn.stringToHclTerraform(struct!.newrelicRegion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     splunk_hecendpoint: {
-      value: cdktf.stringToHclTerraform(struct!.splunkHecendpoint),
+      value: cdktn.stringToHclTerraform(struct!.splunkHecendpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     splunk_token: {
-      value: cdktf.stringToHclTerraform(struct!.splunkToken),
+      value: cdktn.stringToHclTerraform(struct!.splunkToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -470,14 +470,14 @@ export function vaultClusterAuditLogConfigToHclTerraform(struct?: VaultClusterAu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VaultClusterAuditLogConfigOutputReference extends cdktf.ComplexObject {
+export class VaultClusterAuditLogConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -908,11 +908,11 @@ export class VaultClusterAuditLogConfigOutputReference extends cdktf.ComplexObje
   }
 
   // http_compression - computed: false, optional: true, required: false
-  private _httpCompression?: boolean | cdktf.IResolvable; 
+  private _httpCompression?: boolean | cdktn.IResolvable; 
   public get httpCompression() {
     return this.getBooleanAttribute('http_compression');
   }
-  public set httpCompression(value: boolean | cdktf.IResolvable) {
+  public set httpCompression(value: boolean | cdktn.IResolvable) {
     this._httpCompression = value;
   }
   public resetHttpCompression() {
@@ -1098,32 +1098,32 @@ export interface VaultClusterIpAllowlistStruct {
   readonly description?: string;
 }
 
-export function vaultClusterIpAllowlistStructToTerraform(struct?: VaultClusterIpAllowlistStruct | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultClusterIpAllowlistStructToTerraform(struct?: VaultClusterIpAllowlistStruct | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address: cdktf.stringToTerraform(struct!.address),
-    description: cdktf.stringToTerraform(struct!.description),
+    address: cdktn.stringToTerraform(struct!.address),
+    description: cdktn.stringToTerraform(struct!.description),
   }
 }
 
 
-export function vaultClusterIpAllowlistStructToHclTerraform(struct?: VaultClusterIpAllowlistStruct | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultClusterIpAllowlistStructToHclTerraform(struct?: VaultClusterIpAllowlistStruct | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address: {
-      value: cdktf.stringToHclTerraform(struct!.address),
+      value: cdktn.stringToHclTerraform(struct!.address),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1134,9 +1134,9 @@ export function vaultClusterIpAllowlistStructToHclTerraform(struct?: VaultCluste
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VaultClusterIpAllowlistStructOutputReference extends cdktf.ComplexObject {
+export class VaultClusterIpAllowlistStructOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1144,11 +1144,11 @@ export class VaultClusterIpAllowlistStructOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VaultClusterIpAllowlistStruct | cdktf.IResolvable | undefined {
+  public get internalValue(): VaultClusterIpAllowlistStruct | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1165,14 +1165,14 @@ export class VaultClusterIpAllowlistStructOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VaultClusterIpAllowlistStruct | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VaultClusterIpAllowlistStruct | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._address = undefined;
       this._description = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1214,15 +1214,15 @@ export class VaultClusterIpAllowlistStructOutputReference extends cdktf.ComplexO
   }
 }
 
-export class VaultClusterIpAllowlistStructList extends cdktf.ComplexList {
-  public internalValue? : VaultClusterIpAllowlistStruct[] | cdktf.IResolvable
+export class VaultClusterIpAllowlistStructList extends cdktn.ComplexList {
+  public internalValue? : VaultClusterIpAllowlistStruct[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1255,38 +1255,38 @@ export interface VaultClusterMajorVersionUpgradeConfig {
 }
 
 export function vaultClusterMajorVersionUpgradeConfigToTerraform(struct?: VaultClusterMajorVersionUpgradeConfigOutputReference | VaultClusterMajorVersionUpgradeConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    maintenance_window_day: cdktf.stringToTerraform(struct!.maintenanceWindowDay),
-    maintenance_window_time: cdktf.stringToTerraform(struct!.maintenanceWindowTime),
-    upgrade_type: cdktf.stringToTerraform(struct!.upgradeType),
+    maintenance_window_day: cdktn.stringToTerraform(struct!.maintenanceWindowDay),
+    maintenance_window_time: cdktn.stringToTerraform(struct!.maintenanceWindowTime),
+    upgrade_type: cdktn.stringToTerraform(struct!.upgradeType),
   }
 }
 
 
 export function vaultClusterMajorVersionUpgradeConfigToHclTerraform(struct?: VaultClusterMajorVersionUpgradeConfigOutputReference | VaultClusterMajorVersionUpgradeConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     maintenance_window_day: {
-      value: cdktf.stringToHclTerraform(struct!.maintenanceWindowDay),
+      value: cdktn.stringToHclTerraform(struct!.maintenanceWindowDay),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     maintenance_window_time: {
-      value: cdktf.stringToHclTerraform(struct!.maintenanceWindowTime),
+      value: cdktn.stringToHclTerraform(struct!.maintenanceWindowTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     upgrade_type: {
-      value: cdktf.stringToHclTerraform(struct!.upgradeType),
+      value: cdktn.stringToHclTerraform(struct!.upgradeType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1297,14 +1297,14 @@ export function vaultClusterMajorVersionUpgradeConfigToHclTerraform(struct?: Vau
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VaultClusterMajorVersionUpgradeConfigOutputReference extends cdktf.ComplexObject {
+export class VaultClusterMajorVersionUpgradeConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1482,7 +1482,7 @@ export interface VaultClusterMetricsConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#http_compression VaultCluster#http_compression}
   */
-  readonly httpCompression?: boolean | cdktf.IResolvable;
+  readonly httpCompression?: boolean | cdktn.IResolvable;
   /**
   * HTTP headers for streaming metrics
   *
@@ -1546,199 +1546,199 @@ export interface VaultClusterMetricsConfig {
 }
 
 export function vaultClusterMetricsConfigToTerraform(struct?: VaultClusterMetricsConfigOutputReference | VaultClusterMetricsConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cloudwatch_access_key_id: cdktf.stringToTerraform(struct!.cloudwatchAccessKeyId),
-    cloudwatch_region: cdktf.stringToTerraform(struct!.cloudwatchRegion),
-    cloudwatch_secret_access_key: cdktf.stringToTerraform(struct!.cloudwatchSecretAccessKey),
-    datadog_api_key: cdktf.stringToTerraform(struct!.datadogApiKey),
-    datadog_region: cdktf.stringToTerraform(struct!.datadogRegion),
-    elasticsearch_endpoint: cdktf.stringToTerraform(struct!.elasticsearchEndpoint),
-    elasticsearch_password: cdktf.stringToTerraform(struct!.elasticsearchPassword),
-    elasticsearch_user: cdktf.stringToTerraform(struct!.elasticsearchUser),
-    grafana_endpoint: cdktf.stringToTerraform(struct!.grafanaEndpoint),
-    grafana_password: cdktf.stringToTerraform(struct!.grafanaPassword),
-    grafana_user: cdktf.stringToTerraform(struct!.grafanaUser),
-    http_basic_password: cdktf.stringToTerraform(struct!.httpBasicPassword),
-    http_basic_user: cdktf.stringToTerraform(struct!.httpBasicUser),
-    http_bearer_token: cdktf.stringToTerraform(struct!.httpBearerToken),
-    http_codec: cdktf.stringToTerraform(struct!.httpCodec),
-    http_compression: cdktf.booleanToTerraform(struct!.httpCompression),
-    http_headers: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.httpHeaders),
-    http_method: cdktf.stringToTerraform(struct!.httpMethod),
-    http_payload_prefix: cdktf.stringToTerraform(struct!.httpPayloadPrefix),
-    http_payload_suffix: cdktf.stringToTerraform(struct!.httpPayloadSuffix),
-    http_uri: cdktf.stringToTerraform(struct!.httpUri),
-    newrelic_account_id: cdktf.stringToTerraform(struct!.newrelicAccountId),
-    newrelic_license_key: cdktf.stringToTerraform(struct!.newrelicLicenseKey),
-    newrelic_region: cdktf.stringToTerraform(struct!.newrelicRegion),
-    splunk_hecendpoint: cdktf.stringToTerraform(struct!.splunkHecendpoint),
-    splunk_token: cdktf.stringToTerraform(struct!.splunkToken),
+    cloudwatch_access_key_id: cdktn.stringToTerraform(struct!.cloudwatchAccessKeyId),
+    cloudwatch_region: cdktn.stringToTerraform(struct!.cloudwatchRegion),
+    cloudwatch_secret_access_key: cdktn.stringToTerraform(struct!.cloudwatchSecretAccessKey),
+    datadog_api_key: cdktn.stringToTerraform(struct!.datadogApiKey),
+    datadog_region: cdktn.stringToTerraform(struct!.datadogRegion),
+    elasticsearch_endpoint: cdktn.stringToTerraform(struct!.elasticsearchEndpoint),
+    elasticsearch_password: cdktn.stringToTerraform(struct!.elasticsearchPassword),
+    elasticsearch_user: cdktn.stringToTerraform(struct!.elasticsearchUser),
+    grafana_endpoint: cdktn.stringToTerraform(struct!.grafanaEndpoint),
+    grafana_password: cdktn.stringToTerraform(struct!.grafanaPassword),
+    grafana_user: cdktn.stringToTerraform(struct!.grafanaUser),
+    http_basic_password: cdktn.stringToTerraform(struct!.httpBasicPassword),
+    http_basic_user: cdktn.stringToTerraform(struct!.httpBasicUser),
+    http_bearer_token: cdktn.stringToTerraform(struct!.httpBearerToken),
+    http_codec: cdktn.stringToTerraform(struct!.httpCodec),
+    http_compression: cdktn.booleanToTerraform(struct!.httpCompression),
+    http_headers: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.httpHeaders),
+    http_method: cdktn.stringToTerraform(struct!.httpMethod),
+    http_payload_prefix: cdktn.stringToTerraform(struct!.httpPayloadPrefix),
+    http_payload_suffix: cdktn.stringToTerraform(struct!.httpPayloadSuffix),
+    http_uri: cdktn.stringToTerraform(struct!.httpUri),
+    newrelic_account_id: cdktn.stringToTerraform(struct!.newrelicAccountId),
+    newrelic_license_key: cdktn.stringToTerraform(struct!.newrelicLicenseKey),
+    newrelic_region: cdktn.stringToTerraform(struct!.newrelicRegion),
+    splunk_hecendpoint: cdktn.stringToTerraform(struct!.splunkHecendpoint),
+    splunk_token: cdktn.stringToTerraform(struct!.splunkToken),
   }
 }
 
 
 export function vaultClusterMetricsConfigToHclTerraform(struct?: VaultClusterMetricsConfigOutputReference | VaultClusterMetricsConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cloudwatch_access_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.cloudwatchAccessKeyId),
+      value: cdktn.stringToHclTerraform(struct!.cloudwatchAccessKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cloudwatch_region: {
-      value: cdktf.stringToHclTerraform(struct!.cloudwatchRegion),
+      value: cdktn.stringToHclTerraform(struct!.cloudwatchRegion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cloudwatch_secret_access_key: {
-      value: cdktf.stringToHclTerraform(struct!.cloudwatchSecretAccessKey),
+      value: cdktn.stringToHclTerraform(struct!.cloudwatchSecretAccessKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     datadog_api_key: {
-      value: cdktf.stringToHclTerraform(struct!.datadogApiKey),
+      value: cdktn.stringToHclTerraform(struct!.datadogApiKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     datadog_region: {
-      value: cdktf.stringToHclTerraform(struct!.datadogRegion),
+      value: cdktn.stringToHclTerraform(struct!.datadogRegion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     elasticsearch_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.elasticsearchEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.elasticsearchEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     elasticsearch_password: {
-      value: cdktf.stringToHclTerraform(struct!.elasticsearchPassword),
+      value: cdktn.stringToHclTerraform(struct!.elasticsearchPassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     elasticsearch_user: {
-      value: cdktf.stringToHclTerraform(struct!.elasticsearchUser),
+      value: cdktn.stringToHclTerraform(struct!.elasticsearchUser),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     grafana_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.grafanaEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.grafanaEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     grafana_password: {
-      value: cdktf.stringToHclTerraform(struct!.grafanaPassword),
+      value: cdktn.stringToHclTerraform(struct!.grafanaPassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     grafana_user: {
-      value: cdktf.stringToHclTerraform(struct!.grafanaUser),
+      value: cdktn.stringToHclTerraform(struct!.grafanaUser),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_basic_password: {
-      value: cdktf.stringToHclTerraform(struct!.httpBasicPassword),
+      value: cdktn.stringToHclTerraform(struct!.httpBasicPassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_basic_user: {
-      value: cdktf.stringToHclTerraform(struct!.httpBasicUser),
+      value: cdktn.stringToHclTerraform(struct!.httpBasicUser),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_bearer_token: {
-      value: cdktf.stringToHclTerraform(struct!.httpBearerToken),
+      value: cdktn.stringToHclTerraform(struct!.httpBearerToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_codec: {
-      value: cdktf.stringToHclTerraform(struct!.httpCodec),
+      value: cdktn.stringToHclTerraform(struct!.httpCodec),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_compression: {
-      value: cdktf.booleanToHclTerraform(struct!.httpCompression),
+      value: cdktn.booleanToHclTerraform(struct!.httpCompression),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     http_headers: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.httpHeaders),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.httpHeaders),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     http_method: {
-      value: cdktf.stringToHclTerraform(struct!.httpMethod),
+      value: cdktn.stringToHclTerraform(struct!.httpMethod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_payload_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.httpPayloadPrefix),
+      value: cdktn.stringToHclTerraform(struct!.httpPayloadPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_payload_suffix: {
-      value: cdktf.stringToHclTerraform(struct!.httpPayloadSuffix),
+      value: cdktn.stringToHclTerraform(struct!.httpPayloadSuffix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_uri: {
-      value: cdktf.stringToHclTerraform(struct!.httpUri),
+      value: cdktn.stringToHclTerraform(struct!.httpUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     newrelic_account_id: {
-      value: cdktf.stringToHclTerraform(struct!.newrelicAccountId),
+      value: cdktn.stringToHclTerraform(struct!.newrelicAccountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     newrelic_license_key: {
-      value: cdktf.stringToHclTerraform(struct!.newrelicLicenseKey),
+      value: cdktn.stringToHclTerraform(struct!.newrelicLicenseKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     newrelic_region: {
-      value: cdktf.stringToHclTerraform(struct!.newrelicRegion),
+      value: cdktn.stringToHclTerraform(struct!.newrelicRegion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     splunk_hecendpoint: {
-      value: cdktf.stringToHclTerraform(struct!.splunkHecendpoint),
+      value: cdktn.stringToHclTerraform(struct!.splunkHecendpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     splunk_token: {
-      value: cdktf.stringToHclTerraform(struct!.splunkToken),
+      value: cdktn.stringToHclTerraform(struct!.splunkToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1749,14 +1749,14 @@ export function vaultClusterMetricsConfigToHclTerraform(struct?: VaultClusterMet
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VaultClusterMetricsConfigOutputReference extends cdktf.ComplexObject {
+export class VaultClusterMetricsConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2182,11 +2182,11 @@ export class VaultClusterMetricsConfigOutputReference extends cdktf.ComplexObjec
   }
 
   // http_compression - computed: false, optional: true, required: false
-  private _httpCompression?: boolean | cdktf.IResolvable; 
+  private _httpCompression?: boolean | cdktn.IResolvable; 
   public get httpCompression() {
     return this.getBooleanAttribute('http_compression');
   }
-  public set httpCompression(value: boolean | cdktf.IResolvable) {
+  public set httpCompression(value: boolean | cdktn.IResolvable) {
     this._httpCompression = value;
   }
   public resetHttpCompression() {
@@ -2376,46 +2376,46 @@ export interface VaultClusterTimeouts {
   readonly update?: string;
 }
 
-export function vaultClusterTimeoutsToTerraform(struct?: VaultClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultClusterTimeoutsToTerraform(struct?: VaultClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    default: cdktf.stringToTerraform(struct!.default),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    default: cdktn.stringToTerraform(struct!.default),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function vaultClusterTimeoutsToHclTerraform(struct?: VaultClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultClusterTimeoutsToHclTerraform(struct?: VaultClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     default: {
-      value: cdktf.stringToHclTerraform(struct!.default),
+      value: cdktn.stringToHclTerraform(struct!.default),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2426,19 +2426,19 @@ export function vaultClusterTimeoutsToHclTerraform(struct?: VaultClusterTimeouts
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VaultClusterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VaultClusterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VaultClusterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VaultClusterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2463,7 +2463,7 @@ export class VaultClusterTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VaultClusterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VaultClusterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2472,7 +2472,7 @@ export class VaultClusterTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2554,7 +2554,7 @@ export class VaultClusterTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster hcp_vault_cluster}
 */
-export class VaultCluster extends cdktf.TerraformResource {
+export class VaultCluster extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2565,14 +2565,14 @@ export class VaultCluster extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VaultCluster resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VaultCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VaultCluster to import
   * @param importFromId The id of the existing VaultCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VaultCluster to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_vault_cluster", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_vault_cluster", importId: importFromId, provider });
       }
 
   // ===========
@@ -2766,11 +2766,11 @@ export class VaultCluster extends cdktf.TerraformResource {
   }
 
   // public_endpoint - computed: false, optional: true, required: false
-  private _publicEndpoint?: boolean | cdktf.IResolvable; 
+  private _publicEndpoint?: boolean | cdktn.IResolvable; 
   public get publicEndpoint() {
     return this.getBooleanAttribute('public_endpoint');
   }
-  public set publicEndpoint(value: boolean | cdktf.IResolvable) {
+  public set publicEndpoint(value: boolean | cdktn.IResolvable) {
     this._publicEndpoint = value;
   }
   public resetPublicEndpoint() {
@@ -2853,7 +2853,7 @@ export class VaultCluster extends cdktf.TerraformResource {
   public get ipAllowlist() {
     return this._ipAllowlist;
   }
-  public putIpAllowlist(value: VaultClusterIpAllowlistStruct[] | cdktf.IResolvable) {
+  public putIpAllowlist(value: VaultClusterIpAllowlistStruct[] | cdktn.IResolvable) {
     this._ipAllowlist.internalValue = value;
   }
   public resetIpAllowlist() {
@@ -2918,18 +2918,18 @@ export class VaultCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_id: cdktf.stringToTerraform(this._clusterId),
-      hvn_id: cdktf.stringToTerraform(this._hvnId),
-      id: cdktf.stringToTerraform(this._id),
-      min_vault_version: cdktf.stringToTerraform(this._minVaultVersion),
-      paths_filter: cdktf.listMapper(cdktf.stringToTerraform, false)(this._pathsFilter),
-      primary_link: cdktf.stringToTerraform(this._primaryLink),
-      project_id: cdktf.stringToTerraform(this._projectId),
-      proxy_endpoint: cdktf.stringToTerraform(this._proxyEndpoint),
-      public_endpoint: cdktf.booleanToTerraform(this._publicEndpoint),
-      tier: cdktf.stringToTerraform(this._tier),
+      cluster_id: cdktn.stringToTerraform(this._clusterId),
+      hvn_id: cdktn.stringToTerraform(this._hvnId),
+      id: cdktn.stringToTerraform(this._id),
+      min_vault_version: cdktn.stringToTerraform(this._minVaultVersion),
+      paths_filter: cdktn.listMapper(cdktn.stringToTerraform, false)(this._pathsFilter),
+      primary_link: cdktn.stringToTerraform(this._primaryLink),
+      project_id: cdktn.stringToTerraform(this._projectId),
+      proxy_endpoint: cdktn.stringToTerraform(this._proxyEndpoint),
+      public_endpoint: cdktn.booleanToTerraform(this._publicEndpoint),
+      tier: cdktn.stringToTerraform(this._tier),
       audit_log_config: vaultClusterAuditLogConfigToTerraform(this._auditLogConfig.internalValue),
-      ip_allowlist: cdktf.listMapper(vaultClusterIpAllowlistStructToTerraform, true)(this._ipAllowlist.internalValue),
+      ip_allowlist: cdktn.listMapper(vaultClusterIpAllowlistStructToTerraform, true)(this._ipAllowlist.internalValue),
       major_version_upgrade_config: vaultClusterMajorVersionUpgradeConfigToTerraform(this._majorVersionUpgradeConfig.internalValue),
       metrics_config: vaultClusterMetricsConfigToTerraform(this._metricsConfig.internalValue),
       timeouts: vaultClusterTimeoutsToTerraform(this._timeouts.internalValue),
@@ -2939,61 +2939,61 @@ export class VaultCluster extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cluster_id: {
-        value: cdktf.stringToHclTerraform(this._clusterId),
+        value: cdktn.stringToHclTerraform(this._clusterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hvn_id: {
-        value: cdktf.stringToHclTerraform(this._hvnId),
+        value: cdktn.stringToHclTerraform(this._hvnId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       min_vault_version: {
-        value: cdktf.stringToHclTerraform(this._minVaultVersion),
+        value: cdktn.stringToHclTerraform(this._minVaultVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       paths_filter: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._pathsFilter),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._pathsFilter),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       primary_link: {
-        value: cdktf.stringToHclTerraform(this._primaryLink),
+        value: cdktn.stringToHclTerraform(this._primaryLink),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       proxy_endpoint: {
-        value: cdktf.stringToHclTerraform(this._proxyEndpoint),
+        value: cdktn.stringToHclTerraform(this._proxyEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_endpoint: {
-        value: cdktf.booleanToHclTerraform(this._publicEndpoint),
+        value: cdktn.booleanToHclTerraform(this._publicEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tier: {
-        value: cdktf.stringToHclTerraform(this._tier),
+        value: cdktn.stringToHclTerraform(this._tier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -3005,7 +3005,7 @@ export class VaultCluster extends cdktf.TerraformResource {
         storageClassType: "VaultClusterAuditLogConfigList",
       },
       ip_allowlist: {
-        value: cdktf.listMapperHcl(vaultClusterIpAllowlistStructToHclTerraform, true)(this._ipAllowlist.internalValue),
+        value: cdktn.listMapperHcl(vaultClusterIpAllowlistStructToHclTerraform, true)(this._ipAllowlist.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "VaultClusterIpAllowlistStructList",

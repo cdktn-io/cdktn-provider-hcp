@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,17 +7,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VaultRadarSecretManagerVaultDedicatedConfig extends cdktf.TerraformMetaArguments {
+export interface VaultRadarSecretManagerVaultDedicatedConfig extends cdktn.TerraformMetaArguments {
   /**
   * Indicates if the auth method has read and write access to the secrets engine. Defaults to false. Set this to true if you want to copy secrets to this secret manager as part of remediation process. (see https://developer.hashicorp.com/hcp/docs/vault-radar/remediate-secrets/copy-secrets)
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_radar_secret_manager_vault_dedicated#access_read_write VaultRadarSecretManagerVaultDedicated#access_read_write}
   */
-  readonly accessReadWrite?: boolean | cdktf.IResolvable;
+  readonly accessReadWrite?: boolean | cdktn.IResolvable;
   /**
   * Configuration for AppRole Push-based authentication. Only one authentication method may be configured.
   *
@@ -70,39 +70,39 @@ export interface VaultRadarSecretManagerVaultDedicatedApprolePush {
   readonly secretIdEnvVar: string;
 }
 
-export function vaultRadarSecretManagerVaultDedicatedApprolePushToTerraform(struct?: VaultRadarSecretManagerVaultDedicatedApprolePush | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultRadarSecretManagerVaultDedicatedApprolePushToTerraform(struct?: VaultRadarSecretManagerVaultDedicatedApprolePush | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mount_path: cdktf.stringToTerraform(struct!.mountPath),
-    role_id_env_var: cdktf.stringToTerraform(struct!.roleIdEnvVar),
-    secret_id_env_var: cdktf.stringToTerraform(struct!.secretIdEnvVar),
+    mount_path: cdktn.stringToTerraform(struct!.mountPath),
+    role_id_env_var: cdktn.stringToTerraform(struct!.roleIdEnvVar),
+    secret_id_env_var: cdktn.stringToTerraform(struct!.secretIdEnvVar),
   }
 }
 
 
-export function vaultRadarSecretManagerVaultDedicatedApprolePushToHclTerraform(struct?: VaultRadarSecretManagerVaultDedicatedApprolePush | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultRadarSecretManagerVaultDedicatedApprolePushToHclTerraform(struct?: VaultRadarSecretManagerVaultDedicatedApprolePush | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mount_path: {
-      value: cdktf.stringToHclTerraform(struct!.mountPath),
+      value: cdktn.stringToHclTerraform(struct!.mountPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_id_env_var: {
-      value: cdktf.stringToHclTerraform(struct!.roleIdEnvVar),
+      value: cdktn.stringToHclTerraform(struct!.roleIdEnvVar),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_id_env_var: {
-      value: cdktf.stringToHclTerraform(struct!.secretIdEnvVar),
+      value: cdktn.stringToHclTerraform(struct!.secretIdEnvVar),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -113,19 +113,19 @@ export function vaultRadarSecretManagerVaultDedicatedApprolePushToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VaultRadarSecretManagerVaultDedicatedApprolePushOutputReference extends cdktf.ComplexObject {
+export class VaultRadarSecretManagerVaultDedicatedApprolePushOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VaultRadarSecretManagerVaultDedicatedApprolePush | cdktf.IResolvable | undefined {
+  public get internalValue(): VaultRadarSecretManagerVaultDedicatedApprolePush | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -146,7 +146,7 @@ export class VaultRadarSecretManagerVaultDedicatedApprolePushOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VaultRadarSecretManagerVaultDedicatedApprolePush | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VaultRadarSecretManagerVaultDedicatedApprolePush | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -154,7 +154,7 @@ export class VaultRadarSecretManagerVaultDedicatedApprolePushOutputReference ext
       this._roleIdEnvVar = undefined;
       this._secretIdEnvVar = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -221,32 +221,32 @@ export interface VaultRadarSecretManagerVaultDedicatedKubernetes {
   readonly roleName: string;
 }
 
-export function vaultRadarSecretManagerVaultDedicatedKubernetesToTerraform(struct?: VaultRadarSecretManagerVaultDedicatedKubernetes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultRadarSecretManagerVaultDedicatedKubernetesToTerraform(struct?: VaultRadarSecretManagerVaultDedicatedKubernetes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mount_path: cdktf.stringToTerraform(struct!.mountPath),
-    role_name: cdktf.stringToTerraform(struct!.roleName),
+    mount_path: cdktn.stringToTerraform(struct!.mountPath),
+    role_name: cdktn.stringToTerraform(struct!.roleName),
   }
 }
 
 
-export function vaultRadarSecretManagerVaultDedicatedKubernetesToHclTerraform(struct?: VaultRadarSecretManagerVaultDedicatedKubernetes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultRadarSecretManagerVaultDedicatedKubernetesToHclTerraform(struct?: VaultRadarSecretManagerVaultDedicatedKubernetes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mount_path: {
-      value: cdktf.stringToHclTerraform(struct!.mountPath),
+      value: cdktn.stringToHclTerraform(struct!.mountPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_name: {
-      value: cdktf.stringToHclTerraform(struct!.roleName),
+      value: cdktn.stringToHclTerraform(struct!.roleName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -257,19 +257,19 @@ export function vaultRadarSecretManagerVaultDedicatedKubernetesToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VaultRadarSecretManagerVaultDedicatedKubernetesOutputReference extends cdktf.ComplexObject {
+export class VaultRadarSecretManagerVaultDedicatedKubernetesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VaultRadarSecretManagerVaultDedicatedKubernetes | cdktf.IResolvable | undefined {
+  public get internalValue(): VaultRadarSecretManagerVaultDedicatedKubernetes | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -286,14 +286,14 @@ export class VaultRadarSecretManagerVaultDedicatedKubernetesOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VaultRadarSecretManagerVaultDedicatedKubernetes | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VaultRadarSecretManagerVaultDedicatedKubernetes | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._mountPath = undefined;
       this._roleName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -340,25 +340,25 @@ export interface VaultRadarSecretManagerVaultDedicatedToken {
   readonly tokenEnvVar: string;
 }
 
-export function vaultRadarSecretManagerVaultDedicatedTokenToTerraform(struct?: VaultRadarSecretManagerVaultDedicatedToken | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultRadarSecretManagerVaultDedicatedTokenToTerraform(struct?: VaultRadarSecretManagerVaultDedicatedToken | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    token_env_var: cdktf.stringToTerraform(struct!.tokenEnvVar),
+    token_env_var: cdktn.stringToTerraform(struct!.tokenEnvVar),
   }
 }
 
 
-export function vaultRadarSecretManagerVaultDedicatedTokenToHclTerraform(struct?: VaultRadarSecretManagerVaultDedicatedToken | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultRadarSecretManagerVaultDedicatedTokenToHclTerraform(struct?: VaultRadarSecretManagerVaultDedicatedToken | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     token_env_var: {
-      value: cdktf.stringToHclTerraform(struct!.tokenEnvVar),
+      value: cdktn.stringToHclTerraform(struct!.tokenEnvVar),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -369,19 +369,19 @@ export function vaultRadarSecretManagerVaultDedicatedTokenToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VaultRadarSecretManagerVaultDedicatedTokenOutputReference extends cdktf.ComplexObject {
+export class VaultRadarSecretManagerVaultDedicatedTokenOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VaultRadarSecretManagerVaultDedicatedToken | cdktf.IResolvable | undefined {
+  public get internalValue(): VaultRadarSecretManagerVaultDedicatedToken | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -394,13 +394,13 @@ export class VaultRadarSecretManagerVaultDedicatedTokenOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VaultRadarSecretManagerVaultDedicatedToken | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VaultRadarSecretManagerVaultDedicatedToken | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._tokenEnvVar = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -428,7 +428,7 @@ export class VaultRadarSecretManagerVaultDedicatedTokenOutputReference extends c
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_radar_secret_manager_vault_dedicated hcp_vault_radar_secret_manager_vault_dedicated}
 */
-export class VaultRadarSecretManagerVaultDedicated extends cdktf.TerraformResource {
+export class VaultRadarSecretManagerVaultDedicated extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -439,14 +439,14 @@ export class VaultRadarSecretManagerVaultDedicated extends cdktf.TerraformResour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VaultRadarSecretManagerVaultDedicated resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VaultRadarSecretManagerVaultDedicated resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VaultRadarSecretManagerVaultDedicated to import
   * @param importFromId The id of the existing VaultRadarSecretManagerVaultDedicated that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_radar_secret_manager_vault_dedicated#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VaultRadarSecretManagerVaultDedicated to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_vault_radar_secret_manager_vault_dedicated", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_vault_radar_secret_manager_vault_dedicated", importId: importFromId, provider });
       }
 
   // ===========
@@ -489,11 +489,11 @@ export class VaultRadarSecretManagerVaultDedicated extends cdktf.TerraformResour
   // ==========
 
   // access_read_write - computed: true, optional: true, required: false
-  private _accessReadWrite?: boolean | cdktf.IResolvable; 
+  private _accessReadWrite?: boolean | cdktn.IResolvable; 
   public get accessReadWrite() {
     return this.getBooleanAttribute('access_read_write');
   }
-  public set accessReadWrite(value: boolean | cdktf.IResolvable) {
+  public set accessReadWrite(value: boolean | cdktn.IResolvable) {
     this._accessReadWrite = value;
   }
   public resetAccessReadWrite() {
@@ -592,19 +592,19 @@ export class VaultRadarSecretManagerVaultDedicated extends cdktf.TerraformResour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_read_write: cdktf.booleanToTerraform(this._accessReadWrite),
+      access_read_write: cdktn.booleanToTerraform(this._accessReadWrite),
       approle_push: vaultRadarSecretManagerVaultDedicatedApprolePushToTerraform(this._approlePush.internalValue),
       kubernetes: vaultRadarSecretManagerVaultDedicatedKubernetesToTerraform(this._kubernetes.internalValue),
-      project_id: cdktf.stringToTerraform(this._projectId),
+      project_id: cdktn.stringToTerraform(this._projectId),
       token: vaultRadarSecretManagerVaultDedicatedTokenToTerraform(this._token.internalValue),
-      vault_url: cdktf.stringToTerraform(this._vaultUrl),
+      vault_url: cdktn.stringToTerraform(this._vaultUrl),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       access_read_write: {
-        value: cdktf.booleanToHclTerraform(this._accessReadWrite),
+        value: cdktn.booleanToHclTerraform(this._accessReadWrite),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
@@ -622,7 +622,7 @@ export class VaultRadarSecretManagerVaultDedicated extends cdktf.TerraformResour
         storageClassType: "VaultRadarSecretManagerVaultDedicatedKubernetes",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -634,7 +634,7 @@ export class VaultRadarSecretManagerVaultDedicated extends cdktf.TerraformResour
         storageClassType: "VaultRadarSecretManagerVaultDedicatedToken",
       },
       vault_url: {
-        value: cdktf.stringToHclTerraform(this._vaultUrl),
+        value: cdktn.stringToHclTerraform(this._vaultUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

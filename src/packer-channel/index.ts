@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PackerChannelConfig extends cdktf.TerraformMetaArguments {
+export interface PackerChannelConfig extends cdktn.TerraformMetaArguments {
   /**
   * The name of the HCP Packer Registry bucket where the channel should be created.
   *
@@ -45,7 +45,7 @@ export interface PackerChannelConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/packer_channel#restricted PackerChannel#restricted}
   */
-  readonly restricted?: boolean | cdktf.IResolvable;
+  readonly restricted?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -72,46 +72,46 @@ export interface PackerChannelTimeouts {
   readonly update?: string;
 }
 
-export function packerChannelTimeoutsToTerraform(struct?: PackerChannelTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function packerChannelTimeoutsToTerraform(struct?: PackerChannelTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    default: cdktf.stringToTerraform(struct!.default),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    default: cdktn.stringToTerraform(struct!.default),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function packerChannelTimeoutsToHclTerraform(struct?: PackerChannelTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function packerChannelTimeoutsToHclTerraform(struct?: PackerChannelTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     default: {
-      value: cdktf.stringToHclTerraform(struct!.default),
+      value: cdktn.stringToHclTerraform(struct!.default),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -122,19 +122,19 @@ export function packerChannelTimeoutsToHclTerraform(struct?: PackerChannelTimeou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PackerChannelTimeoutsOutputReference extends cdktf.ComplexObject {
+export class PackerChannelTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PackerChannelTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): PackerChannelTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -159,7 +159,7 @@ export class PackerChannelTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PackerChannelTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PackerChannelTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -168,7 +168,7 @@ export class PackerChannelTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -250,7 +250,7 @@ export class PackerChannelTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/packer_channel hcp_packer_channel}
 */
-export class PackerChannel extends cdktf.TerraformResource {
+export class PackerChannel extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -261,14 +261,14 @@ export class PackerChannel extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PackerChannel resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PackerChannel resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PackerChannel to import
   * @param importFromId The id of the existing PackerChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/packer_channel#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PackerChannel to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_packer_channel", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_packer_channel", importId: importFromId, provider });
       }
 
   // ===========
@@ -389,11 +389,11 @@ export class PackerChannel extends cdktf.TerraformResource {
   }
 
   // restricted - computed: true, optional: true, required: false
-  private _restricted?: boolean | cdktf.IResolvable; 
+  private _restricted?: boolean | cdktn.IResolvable; 
   public get restricted() {
     return this.getBooleanAttribute('restricted');
   }
-  public set restricted(value: boolean | cdktf.IResolvable) {
+  public set restricted(value: boolean | cdktn.IResolvable) {
     this._restricted = value;
   }
   public resetRestricted() {
@@ -431,11 +431,11 @@ export class PackerChannel extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket_name: cdktf.stringToTerraform(this._bucketName),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      project_id: cdktf.stringToTerraform(this._projectId),
-      restricted: cdktf.booleanToTerraform(this._restricted),
+      bucket_name: cdktn.stringToTerraform(this._bucketName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      project_id: cdktn.stringToTerraform(this._projectId),
+      restricted: cdktn.booleanToTerraform(this._restricted),
       timeouts: packerChannelTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -443,31 +443,31 @@ export class PackerChannel extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bucket_name: {
-        value: cdktf.stringToHclTerraform(this._bucketName),
+        value: cdktn.stringToHclTerraform(this._bucketName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       restricted: {
-        value: cdktf.booleanToHclTerraform(this._restricted),
+        value: cdktn.booleanToHclTerraform(this._restricted),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

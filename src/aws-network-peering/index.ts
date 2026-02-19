@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AwsNetworkPeeringConfig extends cdktf.TerraformMetaArguments {
+export interface AwsNetworkPeeringConfig extends cdktn.TerraformMetaArguments {
   /**
   * The ID of the HashiCorp Virtual Network (HVN).
   *
@@ -80,39 +80,39 @@ export interface AwsNetworkPeeringTimeouts {
   readonly delete?: string;
 }
 
-export function awsNetworkPeeringTimeoutsToTerraform(struct?: AwsNetworkPeeringTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function awsNetworkPeeringTimeoutsToTerraform(struct?: AwsNetworkPeeringTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    default: cdktf.stringToTerraform(struct!.default),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    default: cdktn.stringToTerraform(struct!.default),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function awsNetworkPeeringTimeoutsToHclTerraform(struct?: AwsNetworkPeeringTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function awsNetworkPeeringTimeoutsToHclTerraform(struct?: AwsNetworkPeeringTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     default: {
-      value: cdktf.stringToHclTerraform(struct!.default),
+      value: cdktn.stringToHclTerraform(struct!.default),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -123,19 +123,19 @@ export function awsNetworkPeeringTimeoutsToHclTerraform(struct?: AwsNetworkPeeri
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AwsNetworkPeeringTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AwsNetworkPeeringTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AwsNetworkPeeringTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AwsNetworkPeeringTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -156,7 +156,7 @@ export class AwsNetworkPeeringTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AwsNetworkPeeringTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AwsNetworkPeeringTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -164,7 +164,7 @@ export class AwsNetworkPeeringTimeoutsOutputReference extends cdktf.ComplexObjec
       this._default = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -229,7 +229,7 @@ export class AwsNetworkPeeringTimeoutsOutputReference extends cdktf.ComplexObjec
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/aws_network_peering hcp_aws_network_peering}
 */
-export class AwsNetworkPeering extends cdktf.TerraformResource {
+export class AwsNetworkPeering extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -240,14 +240,14 @@ export class AwsNetworkPeering extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AwsNetworkPeering resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AwsNetworkPeering resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AwsNetworkPeering to import
   * @param importFromId The id of the existing AwsNetworkPeering that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/aws_network_peering#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AwsNetworkPeering to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_aws_network_peering", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_aws_network_peering", importId: importFromId, provider });
       }
 
   // ===========
@@ -440,13 +440,13 @@ export class AwsNetworkPeering extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      hvn_id: cdktf.stringToTerraform(this._hvnId),
-      id: cdktf.stringToTerraform(this._id),
-      peer_account_id: cdktf.stringToTerraform(this._peerAccountId),
-      peer_vpc_id: cdktf.stringToTerraform(this._peerVpcId),
-      peer_vpc_region: cdktf.stringToTerraform(this._peerVpcRegion),
-      peering_id: cdktf.stringToTerraform(this._peeringId),
-      project_id: cdktf.stringToTerraform(this._projectId),
+      hvn_id: cdktn.stringToTerraform(this._hvnId),
+      id: cdktn.stringToTerraform(this._id),
+      peer_account_id: cdktn.stringToTerraform(this._peerAccountId),
+      peer_vpc_id: cdktn.stringToTerraform(this._peerVpcId),
+      peer_vpc_region: cdktn.stringToTerraform(this._peerVpcRegion),
+      peering_id: cdktn.stringToTerraform(this._peeringId),
+      project_id: cdktn.stringToTerraform(this._projectId),
       timeouts: awsNetworkPeeringTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -454,43 +454,43 @@ export class AwsNetworkPeering extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       hvn_id: {
-        value: cdktf.stringToHclTerraform(this._hvnId),
+        value: cdktn.stringToHclTerraform(this._hvnId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peer_account_id: {
-        value: cdktf.stringToHclTerraform(this._peerAccountId),
+        value: cdktn.stringToHclTerraform(this._peerAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peer_vpc_id: {
-        value: cdktf.stringToHclTerraform(this._peerVpcId),
+        value: cdktn.stringToHclTerraform(this._peerVpcId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peer_vpc_region: {
-        value: cdktf.stringToHclTerraform(this._peerVpcRegion),
+        value: cdktn.stringToHclTerraform(this._peerVpcRegion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peering_id: {
-        value: cdktf.stringToHclTerraform(this._peeringId),
+        value: cdktn.stringToHclTerraform(this._peeringId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataHcpHvnRouteConfig extends cdktf.TerraformMetaArguments {
+export interface DataHcpHvnRouteConfig extends cdktn.TerraformMetaArguments {
   /**
   * The `self_link` of the HashiCorp Virtual Network (HVN).
   *
@@ -48,8 +48,8 @@ export interface DataHcpHvnRouteAzureConfig {
 }
 
 export function dataHcpHvnRouteAzureConfigToTerraform(struct?: DataHcpHvnRouteAzureConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -58,8 +58,8 @@ export function dataHcpHvnRouteAzureConfigToTerraform(struct?: DataHcpHvnRouteAz
 
 
 export function dataHcpHvnRouteAzureConfigToHclTerraform(struct?: DataHcpHvnRouteAzureConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -67,7 +67,7 @@ export function dataHcpHvnRouteAzureConfigToHclTerraform(struct?: DataHcpHvnRout
   return attrs;
 }
 
-export class DataHcpHvnRouteAzureConfigOutputReference extends cdktf.ComplexObject {
+export class DataHcpHvnRouteAzureConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -76,7 +76,7 @@ export class DataHcpHvnRouteAzureConfigOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -106,14 +106,14 @@ export class DataHcpHvnRouteAzureConfigOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class DataHcpHvnRouteAzureConfigList extends cdktf.ComplexList {
+export class DataHcpHvnRouteAzureConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -131,25 +131,25 @@ export interface DataHcpHvnRouteTimeouts {
   readonly default?: string;
 }
 
-export function dataHcpHvnRouteTimeoutsToTerraform(struct?: DataHcpHvnRouteTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataHcpHvnRouteTimeoutsToTerraform(struct?: DataHcpHvnRouteTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default: cdktf.stringToTerraform(struct!.default),
+    default: cdktn.stringToTerraform(struct!.default),
   }
 }
 
 
-export function dataHcpHvnRouteTimeoutsToHclTerraform(struct?: DataHcpHvnRouteTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataHcpHvnRouteTimeoutsToHclTerraform(struct?: DataHcpHvnRouteTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default: {
-      value: cdktf.stringToHclTerraform(struct!.default),
+      value: cdktn.stringToHclTerraform(struct!.default),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -160,19 +160,19 @@ export function dataHcpHvnRouteTimeoutsToHclTerraform(struct?: DataHcpHvnRouteTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataHcpHvnRouteTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataHcpHvnRouteTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataHcpHvnRouteTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataHcpHvnRouteTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -185,13 +185,13 @@ export class DataHcpHvnRouteTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataHcpHvnRouteTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataHcpHvnRouteTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._default = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -222,7 +222,7 @@ export class DataHcpHvnRouteTimeoutsOutputReference extends cdktf.ComplexObject 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/hvn_route hcp_hvn_route}
 */
-export class DataHcpHvnRoute extends cdktf.TerraformDataSource {
+export class DataHcpHvnRoute extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -233,14 +233,14 @@ export class DataHcpHvnRoute extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataHcpHvnRoute resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataHcpHvnRoute resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataHcpHvnRoute to import
   * @param importFromId The id of the existing DataHcpHvnRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/hvn_route#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataHcpHvnRoute to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_hvn_route", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_hvn_route", importId: importFromId, provider });
       }
 
   // ===========
@@ -392,10 +392,10 @@ export class DataHcpHvnRoute extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      hvn_link: cdktf.stringToTerraform(this._hvnLink),
-      hvn_route_id: cdktf.stringToTerraform(this._hvnRouteId),
-      id: cdktf.stringToTerraform(this._id),
-      project_id: cdktf.stringToTerraform(this._projectId),
+      hvn_link: cdktn.stringToTerraform(this._hvnLink),
+      hvn_route_id: cdktn.stringToTerraform(this._hvnRouteId),
+      id: cdktn.stringToTerraform(this._id),
+      project_id: cdktn.stringToTerraform(this._projectId),
       timeouts: dataHcpHvnRouteTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -403,25 +403,25 @@ export class DataHcpHvnRoute extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       hvn_link: {
-        value: cdktf.stringToHclTerraform(this._hvnLink),
+        value: cdktn.stringToHclTerraform(this._hvnLink),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hvn_route_id: {
-        value: cdktf.stringToHclTerraform(this._hvnRouteId),
+        value: cdktn.stringToHclTerraform(this._hvnRouteId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

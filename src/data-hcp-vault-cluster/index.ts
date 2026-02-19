@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataHcpVaultClusterConfig extends cdktf.TerraformMetaArguments {
+export interface DataHcpVaultClusterConfig extends cdktn.TerraformMetaArguments {
   /**
   * The ID of the HCP Vault cluster.
   *
@@ -39,13 +39,13 @@ export interface DataHcpVaultClusterConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_cluster#audit_log_config DataHcpVaultCluster#audit_log_config}
   */
-  readonly auditLogConfig?: DataHcpVaultClusterAuditLogConfig[] | cdktf.IResolvable;
+  readonly auditLogConfig?: DataHcpVaultClusterAuditLogConfig[] | cdktn.IResolvable;
   /**
   * metrics_config block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_cluster#metrics_config DataHcpVaultCluster#metrics_config}
   */
-  readonly metricsConfig?: DataHcpVaultClusterMetricsConfig[] | cdktf.IResolvable;
+  readonly metricsConfig?: DataHcpVaultClusterMetricsConfig[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -57,8 +57,8 @@ export interface DataHcpVaultClusterIpAllowlistStruct {
 }
 
 export function dataHcpVaultClusterIpAllowlistStructToTerraform(struct?: DataHcpVaultClusterIpAllowlistStruct): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -67,8 +67,8 @@ export function dataHcpVaultClusterIpAllowlistStructToTerraform(struct?: DataHcp
 
 
 export function dataHcpVaultClusterIpAllowlistStructToHclTerraform(struct?: DataHcpVaultClusterIpAllowlistStruct): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -76,7 +76,7 @@ export function dataHcpVaultClusterIpAllowlistStructToHclTerraform(struct?: Data
   return attrs;
 }
 
-export class DataHcpVaultClusterIpAllowlistStructOutputReference extends cdktf.ComplexObject {
+export class DataHcpVaultClusterIpAllowlistStructOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -85,7 +85,7 @@ export class DataHcpVaultClusterIpAllowlistStructOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -115,14 +115,14 @@ export class DataHcpVaultClusterIpAllowlistStructOutputReference extends cdktf.C
   }
 }
 
-export class DataHcpVaultClusterIpAllowlistStructList extends cdktf.ComplexList {
+export class DataHcpVaultClusterIpAllowlistStructList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -137,8 +137,8 @@ export interface DataHcpVaultClusterMajorVersionUpgradeConfig {
 }
 
 export function dataHcpVaultClusterMajorVersionUpgradeConfigToTerraform(struct?: DataHcpVaultClusterMajorVersionUpgradeConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -147,8 +147,8 @@ export function dataHcpVaultClusterMajorVersionUpgradeConfigToTerraform(struct?:
 
 
 export function dataHcpVaultClusterMajorVersionUpgradeConfigToHclTerraform(struct?: DataHcpVaultClusterMajorVersionUpgradeConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -156,7 +156,7 @@ export function dataHcpVaultClusterMajorVersionUpgradeConfigToHclTerraform(struc
   return attrs;
 }
 
-export class DataHcpVaultClusterMajorVersionUpgradeConfigOutputReference extends cdktf.ComplexObject {
+export class DataHcpVaultClusterMajorVersionUpgradeConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -165,7 +165,7 @@ export class DataHcpVaultClusterMajorVersionUpgradeConfigOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -200,14 +200,14 @@ export class DataHcpVaultClusterMajorVersionUpgradeConfigOutputReference extends
   }
 }
 
-export class DataHcpVaultClusterMajorVersionUpgradeConfigList extends cdktf.ComplexList {
+export class DataHcpVaultClusterMajorVersionUpgradeConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -221,9 +221,9 @@ export class DataHcpVaultClusterMajorVersionUpgradeConfigList extends cdktf.Comp
 export interface DataHcpVaultClusterAuditLogConfig {
 }
 
-export function dataHcpVaultClusterAuditLogConfigToTerraform(struct?: DataHcpVaultClusterAuditLogConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataHcpVaultClusterAuditLogConfigToTerraform(struct?: DataHcpVaultClusterAuditLogConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -231,9 +231,9 @@ export function dataHcpVaultClusterAuditLogConfigToTerraform(struct?: DataHcpVau
 }
 
 
-export function dataHcpVaultClusterAuditLogConfigToHclTerraform(struct?: DataHcpVaultClusterAuditLogConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataHcpVaultClusterAuditLogConfigToHclTerraform(struct?: DataHcpVaultClusterAuditLogConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -241,9 +241,9 @@ export function dataHcpVaultClusterAuditLogConfigToHclTerraform(struct?: DataHcp
   return attrs;
 }
 
-export class DataHcpVaultClusterAuditLogConfigOutputReference extends cdktf.ComplexObject {
+export class DataHcpVaultClusterAuditLogConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -251,11 +251,11 @@ export class DataHcpVaultClusterAuditLogConfigOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataHcpVaultClusterAuditLogConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): DataHcpVaultClusterAuditLogConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -264,12 +264,12 @@ export class DataHcpVaultClusterAuditLogConfigOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataHcpVaultClusterAuditLogConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataHcpVaultClusterAuditLogConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -365,7 +365,7 @@ export class DataHcpVaultClusterAuditLogConfigOutputReference extends cdktf.Comp
   }
 
   // http_headers - computed: true, optional: false, required: false
-  private _httpHeaders = new cdktf.StringMap(this, "http_headers");
+  private _httpHeaders = new cdktn.StringMap(this, "http_headers");
   public get httpHeaders() {
     return this._httpHeaders;
   }
@@ -411,15 +411,15 @@ export class DataHcpVaultClusterAuditLogConfigOutputReference extends cdktf.Comp
   }
 }
 
-export class DataHcpVaultClusterAuditLogConfigList extends cdktf.ComplexList {
-  public internalValue? : DataHcpVaultClusterAuditLogConfig[] | cdktf.IResolvable
+export class DataHcpVaultClusterAuditLogConfigList extends cdktn.ComplexList {
+  public internalValue? : DataHcpVaultClusterAuditLogConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -433,9 +433,9 @@ export class DataHcpVaultClusterAuditLogConfigList extends cdktf.ComplexList {
 export interface DataHcpVaultClusterMetricsConfig {
 }
 
-export function dataHcpVaultClusterMetricsConfigToTerraform(struct?: DataHcpVaultClusterMetricsConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataHcpVaultClusterMetricsConfigToTerraform(struct?: DataHcpVaultClusterMetricsConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -443,9 +443,9 @@ export function dataHcpVaultClusterMetricsConfigToTerraform(struct?: DataHcpVaul
 }
 
 
-export function dataHcpVaultClusterMetricsConfigToHclTerraform(struct?: DataHcpVaultClusterMetricsConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataHcpVaultClusterMetricsConfigToHclTerraform(struct?: DataHcpVaultClusterMetricsConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -453,9 +453,9 @@ export function dataHcpVaultClusterMetricsConfigToHclTerraform(struct?: DataHcpV
   return attrs;
 }
 
-export class DataHcpVaultClusterMetricsConfigOutputReference extends cdktf.ComplexObject {
+export class DataHcpVaultClusterMetricsConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -463,11 +463,11 @@ export class DataHcpVaultClusterMetricsConfigOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataHcpVaultClusterMetricsConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): DataHcpVaultClusterMetricsConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -476,12 +476,12 @@ export class DataHcpVaultClusterMetricsConfigOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataHcpVaultClusterMetricsConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataHcpVaultClusterMetricsConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -572,7 +572,7 @@ export class DataHcpVaultClusterMetricsConfigOutputReference extends cdktf.Compl
   }
 
   // http_headers - computed: true, optional: false, required: false
-  private _httpHeaders = new cdktf.StringMap(this, "http_headers");
+  private _httpHeaders = new cdktn.StringMap(this, "http_headers");
   public get httpHeaders() {
     return this._httpHeaders;
   }
@@ -618,15 +618,15 @@ export class DataHcpVaultClusterMetricsConfigOutputReference extends cdktf.Compl
   }
 }
 
-export class DataHcpVaultClusterMetricsConfigList extends cdktf.ComplexList {
-  public internalValue? : DataHcpVaultClusterMetricsConfig[] | cdktf.IResolvable
+export class DataHcpVaultClusterMetricsConfigList extends cdktn.ComplexList {
+  public internalValue? : DataHcpVaultClusterMetricsConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -644,25 +644,25 @@ export interface DataHcpVaultClusterTimeouts {
   readonly default?: string;
 }
 
-export function dataHcpVaultClusterTimeoutsToTerraform(struct?: DataHcpVaultClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataHcpVaultClusterTimeoutsToTerraform(struct?: DataHcpVaultClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default: cdktf.stringToTerraform(struct!.default),
+    default: cdktn.stringToTerraform(struct!.default),
   }
 }
 
 
-export function dataHcpVaultClusterTimeoutsToHclTerraform(struct?: DataHcpVaultClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataHcpVaultClusterTimeoutsToHclTerraform(struct?: DataHcpVaultClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default: {
-      value: cdktf.stringToHclTerraform(struct!.default),
+      value: cdktn.stringToHclTerraform(struct!.default),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -673,19 +673,19 @@ export function dataHcpVaultClusterTimeoutsToHclTerraform(struct?: DataHcpVaultC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataHcpVaultClusterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataHcpVaultClusterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataHcpVaultClusterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataHcpVaultClusterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -698,13 +698,13 @@ export class DataHcpVaultClusterTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataHcpVaultClusterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataHcpVaultClusterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._default = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -735,7 +735,7 @@ export class DataHcpVaultClusterTimeoutsOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_cluster hcp_vault_cluster}
 */
-export class DataHcpVaultCluster extends cdktf.TerraformDataSource {
+export class DataHcpVaultCluster extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -746,14 +746,14 @@ export class DataHcpVaultCluster extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataHcpVaultCluster resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataHcpVaultCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataHcpVaultCluster to import
   * @param importFromId The id of the existing DataHcpVaultCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataHcpVaultCluster to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_vault_cluster", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_vault_cluster", importId: importFromId, provider });
       }
 
   // ===========
@@ -947,7 +947,7 @@ export class DataHcpVaultCluster extends cdktf.TerraformDataSource {
   public get auditLogConfig() {
     return this._auditLogConfig;
   }
-  public putAuditLogConfig(value: DataHcpVaultClusterAuditLogConfig[] | cdktf.IResolvable) {
+  public putAuditLogConfig(value: DataHcpVaultClusterAuditLogConfig[] | cdktn.IResolvable) {
     this._auditLogConfig.internalValue = value;
   }
   public resetAuditLogConfig() {
@@ -963,7 +963,7 @@ export class DataHcpVaultCluster extends cdktf.TerraformDataSource {
   public get metricsConfig() {
     return this._metricsConfig;
   }
-  public putMetricsConfig(value: DataHcpVaultClusterMetricsConfig[] | cdktf.IResolvable) {
+  public putMetricsConfig(value: DataHcpVaultClusterMetricsConfig[] | cdktn.IResolvable) {
     this._metricsConfig.internalValue = value;
   }
   public resetMetricsConfig() {
@@ -996,11 +996,11 @@ export class DataHcpVaultCluster extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_id: cdktf.stringToTerraform(this._clusterId),
-      id: cdktf.stringToTerraform(this._id),
-      project_id: cdktf.stringToTerraform(this._projectId),
-      audit_log_config: cdktf.listMapper(dataHcpVaultClusterAuditLogConfigToTerraform, true)(this._auditLogConfig.internalValue),
-      metrics_config: cdktf.listMapper(dataHcpVaultClusterMetricsConfigToTerraform, true)(this._metricsConfig.internalValue),
+      cluster_id: cdktn.stringToTerraform(this._clusterId),
+      id: cdktn.stringToTerraform(this._id),
+      project_id: cdktn.stringToTerraform(this._projectId),
+      audit_log_config: cdktn.listMapper(dataHcpVaultClusterAuditLogConfigToTerraform, true)(this._auditLogConfig.internalValue),
+      metrics_config: cdktn.listMapper(dataHcpVaultClusterMetricsConfigToTerraform, true)(this._metricsConfig.internalValue),
       timeouts: dataHcpVaultClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1008,31 +1008,31 @@ export class DataHcpVaultCluster extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cluster_id: {
-        value: cdktf.stringToHclTerraform(this._clusterId),
+        value: cdktn.stringToHclTerraform(this._clusterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       audit_log_config: {
-        value: cdktf.listMapperHcl(dataHcpVaultClusterAuditLogConfigToHclTerraform, true)(this._auditLogConfig.internalValue),
+        value: cdktn.listMapperHcl(dataHcpVaultClusterAuditLogConfigToHclTerraform, true)(this._auditLogConfig.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataHcpVaultClusterAuditLogConfigList",
       },
       metrics_config: {
-        value: cdktf.listMapperHcl(dataHcpVaultClusterMetricsConfigToHclTerraform, true)(this._metricsConfig.internalValue),
+        value: cdktn.listMapperHcl(dataHcpVaultClusterMetricsConfigToHclTerraform, true)(this._metricsConfig.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataHcpVaultClusterMetricsConfigList",

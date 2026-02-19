@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LogStreamingDestinationConfig extends cdktf.TerraformMetaArguments {
+export interface LogStreamingDestinationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/log_streaming_destination#cloudwatch LogStreamingDestination#cloudwatch}
   */
@@ -58,46 +58,46 @@ export interface LogStreamingDestinationCloudwatch {
   readonly roleArn: string;
 }
 
-export function logStreamingDestinationCloudwatchToTerraform(struct?: LogStreamingDestinationCloudwatch | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logStreamingDestinationCloudwatchToTerraform(struct?: LogStreamingDestinationCloudwatch | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    external_id: cdktf.stringToTerraform(struct!.externalId),
-    log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
-    region: cdktf.stringToTerraform(struct!.region),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
+    log_group_name: cdktn.stringToTerraform(struct!.logGroupName),
+    region: cdktn.stringToTerraform(struct!.region),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
   }
 }
 
 
-export function logStreamingDestinationCloudwatchToHclTerraform(struct?: LogStreamingDestinationCloudwatch | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logStreamingDestinationCloudwatchToHclTerraform(struct?: LogStreamingDestinationCloudwatch | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     external_id: {
-      value: cdktf.stringToHclTerraform(struct!.externalId),
+      value: cdktn.stringToHclTerraform(struct!.externalId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_group_name: {
-      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      value: cdktn.stringToHclTerraform(struct!.logGroupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -108,19 +108,19 @@ export function logStreamingDestinationCloudwatchToHclTerraform(struct?: LogStre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogStreamingDestinationCloudwatchOutputReference extends cdktf.ComplexObject {
+export class LogStreamingDestinationCloudwatchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LogStreamingDestinationCloudwatch | cdktf.IResolvable | undefined {
+  public get internalValue(): LogStreamingDestinationCloudwatch | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -145,7 +145,7 @@ export class LogStreamingDestinationCloudwatchOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogStreamingDestinationCloudwatch | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogStreamingDestinationCloudwatch | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -154,7 +154,7 @@ export class LogStreamingDestinationCloudwatchOutputReference extends cdktf.Comp
       this._region = undefined;
       this._roleArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -244,39 +244,39 @@ export interface LogStreamingDestinationDatadog {
   readonly endpoint: string;
 }
 
-export function logStreamingDestinationDatadogToTerraform(struct?: LogStreamingDestinationDatadog | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logStreamingDestinationDatadogToTerraform(struct?: LogStreamingDestinationDatadog | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_key: cdktf.stringToTerraform(struct!.apiKey),
-    application_key: cdktf.stringToTerraform(struct!.applicationKey),
-    endpoint: cdktf.stringToTerraform(struct!.endpoint),
+    api_key: cdktn.stringToTerraform(struct!.apiKey),
+    application_key: cdktn.stringToTerraform(struct!.applicationKey),
+    endpoint: cdktn.stringToTerraform(struct!.endpoint),
   }
 }
 
 
-export function logStreamingDestinationDatadogToHclTerraform(struct?: LogStreamingDestinationDatadog | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logStreamingDestinationDatadogToHclTerraform(struct?: LogStreamingDestinationDatadog | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     api_key: {
-      value: cdktf.stringToHclTerraform(struct!.apiKey),
+      value: cdktn.stringToHclTerraform(struct!.apiKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     application_key: {
-      value: cdktf.stringToHclTerraform(struct!.applicationKey),
+      value: cdktn.stringToHclTerraform(struct!.applicationKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.endpoint),
+      value: cdktn.stringToHclTerraform(struct!.endpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -287,19 +287,19 @@ export function logStreamingDestinationDatadogToHclTerraform(struct?: LogStreami
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogStreamingDestinationDatadogOutputReference extends cdktf.ComplexObject {
+export class LogStreamingDestinationDatadogOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LogStreamingDestinationDatadog | cdktf.IResolvable | undefined {
+  public get internalValue(): LogStreamingDestinationDatadog | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -320,7 +320,7 @@ export class LogStreamingDestinationDatadogOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogStreamingDestinationDatadog | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogStreamingDestinationDatadog | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -328,7 +328,7 @@ export class LogStreamingDestinationDatadogOutputReference extends cdktf.Complex
       this._applicationKey = undefined;
       this._endpoint = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -398,32 +398,32 @@ export interface LogStreamingDestinationSplunkCloud {
   readonly token: string;
 }
 
-export function logStreamingDestinationSplunkCloudToTerraform(struct?: LogStreamingDestinationSplunkCloud | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logStreamingDestinationSplunkCloudToTerraform(struct?: LogStreamingDestinationSplunkCloud | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    endpoint: cdktf.stringToTerraform(struct!.endpoint),
-    token: cdktf.stringToTerraform(struct!.token),
+    endpoint: cdktn.stringToTerraform(struct!.endpoint),
+    token: cdktn.stringToTerraform(struct!.token),
   }
 }
 
 
-export function logStreamingDestinationSplunkCloudToHclTerraform(struct?: LogStreamingDestinationSplunkCloud | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logStreamingDestinationSplunkCloudToHclTerraform(struct?: LogStreamingDestinationSplunkCloud | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.endpoint),
+      value: cdktn.stringToHclTerraform(struct!.endpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     token: {
-      value: cdktf.stringToHclTerraform(struct!.token),
+      value: cdktn.stringToHclTerraform(struct!.token),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -434,19 +434,19 @@ export function logStreamingDestinationSplunkCloudToHclTerraform(struct?: LogStr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogStreamingDestinationSplunkCloudOutputReference extends cdktf.ComplexObject {
+export class LogStreamingDestinationSplunkCloudOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LogStreamingDestinationSplunkCloud | cdktf.IResolvable | undefined {
+  public get internalValue(): LogStreamingDestinationSplunkCloud | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -463,14 +463,14 @@ export class LogStreamingDestinationSplunkCloudOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogStreamingDestinationSplunkCloud | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogStreamingDestinationSplunkCloud | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._endpoint = undefined;
       this._token = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -512,7 +512,7 @@ export class LogStreamingDestinationSplunkCloudOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/log_streaming_destination hcp_log_streaming_destination}
 */
-export class LogStreamingDestination extends cdktf.TerraformResource {
+export class LogStreamingDestination extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -523,14 +523,14 @@ export class LogStreamingDestination extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LogStreamingDestination resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LogStreamingDestination resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogStreamingDestination to import
   * @param importFromId The id of the existing LogStreamingDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/log_streaming_destination#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogStreamingDestination to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_log_streaming_destination", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_log_streaming_destination", importId: importFromId, provider });
       }
 
   // ===========
@@ -644,7 +644,7 @@ export class LogStreamingDestination extends cdktf.TerraformResource {
     return {
       cloudwatch: logStreamingDestinationCloudwatchToTerraform(this._cloudwatch.internalValue),
       datadog: logStreamingDestinationDatadogToTerraform(this._datadog.internalValue),
-      name: cdktf.stringToTerraform(this._name),
+      name: cdktn.stringToTerraform(this._name),
       splunk_cloud: logStreamingDestinationSplunkCloudToTerraform(this._splunkCloud.internalValue),
     };
   }
@@ -664,7 +664,7 @@ export class LogStreamingDestination extends cdktf.TerraformResource {
         storageClassType: "LogStreamingDestinationDatadog",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
