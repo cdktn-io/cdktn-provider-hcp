@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VaultSecretsSecretConfig extends cdktf.TerraformMetaArguments {
+export interface VaultSecretsSecretConfig extends cdktn.TerraformMetaArguments {
   /**
   * The name of the application the secret can be found in
   *
@@ -41,7 +41,7 @@ export interface VaultSecretsSecretConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_secrets_secret hcp_vault_secrets_secret}
 */
-export class VaultSecretsSecret extends cdktf.TerraformResource {
+export class VaultSecretsSecret extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -52,14 +52,14 @@ export class VaultSecretsSecret extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VaultSecretsSecret resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VaultSecretsSecret resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VaultSecretsSecret to import
   * @param importFromId The id of the existing VaultSecretsSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_secrets_secret#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VaultSecretsSecret to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_vault_secrets_secret", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_vault_secrets_secret", importId: importFromId, provider });
       }
 
   // ===========
@@ -170,35 +170,35 @@ export class VaultSecretsSecret extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      app_name: cdktf.stringToTerraform(this._appName),
-      project_id: cdktf.stringToTerraform(this._projectId),
-      secret_name: cdktf.stringToTerraform(this._secretName),
-      secret_value: cdktf.stringToTerraform(this._secretValue),
+      app_name: cdktn.stringToTerraform(this._appName),
+      project_id: cdktn.stringToTerraform(this._projectId),
+      secret_name: cdktn.stringToTerraform(this._secretName),
+      secret_value: cdktn.stringToTerraform(this._secretValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       app_name: {
-        value: cdktf.stringToHclTerraform(this._appName),
+        value: cdktn.stringToHclTerraform(this._appName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret_name: {
-        value: cdktf.stringToHclTerraform(this._secretName),
+        value: cdktn.stringToHclTerraform(this._secretName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret_value: {
-        value: cdktf.stringToHclTerraform(this._secretValue),
+        value: cdktn.stringToHclTerraform(this._secretValue),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

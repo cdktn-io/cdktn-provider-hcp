@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataHcpVaultRadarResourcesConfig extends cdktf.TerraformMetaArguments {
+export interface DataHcpVaultRadarResourcesConfig extends cdktn.TerraformMetaArguments {
   /**
   * The ID of the HCP project where Vault Radar is located. If not specified, the project specified in the HCP Provider config block will be used, if configured.
   *
@@ -29,8 +29,8 @@ export interface DataHcpVaultRadarResourcesResources {
 }
 
 export function dataHcpVaultRadarResourcesResourcesToTerraform(struct?: DataHcpVaultRadarResourcesResources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -39,8 +39,8 @@ export function dataHcpVaultRadarResourcesResourcesToTerraform(struct?: DataHcpV
 
 
 export function dataHcpVaultRadarResourcesResourcesToHclTerraform(struct?: DataHcpVaultRadarResourcesResources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -48,7 +48,7 @@ export function dataHcpVaultRadarResourcesResourcesToHclTerraform(struct?: DataH
   return attrs;
 }
 
-export class DataHcpVaultRadarResourcesResourcesOutputReference extends cdktf.ComplexObject {
+export class DataHcpVaultRadarResourcesResourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -57,7 +57,7 @@ export class DataHcpVaultRadarResourcesResourcesOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -147,14 +147,14 @@ export class DataHcpVaultRadarResourcesResourcesOutputReference extends cdktf.Co
   }
 }
 
-export class DataHcpVaultRadarResourcesResourcesList extends cdktf.ComplexList {
+export class DataHcpVaultRadarResourcesResourcesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -171,7 +171,7 @@ export interface DataHcpVaultRadarResourcesUriLikeFilter {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_radar_resources#case_insensitive DataHcpVaultRadarResources#case_insensitive}
   */
-  readonly caseInsensitive?: boolean | cdktf.IResolvable;
+  readonly caseInsensitive?: boolean | cdktn.IResolvable;
   /**
   * URI like filters to apply radar resources. Each entry in the list will act like an or condition.
   *
@@ -180,32 +180,32 @@ export interface DataHcpVaultRadarResourcesUriLikeFilter {
   readonly values: string[];
 }
 
-export function dataHcpVaultRadarResourcesUriLikeFilterToTerraform(struct?: DataHcpVaultRadarResourcesUriLikeFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataHcpVaultRadarResourcesUriLikeFilterToTerraform(struct?: DataHcpVaultRadarResourcesUriLikeFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    case_insensitive: cdktf.booleanToTerraform(struct!.caseInsensitive),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    case_insensitive: cdktn.booleanToTerraform(struct!.caseInsensitive),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function dataHcpVaultRadarResourcesUriLikeFilterToHclTerraform(struct?: DataHcpVaultRadarResourcesUriLikeFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataHcpVaultRadarResourcesUriLikeFilterToHclTerraform(struct?: DataHcpVaultRadarResourcesUriLikeFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     case_insensitive: {
-      value: cdktf.booleanToHclTerraform(struct!.caseInsensitive),
+      value: cdktn.booleanToHclTerraform(struct!.caseInsensitive),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -216,19 +216,19 @@ export function dataHcpVaultRadarResourcesUriLikeFilterToHclTerraform(struct?: D
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataHcpVaultRadarResourcesUriLikeFilterOutputReference extends cdktf.ComplexObject {
+export class DataHcpVaultRadarResourcesUriLikeFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataHcpVaultRadarResourcesUriLikeFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): DataHcpVaultRadarResourcesUriLikeFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -245,14 +245,14 @@ export class DataHcpVaultRadarResourcesUriLikeFilterOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataHcpVaultRadarResourcesUriLikeFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataHcpVaultRadarResourcesUriLikeFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._caseInsensitive = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -265,11 +265,11 @@ export class DataHcpVaultRadarResourcesUriLikeFilterOutputReference extends cdkt
   }
 
   // case_insensitive - computed: false, optional: true, required: false
-  private _caseInsensitive?: boolean | cdktf.IResolvable; 
+  private _caseInsensitive?: boolean | cdktn.IResolvable; 
   public get caseInsensitive() {
     return this.getBooleanAttribute('case_insensitive');
   }
-  public set caseInsensitive(value: boolean | cdktf.IResolvable) {
+  public set caseInsensitive(value: boolean | cdktn.IResolvable) {
     this._caseInsensitive = value;
   }
   public resetCaseInsensitive() {
@@ -297,7 +297,7 @@ export class DataHcpVaultRadarResourcesUriLikeFilterOutputReference extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_radar_resources hcp_vault_radar_resources}
 */
-export class DataHcpVaultRadarResources extends cdktf.TerraformDataSource {
+export class DataHcpVaultRadarResources extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -308,14 +308,14 @@ export class DataHcpVaultRadarResources extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataHcpVaultRadarResources resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataHcpVaultRadarResources resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataHcpVaultRadarResources to import
   * @param importFromId The id of the existing DataHcpVaultRadarResources that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_radar_resources#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataHcpVaultRadarResources to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_vault_radar_resources", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_vault_radar_resources", importId: importFromId, provider });
       }
 
   // ===========
@@ -394,7 +394,7 @@ export class DataHcpVaultRadarResources extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      project_id: cdktf.stringToTerraform(this._projectId),
+      project_id: cdktn.stringToTerraform(this._projectId),
       uri_like_filter: dataHcpVaultRadarResourcesUriLikeFilterToTerraform(this._uriLikeFilter.internalValue),
     };
   }
@@ -402,7 +402,7 @@ export class DataHcpVaultRadarResources extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

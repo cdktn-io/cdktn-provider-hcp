@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,17 +7,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataHcpIamPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface DataHcpIamPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * A binding associates a set of principals to a role.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/iam_policy#bindings DataHcpIamPolicy#bindings}
   */
-  readonly bindings: DataHcpIamPolicyBindings[] | cdktf.IResolvable;
+  readonly bindings: DataHcpIamPolicyBindings[] | cdktn.IResolvable;
 }
 export interface DataHcpIamPolicyBindings {
   /**
@@ -34,32 +34,32 @@ export interface DataHcpIamPolicyBindings {
   readonly role: string;
 }
 
-export function dataHcpIamPolicyBindingsToTerraform(struct?: DataHcpIamPolicyBindings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataHcpIamPolicyBindingsToTerraform(struct?: DataHcpIamPolicyBindings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    principals: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.principals),
-    role: cdktf.stringToTerraform(struct!.role),
+    principals: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.principals),
+    role: cdktn.stringToTerraform(struct!.role),
   }
 }
 
 
-export function dataHcpIamPolicyBindingsToHclTerraform(struct?: DataHcpIamPolicyBindings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataHcpIamPolicyBindingsToHclTerraform(struct?: DataHcpIamPolicyBindings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     principals: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.principals),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.principals),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     role: {
-      value: cdktf.stringToHclTerraform(struct!.role),
+      value: cdktn.stringToHclTerraform(struct!.role),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -70,9 +70,9 @@ export function dataHcpIamPolicyBindingsToHclTerraform(struct?: DataHcpIamPolicy
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataHcpIamPolicyBindingsOutputReference extends cdktf.ComplexObject {
+export class DataHcpIamPolicyBindingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -80,11 +80,11 @@ export class DataHcpIamPolicyBindingsOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataHcpIamPolicyBindings | cdktf.IResolvable | undefined {
+  public get internalValue(): DataHcpIamPolicyBindings | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -101,14 +101,14 @@ export class DataHcpIamPolicyBindingsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataHcpIamPolicyBindings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataHcpIamPolicyBindings | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._principals = undefined;
       this._role = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -123,7 +123,7 @@ export class DataHcpIamPolicyBindingsOutputReference extends cdktf.ComplexObject
   // principals - computed: false, optional: false, required: true
   private _principals?: string[]; 
   public get principals() {
-    return cdktf.Fn.tolist(this.getListAttribute('principals'));
+    return cdktn.Fn.tolist(this.getListAttribute('principals'));
   }
   public set principals(value: string[]) {
     this._principals = value;
@@ -147,15 +147,15 @@ export class DataHcpIamPolicyBindingsOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class DataHcpIamPolicyBindingsList extends cdktf.ComplexList {
-  public internalValue? : DataHcpIamPolicyBindings[] | cdktf.IResolvable
+export class DataHcpIamPolicyBindingsList extends cdktn.ComplexList {
+  public internalValue? : DataHcpIamPolicyBindings[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -170,7 +170,7 @@ export class DataHcpIamPolicyBindingsList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/iam_policy hcp_iam_policy}
 */
-export class DataHcpIamPolicy extends cdktf.TerraformDataSource {
+export class DataHcpIamPolicy extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -181,14 +181,14 @@ export class DataHcpIamPolicy extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataHcpIamPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataHcpIamPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataHcpIamPolicy to import
   * @param importFromId The id of the existing DataHcpIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/iam_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataHcpIamPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_iam_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_iam_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -230,7 +230,7 @@ export class DataHcpIamPolicy extends cdktf.TerraformDataSource {
   public get bindings() {
     return this._bindings;
   }
-  public putBindings(value: DataHcpIamPolicyBindings[] | cdktf.IResolvable) {
+  public putBindings(value: DataHcpIamPolicyBindings[] | cdktn.IResolvable) {
     this._bindings.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -249,14 +249,14 @@ export class DataHcpIamPolicy extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bindings: cdktf.listMapper(dataHcpIamPolicyBindingsToTerraform, false)(this._bindings.internalValue),
+      bindings: cdktn.listMapper(dataHcpIamPolicyBindingsToTerraform, false)(this._bindings.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bindings: {
-        value: cdktf.listMapperHcl(dataHcpIamPolicyBindingsToHclTerraform, false)(this._bindings.internalValue),
+        value: cdktn.listMapperHcl(dataHcpIamPolicyBindingsToHclTerraform, false)(this._bindings.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DataHcpIamPolicyBindingsList",

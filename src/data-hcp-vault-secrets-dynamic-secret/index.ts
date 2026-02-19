@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataHcpVaultSecretsDynamicSecretConfig extends cdktf.TerraformMetaArguments {
+export interface DataHcpVaultSecretsDynamicSecretConfig extends cdktn.TerraformMetaArguments {
   /**
   * The name of the Vault Secrets application.
   *
@@ -29,7 +29,7 @@ export interface DataHcpVaultSecretsDynamicSecretConfig extends cdktf.TerraformM
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_secrets_dynamic_secret hcp_vault_secrets_dynamic_secret}
 */
-export class DataHcpVaultSecretsDynamicSecret extends cdktf.TerraformDataSource {
+export class DataHcpVaultSecretsDynamicSecret extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -40,14 +40,14 @@ export class DataHcpVaultSecretsDynamicSecret extends cdktf.TerraformDataSource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataHcpVaultSecretsDynamicSecret resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataHcpVaultSecretsDynamicSecret resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataHcpVaultSecretsDynamicSecret to import
   * @param importFromId The id of the existing DataHcpVaultSecretsDynamicSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_secrets_dynamic_secret#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataHcpVaultSecretsDynamicSecret to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_vault_secrets_dynamic_secret", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_vault_secrets_dynamic_secret", importId: importFromId, provider });
       }
 
   // ===========
@@ -127,7 +127,7 @@ export class DataHcpVaultSecretsDynamicSecret extends cdktf.TerraformDataSource 
   }
 
   // secret_values - computed: true, optional: false, required: false
-  private _secretValues = new cdktf.StringMap(this, "secret_values");
+  private _secretValues = new cdktn.StringMap(this, "secret_values");
   public get secretValues() {
     return this._secretValues;
   }
@@ -138,21 +138,21 @@ export class DataHcpVaultSecretsDynamicSecret extends cdktf.TerraformDataSource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      app_name: cdktf.stringToTerraform(this._appName),
-      secret_name: cdktf.stringToTerraform(this._secretName),
+      app_name: cdktn.stringToTerraform(this._appName),
+      secret_name: cdktn.stringToTerraform(this._secretName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       app_name: {
-        value: cdktf.stringToHclTerraform(this._appName),
+        value: cdktn.stringToHclTerraform(this._appName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret_name: {
-        value: cdktf.stringToHclTerraform(this._secretName),
+        value: cdktn.stringToHclTerraform(this._secretName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

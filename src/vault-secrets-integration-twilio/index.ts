@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VaultSecretsIntegrationTwilioConfig extends cdktf.TerraformMetaArguments {
+export interface VaultSecretsIntegrationTwilioConfig extends cdktn.TerraformMetaArguments {
   /**
   * Capabilities enabled for the integration. See the Vault Secrets documentation for the list of supported capabilities per provider.
   *
@@ -58,39 +58,39 @@ export interface VaultSecretsIntegrationTwilioStaticCredentialDetails {
   readonly apiKeySid: string;
 }
 
-export function vaultSecretsIntegrationTwilioStaticCredentialDetailsToTerraform(struct?: VaultSecretsIntegrationTwilioStaticCredentialDetails | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultSecretsIntegrationTwilioStaticCredentialDetailsToTerraform(struct?: VaultSecretsIntegrationTwilioStaticCredentialDetails | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account_sid: cdktf.stringToTerraform(struct!.accountSid),
-    api_key_secret: cdktf.stringToTerraform(struct!.apiKeySecret),
-    api_key_sid: cdktf.stringToTerraform(struct!.apiKeySid),
+    account_sid: cdktn.stringToTerraform(struct!.accountSid),
+    api_key_secret: cdktn.stringToTerraform(struct!.apiKeySecret),
+    api_key_sid: cdktn.stringToTerraform(struct!.apiKeySid),
   }
 }
 
 
-export function vaultSecretsIntegrationTwilioStaticCredentialDetailsToHclTerraform(struct?: VaultSecretsIntegrationTwilioStaticCredentialDetails | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultSecretsIntegrationTwilioStaticCredentialDetailsToHclTerraform(struct?: VaultSecretsIntegrationTwilioStaticCredentialDetails | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account_sid: {
-      value: cdktf.stringToHclTerraform(struct!.accountSid),
+      value: cdktn.stringToHclTerraform(struct!.accountSid),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     api_key_secret: {
-      value: cdktf.stringToHclTerraform(struct!.apiKeySecret),
+      value: cdktn.stringToHclTerraform(struct!.apiKeySecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     api_key_sid: {
-      value: cdktf.stringToHclTerraform(struct!.apiKeySid),
+      value: cdktn.stringToHclTerraform(struct!.apiKeySid),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -101,19 +101,19 @@ export function vaultSecretsIntegrationTwilioStaticCredentialDetailsToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VaultSecretsIntegrationTwilioStaticCredentialDetailsOutputReference extends cdktf.ComplexObject {
+export class VaultSecretsIntegrationTwilioStaticCredentialDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VaultSecretsIntegrationTwilioStaticCredentialDetails | cdktf.IResolvable | undefined {
+  public get internalValue(): VaultSecretsIntegrationTwilioStaticCredentialDetails | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -134,7 +134,7 @@ export class VaultSecretsIntegrationTwilioStaticCredentialDetailsOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VaultSecretsIntegrationTwilioStaticCredentialDetails | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VaultSecretsIntegrationTwilioStaticCredentialDetails | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -142,7 +142,7 @@ export class VaultSecretsIntegrationTwilioStaticCredentialDetailsOutputReference
       this._apiKeySecret = undefined;
       this._apiKeySid = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -198,7 +198,7 @@ export class VaultSecretsIntegrationTwilioStaticCredentialDetailsOutputReference
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_secrets_integration_twilio hcp_vault_secrets_integration_twilio}
 */
-export class VaultSecretsIntegrationTwilio extends cdktf.TerraformResource {
+export class VaultSecretsIntegrationTwilio extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -209,14 +209,14 @@ export class VaultSecretsIntegrationTwilio extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VaultSecretsIntegrationTwilio resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VaultSecretsIntegrationTwilio resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VaultSecretsIntegrationTwilio to import
   * @param importFromId The id of the existing VaultSecretsIntegrationTwilio that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_secrets_integration_twilio#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VaultSecretsIntegrationTwilio to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_vault_secrets_integration_twilio", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_vault_secrets_integration_twilio", importId: importFromId, provider });
       }
 
   // ===========
@@ -259,7 +259,7 @@ export class VaultSecretsIntegrationTwilio extends cdktf.TerraformResource {
   // capabilities - computed: false, optional: false, required: true
   private _capabilities?: string[]; 
   public get capabilities() {
-    return cdktf.Fn.tolist(this.getListAttribute('capabilities'));
+    return cdktn.Fn.tolist(this.getListAttribute('capabilities'));
   }
   public set capabilities(value: string[]) {
     this._capabilities = value;
@@ -335,9 +335,9 @@ export class VaultSecretsIntegrationTwilio extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      capabilities: cdktf.listMapper(cdktf.stringToTerraform, false)(this._capabilities),
-      name: cdktf.stringToTerraform(this._name),
-      project_id: cdktf.stringToTerraform(this._projectId),
+      capabilities: cdktn.listMapper(cdktn.stringToTerraform, false)(this._capabilities),
+      name: cdktn.stringToTerraform(this._name),
+      project_id: cdktn.stringToTerraform(this._projectId),
       static_credential_details: vaultSecretsIntegrationTwilioStaticCredentialDetailsToTerraform(this._staticCredentialDetails.internalValue),
     };
   }
@@ -345,19 +345,19 @@ export class VaultSecretsIntegrationTwilio extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       capabilities: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._capabilities),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._capabilities),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

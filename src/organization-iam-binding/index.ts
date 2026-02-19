@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OrganizationIamBindingConfig extends cdktf.TerraformMetaArguments {
+export interface OrganizationIamBindingConfig extends cdktn.TerraformMetaArguments {
   /**
   * The principal to bind to the given role.
   *
@@ -29,7 +29,7 @@ export interface OrganizationIamBindingConfig extends cdktf.TerraformMetaArgumen
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/organization_iam_binding hcp_organization_iam_binding}
 */
-export class OrganizationIamBinding extends cdktf.TerraformResource {
+export class OrganizationIamBinding extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -40,14 +40,14 @@ export class OrganizationIamBinding extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OrganizationIamBinding resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OrganizationIamBinding resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrganizationIamBinding to import
   * @param importFromId The id of the existing OrganizationIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/organization_iam_binding#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrganizationIamBinding to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_organization_iam_binding", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_organization_iam_binding", importId: importFromId, provider });
       }
 
   // ===========
@@ -117,21 +117,21 @@ export class OrganizationIamBinding extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      principal_id: cdktf.stringToTerraform(this._principalId),
-      role: cdktf.stringToTerraform(this._role),
+      principal_id: cdktn.stringToTerraform(this._principalId),
+      role: cdktn.stringToTerraform(this._role),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       principal_id: {
-        value: cdktf.stringToHclTerraform(this._principalId),
+        value: cdktn.stringToHclTerraform(this._principalId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role: {
-        value: cdktf.stringToHclTerraform(this._role),
+        value: cdktn.stringToHclTerraform(this._role),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

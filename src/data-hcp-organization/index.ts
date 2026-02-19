@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,17 +7,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataHcpOrganizationConfig extends cdktf.TerraformMetaArguments {
+export interface DataHcpOrganizationConfig extends cdktn.TerraformMetaArguments {
 }
 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/organization hcp_organization}
 */
-export class DataHcpOrganization extends cdktf.TerraformDataSource {
+export class DataHcpOrganization extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -28,14 +28,14 @@ export class DataHcpOrganization extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataHcpOrganization resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataHcpOrganization resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataHcpOrganization to import
   * @param importFromId The id of the existing DataHcpOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/organization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataHcpOrganization to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_organization", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_organization", importId: importFromId, provider });
       }
 
   // ===========

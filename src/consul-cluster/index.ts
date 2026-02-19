@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,17 +7,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ConsulClusterConfig extends cdktf.TerraformMetaArguments {
+export interface ConsulClusterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Enables automatic HVN to HVN peering when creating a secondary cluster in a federation. The alternative to using the auto-accept feature is to create an [`hcp_hvn_peering_connection`](hvn_peering_connection.md) resource that explicitly defines the HVN resources that are allowed to communicate with each other.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/consul_cluster#auto_hvn_to_hvn_peering ConsulCluster#auto_hvn_to_hvn_peering}
   */
-  readonly autoHvnToHvnPeering?: boolean | cdktf.IResolvable;
+  readonly autoHvnToHvnPeering?: boolean | cdktn.IResolvable;
   /**
   * The ID of the HCP Consul cluster.
   *
@@ -29,7 +29,7 @@ export interface ConsulClusterConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/consul_cluster#connect_enabled ConsulCluster#connect_enabled}
   */
-  readonly connectEnabled?: boolean | cdktf.IResolvable;
+  readonly connectEnabled?: boolean | cdktn.IResolvable;
   /**
   * The Consul data center name of the cluster. If not specified, it is defaulted to the value of `cluster_id`.
   *
@@ -75,7 +75,7 @@ export interface ConsulClusterConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/consul_cluster#public_endpoint ConsulCluster#public_endpoint}
   */
-  readonly publicEndpoint?: boolean | cdktf.IResolvable;
+  readonly publicEndpoint?: boolean | cdktn.IResolvable;
   /**
   * The t-shirt size representation of each server VM that this Consul cluster is provisioned with. Valid option for development tier - `x_small`. Valid options for other tiers - `small`, `medium`, `large`. For more details - https://cloud.hashicorp.com/pricing/consul. Upgrading the size of a cluster after creation is allowed.
   *
@@ -93,7 +93,7 @@ export interface ConsulClusterConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/consul_cluster#ip_allowlist ConsulCluster#ip_allowlist}
   */
-  readonly ipAllowlist?: ConsulClusterIpAllowlistStruct[] | cdktf.IResolvable;
+  readonly ipAllowlist?: ConsulClusterIpAllowlistStruct[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -116,32 +116,32 @@ export interface ConsulClusterIpAllowlistStruct {
   readonly description?: string;
 }
 
-export function consulClusterIpAllowlistStructToTerraform(struct?: ConsulClusterIpAllowlistStruct | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function consulClusterIpAllowlistStructToTerraform(struct?: ConsulClusterIpAllowlistStruct | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address: cdktf.stringToTerraform(struct!.address),
-    description: cdktf.stringToTerraform(struct!.description),
+    address: cdktn.stringToTerraform(struct!.address),
+    description: cdktn.stringToTerraform(struct!.description),
   }
 }
 
 
-export function consulClusterIpAllowlistStructToHclTerraform(struct?: ConsulClusterIpAllowlistStruct | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function consulClusterIpAllowlistStructToHclTerraform(struct?: ConsulClusterIpAllowlistStruct | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address: {
-      value: cdktf.stringToHclTerraform(struct!.address),
+      value: cdktn.stringToHclTerraform(struct!.address),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -152,9 +152,9 @@ export function consulClusterIpAllowlistStructToHclTerraform(struct?: ConsulClus
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConsulClusterIpAllowlistStructOutputReference extends cdktf.ComplexObject {
+export class ConsulClusterIpAllowlistStructOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -162,11 +162,11 @@ export class ConsulClusterIpAllowlistStructOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ConsulClusterIpAllowlistStruct | cdktf.IResolvable | undefined {
+  public get internalValue(): ConsulClusterIpAllowlistStruct | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -183,14 +183,14 @@ export class ConsulClusterIpAllowlistStructOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ConsulClusterIpAllowlistStruct | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ConsulClusterIpAllowlistStruct | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._address = undefined;
       this._description = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -232,15 +232,15 @@ export class ConsulClusterIpAllowlistStructOutputReference extends cdktf.Complex
   }
 }
 
-export class ConsulClusterIpAllowlistStructList extends cdktf.ComplexList {
-  public internalValue? : ConsulClusterIpAllowlistStruct[] | cdktf.IResolvable
+export class ConsulClusterIpAllowlistStructList extends cdktn.ComplexList {
+  public internalValue? : ConsulClusterIpAllowlistStruct[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -270,46 +270,46 @@ export interface ConsulClusterTimeouts {
   readonly update?: string;
 }
 
-export function consulClusterTimeoutsToTerraform(struct?: ConsulClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function consulClusterTimeoutsToTerraform(struct?: ConsulClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    default: cdktf.stringToTerraform(struct!.default),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    default: cdktn.stringToTerraform(struct!.default),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function consulClusterTimeoutsToHclTerraform(struct?: ConsulClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function consulClusterTimeoutsToHclTerraform(struct?: ConsulClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     default: {
-      value: cdktf.stringToHclTerraform(struct!.default),
+      value: cdktn.stringToHclTerraform(struct!.default),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -320,19 +320,19 @@ export function consulClusterTimeoutsToHclTerraform(struct?: ConsulClusterTimeou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConsulClusterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ConsulClusterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ConsulClusterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ConsulClusterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -357,7 +357,7 @@ export class ConsulClusterTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ConsulClusterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ConsulClusterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -366,7 +366,7 @@ export class ConsulClusterTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -448,7 +448,7 @@ export class ConsulClusterTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/consul_cluster hcp_consul_cluster}
 */
-export class ConsulCluster extends cdktf.TerraformResource {
+export class ConsulCluster extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -459,14 +459,14 @@ export class ConsulCluster extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ConsulCluster resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ConsulCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConsulCluster to import
   * @param importFromId The id of the existing ConsulCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/consul_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConsulCluster to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_consul_cluster", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_consul_cluster", importId: importFromId, provider });
       }
 
   // ===========
@@ -517,11 +517,11 @@ export class ConsulCluster extends cdktf.TerraformResource {
   // ==========
 
   // auto_hvn_to_hvn_peering - computed: true, optional: true, required: false
-  private _autoHvnToHvnPeering?: boolean | cdktf.IResolvable; 
+  private _autoHvnToHvnPeering?: boolean | cdktn.IResolvable; 
   public get autoHvnToHvnPeering() {
     return this.getBooleanAttribute('auto_hvn_to_hvn_peering');
   }
-  public set autoHvnToHvnPeering(value: boolean | cdktf.IResolvable) {
+  public set autoHvnToHvnPeering(value: boolean | cdktn.IResolvable) {
     this._autoHvnToHvnPeering = value;
   }
   public resetAutoHvnToHvnPeering() {
@@ -551,11 +551,11 @@ export class ConsulCluster extends cdktf.TerraformResource {
   }
 
   // connect_enabled - computed: false, optional: true, required: false
-  private _connectEnabled?: boolean | cdktf.IResolvable; 
+  private _connectEnabled?: boolean | cdktn.IResolvable; 
   public get connectEnabled() {
     return this.getBooleanAttribute('connect_enabled');
   }
-  public set connectEnabled(value: boolean | cdktf.IResolvable) {
+  public set connectEnabled(value: boolean | cdktn.IResolvable) {
     this._connectEnabled = value;
   }
   public resetConnectEnabled() {
@@ -715,11 +715,11 @@ export class ConsulCluster extends cdktf.TerraformResource {
   }
 
   // public_endpoint - computed: false, optional: true, required: false
-  private _publicEndpoint?: boolean | cdktf.IResolvable; 
+  private _publicEndpoint?: boolean | cdktn.IResolvable; 
   public get publicEndpoint() {
     return this.getBooleanAttribute('public_endpoint');
   }
-  public set publicEndpoint(value: boolean | cdktf.IResolvable) {
+  public set publicEndpoint(value: boolean | cdktn.IResolvable) {
     this._publicEndpoint = value;
   }
   public resetPublicEndpoint() {
@@ -784,7 +784,7 @@ export class ConsulCluster extends cdktf.TerraformResource {
   public get ipAllowlist() {
     return this._ipAllowlist;
   }
-  public putIpAllowlist(value: ConsulClusterIpAllowlistStruct[] | cdktf.IResolvable) {
+  public putIpAllowlist(value: ConsulClusterIpAllowlistStruct[] | cdktn.IResolvable) {
     this._ipAllowlist.internalValue = value;
   }
   public resetIpAllowlist() {
@@ -817,19 +817,19 @@ export class ConsulCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_hvn_to_hvn_peering: cdktf.booleanToTerraform(this._autoHvnToHvnPeering),
-      cluster_id: cdktf.stringToTerraform(this._clusterId),
-      connect_enabled: cdktf.booleanToTerraform(this._connectEnabled),
-      datacenter: cdktf.stringToTerraform(this._datacenter),
-      hvn_id: cdktf.stringToTerraform(this._hvnId),
-      id: cdktf.stringToTerraform(this._id),
-      min_consul_version: cdktf.stringToTerraform(this._minConsulVersion),
-      primary_link: cdktf.stringToTerraform(this._primaryLink),
-      project_id: cdktf.stringToTerraform(this._projectId),
-      public_endpoint: cdktf.booleanToTerraform(this._publicEndpoint),
-      size: cdktf.stringToTerraform(this._size),
-      tier: cdktf.stringToTerraform(this._tier),
-      ip_allowlist: cdktf.listMapper(consulClusterIpAllowlistStructToTerraform, true)(this._ipAllowlist.internalValue),
+      auto_hvn_to_hvn_peering: cdktn.booleanToTerraform(this._autoHvnToHvnPeering),
+      cluster_id: cdktn.stringToTerraform(this._clusterId),
+      connect_enabled: cdktn.booleanToTerraform(this._connectEnabled),
+      datacenter: cdktn.stringToTerraform(this._datacenter),
+      hvn_id: cdktn.stringToTerraform(this._hvnId),
+      id: cdktn.stringToTerraform(this._id),
+      min_consul_version: cdktn.stringToTerraform(this._minConsulVersion),
+      primary_link: cdktn.stringToTerraform(this._primaryLink),
+      project_id: cdktn.stringToTerraform(this._projectId),
+      public_endpoint: cdktn.booleanToTerraform(this._publicEndpoint),
+      size: cdktn.stringToTerraform(this._size),
+      tier: cdktn.stringToTerraform(this._tier),
+      ip_allowlist: cdktn.listMapper(consulClusterIpAllowlistStructToTerraform, true)(this._ipAllowlist.internalValue),
       timeouts: consulClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -837,79 +837,79 @@ export class ConsulCluster extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auto_hvn_to_hvn_peering: {
-        value: cdktf.booleanToHclTerraform(this._autoHvnToHvnPeering),
+        value: cdktn.booleanToHclTerraform(this._autoHvnToHvnPeering),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       cluster_id: {
-        value: cdktf.stringToHclTerraform(this._clusterId),
+        value: cdktn.stringToHclTerraform(this._clusterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       connect_enabled: {
-        value: cdktf.booleanToHclTerraform(this._connectEnabled),
+        value: cdktn.booleanToHclTerraform(this._connectEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       datacenter: {
-        value: cdktf.stringToHclTerraform(this._datacenter),
+        value: cdktn.stringToHclTerraform(this._datacenter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hvn_id: {
-        value: cdktf.stringToHclTerraform(this._hvnId),
+        value: cdktn.stringToHclTerraform(this._hvnId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       min_consul_version: {
-        value: cdktf.stringToHclTerraform(this._minConsulVersion),
+        value: cdktn.stringToHclTerraform(this._minConsulVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       primary_link: {
-        value: cdktf.stringToHclTerraform(this._primaryLink),
+        value: cdktn.stringToHclTerraform(this._primaryLink),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_endpoint: {
-        value: cdktf.booleanToHclTerraform(this._publicEndpoint),
+        value: cdktn.booleanToHclTerraform(this._publicEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       size: {
-        value: cdktf.stringToHclTerraform(this._size),
+        value: cdktn.stringToHclTerraform(this._size),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tier: {
-        value: cdktf.stringToHclTerraform(this._tier),
+        value: cdktn.stringToHclTerraform(this._tier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_allowlist: {
-        value: cdktf.listMapperHcl(consulClusterIpAllowlistStructToHclTerraform, true)(this._ipAllowlist.internalValue),
+        value: cdktn.listMapperHcl(consulClusterIpAllowlistStructToHclTerraform, true)(this._ipAllowlist.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ConsulClusterIpAllowlistStructList",

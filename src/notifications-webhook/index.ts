@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NotificationsWebhookConfig extends cdktf.TerraformMetaArguments {
+export interface NotificationsWebhookConfig extends cdktn.TerraformMetaArguments {
   /**
   * The webhook configuration used to deliver event payloads.
   *
@@ -29,7 +29,7 @@ export interface NotificationsWebhookConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/notifications_webhook#enabled NotificationsWebhook#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The webhook's name.
   *
@@ -47,7 +47,7 @@ export interface NotificationsWebhookConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/notifications_webhook#subscriptions NotificationsWebhook#subscriptions}
   */
-  readonly subscriptions?: NotificationsWebhookSubscriptions[] | cdktf.IResolvable;
+  readonly subscriptions?: NotificationsWebhookSubscriptions[] | cdktn.IResolvable;
 }
 export interface NotificationsWebhookConfigA {
   /**
@@ -66,32 +66,32 @@ export interface NotificationsWebhookConfigA {
   readonly url: string;
 }
 
-export function notificationsWebhookConfigAToTerraform(struct?: NotificationsWebhookConfigA | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function notificationsWebhookConfigAToTerraform(struct?: NotificationsWebhookConfigA | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hmac_key: cdktf.stringToTerraform(struct!.hmacKey),
-    url: cdktf.stringToTerraform(struct!.url),
+    hmac_key: cdktn.stringToTerraform(struct!.hmacKey),
+    url: cdktn.stringToTerraform(struct!.url),
   }
 }
 
 
-export function notificationsWebhookConfigAToHclTerraform(struct?: NotificationsWebhookConfigA | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function notificationsWebhookConfigAToHclTerraform(struct?: NotificationsWebhookConfigA | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hmac_key: {
-      value: cdktf.stringToHclTerraform(struct!.hmacKey),
+      value: cdktn.stringToHclTerraform(struct!.hmacKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -102,19 +102,19 @@ export function notificationsWebhookConfigAToHclTerraform(struct?: Notifications
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NotificationsWebhookConfigAOutputReference extends cdktf.ComplexObject {
+export class NotificationsWebhookConfigAOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NotificationsWebhookConfigA | cdktf.IResolvable | undefined {
+  public get internalValue(): NotificationsWebhookConfigA | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -131,14 +131,14 @@ export class NotificationsWebhookConfigAOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NotificationsWebhookConfigA | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NotificationsWebhookConfigA | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._hmacKey = undefined;
       this._url = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -194,32 +194,32 @@ export interface NotificationsWebhookSubscriptionsEvents {
   readonly source: string;
 }
 
-export function notificationsWebhookSubscriptionsEventsToTerraform(struct?: NotificationsWebhookSubscriptionsEvents | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function notificationsWebhookSubscriptionsEventsToTerraform(struct?: NotificationsWebhookSubscriptionsEvents | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.actions),
-    source: cdktf.stringToTerraform(struct!.source),
+    actions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.actions),
+    source: cdktn.stringToTerraform(struct!.source),
   }
 }
 
 
-export function notificationsWebhookSubscriptionsEventsToHclTerraform(struct?: NotificationsWebhookSubscriptionsEvents | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function notificationsWebhookSubscriptionsEventsToHclTerraform(struct?: NotificationsWebhookSubscriptionsEvents | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     actions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.actions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.actions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -230,9 +230,9 @@ export function notificationsWebhookSubscriptionsEventsToHclTerraform(struct?: N
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NotificationsWebhookSubscriptionsEventsOutputReference extends cdktf.ComplexObject {
+export class NotificationsWebhookSubscriptionsEventsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -240,11 +240,11 @@ export class NotificationsWebhookSubscriptionsEventsOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NotificationsWebhookSubscriptionsEvents | cdktf.IResolvable | undefined {
+  public get internalValue(): NotificationsWebhookSubscriptionsEvents | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -261,14 +261,14 @@ export class NotificationsWebhookSubscriptionsEventsOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NotificationsWebhookSubscriptionsEvents | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NotificationsWebhookSubscriptionsEvents | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._actions = undefined;
       this._source = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -307,15 +307,15 @@ export class NotificationsWebhookSubscriptionsEventsOutputReference extends cdkt
   }
 }
 
-export class NotificationsWebhookSubscriptionsEventsList extends cdktf.ComplexList {
-  public internalValue? : NotificationsWebhookSubscriptionsEvents[] | cdktf.IResolvable
+export class NotificationsWebhookSubscriptionsEventsList extends cdktn.ComplexList {
+  public internalValue? : NotificationsWebhookSubscriptionsEvents[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -332,7 +332,7 @@ export interface NotificationsWebhookSubscriptions {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/notifications_webhook#events NotificationsWebhook#events}
   */
-  readonly events: NotificationsWebhookSubscriptionsEvents[] | cdktf.IResolvable;
+  readonly events: NotificationsWebhookSubscriptionsEvents[] | cdktn.IResolvable;
   /**
   * Refers to the resource the webhook is subscribed to. If not set, the webhook subscribes to the emitted events listed in events for any resource in the webhook's project.
   *
@@ -341,32 +341,32 @@ export interface NotificationsWebhookSubscriptions {
   readonly resourceId?: string;
 }
 
-export function notificationsWebhookSubscriptionsToTerraform(struct?: NotificationsWebhookSubscriptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function notificationsWebhookSubscriptionsToTerraform(struct?: NotificationsWebhookSubscriptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    events: cdktf.listMapper(notificationsWebhookSubscriptionsEventsToTerraform, false)(struct!.events),
-    resource_id: cdktf.stringToTerraform(struct!.resourceId),
+    events: cdktn.listMapper(notificationsWebhookSubscriptionsEventsToTerraform, false)(struct!.events),
+    resource_id: cdktn.stringToTerraform(struct!.resourceId),
   }
 }
 
 
-export function notificationsWebhookSubscriptionsToHclTerraform(struct?: NotificationsWebhookSubscriptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function notificationsWebhookSubscriptionsToHclTerraform(struct?: NotificationsWebhookSubscriptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     events: {
-      value: cdktf.listMapperHcl(notificationsWebhookSubscriptionsEventsToHclTerraform, false)(struct!.events),
+      value: cdktn.listMapperHcl(notificationsWebhookSubscriptionsEventsToHclTerraform, false)(struct!.events),
       isBlock: true,
       type: "list",
       storageClassType: "NotificationsWebhookSubscriptionsEventsList",
     },
     resource_id: {
-      value: cdktf.stringToHclTerraform(struct!.resourceId),
+      value: cdktn.stringToHclTerraform(struct!.resourceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -377,9 +377,9 @@ export function notificationsWebhookSubscriptionsToHclTerraform(struct?: Notific
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NotificationsWebhookSubscriptionsOutputReference extends cdktf.ComplexObject {
+export class NotificationsWebhookSubscriptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -387,11 +387,11 @@ export class NotificationsWebhookSubscriptionsOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NotificationsWebhookSubscriptions | cdktf.IResolvable | undefined {
+  public get internalValue(): NotificationsWebhookSubscriptions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -408,14 +408,14 @@ export class NotificationsWebhookSubscriptionsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NotificationsWebhookSubscriptions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NotificationsWebhookSubscriptions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._events.internalValue = undefined;
       this._resourceId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -432,7 +432,7 @@ export class NotificationsWebhookSubscriptionsOutputReference extends cdktf.Comp
   public get events() {
     return this._events;
   }
-  public putEvents(value: NotificationsWebhookSubscriptionsEvents[] | cdktf.IResolvable) {
+  public putEvents(value: NotificationsWebhookSubscriptionsEvents[] | cdktn.IResolvable) {
     this._events.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -457,15 +457,15 @@ export class NotificationsWebhookSubscriptionsOutputReference extends cdktf.Comp
   }
 }
 
-export class NotificationsWebhookSubscriptionsList extends cdktf.ComplexList {
-  public internalValue? : NotificationsWebhookSubscriptions[] | cdktf.IResolvable
+export class NotificationsWebhookSubscriptionsList extends cdktn.ComplexList {
+  public internalValue? : NotificationsWebhookSubscriptions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -480,7 +480,7 @@ export class NotificationsWebhookSubscriptionsList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/notifications_webhook hcp_notifications_webhook}
 */
-export class NotificationsWebhook extends cdktf.TerraformResource {
+export class NotificationsWebhook extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -491,14 +491,14 @@ export class NotificationsWebhook extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NotificationsWebhook resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NotificationsWebhook resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NotificationsWebhook to import
   * @param importFromId The id of the existing NotificationsWebhook that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/notifications_webhook#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NotificationsWebhook to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_notifications_webhook", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_notifications_webhook", importId: importFromId, provider });
       }
 
   // ===========
@@ -570,11 +570,11 @@ export class NotificationsWebhook extends cdktf.TerraformResource {
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -629,7 +629,7 @@ export class NotificationsWebhook extends cdktf.TerraformResource {
   public get subscriptions() {
     return this._subscriptions;
   }
-  public putSubscriptions(value: NotificationsWebhookSubscriptions[] | cdktf.IResolvable) {
+  public putSubscriptions(value: NotificationsWebhookSubscriptions[] | cdktn.IResolvable) {
     this._subscriptions.internalValue = value;
   }
   public resetSubscriptions() {
@@ -647,11 +647,11 @@ export class NotificationsWebhook extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       config: notificationsWebhookConfigAToTerraform(this._config.internalValue),
-      description: cdktf.stringToTerraform(this._description),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      name: cdktf.stringToTerraform(this._name),
-      project_id: cdktf.stringToTerraform(this._projectId),
-      subscriptions: cdktf.listMapper(notificationsWebhookSubscriptionsToTerraform, false)(this._subscriptions.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      name: cdktn.stringToTerraform(this._name),
+      project_id: cdktn.stringToTerraform(this._projectId),
+      subscriptions: cdktn.listMapper(notificationsWebhookSubscriptionsToTerraform, false)(this._subscriptions.internalValue),
     };
   }
 
@@ -664,31 +664,31 @@ export class NotificationsWebhook extends cdktf.TerraformResource {
         storageClassType: "NotificationsWebhookConfigA",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subscriptions: {
-        value: cdktf.listMapperHcl(notificationsWebhookSubscriptionsToHclTerraform, false)(this._subscriptions.internalValue),
+        value: cdktn.listMapperHcl(notificationsWebhookSubscriptionsToHclTerraform, false)(this._subscriptions.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "NotificationsWebhookSubscriptionsList",

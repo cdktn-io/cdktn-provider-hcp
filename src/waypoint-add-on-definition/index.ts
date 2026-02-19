@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WaypointAddOnDefinitionConfig extends cdktf.TerraformMetaArguments {
+export interface WaypointAddOnDefinitionConfig extends cdktn.TerraformMetaArguments {
   /**
   * A longer description of the Add-on Definition.
   *
@@ -89,7 +89,7 @@ export interface WaypointAddOnDefinitionConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_add_on_definition#variable_options WaypointAddOnDefinition#variable_options}
   */
-  readonly variableOptions?: WaypointAddOnDefinitionVariableOptions[] | cdktf.IResolvable;
+  readonly variableOptions?: WaypointAddOnDefinitionVariableOptions[] | cdktn.IResolvable;
 }
 export interface WaypointAddOnDefinitionTerraformCloudWorkspaceDetails {
   /**
@@ -106,32 +106,32 @@ export interface WaypointAddOnDefinitionTerraformCloudWorkspaceDetails {
   readonly terraformProjectId: string;
 }
 
-export function waypointAddOnDefinitionTerraformCloudWorkspaceDetailsToTerraform(struct?: WaypointAddOnDefinitionTerraformCloudWorkspaceDetails | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function waypointAddOnDefinitionTerraformCloudWorkspaceDetailsToTerraform(struct?: WaypointAddOnDefinitionTerraformCloudWorkspaceDetails | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    terraform_project_id: cdktf.stringToTerraform(struct!.terraformProjectId),
+    name: cdktn.stringToTerraform(struct!.name),
+    terraform_project_id: cdktn.stringToTerraform(struct!.terraformProjectId),
   }
 }
 
 
-export function waypointAddOnDefinitionTerraformCloudWorkspaceDetailsToHclTerraform(struct?: WaypointAddOnDefinitionTerraformCloudWorkspaceDetails | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function waypointAddOnDefinitionTerraformCloudWorkspaceDetailsToHclTerraform(struct?: WaypointAddOnDefinitionTerraformCloudWorkspaceDetails | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     terraform_project_id: {
-      value: cdktf.stringToHclTerraform(struct!.terraformProjectId),
+      value: cdktn.stringToHclTerraform(struct!.terraformProjectId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -142,19 +142,19 @@ export function waypointAddOnDefinitionTerraformCloudWorkspaceDetailsToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WaypointAddOnDefinitionTerraformCloudWorkspaceDetailsOutputReference extends cdktf.ComplexObject {
+export class WaypointAddOnDefinitionTerraformCloudWorkspaceDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WaypointAddOnDefinitionTerraformCloudWorkspaceDetails | cdktf.IResolvable | undefined {
+  public get internalValue(): WaypointAddOnDefinitionTerraformCloudWorkspaceDetails | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -171,14 +171,14 @@ export class WaypointAddOnDefinitionTerraformCloudWorkspaceDetailsOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WaypointAddOnDefinitionTerraformCloudWorkspaceDetails | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WaypointAddOnDefinitionTerraformCloudWorkspaceDetails | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._terraformProjectId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -234,7 +234,7 @@ export interface WaypointAddOnDefinitionVariableOptions {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_add_on_definition#user_editable WaypointAddOnDefinition#user_editable}
   */
-  readonly userEditable?: boolean | cdktf.IResolvable;
+  readonly userEditable?: boolean | cdktn.IResolvable;
   /**
   * Variable type
   *
@@ -243,46 +243,46 @@ export interface WaypointAddOnDefinitionVariableOptions {
   readonly variableType: string;
 }
 
-export function waypointAddOnDefinitionVariableOptionsToTerraform(struct?: WaypointAddOnDefinitionVariableOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function waypointAddOnDefinitionVariableOptionsToTerraform(struct?: WaypointAddOnDefinitionVariableOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.options),
-    user_editable: cdktf.booleanToTerraform(struct!.userEditable),
-    variable_type: cdktf.stringToTerraform(struct!.variableType),
+    name: cdktn.stringToTerraform(struct!.name),
+    options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.options),
+    user_editable: cdktn.booleanToTerraform(struct!.userEditable),
+    variable_type: cdktn.stringToTerraform(struct!.variableType),
   }
 }
 
 
-export function waypointAddOnDefinitionVariableOptionsToHclTerraform(struct?: WaypointAddOnDefinitionVariableOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function waypointAddOnDefinitionVariableOptionsToHclTerraform(struct?: WaypointAddOnDefinitionVariableOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     options: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.options),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.options),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     user_editable: {
-      value: cdktf.booleanToHclTerraform(struct!.userEditable),
+      value: cdktn.booleanToHclTerraform(struct!.userEditable),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     variable_type: {
-      value: cdktf.stringToHclTerraform(struct!.variableType),
+      value: cdktn.stringToHclTerraform(struct!.variableType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -293,9 +293,9 @@ export function waypointAddOnDefinitionVariableOptionsToHclTerraform(struct?: Wa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WaypointAddOnDefinitionVariableOptionsOutputReference extends cdktf.ComplexObject {
+export class WaypointAddOnDefinitionVariableOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -303,11 +303,11 @@ export class WaypointAddOnDefinitionVariableOptionsOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WaypointAddOnDefinitionVariableOptions | cdktf.IResolvable | undefined {
+  public get internalValue(): WaypointAddOnDefinitionVariableOptions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -332,7 +332,7 @@ export class WaypointAddOnDefinitionVariableOptionsOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WaypointAddOnDefinitionVariableOptions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WaypointAddOnDefinitionVariableOptions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -341,7 +341,7 @@ export class WaypointAddOnDefinitionVariableOptionsOutputReference extends cdktf
       this._userEditable = undefined;
       this._variableType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -385,11 +385,11 @@ export class WaypointAddOnDefinitionVariableOptionsOutputReference extends cdktf
   }
 
   // user_editable - computed: true, optional: true, required: false
-  private _userEditable?: boolean | cdktf.IResolvable; 
+  private _userEditable?: boolean | cdktn.IResolvable; 
   public get userEditable() {
     return this.getBooleanAttribute('user_editable');
   }
-  public set userEditable(value: boolean | cdktf.IResolvable) {
+  public set userEditable(value: boolean | cdktn.IResolvable) {
     this._userEditable = value;
   }
   public resetUserEditable() {
@@ -414,15 +414,15 @@ export class WaypointAddOnDefinitionVariableOptionsOutputReference extends cdktf
   }
 }
 
-export class WaypointAddOnDefinitionVariableOptionsList extends cdktf.ComplexList {
-  public internalValue? : WaypointAddOnDefinitionVariableOptions[] | cdktf.IResolvable
+export class WaypointAddOnDefinitionVariableOptionsList extends cdktn.ComplexList {
+  public internalValue? : WaypointAddOnDefinitionVariableOptions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -437,7 +437,7 @@ export class WaypointAddOnDefinitionVariableOptionsList extends cdktf.ComplexLis
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition}
 */
-export class WaypointAddOnDefinition extends cdktf.TerraformResource {
+export class WaypointAddOnDefinition extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -448,14 +448,14 @@ export class WaypointAddOnDefinition extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WaypointAddOnDefinition resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WaypointAddOnDefinition resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WaypointAddOnDefinition to import
   * @param importFromId The id of the existing WaypointAddOnDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_add_on_definition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WaypointAddOnDefinition to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_waypoint_add_on_definition", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_waypoint_add_on_definition", importId: importFromId, provider });
       }
 
   // ===========
@@ -693,7 +693,7 @@ export class WaypointAddOnDefinition extends cdktf.TerraformResource {
   public get variableOptions() {
     return this._variableOptions;
   }
-  public putVariableOptions(value: WaypointAddOnDefinitionVariableOptions[] | cdktf.IResolvable) {
+  public putVariableOptions(value: WaypointAddOnDefinitionVariableOptions[] | cdktn.IResolvable) {
     this._variableOptions.internalValue = value;
   }
   public resetVariableOptions() {
@@ -710,62 +710,62 @@ export class WaypointAddOnDefinition extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      labels: cdktf.listMapper(cdktf.stringToTerraform, false)(this._labels),
-      name: cdktf.stringToTerraform(this._name),
-      project_id: cdktf.stringToTerraform(this._projectId),
-      readme_markdown_template: cdktf.stringToTerraform(this._readmeMarkdownTemplate),
-      summary: cdktf.stringToTerraform(this._summary),
-      terraform_agent_pool_id: cdktf.stringToTerraform(this._terraformAgentPoolId),
+      description: cdktn.stringToTerraform(this._description),
+      labels: cdktn.listMapper(cdktn.stringToTerraform, false)(this._labels),
+      name: cdktn.stringToTerraform(this._name),
+      project_id: cdktn.stringToTerraform(this._projectId),
+      readme_markdown_template: cdktn.stringToTerraform(this._readmeMarkdownTemplate),
+      summary: cdktn.stringToTerraform(this._summary),
+      terraform_agent_pool_id: cdktn.stringToTerraform(this._terraformAgentPoolId),
       terraform_cloud_workspace_details: waypointAddOnDefinitionTerraformCloudWorkspaceDetailsToTerraform(this._terraformCloudWorkspaceDetails.internalValue),
-      terraform_execution_mode: cdktf.stringToTerraform(this._terraformExecutionMode),
-      terraform_no_code_module_id: cdktf.stringToTerraform(this._terraformNoCodeModuleId),
-      terraform_no_code_module_source: cdktf.stringToTerraform(this._terraformNoCodeModuleSource),
-      terraform_project_id: cdktf.stringToTerraform(this._terraformProjectId),
-      variable_options: cdktf.listMapper(waypointAddOnDefinitionVariableOptionsToTerraform, false)(this._variableOptions.internalValue),
+      terraform_execution_mode: cdktn.stringToTerraform(this._terraformExecutionMode),
+      terraform_no_code_module_id: cdktn.stringToTerraform(this._terraformNoCodeModuleId),
+      terraform_no_code_module_source: cdktn.stringToTerraform(this._terraformNoCodeModuleSource),
+      terraform_project_id: cdktn.stringToTerraform(this._terraformProjectId),
+      variable_options: cdktn.listMapper(waypointAddOnDefinitionVariableOptionsToTerraform, false)(this._variableOptions.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._labels),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._labels),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       readme_markdown_template: {
-        value: cdktf.stringToHclTerraform(this._readmeMarkdownTemplate),
+        value: cdktn.stringToHclTerraform(this._readmeMarkdownTemplate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       summary: {
-        value: cdktf.stringToHclTerraform(this._summary),
+        value: cdktn.stringToHclTerraform(this._summary),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       terraform_agent_pool_id: {
-        value: cdktf.stringToHclTerraform(this._terraformAgentPoolId),
+        value: cdktn.stringToHclTerraform(this._terraformAgentPoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -777,31 +777,31 @@ export class WaypointAddOnDefinition extends cdktf.TerraformResource {
         storageClassType: "WaypointAddOnDefinitionTerraformCloudWorkspaceDetails",
       },
       terraform_execution_mode: {
-        value: cdktf.stringToHclTerraform(this._terraformExecutionMode),
+        value: cdktn.stringToHclTerraform(this._terraformExecutionMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       terraform_no_code_module_id: {
-        value: cdktf.stringToHclTerraform(this._terraformNoCodeModuleId),
+        value: cdktn.stringToHclTerraform(this._terraformNoCodeModuleId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       terraform_no_code_module_source: {
-        value: cdktf.stringToHclTerraform(this._terraformNoCodeModuleSource),
+        value: cdktn.stringToHclTerraform(this._terraformNoCodeModuleSource),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       terraform_project_id: {
-        value: cdktf.stringToHclTerraform(this._terraformProjectId),
+        value: cdktn.stringToHclTerraform(this._terraformProjectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       variable_options: {
-        value: cdktf.listMapperHcl(waypointAddOnDefinitionVariableOptionsToHclTerraform, false)(this._variableOptions.internalValue),
+        value: cdktn.listMapperHcl(waypointAddOnDefinitionVariableOptionsToHclTerraform, false)(this._variableOptions.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "WaypointAddOnDefinitionVariableOptionsList",

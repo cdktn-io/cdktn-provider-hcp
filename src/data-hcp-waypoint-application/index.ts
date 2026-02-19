@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataHcpWaypointApplicationConfig extends cdktf.TerraformMetaArguments {
+export interface DataHcpWaypointApplicationConfig extends cdktn.TerraformMetaArguments {
   /**
   * List of actions by 'ID' to assign to this Template. Applications created from this Template will have these actions assigned to them. Only 'ID' is supported.
   *
@@ -32,7 +32,7 @@ export interface DataHcpWaypointApplicationConfig extends cdktf.TerraformMetaArg
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/waypoint_application#input_variables DataHcpWaypointApplication#input_variables}
   */
-  readonly inputVariables?: DataHcpWaypointApplicationInputVariables[] | cdktf.IResolvable;
+  readonly inputVariables?: DataHcpWaypointApplicationInputVariables[] | cdktn.IResolvable;
   /**
   * The name of the Application.
   *
@@ -49,9 +49,9 @@ export interface DataHcpWaypointApplicationConfig extends cdktf.TerraformMetaArg
 export interface DataHcpWaypointApplicationInputVariables {
 }
 
-export function dataHcpWaypointApplicationInputVariablesToTerraform(struct?: DataHcpWaypointApplicationInputVariables | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataHcpWaypointApplicationInputVariablesToTerraform(struct?: DataHcpWaypointApplicationInputVariables | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -59,9 +59,9 @@ export function dataHcpWaypointApplicationInputVariablesToTerraform(struct?: Dat
 }
 
 
-export function dataHcpWaypointApplicationInputVariablesToHclTerraform(struct?: DataHcpWaypointApplicationInputVariables | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataHcpWaypointApplicationInputVariablesToHclTerraform(struct?: DataHcpWaypointApplicationInputVariables | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -69,9 +69,9 @@ export function dataHcpWaypointApplicationInputVariablesToHclTerraform(struct?: 
   return attrs;
 }
 
-export class DataHcpWaypointApplicationInputVariablesOutputReference extends cdktf.ComplexObject {
+export class DataHcpWaypointApplicationInputVariablesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -79,11 +79,11 @@ export class DataHcpWaypointApplicationInputVariablesOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataHcpWaypointApplicationInputVariables | cdktf.IResolvable | undefined {
+  public get internalValue(): DataHcpWaypointApplicationInputVariables | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -92,12 +92,12 @@ export class DataHcpWaypointApplicationInputVariablesOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataHcpWaypointApplicationInputVariables | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataHcpWaypointApplicationInputVariables | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -123,15 +123,15 @@ export class DataHcpWaypointApplicationInputVariablesOutputReference extends cdk
   }
 }
 
-export class DataHcpWaypointApplicationInputVariablesList extends cdktf.ComplexList {
-  public internalValue? : DataHcpWaypointApplicationInputVariables[] | cdktf.IResolvable
+export class DataHcpWaypointApplicationInputVariablesList extends cdktn.ComplexList {
+  public internalValue? : DataHcpWaypointApplicationInputVariables[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -146,8 +146,8 @@ export interface DataHcpWaypointApplicationOutputValues {
 }
 
 export function dataHcpWaypointApplicationOutputValuesToTerraform(struct?: DataHcpWaypointApplicationOutputValues): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -156,8 +156,8 @@ export function dataHcpWaypointApplicationOutputValuesToTerraform(struct?: DataH
 
 
 export function dataHcpWaypointApplicationOutputValuesToHclTerraform(struct?: DataHcpWaypointApplicationOutputValues): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -165,7 +165,7 @@ export function dataHcpWaypointApplicationOutputValuesToHclTerraform(struct?: Da
   return attrs;
 }
 
-export class DataHcpWaypointApplicationOutputValuesOutputReference extends cdktf.ComplexObject {
+export class DataHcpWaypointApplicationOutputValuesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -174,7 +174,7 @@ export class DataHcpWaypointApplicationOutputValuesOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -214,14 +214,14 @@ export class DataHcpWaypointApplicationOutputValuesOutputReference extends cdktf
   }
 }
 
-export class DataHcpWaypointApplicationOutputValuesList extends cdktf.ComplexList {
+export class DataHcpWaypointApplicationOutputValuesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -236,7 +236,7 @@ export class DataHcpWaypointApplicationOutputValuesList extends cdktf.ComplexLis
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/waypoint_application hcp_waypoint_application}
 */
-export class DataHcpWaypointApplication extends cdktf.TerraformDataSource {
+export class DataHcpWaypointApplication extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -247,14 +247,14 @@ export class DataHcpWaypointApplication extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataHcpWaypointApplication resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataHcpWaypointApplication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataHcpWaypointApplication to import
   * @param importFromId The id of the existing DataHcpWaypointApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/waypoint_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataHcpWaypointApplication to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_waypoint_application", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_waypoint_application", importId: importFromId, provider });
       }
 
   // ===========
@@ -332,7 +332,7 @@ export class DataHcpWaypointApplication extends cdktf.TerraformDataSource {
   public get inputVariables() {
     return this._inputVariables;
   }
-  public putInputVariables(value: DataHcpWaypointApplicationInputVariables[] | cdktf.IResolvable) {
+  public putInputVariables(value: DataHcpWaypointApplicationInputVariables[] | cdktn.IResolvable) {
     this._inputVariables.internalValue = value;
   }
   public resetInputVariables() {
@@ -412,42 +412,42 @@ export class DataHcpWaypointApplication extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      actions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._actions),
-      id: cdktf.stringToTerraform(this._id),
-      input_variables: cdktf.listMapper(dataHcpWaypointApplicationInputVariablesToTerraform, false)(this._inputVariables.internalValue),
-      name: cdktf.stringToTerraform(this._name),
-      project_id: cdktf.stringToTerraform(this._projectId),
+      actions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._actions),
+      id: cdktn.stringToTerraform(this._id),
+      input_variables: cdktn.listMapper(dataHcpWaypointApplicationInputVariablesToTerraform, false)(this._inputVariables.internalValue),
+      name: cdktn.stringToTerraform(this._name),
+      project_id: cdktn.stringToTerraform(this._projectId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       actions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._actions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._actions),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       input_variables: {
-        value: cdktf.listMapperHcl(dataHcpWaypointApplicationInputVariablesToHclTerraform, false)(this._inputVariables.internalValue),
+        value: cdktn.listMapperHcl(dataHcpWaypointApplicationInputVariablesToHclTerraform, false)(this._inputVariables.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DataHcpWaypointApplicationInputVariablesList",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

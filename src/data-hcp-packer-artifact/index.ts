@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataHcpPackerArtifactConfig extends cdktf.TerraformMetaArguments {
+export interface DataHcpPackerArtifactConfig extends cdktn.TerraformMetaArguments {
   /**
   * The name of the HCP Packer Bucket where the Artifact is located.
   *
@@ -65,7 +65,7 @@ export interface DataHcpPackerArtifactConfig extends cdktf.TerraformMetaArgument
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/packer_artifact hcp_packer_artifact}
 */
-export class DataHcpPackerArtifact extends cdktf.TerraformDataSource {
+export class DataHcpPackerArtifact extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -76,14 +76,14 @@ export class DataHcpPackerArtifact extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataHcpPackerArtifact resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataHcpPackerArtifact resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataHcpPackerArtifact to import
   * @param importFromId The id of the existing DataHcpPackerArtifact that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/packer_artifact#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataHcpPackerArtifact to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_packer_artifact", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_packer_artifact", importId: importFromId, provider });
       }
 
   // ===========
@@ -192,7 +192,7 @@ export class DataHcpPackerArtifact extends cdktf.TerraformDataSource {
   }
 
   // labels - computed: true, optional: false, required: false
-  private _labels = new cdktf.StringMap(this, "labels");
+  private _labels = new cdktn.StringMap(this, "labels");
   public get labels() {
     return this._labels;
   }
@@ -276,56 +276,56 @@ export class DataHcpPackerArtifact extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket_name: cdktf.stringToTerraform(this._bucketName),
-      channel_name: cdktf.stringToTerraform(this._channelName),
-      component_type: cdktf.stringToTerraform(this._componentType),
-      platform: cdktf.stringToTerraform(this._platform),
-      project_id: cdktf.stringToTerraform(this._projectId),
-      region: cdktf.stringToTerraform(this._region),
-      version_fingerprint: cdktf.stringToTerraform(this._versionFingerprint),
+      bucket_name: cdktn.stringToTerraform(this._bucketName),
+      channel_name: cdktn.stringToTerraform(this._channelName),
+      component_type: cdktn.stringToTerraform(this._componentType),
+      platform: cdktn.stringToTerraform(this._platform),
+      project_id: cdktn.stringToTerraform(this._projectId),
+      region: cdktn.stringToTerraform(this._region),
+      version_fingerprint: cdktn.stringToTerraform(this._versionFingerprint),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bucket_name: {
-        value: cdktf.stringToHclTerraform(this._bucketName),
+        value: cdktn.stringToHclTerraform(this._bucketName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       channel_name: {
-        value: cdktf.stringToHclTerraform(this._channelName),
+        value: cdktn.stringToHclTerraform(this._channelName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       component_type: {
-        value: cdktf.stringToHclTerraform(this._componentType),
+        value: cdktn.stringToHclTerraform(this._componentType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       platform: {
-        value: cdktf.stringToHclTerraform(this._platform),
+        value: cdktn.stringToHclTerraform(this._platform),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version_fingerprint: {
-        value: cdktf.stringToHclTerraform(this._versionFingerprint),
+        value: cdktn.stringToHclTerraform(this._versionFingerprint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

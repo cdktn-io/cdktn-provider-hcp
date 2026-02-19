@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BoundaryClusterConfig extends cdktf.TerraformMetaArguments {
+export interface BoundaryClusterConfig extends cdktn.TerraformMetaArguments {
   /**
   * The time to live for the auth token in golang's time.Duration string format.
   *
@@ -105,45 +105,45 @@ export interface BoundaryClusterMaintenanceWindowConfig {
 }
 
 export function boundaryClusterMaintenanceWindowConfigToTerraform(struct?: BoundaryClusterMaintenanceWindowConfigOutputReference | BoundaryClusterMaintenanceWindowConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    day: cdktf.stringToTerraform(struct!.day),
-    end: cdktf.numberToTerraform(struct!.end),
-    start: cdktf.numberToTerraform(struct!.start),
-    upgrade_type: cdktf.stringToTerraform(struct!.upgradeType),
+    day: cdktn.stringToTerraform(struct!.day),
+    end: cdktn.numberToTerraform(struct!.end),
+    start: cdktn.numberToTerraform(struct!.start),
+    upgrade_type: cdktn.stringToTerraform(struct!.upgradeType),
   }
 }
 
 
 export function boundaryClusterMaintenanceWindowConfigToHclTerraform(struct?: BoundaryClusterMaintenanceWindowConfigOutputReference | BoundaryClusterMaintenanceWindowConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     day: {
-      value: cdktf.stringToHclTerraform(struct!.day),
+      value: cdktn.stringToHclTerraform(struct!.day),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     end: {
-      value: cdktf.numberToHclTerraform(struct!.end),
+      value: cdktn.numberToHclTerraform(struct!.end),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     start: {
-      value: cdktf.numberToHclTerraform(struct!.start),
+      value: cdktn.numberToHclTerraform(struct!.start),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     upgrade_type: {
-      value: cdktf.stringToHclTerraform(struct!.upgradeType),
+      value: cdktn.stringToHclTerraform(struct!.upgradeType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -154,14 +154,14 @@ export function boundaryClusterMaintenanceWindowConfigToHclTerraform(struct?: Bo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BoundaryClusterMaintenanceWindowConfigOutputReference extends cdktf.ComplexObject {
+export class BoundaryClusterMaintenanceWindowConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -283,39 +283,39 @@ export interface BoundaryClusterTimeouts {
   readonly delete?: string;
 }
 
-export function boundaryClusterTimeoutsToTerraform(struct?: BoundaryClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function boundaryClusterTimeoutsToTerraform(struct?: BoundaryClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    default: cdktf.stringToTerraform(struct!.default),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    default: cdktn.stringToTerraform(struct!.default),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function boundaryClusterTimeoutsToHclTerraform(struct?: BoundaryClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function boundaryClusterTimeoutsToHclTerraform(struct?: BoundaryClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     default: {
-      value: cdktf.stringToHclTerraform(struct!.default),
+      value: cdktn.stringToHclTerraform(struct!.default),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -326,19 +326,19 @@ export function boundaryClusterTimeoutsToHclTerraform(struct?: BoundaryClusterTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BoundaryClusterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BoundaryClusterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BoundaryClusterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BoundaryClusterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -359,7 +359,7 @@ export class BoundaryClusterTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BoundaryClusterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BoundaryClusterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -367,7 +367,7 @@ export class BoundaryClusterTimeoutsOutputReference extends cdktf.ComplexObject 
       this._default = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -432,7 +432,7 @@ export class BoundaryClusterTimeoutsOutputReference extends cdktf.ComplexObject 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/boundary_cluster hcp_boundary_cluster}
 */
-export class BoundaryCluster extends cdktf.TerraformResource {
+export class BoundaryCluster extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -443,14 +443,14 @@ export class BoundaryCluster extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BoundaryCluster resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BoundaryCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BoundaryCluster to import
   * @param importFromId The id of the existing BoundaryCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/boundary_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BoundaryCluster to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_boundary_cluster", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_boundary_cluster", importId: importFromId, provider });
       }
 
   // ===========
@@ -670,14 +670,14 @@ export class BoundaryCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auth_token_time_to_live: cdktf.stringToTerraform(this._authTokenTimeToLive),
-      auth_token_time_to_stale: cdktf.stringToTerraform(this._authTokenTimeToStale),
-      cluster_id: cdktf.stringToTerraform(this._clusterId),
-      id: cdktf.stringToTerraform(this._id),
-      password: cdktf.stringToTerraform(this._password),
-      project_id: cdktf.stringToTerraform(this._projectId),
-      tier: cdktf.stringToTerraform(this._tier),
-      username: cdktf.stringToTerraform(this._username),
+      auth_token_time_to_live: cdktn.stringToTerraform(this._authTokenTimeToLive),
+      auth_token_time_to_stale: cdktn.stringToTerraform(this._authTokenTimeToStale),
+      cluster_id: cdktn.stringToTerraform(this._clusterId),
+      id: cdktn.stringToTerraform(this._id),
+      password: cdktn.stringToTerraform(this._password),
+      project_id: cdktn.stringToTerraform(this._projectId),
+      tier: cdktn.stringToTerraform(this._tier),
+      username: cdktn.stringToTerraform(this._username),
       maintenance_window_config: boundaryClusterMaintenanceWindowConfigToTerraform(this._maintenanceWindowConfig.internalValue),
       timeouts: boundaryClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -686,49 +686,49 @@ export class BoundaryCluster extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auth_token_time_to_live: {
-        value: cdktf.stringToHclTerraform(this._authTokenTimeToLive),
+        value: cdktn.stringToHclTerraform(this._authTokenTimeToLive),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       auth_token_time_to_stale: {
-        value: cdktf.stringToHclTerraform(this._authTokenTimeToStale),
+        value: cdktn.stringToHclTerraform(this._authTokenTimeToStale),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cluster_id: {
-        value: cdktf.stringToHclTerraform(this._clusterId),
+        value: cdktn.stringToHclTerraform(this._clusterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       password: {
-        value: cdktf.stringToHclTerraform(this._password),
+        value: cdktn.stringToHclTerraform(this._password),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tier: {
-        value: cdktf.stringToHclTerraform(this._tier),
+        value: cdktn.stringToHclTerraform(this._tier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       username: {
-        value: cdktf.stringToHclTerraform(this._username),
+        value: cdktn.stringToHclTerraform(this._username),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

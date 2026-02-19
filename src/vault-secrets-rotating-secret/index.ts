@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VaultSecretsRotatingSecretConfig extends cdktf.TerraformMetaArguments {
+export interface VaultSecretsRotatingSecretConfig extends cdktn.TerraformMetaArguments {
   /**
   * Vault Secrets application name that owns the secret.
   *
@@ -94,25 +94,25 @@ export interface VaultSecretsRotatingSecretAwsAccessKeys {
   readonly iamUsername: string;
 }
 
-export function vaultSecretsRotatingSecretAwsAccessKeysToTerraform(struct?: VaultSecretsRotatingSecretAwsAccessKeys | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultSecretsRotatingSecretAwsAccessKeysToTerraform(struct?: VaultSecretsRotatingSecretAwsAccessKeys | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    iam_username: cdktf.stringToTerraform(struct!.iamUsername),
+    iam_username: cdktn.stringToTerraform(struct!.iamUsername),
   }
 }
 
 
-export function vaultSecretsRotatingSecretAwsAccessKeysToHclTerraform(struct?: VaultSecretsRotatingSecretAwsAccessKeys | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultSecretsRotatingSecretAwsAccessKeysToHclTerraform(struct?: VaultSecretsRotatingSecretAwsAccessKeys | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     iam_username: {
-      value: cdktf.stringToHclTerraform(struct!.iamUsername),
+      value: cdktn.stringToHclTerraform(struct!.iamUsername),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -123,19 +123,19 @@ export function vaultSecretsRotatingSecretAwsAccessKeysToHclTerraform(struct?: V
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VaultSecretsRotatingSecretAwsAccessKeysOutputReference extends cdktf.ComplexObject {
+export class VaultSecretsRotatingSecretAwsAccessKeysOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VaultSecretsRotatingSecretAwsAccessKeys | cdktf.IResolvable | undefined {
+  public get internalValue(): VaultSecretsRotatingSecretAwsAccessKeys | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -148,13 +148,13 @@ export class VaultSecretsRotatingSecretAwsAccessKeysOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VaultSecretsRotatingSecretAwsAccessKeys | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VaultSecretsRotatingSecretAwsAccessKeys | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._iamUsername = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -193,32 +193,32 @@ export interface VaultSecretsRotatingSecretAzureApplicationPassword {
   readonly appObjectId: string;
 }
 
-export function vaultSecretsRotatingSecretAzureApplicationPasswordToTerraform(struct?: VaultSecretsRotatingSecretAzureApplicationPassword | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultSecretsRotatingSecretAzureApplicationPasswordToTerraform(struct?: VaultSecretsRotatingSecretAzureApplicationPassword | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    app_client_id: cdktf.stringToTerraform(struct!.appClientId),
-    app_object_id: cdktf.stringToTerraform(struct!.appObjectId),
+    app_client_id: cdktn.stringToTerraform(struct!.appClientId),
+    app_object_id: cdktn.stringToTerraform(struct!.appObjectId),
   }
 }
 
 
-export function vaultSecretsRotatingSecretAzureApplicationPasswordToHclTerraform(struct?: VaultSecretsRotatingSecretAzureApplicationPassword | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultSecretsRotatingSecretAzureApplicationPasswordToHclTerraform(struct?: VaultSecretsRotatingSecretAzureApplicationPassword | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     app_client_id: {
-      value: cdktf.stringToHclTerraform(struct!.appClientId),
+      value: cdktn.stringToHclTerraform(struct!.appClientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     app_object_id: {
-      value: cdktf.stringToHclTerraform(struct!.appObjectId),
+      value: cdktn.stringToHclTerraform(struct!.appObjectId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -229,19 +229,19 @@ export function vaultSecretsRotatingSecretAzureApplicationPasswordToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VaultSecretsRotatingSecretAzureApplicationPasswordOutputReference extends cdktf.ComplexObject {
+export class VaultSecretsRotatingSecretAzureApplicationPasswordOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VaultSecretsRotatingSecretAzureApplicationPassword | cdktf.IResolvable | undefined {
+  public get internalValue(): VaultSecretsRotatingSecretAzureApplicationPassword | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -258,14 +258,14 @@ export class VaultSecretsRotatingSecretAzureApplicationPasswordOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VaultSecretsRotatingSecretAzureApplicationPassword | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VaultSecretsRotatingSecretAzureApplicationPassword | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._appClientId = undefined;
       this._appObjectId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -312,25 +312,25 @@ export interface VaultSecretsRotatingSecretConfluentServiceAccount {
   readonly serviceAccountId: string;
 }
 
-export function vaultSecretsRotatingSecretConfluentServiceAccountToTerraform(struct?: VaultSecretsRotatingSecretConfluentServiceAccount | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultSecretsRotatingSecretConfluentServiceAccountToTerraform(struct?: VaultSecretsRotatingSecretConfluentServiceAccount | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    service_account_id: cdktf.stringToTerraform(struct!.serviceAccountId),
+    service_account_id: cdktn.stringToTerraform(struct!.serviceAccountId),
   }
 }
 
 
-export function vaultSecretsRotatingSecretConfluentServiceAccountToHclTerraform(struct?: VaultSecretsRotatingSecretConfluentServiceAccount | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultSecretsRotatingSecretConfluentServiceAccountToHclTerraform(struct?: VaultSecretsRotatingSecretConfluentServiceAccount | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     service_account_id: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAccountId),
+      value: cdktn.stringToHclTerraform(struct!.serviceAccountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -341,19 +341,19 @@ export function vaultSecretsRotatingSecretConfluentServiceAccountToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VaultSecretsRotatingSecretConfluentServiceAccountOutputReference extends cdktf.ComplexObject {
+export class VaultSecretsRotatingSecretConfluentServiceAccountOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VaultSecretsRotatingSecretConfluentServiceAccount | cdktf.IResolvable | undefined {
+  public get internalValue(): VaultSecretsRotatingSecretConfluentServiceAccount | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -366,13 +366,13 @@ export class VaultSecretsRotatingSecretConfluentServiceAccountOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VaultSecretsRotatingSecretConfluentServiceAccount | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VaultSecretsRotatingSecretConfluentServiceAccount | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._serviceAccountId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -405,25 +405,25 @@ export interface VaultSecretsRotatingSecretGcpServiceAccountKey {
   readonly serviceAccountEmail: string;
 }
 
-export function vaultSecretsRotatingSecretGcpServiceAccountKeyToTerraform(struct?: VaultSecretsRotatingSecretGcpServiceAccountKey | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultSecretsRotatingSecretGcpServiceAccountKeyToTerraform(struct?: VaultSecretsRotatingSecretGcpServiceAccountKey | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    service_account_email: cdktf.stringToTerraform(struct!.serviceAccountEmail),
+    service_account_email: cdktn.stringToTerraform(struct!.serviceAccountEmail),
   }
 }
 
 
-export function vaultSecretsRotatingSecretGcpServiceAccountKeyToHclTerraform(struct?: VaultSecretsRotatingSecretGcpServiceAccountKey | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultSecretsRotatingSecretGcpServiceAccountKeyToHclTerraform(struct?: VaultSecretsRotatingSecretGcpServiceAccountKey | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     service_account_email: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAccountEmail),
+      value: cdktn.stringToHclTerraform(struct!.serviceAccountEmail),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -434,19 +434,19 @@ export function vaultSecretsRotatingSecretGcpServiceAccountKeyToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VaultSecretsRotatingSecretGcpServiceAccountKeyOutputReference extends cdktf.ComplexObject {
+export class VaultSecretsRotatingSecretGcpServiceAccountKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VaultSecretsRotatingSecretGcpServiceAccountKey | cdktf.IResolvable | undefined {
+  public get internalValue(): VaultSecretsRotatingSecretGcpServiceAccountKey | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -459,13 +459,13 @@ export class VaultSecretsRotatingSecretGcpServiceAccountKeyOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VaultSecretsRotatingSecretGcpServiceAccountKey | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VaultSecretsRotatingSecretGcpServiceAccountKey | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._serviceAccountEmail = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -510,39 +510,39 @@ export interface VaultSecretsRotatingSecretMongodbAtlasUser {
   readonly roles: string[];
 }
 
-export function vaultSecretsRotatingSecretMongodbAtlasUserToTerraform(struct?: VaultSecretsRotatingSecretMongodbAtlasUser | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultSecretsRotatingSecretMongodbAtlasUserToTerraform(struct?: VaultSecretsRotatingSecretMongodbAtlasUser | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    database_name: cdktf.stringToTerraform(struct!.databaseName),
-    project_id: cdktf.stringToTerraform(struct!.projectId),
-    roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.roles),
+    database_name: cdktn.stringToTerraform(struct!.databaseName),
+    project_id: cdktn.stringToTerraform(struct!.projectId),
+    roles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.roles),
   }
 }
 
 
-export function vaultSecretsRotatingSecretMongodbAtlasUserToHclTerraform(struct?: VaultSecretsRotatingSecretMongodbAtlasUser | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultSecretsRotatingSecretMongodbAtlasUserToHclTerraform(struct?: VaultSecretsRotatingSecretMongodbAtlasUser | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     database_name: {
-      value: cdktf.stringToHclTerraform(struct!.databaseName),
+      value: cdktn.stringToHclTerraform(struct!.databaseName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     project_id: {
-      value: cdktf.stringToHclTerraform(struct!.projectId),
+      value: cdktn.stringToHclTerraform(struct!.projectId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     roles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.roles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.roles),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -553,19 +553,19 @@ export function vaultSecretsRotatingSecretMongodbAtlasUserToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VaultSecretsRotatingSecretMongodbAtlasUserOutputReference extends cdktf.ComplexObject {
+export class VaultSecretsRotatingSecretMongodbAtlasUserOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VaultSecretsRotatingSecretMongodbAtlasUser | cdktf.IResolvable | undefined {
+  public get internalValue(): VaultSecretsRotatingSecretMongodbAtlasUser | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -586,7 +586,7 @@ export class VaultSecretsRotatingSecretMongodbAtlasUserOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VaultSecretsRotatingSecretMongodbAtlasUser | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VaultSecretsRotatingSecretMongodbAtlasUser | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -594,7 +594,7 @@ export class VaultSecretsRotatingSecretMongodbAtlasUserOutputReference extends c
       this._projectId = undefined;
       this._roles = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -649,9 +649,9 @@ export class VaultSecretsRotatingSecretMongodbAtlasUserOutputReference extends c
 export interface VaultSecretsRotatingSecretTwilioApiKey {
 }
 
-export function vaultSecretsRotatingSecretTwilioApiKeyToTerraform(struct?: VaultSecretsRotatingSecretTwilioApiKey | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultSecretsRotatingSecretTwilioApiKeyToTerraform(struct?: VaultSecretsRotatingSecretTwilioApiKey | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -659,9 +659,9 @@ export function vaultSecretsRotatingSecretTwilioApiKeyToTerraform(struct?: Vault
 }
 
 
-export function vaultSecretsRotatingSecretTwilioApiKeyToHclTerraform(struct?: VaultSecretsRotatingSecretTwilioApiKey | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultSecretsRotatingSecretTwilioApiKeyToHclTerraform(struct?: VaultSecretsRotatingSecretTwilioApiKey | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -669,19 +669,19 @@ export function vaultSecretsRotatingSecretTwilioApiKeyToHclTerraform(struct?: Va
   return attrs;
 }
 
-export class VaultSecretsRotatingSecretTwilioApiKeyOutputReference extends cdktf.ComplexObject {
+export class VaultSecretsRotatingSecretTwilioApiKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VaultSecretsRotatingSecretTwilioApiKey | cdktf.IResolvable | undefined {
+  public get internalValue(): VaultSecretsRotatingSecretTwilioApiKey | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -690,12 +690,12 @@ export class VaultSecretsRotatingSecretTwilioApiKeyOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VaultSecretsRotatingSecretTwilioApiKey | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VaultSecretsRotatingSecretTwilioApiKey | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -709,7 +709,7 @@ export class VaultSecretsRotatingSecretTwilioApiKeyOutputReference extends cdktf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_secrets_rotating_secret hcp_vault_secrets_rotating_secret}
 */
-export class VaultSecretsRotatingSecret extends cdktf.TerraformResource {
+export class VaultSecretsRotatingSecret extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -720,14 +720,14 @@ export class VaultSecretsRotatingSecret extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VaultSecretsRotatingSecret resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VaultSecretsRotatingSecret resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VaultSecretsRotatingSecret to import
   * @param importFromId The id of the existing VaultSecretsRotatingSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_secrets_rotating_secret#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VaultSecretsRotatingSecret to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_vault_secrets_rotating_secret", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_vault_secrets_rotating_secret", importId: importFromId, provider });
       }
 
   // ===========
@@ -963,17 +963,17 @@ export class VaultSecretsRotatingSecret extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      app_name: cdktf.stringToTerraform(this._appName),
+      app_name: cdktn.stringToTerraform(this._appName),
       aws_access_keys: vaultSecretsRotatingSecretAwsAccessKeysToTerraform(this._awsAccessKeys.internalValue),
       azure_application_password: vaultSecretsRotatingSecretAzureApplicationPasswordToTerraform(this._azureApplicationPassword.internalValue),
       confluent_service_account: vaultSecretsRotatingSecretConfluentServiceAccountToTerraform(this._confluentServiceAccount.internalValue),
       gcp_service_account_key: vaultSecretsRotatingSecretGcpServiceAccountKeyToTerraform(this._gcpServiceAccountKey.internalValue),
-      integration_name: cdktf.stringToTerraform(this._integrationName),
+      integration_name: cdktn.stringToTerraform(this._integrationName),
       mongodb_atlas_user: vaultSecretsRotatingSecretMongodbAtlasUserToTerraform(this._mongodbAtlasUser.internalValue),
-      name: cdktf.stringToTerraform(this._name),
-      project_id: cdktf.stringToTerraform(this._projectId),
-      rotation_policy_name: cdktf.stringToTerraform(this._rotationPolicyName),
-      secret_provider: cdktf.stringToTerraform(this._secretProvider),
+      name: cdktn.stringToTerraform(this._name),
+      project_id: cdktn.stringToTerraform(this._projectId),
+      rotation_policy_name: cdktn.stringToTerraform(this._rotationPolicyName),
+      secret_provider: cdktn.stringToTerraform(this._secretProvider),
       twilio_api_key: vaultSecretsRotatingSecretTwilioApiKeyToTerraform(this._twilioApiKey.internalValue),
     };
   }
@@ -981,7 +981,7 @@ export class VaultSecretsRotatingSecret extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       app_name: {
-        value: cdktf.stringToHclTerraform(this._appName),
+        value: cdktn.stringToHclTerraform(this._appName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1011,7 +1011,7 @@ export class VaultSecretsRotatingSecret extends cdktf.TerraformResource {
         storageClassType: "VaultSecretsRotatingSecretGcpServiceAccountKey",
       },
       integration_name: {
-        value: cdktf.stringToHclTerraform(this._integrationName),
+        value: cdktn.stringToHclTerraform(this._integrationName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1023,25 +1023,25 @@ export class VaultSecretsRotatingSecret extends cdktf.TerraformResource {
         storageClassType: "VaultSecretsRotatingSecretMongodbAtlasUser",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rotation_policy_name: {
-        value: cdktf.stringToHclTerraform(this._rotationPolicyName),
+        value: cdktn.stringToHclTerraform(this._rotationPolicyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret_provider: {
-        value: cdktf.stringToHclTerraform(this._secretProvider),
+        value: cdktn.stringToHclTerraform(this._secretProvider),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

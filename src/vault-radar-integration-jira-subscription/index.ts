@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VaultRadarIntegrationJiraSubscriptionConfig extends cdktf.TerraformMetaArguments {
+export interface VaultRadarIntegrationJiraSubscriptionConfig extends cdktn.TerraformMetaArguments {
   /**
   * The identifier of the Jira user who will be assigned the ticket. In case of Jira Cloud, this will be the Atlassian Account ID of the user. Example: 71509:11bb945b-c0de-4bac-9d57-9f09db2f7bc9
   *
@@ -59,7 +59,7 @@ export interface VaultRadarIntegrationJiraSubscriptionConfig extends cdktf.Terra
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_radar_integration_jira_subscription hcp_vault_radar_integration_jira_subscription}
 */
-export class VaultRadarIntegrationJiraSubscription extends cdktf.TerraformResource {
+export class VaultRadarIntegrationJiraSubscription extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -70,14 +70,14 @@ export class VaultRadarIntegrationJiraSubscription extends cdktf.TerraformResour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VaultRadarIntegrationJiraSubscription resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VaultRadarIntegrationJiraSubscription resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VaultRadarIntegrationJiraSubscription to import
   * @param importFromId The id of the existing VaultRadarIntegrationJiraSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_radar_integration_jira_subscription#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VaultRadarIntegrationJiraSubscription to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_vault_radar_integration_jira_subscription", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_vault_radar_integration_jira_subscription", importId: importFromId, provider });
       }
 
   // ===========
@@ -231,56 +231,56 @@ export class VaultRadarIntegrationJiraSubscription extends cdktf.TerraformResour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      assignee: cdktf.stringToTerraform(this._assignee),
-      connection_id: cdktf.stringToTerraform(this._connectionId),
-      issue_type: cdktf.stringToTerraform(this._issueType),
-      jira_project_key: cdktf.stringToTerraform(this._jiraProjectKey),
-      message: cdktf.stringToTerraform(this._message),
-      name: cdktf.stringToTerraform(this._name),
-      project_id: cdktf.stringToTerraform(this._projectId),
+      assignee: cdktn.stringToTerraform(this._assignee),
+      connection_id: cdktn.stringToTerraform(this._connectionId),
+      issue_type: cdktn.stringToTerraform(this._issueType),
+      jira_project_key: cdktn.stringToTerraform(this._jiraProjectKey),
+      message: cdktn.stringToTerraform(this._message),
+      name: cdktn.stringToTerraform(this._name),
+      project_id: cdktn.stringToTerraform(this._projectId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       assignee: {
-        value: cdktf.stringToHclTerraform(this._assignee),
+        value: cdktn.stringToHclTerraform(this._assignee),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       connection_id: {
-        value: cdktf.stringToHclTerraform(this._connectionId),
+        value: cdktn.stringToHclTerraform(this._connectionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       issue_type: {
-        value: cdktf.stringToHclTerraform(this._issueType),
+        value: cdktn.stringToHclTerraform(this._issueType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       jira_project_key: {
-        value: cdktf.stringToHclTerraform(this._jiraProjectKey),
+        value: cdktn.stringToHclTerraform(this._jiraProjectKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       message: {
-        value: cdktf.stringToHclTerraform(this._message),
+        value: cdktn.stringToHclTerraform(this._message),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VaultRadarSourceGithubEnterpriseConfig extends cdktf.TerraformMetaArguments {
+export interface VaultRadarSourceGithubEnterpriseConfig extends cdktn.TerraformMetaArguments {
   /**
   * The detector type which will monitor this resource. The default is HCP if not specified.
   *
@@ -47,7 +47,7 @@ export interface VaultRadarSourceGithubEnterpriseConfig extends cdktf.TerraformM
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_radar_source_github_enterprise hcp_vault_radar_source_github_enterprise}
 */
-export class VaultRadarSourceGithubEnterprise extends cdktf.TerraformResource {
+export class VaultRadarSourceGithubEnterprise extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -58,14 +58,14 @@ export class VaultRadarSourceGithubEnterprise extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VaultRadarSourceGithubEnterprise resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VaultRadarSourceGithubEnterprise resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VaultRadarSourceGithubEnterprise to import
   * @param importFromId The id of the existing VaultRadarSourceGithubEnterprise that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_radar_source_github_enterprise#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VaultRadarSourceGithubEnterprise to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_vault_radar_source_github_enterprise", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_vault_radar_source_github_enterprise", importId: importFromId, provider });
       }
 
   // ===========
@@ -188,42 +188,42 @@ export class VaultRadarSourceGithubEnterprise extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      detector_type: cdktf.stringToTerraform(this._detectorType),
-      domain_name: cdktf.stringToTerraform(this._domainName),
-      github_organization: cdktf.stringToTerraform(this._githubOrganization),
-      project_id: cdktf.stringToTerraform(this._projectId),
-      token: cdktf.stringToTerraform(this._token),
+      detector_type: cdktn.stringToTerraform(this._detectorType),
+      domain_name: cdktn.stringToTerraform(this._domainName),
+      github_organization: cdktn.stringToTerraform(this._githubOrganization),
+      project_id: cdktn.stringToTerraform(this._projectId),
+      token: cdktn.stringToTerraform(this._token),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       detector_type: {
-        value: cdktf.stringToHclTerraform(this._detectorType),
+        value: cdktn.stringToHclTerraform(this._detectorType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       domain_name: {
-        value: cdktf.stringToHclTerraform(this._domainName),
+        value: cdktn.stringToHclTerraform(this._domainName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       github_organization: {
-        value: cdktf.stringToHclTerraform(this._githubOrganization),
+        value: cdktn.stringToHclTerraform(this._githubOrganization),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       token: {
-        value: cdktf.stringToHclTerraform(this._token),
+        value: cdktn.stringToHclTerraform(this._token),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

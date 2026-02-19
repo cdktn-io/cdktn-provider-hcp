@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GroupMembersConfig extends cdktf.TerraformMetaArguments {
+export interface GroupMembersConfig extends cdktn.TerraformMetaArguments {
   /**
   * The group's resource name in the format `iam/organization/<organization_id>/group/<name>`
   *
@@ -29,7 +29,7 @@ export interface GroupMembersConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/group_members hcp_group_members}
 */
-export class GroupMembers extends cdktf.TerraformResource {
+export class GroupMembers extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -40,14 +40,14 @@ export class GroupMembers extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GroupMembers resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GroupMembers resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GroupMembers to import
   * @param importFromId The id of the existing GroupMembers that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/group_members#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GroupMembers to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_group_members", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "hcp_group_members", importId: importFromId, provider });
       }
 
   // ===========
@@ -117,21 +117,21 @@ export class GroupMembers extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      group: cdktf.stringToTerraform(this._group),
-      members: cdktf.listMapper(cdktf.stringToTerraform, false)(this._members),
+      group: cdktn.stringToTerraform(this._group),
+      members: cdktn.listMapper(cdktn.stringToTerraform, false)(this._members),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       group: {
-        value: cdktf.stringToHclTerraform(this._group),
+        value: cdktn.stringToHclTerraform(this._group),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       members: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._members),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._members),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
