@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.azurePeeringConnection.AzurePeeringConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/azurepeeringconnection"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/azurepeeringconnection"
 
 azurepeeringconnection.NewAzurePeeringConnection(scope Construct, id *string, config AzurePeeringConnectionConfig) AzurePeeringConnection
 ```
@@ -441,7 +441,7 @@ func ResetUseRemoteGateways()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.azurePeeringConnection.AzurePeeringConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/azurepeeringconnection"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/azurepeeringconnection"
 
 azurepeeringconnection.AzurePeeringConnection_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.azurePeeringConnection.AzurePeeringConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/azurepeeringconnection"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/azurepeeringconnection"
 
 azurepeeringconnection.AzurePeeringConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ azurepeeringconnection.AzurePeeringConnection_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.azurePeeringConnection.AzurePeeringConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/azurepeeringconnection"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/azurepeeringconnection"
 
 azurepeeringconnection.AzurePeeringConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ azurepeeringconnection.AzurePeeringConnection_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.azurePeeringConnection.AzurePeeringConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/azurepeeringconnection"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/azurepeeringconnection"
 
 azurepeeringconnection.AzurePeeringConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1060,7 +1060,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.azurePeeringConnection.AzurePeeringConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/azurepeeringconnection"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/azurepeeringconnection"
 
 &azurepeeringconnection.AzurePeeringConnectionConfig {
 	Connection: interface{},
@@ -1079,7 +1079,7 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/azurepeeringconnection
 	PeerVnetRegion: *string,
 	AllowForwardedTraffic: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11.azurePeeringConnection.AzurePeeringConnectionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12.azurePeeringConnection.AzurePeeringConnectionTimeouts,
 	UseRemoteGateways: interface{},
 }
 ```
@@ -1339,7 +1339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.azurePeeringConnection.AzurePeeringConnectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/azurepeeringconnection"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/azurepeeringconnection"
 
 &azurepeeringconnection.AzurePeeringConnectionTimeouts {
 	Create: *string,
@@ -1401,7 +1401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.azurePeeringConnection.AzurePeeringConnectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/azurepeeringconnection"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/azurepeeringconnection"
 
 azurepeeringconnection.NewAzurePeeringConnectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AzurePeeringConnectionTimeoutsOutputReference
 ```

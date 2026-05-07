@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/datahcppackerartifact"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcppackerartifact"
 
 datahcppackerartifact.NewDataHcpPackerArtifact(scope Construct, id *string, config DataHcpPackerArtifactConfig) DataHcpPackerArtifact
 ```
@@ -326,7 +326,7 @@ func ResetVersionFingerprint()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/datahcppackerartifact"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcppackerartifact"
 
 datahcppackerartifact.DataHcpPackerArtifact_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/datahcppackerartifact"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcppackerartifact"
 
 datahcppackerartifact.DataHcpPackerArtifact_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datahcppackerartifact.DataHcpPackerArtifact_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/datahcppackerartifact"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcppackerartifact"
 
 datahcppackerartifact.DataHcpPackerArtifact_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ datahcppackerartifact.DataHcpPackerArtifact_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/datahcppackerartifact"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcppackerartifact"
 
 datahcppackerartifact.DataHcpPackerArtifact_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -835,7 +835,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifactConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/datahcppackerartifact"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcppackerartifact"
 
 &datahcppackerartifact.DataHcpPackerArtifactConfig {
 	Connection: interface{},

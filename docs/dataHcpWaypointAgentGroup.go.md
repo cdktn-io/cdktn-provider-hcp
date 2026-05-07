@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpWaypointAgentGroup.DataHcpWaypointAgentGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/datahcpwaypointagentgroup"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpwaypointagentgroup"
 
 datahcpwaypointagentgroup.NewDataHcpWaypointAgentGroup(scope Construct, id *string, config DataHcpWaypointAgentGroupConfig) DataHcpWaypointAgentGroup
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.dataHcpWaypointAgentGroup.DataHcpWaypointAgentGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/datahcpwaypointagentgroup"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpwaypointagentgroup"
 
 datahcpwaypointagentgroup.DataHcpWaypointAgentGroup_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.dataHcpWaypointAgentGroup.DataHcpWaypointAgentGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/datahcpwaypointagentgroup"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpwaypointagentgroup"
 
 datahcpwaypointagentgroup.DataHcpWaypointAgentGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datahcpwaypointagentgroup.DataHcpWaypointAgentGroup_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-hcp.dataHcpWaypointAgentGroup.DataHcpWaypointAgentGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/datahcpwaypointagentgroup"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpwaypointagentgroup"
 
 datahcpwaypointagentgroup.DataHcpWaypointAgentGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datahcpwaypointagentgroup.DataHcpWaypointAgentGroup_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.dataHcpWaypointAgentGroup.DataHcpWaypointAgentGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/datahcpwaypointagentgroup"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpwaypointagentgroup"
 
 datahcpwaypointagentgroup.DataHcpWaypointAgentGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -620,7 +620,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpWaypointAgentGroup.DataHcpWaypointAgentGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/datahcpwaypointagentgroup"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpwaypointagentgroup"
 
 &datahcpwaypointagentgroup.DataHcpWaypointAgentGroupConfig {
 	Connection: interface{},

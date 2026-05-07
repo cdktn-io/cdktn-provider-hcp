@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.logStreamingDestination.LogStreamingDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/logstreamingdestination"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/logstreamingdestination"
 
 logstreamingdestination.NewLogStreamingDestination(scope Construct, id *string, config LogStreamingDestinationConfig) LogStreamingDestination
 ```
@@ -460,7 +460,7 @@ func ResetSplunkCloud()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.logStreamingDestination.LogStreamingDestination.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/logstreamingdestination"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/logstreamingdestination"
 
 logstreamingdestination.LogStreamingDestination_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.logStreamingDestination.LogStreamingDestination.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/logstreamingdestination"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/logstreamingdestination"
 
 logstreamingdestination.LogStreamingDestination_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ logstreamingdestination.LogStreamingDestination_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.logStreamingDestination.LogStreamingDestination.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/logstreamingdestination"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/logstreamingdestination"
 
 logstreamingdestination.LogStreamingDestination_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ logstreamingdestination.LogStreamingDestination_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.logStreamingDestination.LogStreamingDestination.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/logstreamingdestination"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/logstreamingdestination"
 
 logstreamingdestination.LogStreamingDestination_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -848,7 +848,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.logStreamingDestination.LogStreamingDestinationCloudwatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/logstreamingdestination"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/logstreamingdestination"
 
 &logstreamingdestination.LogStreamingDestinationCloudwatch {
 	ExternalId: *string,
@@ -930,7 +930,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.logStreamingDestination.LogStreamingDestinationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/logstreamingdestination"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/logstreamingdestination"
 
 &logstreamingdestination.LogStreamingDestinationConfig {
 	Connection: interface{},
@@ -941,9 +941,9 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/logstreamingdestinatio
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	Cloudwatch: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11.logStreamingDestination.LogStreamingDestinationCloudwatch,
-	Datadog: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11.logStreamingDestination.LogStreamingDestinationDatadog,
-	SplunkCloud: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11.logStreamingDestination.LogStreamingDestinationSplunkCloud,
+	Cloudwatch: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12.logStreamingDestination.LogStreamingDestinationCloudwatch,
+	Datadog: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12.logStreamingDestination.LogStreamingDestinationDatadog,
+	SplunkCloud: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12.logStreamingDestination.LogStreamingDestinationSplunkCloud,
 }
 ```
 
@@ -1090,7 +1090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.logStreamingDestination.LogStreamingDestinationDatadog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/logstreamingdestination"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/logstreamingdestination"
 
 &logstreamingdestination.LogStreamingDestinationDatadog {
 	ApiKey: *string,
@@ -1156,7 +1156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.logStreamingDestination.LogStreamingDestinationSplunkCloud.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/logstreamingdestination"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/logstreamingdestination"
 
 &logstreamingdestination.LogStreamingDestinationSplunkCloud {
 	Endpoint: *string,
@@ -1208,7 +1208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.logStreamingDestination.LogStreamingDestinationCloudwatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/logstreamingdestination"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/logstreamingdestination"
 
 logstreamingdestination.NewLogStreamingDestinationCloudwatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogStreamingDestinationCloudwatchOutputReference
 ```
@@ -1552,7 +1552,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.logStreamingDestination.LogStreamingDestinationDatadogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/logstreamingdestination"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/logstreamingdestination"
 
 logstreamingdestination.NewLogStreamingDestinationDatadogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogStreamingDestinationDatadogOutputReference
 ```
@@ -1874,7 +1874,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.logStreamingDestination.LogStreamingDestinationSplunkCloudOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/logstreamingdestination"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/logstreamingdestination"
 
 logstreamingdestination.NewLogStreamingDestinationSplunkCloudOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogStreamingDestinationSplunkCloudOutputReference
 ```
