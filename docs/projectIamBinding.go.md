@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.projectIamBinding.ProjectIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/projectiambinding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/projectiambinding"
 
 projectiambinding.NewProjectIamBinding(scope Construct, id *string, config ProjectIamBindingConfig) ProjectIamBinding
 ```
@@ -407,7 +407,7 @@ func ResetProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.projectIamBinding.ProjectIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/projectiambinding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/projectiambinding"
 
 projectiambinding.ProjectIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.projectIamBinding.ProjectIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/projectiambinding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/projectiambinding"
 
 projectiambinding.ProjectIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ projectiambinding.ProjectIamBinding_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.projectIamBinding.ProjectIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/projectiambinding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/projectiambinding"
 
 projectiambinding.ProjectIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ projectiambinding.ProjectIamBinding_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.projectIamBinding.ProjectIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/projectiambinding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/projectiambinding"
 
 projectiambinding.ProjectIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.projectIamBinding.ProjectIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/projectiambinding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/projectiambinding"
 
 &projectiambinding.ProjectIamBindingConfig {
 	Connection: interface{},

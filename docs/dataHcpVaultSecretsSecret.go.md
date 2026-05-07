@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpVaultSecretsSecret.DataHcpVaultSecretsSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/datahcpvaultsecretssecret"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpvaultsecretssecret"
 
 datahcpvaultsecretssecret.NewDataHcpVaultSecretsSecret(scope Construct, id *string, config DataHcpVaultSecretsSecretConfig) DataHcpVaultSecretsSecret
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.dataHcpVaultSecretsSecret.DataHcpVaultSecretsSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/datahcpvaultsecretssecret"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpvaultsecretssecret"
 
 datahcpvaultsecretssecret.DataHcpVaultSecretsSecret_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.dataHcpVaultSecretsSecret.DataHcpVaultSecretsSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/datahcpvaultsecretssecret"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpvaultsecretssecret"
 
 datahcpvaultsecretssecret.DataHcpVaultSecretsSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datahcpvaultsecretssecret.DataHcpVaultSecretsSecret_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-hcp.dataHcpVaultSecretsSecret.DataHcpVaultSecretsSecret.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/datahcpvaultsecretssecret"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpvaultsecretssecret"
 
 datahcpvaultsecretssecret.DataHcpVaultSecretsSecret_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datahcpvaultsecretssecret.DataHcpVaultSecretsSecret_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.dataHcpVaultSecretsSecret.DataHcpVaultSecretsSecret.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/datahcpvaultsecretssecret"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpvaultsecretssecret"
 
 datahcpvaultsecretssecret.DataHcpVaultSecretsSecret_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -653,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpVaultSecretsSecret.DataHcpVaultSecretsSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v11/datahcpvaultsecretssecret"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpvaultsecretssecret"
 
 &datahcpvaultsecretssecret.DataHcpVaultSecretsSecretConfig {
 	Connection: interface{},
