@@ -4,7 +4,7 @@
 
 ### PackerChannel <a name="PackerChannel" id="@cdktn/provider-hcp.packerChannel.PackerChannel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/packer_channel hcp_packer_channel}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/packer_channel hcp_packer_channel}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.packerChannel.PackerChannel.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the PackerChannel to import.
 
 The id of the existing PackerChannel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/packer_channel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/packer_channel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -949,7 +949,7 @@ new PackerChannelConfig {
 | <code><a href="#@cdktn/provider-hcp.packerChannel.PackerChannelConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.packerChannel.PackerChannelConfig.property.bucketName">BucketName</a></code> | <code>string</code> | The name of the HCP Packer Registry bucket where the channel should be created. |
 | <code><a href="#@cdktn/provider-hcp.packerChannel.PackerChannelConfig.property.name">Name</a></code> | <code>string</code> | The name of the channel being managed. |
-| <code><a href="#@cdktn/provider-hcp.packerChannel.PackerChannelConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/packer_channel#id PackerChannel#id}. |
+| <code><a href="#@cdktn/provider-hcp.packerChannel.PackerChannelConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/packer_channel#id PackerChannel#id}. |
 | <code><a href="#@cdktn/provider-hcp.packerChannel.PackerChannelConfig.property.projectId">ProjectId</a></code> | <code>string</code> | The ID of the HCP project where this channel is located. |
 | <code><a href="#@cdktn/provider-hcp.packerChannel.PackerChannelConfig.property.restricted">Restricted</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | If true, the channel is only visible to users with permission to create and manage it. |
 | <code><a href="#@cdktn/provider-hcp.packerChannel.PackerChannelConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-hcp.packerChannel.PackerChannelTimeouts">PackerChannelTimeouts</a></code> | timeouts block. |
@@ -1036,7 +1036,7 @@ public string BucketName { get; set; }
 
 The name of the HCP Packer Registry bucket where the channel should be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/packer_channel#bucket_name PackerChannel#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/packer_channel#bucket_name PackerChannel#bucket_name}
 
 ---
 
@@ -1050,7 +1050,7 @@ public string Name { get; set; }
 
 The name of the channel being managed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/packer_channel#name PackerChannel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/packer_channel#name PackerChannel#name}
 
 ---
 
@@ -1062,7 +1062,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/packer_channel#id PackerChannel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/packer_channel#id PackerChannel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1082,7 +1082,7 @@ The ID of the HCP project where this channel is located.
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/packer_channel#project_id PackerChannel#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/packer_channel#project_id PackerChannel#project_id}
 
 ---
 
@@ -1098,7 +1098,7 @@ If true, the channel is only visible to users with permission to create and mana
 
 If false, the channel is visible to every member of the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/packer_channel#restricted PackerChannel#restricted}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/packer_channel#restricted PackerChannel#restricted}
 
 ---
 
@@ -1112,7 +1112,7 @@ public PackerChannelTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/packer_channel#timeouts PackerChannel#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/packer_channel#timeouts PackerChannel#timeouts}
 
 ---
 
@@ -1135,10 +1135,10 @@ new PackerChannelTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-hcp.packerChannel.PackerChannelTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/packer_channel#create PackerChannel#create}. |
-| <code><a href="#@cdktn/provider-hcp.packerChannel.PackerChannelTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/packer_channel#default PackerChannel#default}. |
-| <code><a href="#@cdktn/provider-hcp.packerChannel.PackerChannelTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/packer_channel#delete PackerChannel#delete}. |
-| <code><a href="#@cdktn/provider-hcp.packerChannel.PackerChannelTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/packer_channel#update PackerChannel#update}. |
+| <code><a href="#@cdktn/provider-hcp.packerChannel.PackerChannelTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/packer_channel#create PackerChannel#create}. |
+| <code><a href="#@cdktn/provider-hcp.packerChannel.PackerChannelTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/packer_channel#default PackerChannel#default}. |
+| <code><a href="#@cdktn/provider-hcp.packerChannel.PackerChannelTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/packer_channel#delete PackerChannel#delete}. |
+| <code><a href="#@cdktn/provider-hcp.packerChannel.PackerChannelTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/packer_channel#update PackerChannel#update}. |
 
 ---
 
@@ -1150,7 +1150,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/packer_channel#create PackerChannel#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/packer_channel#create PackerChannel#create}.
 
 ---
 
@@ -1162,7 +1162,7 @@ public string Default { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/packer_channel#default PackerChannel#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/packer_channel#default PackerChannel#default}.
 
 ---
 
@@ -1174,7 +1174,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/packer_channel#delete PackerChannel#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/packer_channel#delete PackerChannel#delete}.
 
 ---
 
@@ -1186,7 +1186,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/packer_channel#update PackerChannel#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/packer_channel#update PackerChannel#update}.
 
 ---
 

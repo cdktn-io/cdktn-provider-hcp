@@ -4,7 +4,7 @@
 
 ### DataHcpVaultRadarResources <a name="DataHcpVaultRadarResources" id="@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResources"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_radar_resources hcp_vault_radar_resources}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/vault_radar_resources hcp_vault_radar_resources}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResources.Initializer"></a>
 
@@ -108,7 +108,7 @@ Applies a filter to the radar resources based on their URIs.
 
 The filter uses the SQL LIKE operator, which allows for wildcard matching.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_radar_resources#uri_like_filter DataHcpVaultRadarResources#uri_like_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/vault_radar_resources#uri_like_filter DataHcpVaultRadarResources#uri_like_filter}
 
 ---
 
@@ -120,7 +120,7 @@ The ID of the HCP project where Vault Radar is located.
 
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_radar_resources#project_id DataHcpVaultRadarResources#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/vault_radar_resources#project_id DataHcpVaultRadarResources#project_id}
 
 ---
 
@@ -485,7 +485,7 @@ The construct id used in the generated config for the DataHcpVaultRadarResources
 
 The id of the existing DataHcpVaultRadarResources that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_radar_resources#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/vault_radar_resources#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -831,7 +831,7 @@ Applies a filter to the radar resources based on their URIs.
 
 The filter uses the SQL LIKE operator, which allows for wildcard matching.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_radar_resources#uri_like_filter DataHcpVaultRadarResources#uri_like_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/vault_radar_resources#uri_like_filter DataHcpVaultRadarResources#uri_like_filter}
 
 ---
 
@@ -847,7 +847,7 @@ The ID of the HCP project where Vault Radar is located.
 
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_radar_resources#project_id DataHcpVaultRadarResources#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/vault_radar_resources#project_id DataHcpVaultRadarResources#project_id}
 
 ---
 
@@ -895,7 +895,7 @@ public java.util.List<java.lang.String> getValues();
 
 URI like filters to apply radar resources. Each entry in the list will act like an or condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_radar_resources#values DataHcpVaultRadarResources#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/vault_radar_resources#values DataHcpVaultRadarResources#values}
 
 ---
 
@@ -909,7 +909,7 @@ public java.lang.Boolean|IResolvable getCaseInsensitive();
 
 If true, the uri like filter will be case insensitive. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_radar_resources#case_insensitive DataHcpVaultRadarResources#case_insensitive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/vault_radar_resources#case_insensitive DataHcpVaultRadarResources#case_insensitive}
 
 ---
 
@@ -1293,12 +1293,10 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResourcesResourcesOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResourcesResourcesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResourcesResourcesOutputReference.property.connectionUrl">connectionUrl</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResourcesResourcesOutputReference.property.dataSourceInfo">dataSourceInfo</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResourcesResourcesOutputReference.property.dataSourceName">dataSourceName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResourcesResourcesOutputReference.property.dataSourceType">dataSourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResourcesResourcesOutputReference.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResourcesResourcesOutputReference.property.detectorType">detectorType</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResourcesResourcesOutputReference.property.hcpResourceId">hcpResourceId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResourcesResourcesOutputReference.property.hcpResourceName">hcpResourceName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResourcesResourcesOutputReference.property.hcpResourceStatus">hcpResourceStatus</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResourcesResourcesOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1344,16 +1342,6 @@ public java.lang.String getConnectionUrl();
 
 ---
 
-##### `dataSourceInfo`<sup>Required</sup> <a name="dataSourceInfo" id="@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResourcesResourcesOutputReference.property.dataSourceInfo"></a>
-
-```java
-public java.lang.String getDataSourceInfo();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `dataSourceName`<sup>Required</sup> <a name="dataSourceName" id="@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResourcesResourcesOutputReference.property.dataSourceName"></a>
 
 ```java
@@ -1388,16 +1376,6 @@ public java.lang.String getDescription();
 
 ```java
 public java.lang.String getDetectorType();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `hcpResourceId`<sup>Required</sup> <a name="hcpResourceId" id="@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResourcesResourcesOutputReference.property.hcpResourceId"></a>
-
-```java
-public java.lang.String getHcpResourceId();
 ```
 
 - *Type:* java.lang.String

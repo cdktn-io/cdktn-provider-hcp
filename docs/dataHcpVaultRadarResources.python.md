@@ -4,7 +4,7 @@
 
 ### DataHcpVaultRadarResources <a name="DataHcpVaultRadarResources" id="@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResources"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_radar_resources hcp_vault_radar_resources}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/vault_radar_resources hcp_vault_radar_resources}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResources.Initializer"></a>
 
@@ -110,7 +110,7 @@ Applies a filter to the radar resources based on their URIs.
 
 The filter uses the SQL LIKE operator, which allows for wildcard matching.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_radar_resources#uri_like_filter DataHcpVaultRadarResources#uri_like_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/vault_radar_resources#uri_like_filter DataHcpVaultRadarResources#uri_like_filter}
 
 ---
 
@@ -122,7 +122,7 @@ The ID of the HCP project where Vault Radar is located.
 
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_radar_resources#project_id DataHcpVaultRadarResources#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/vault_radar_resources#project_id DataHcpVaultRadarResources#project_id}
 
 ---
 
@@ -408,7 +408,7 @@ def put_uri_like_filter(
 
 URI like filters to apply radar resources. Each entry in the list will act like an or condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_radar_resources#values DataHcpVaultRadarResources#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/vault_radar_resources#values DataHcpVaultRadarResources#values}
 
 ---
 
@@ -418,7 +418,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If true, the uri like filter will be case insensitive. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_radar_resources#case_insensitive DataHcpVaultRadarResources#case_insensitive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/vault_radar_resources#case_insensitive DataHcpVaultRadarResources#case_insensitive}
 
 ---
 
@@ -542,7 +542,7 @@ The construct id used in the generated config for the DataHcpVaultRadarResources
 
 The id of the existing DataHcpVaultRadarResources that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_radar_resources#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/vault_radar_resources#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -888,7 +888,7 @@ Applies a filter to the radar resources based on their URIs.
 
 The filter uses the SQL LIKE operator, which allows for wildcard matching.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_radar_resources#uri_like_filter DataHcpVaultRadarResources#uri_like_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/vault_radar_resources#uri_like_filter DataHcpVaultRadarResources#uri_like_filter}
 
 ---
 
@@ -904,7 +904,7 @@ The ID of the HCP project where Vault Radar is located.
 
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_radar_resources#project_id DataHcpVaultRadarResources#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/vault_radar_resources#project_id DataHcpVaultRadarResources#project_id}
 
 ---
 
@@ -951,7 +951,7 @@ values: typing.List[str]
 
 URI like filters to apply radar resources. Each entry in the list will act like an or condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_radar_resources#values DataHcpVaultRadarResources#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/vault_radar_resources#values DataHcpVaultRadarResources#values}
 
 ---
 
@@ -965,7 +965,7 @@ case_insensitive: bool | IResolvable
 
 If true, the uri like filter will be case insensitive. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_radar_resources#case_insensitive DataHcpVaultRadarResources#case_insensitive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/vault_radar_resources#case_insensitive DataHcpVaultRadarResources#case_insensitive}
 
 ---
 
@@ -1386,12 +1386,10 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResourcesResourcesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResourcesResourcesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResourcesResourcesOutputReference.property.connectionUrl">connection_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResourcesResourcesOutputReference.property.dataSourceInfo">data_source_info</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResourcesResourcesOutputReference.property.dataSourceName">data_source_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResourcesResourcesOutputReference.property.dataSourceType">data_source_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResourcesResourcesOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResourcesResourcesOutputReference.property.detectorType">detector_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResourcesResourcesOutputReference.property.hcpResourceId">hcp_resource_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResourcesResourcesOutputReference.property.hcpResourceName">hcp_resource_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResourcesResourcesOutputReference.property.hcpResourceStatus">hcp_resource_status</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResourcesResourcesOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -1437,16 +1435,6 @@ connection_url: str
 
 ---
 
-##### `data_source_info`<sup>Required</sup> <a name="data_source_info" id="@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResourcesResourcesOutputReference.property.dataSourceInfo"></a>
-
-```python
-data_source_info: str
-```
-
-- *Type:* str
-
----
-
 ##### `data_source_name`<sup>Required</sup> <a name="data_source_name" id="@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResourcesResourcesOutputReference.property.dataSourceName"></a>
 
 ```python
@@ -1481,16 +1469,6 @@ description: str
 
 ```python
 detector_type: str
-```
-
-- *Type:* str
-
----
-
-##### `hcp_resource_id`<sup>Required</sup> <a name="hcp_resource_id" id="@cdktn/provider-hcp.dataHcpVaultRadarResources.DataHcpVaultRadarResourcesResourcesOutputReference.property.hcpResourceId"></a>
-
-```python
-hcp_resource_id: str
 ```
 
 - *Type:* str

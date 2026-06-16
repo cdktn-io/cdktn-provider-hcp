@@ -4,7 +4,7 @@
 
 ### VaultCluster <a name="VaultCluster" id="@cdktn/provider-hcp.vaultCluster.VaultCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster hcp_vault_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster hcp_vault_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.vaultCluster.VaultCluster.Initializer"></a>
 
@@ -645,7 +645,7 @@ The construct id used in the generated config for the VaultCluster to import.
 
 The id of the existing VaultCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1371,7 +1371,7 @@ public string CloudwatchAccessKeyId { get; set; }
 
 CloudWatch access key ID for streaming audit logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#cloudwatch_access_key_id VaultCluster#cloudwatch_access_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#cloudwatch_access_key_id VaultCluster#cloudwatch_access_key_id}
 
 ---
 
@@ -1385,7 +1385,7 @@ public string CloudwatchRegion { get; set; }
 
 CloudWatch region for streaming audit logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#cloudwatch_region VaultCluster#cloudwatch_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#cloudwatch_region VaultCluster#cloudwatch_region}
 
 ---
 
@@ -1399,7 +1399,7 @@ public string CloudwatchSecretAccessKey { get; set; }
 
 CloudWatch secret access key for streaming audit logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#cloudwatch_secret_access_key VaultCluster#cloudwatch_secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#cloudwatch_secret_access_key VaultCluster#cloudwatch_secret_access_key}
 
 ---
 
@@ -1413,7 +1413,7 @@ public string DatadogApiKey { get; set; }
 
 Datadog api key for streaming audit logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#datadog_api_key VaultCluster#datadog_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#datadog_api_key VaultCluster#datadog_api_key}
 
 ---
 
@@ -1427,7 +1427,7 @@ public string DatadogRegion { get; set; }
 
 Datadog region for streaming audit logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#datadog_region VaultCluster#datadog_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#datadog_region VaultCluster#datadog_region}
 
 ---
 
@@ -1441,7 +1441,7 @@ public string ElasticsearchEndpoint { get; set; }
 
 ElasticSearch endpoint for streaming audit logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#elasticsearch_endpoint VaultCluster#elasticsearch_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#elasticsearch_endpoint VaultCluster#elasticsearch_endpoint}
 
 ---
 
@@ -1455,7 +1455,7 @@ public string ElasticsearchPassword { get; set; }
 
 ElasticSearch password for streaming audit logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#elasticsearch_password VaultCluster#elasticsearch_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#elasticsearch_password VaultCluster#elasticsearch_password}
 
 ---
 
@@ -1469,7 +1469,7 @@ public string ElasticsearchUser { get; set; }
 
 ElasticSearch user for streaming audit logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#elasticsearch_user VaultCluster#elasticsearch_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#elasticsearch_user VaultCluster#elasticsearch_user}
 
 ---
 
@@ -1483,7 +1483,7 @@ public string GrafanaEndpoint { get; set; }
 
 Grafana endpoint for streaming audit logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#grafana_endpoint VaultCluster#grafana_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#grafana_endpoint VaultCluster#grafana_endpoint}
 
 ---
 
@@ -1497,7 +1497,7 @@ public string GrafanaPassword { get; set; }
 
 Grafana password for streaming audit logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#grafana_password VaultCluster#grafana_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#grafana_password VaultCluster#grafana_password}
 
 ---
 
@@ -1511,7 +1511,7 @@ public string GrafanaUser { get; set; }
 
 Grafana user for streaming audit logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#grafana_user VaultCluster#grafana_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#grafana_user VaultCluster#grafana_user}
 
 ---
 
@@ -1525,7 +1525,7 @@ public string HttpBasicPassword { get; set; }
 
 HTTP basic authentication password for streaming audit logs, one of the two available authentication methods, can be specified only if http_basic_user is also provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#http_basic_password VaultCluster#http_basic_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#http_basic_password VaultCluster#http_basic_password}
 
 ---
 
@@ -1539,7 +1539,7 @@ public string HttpBasicUser { get; set; }
 
 HTTP basic authentication username for streaming audit logs, one of the two available authentication methods, can be specified only if http_basic_password is also provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#http_basic_user VaultCluster#http_basic_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#http_basic_user VaultCluster#http_basic_user}
 
 ---
 
@@ -1553,7 +1553,7 @@ public string HttpBearerToken { get; set; }
 
 HTTP bearer authentication token for streaming audit logs, one of the two available authentication methods, can be specified only if http_basic_user and http_basic_password are not provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#http_bearer_token VaultCluster#http_bearer_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#http_bearer_token VaultCluster#http_bearer_token}
 
 ---
 
@@ -1567,7 +1567,7 @@ public string HttpCodec { get; set; }
 
 HTTP codec for streaming audit logs, allowed values are JSON and NDJSON.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#http_codec VaultCluster#http_codec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#http_codec VaultCluster#http_codec}
 
 ---
 
@@ -1581,7 +1581,7 @@ public bool|IResolvable HttpCompression { get; set; }
 
 HTTP compression flag for streaming audit logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#http_compression VaultCluster#http_compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#http_compression VaultCluster#http_compression}
 
 ---
 
@@ -1595,7 +1595,7 @@ public System.Collections.Generic.IDictionary<string, string> HttpHeaders { get;
 
 HTTP headers for streaming audit logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#http_headers VaultCluster#http_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#http_headers VaultCluster#http_headers}
 
 ---
 
@@ -1609,7 +1609,7 @@ public string HttpMethod { get; set; }
 
 HTTP payload method for streaming audit logs, , allowed values are PATCH, POST, or PUT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#http_method VaultCluster#http_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#http_method VaultCluster#http_method}
 
 ---
 
@@ -1623,7 +1623,7 @@ public string HttpPayloadPrefix { get; set; }
 
 HTTP payload prefix for streaming audit logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#http_payload_prefix VaultCluster#http_payload_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#http_payload_prefix VaultCluster#http_payload_prefix}
 
 ---
 
@@ -1637,7 +1637,7 @@ public string HttpPayloadSuffix { get; set; }
 
 HTTP payload suffix for streaming audit logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#http_payload_suffix VaultCluster#http_payload_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#http_payload_suffix VaultCluster#http_payload_suffix}
 
 ---
 
@@ -1651,7 +1651,7 @@ public string HttpUri { get; set; }
 
 HTTP URI for streaming audit logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#http_uri VaultCluster#http_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#http_uri VaultCluster#http_uri}
 
 ---
 
@@ -1665,7 +1665,7 @@ public string NewrelicAccountId { get; set; }
 
 NewRelic Account ID for streaming audit logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#newrelic_account_id VaultCluster#newrelic_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#newrelic_account_id VaultCluster#newrelic_account_id}
 
 ---
 
@@ -1679,7 +1679,7 @@ public string NewrelicLicenseKey { get; set; }
 
 NewRelic license key for streaming audit logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#newrelic_license_key VaultCluster#newrelic_license_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#newrelic_license_key VaultCluster#newrelic_license_key}
 
 ---
 
@@ -1693,7 +1693,7 @@ public string NewrelicRegion { get; set; }
 
 NewRelic region for streaming audit logs, allowed values are "US" and "EU".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#newrelic_region VaultCluster#newrelic_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#newrelic_region VaultCluster#newrelic_region}
 
 ---
 
@@ -1707,7 +1707,7 @@ public string SplunkHecendpoint { get; set; }
 
 Splunk endpoint for streaming audit logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#splunk_hecendpoint VaultCluster#splunk_hecendpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#splunk_hecendpoint VaultCluster#splunk_hecendpoint}
 
 ---
 
@@ -1721,7 +1721,7 @@ public string SplunkToken { get; set; }
 
 Splunk token for streaming audit logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#splunk_token VaultCluster#splunk_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#splunk_token VaultCluster#splunk_token}
 
 ---
 
@@ -1772,7 +1772,7 @@ new VaultClusterConfig {
 | <code><a href="#@cdktn/provider-hcp.vaultCluster.VaultClusterConfig.property.clusterId">ClusterId</a></code> | <code>string</code> | The ID of the HCP Vault cluster. |
 | <code><a href="#@cdktn/provider-hcp.vaultCluster.VaultClusterConfig.property.hvnId">HvnId</a></code> | <code>string</code> | The ID of the HVN this HCP Vault cluster is associated to. |
 | <code><a href="#@cdktn/provider-hcp.vaultCluster.VaultClusterConfig.property.auditLogConfig">AuditLogConfig</a></code> | <code><a href="#@cdktn/provider-hcp.vaultCluster.VaultClusterAuditLogConfig">VaultClusterAuditLogConfig</a></code> | audit_log_config block. |
-| <code><a href="#@cdktn/provider-hcp.vaultCluster.VaultClusterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#id VaultCluster#id}. |
+| <code><a href="#@cdktn/provider-hcp.vaultCluster.VaultClusterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#id VaultCluster#id}. |
 | <code><a href="#@cdktn/provider-hcp.vaultCluster.VaultClusterConfig.property.ipAllowlist">IpAllowlist</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-hcp.vaultCluster.VaultClusterIpAllowlistStruct">VaultClusterIpAllowlistStruct</a>[]</code> | ip_allowlist block. |
 | <code><a href="#@cdktn/provider-hcp.vaultCluster.VaultClusterConfig.property.majorVersionUpgradeConfig">MajorVersionUpgradeConfig</a></code> | <code><a href="#@cdktn/provider-hcp.vaultCluster.VaultClusterMajorVersionUpgradeConfig">VaultClusterMajorVersionUpgradeConfig</a></code> | major_version_upgrade_config block. |
 | <code><a href="#@cdktn/provider-hcp.vaultCluster.VaultClusterConfig.property.metricsConfig">MetricsConfig</a></code> | <code><a href="#@cdktn/provider-hcp.vaultCluster.VaultClusterMetricsConfig">VaultClusterMetricsConfig</a></code> | metrics_config block. |
@@ -1867,7 +1867,7 @@ public string ClusterId { get; set; }
 
 The ID of the HCP Vault cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#cluster_id VaultCluster#cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#cluster_id VaultCluster#cluster_id}
 
 ---
 
@@ -1881,7 +1881,7 @@ public string HvnId { get; set; }
 
 The ID of the HVN this HCP Vault cluster is associated to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#hvn_id VaultCluster#hvn_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#hvn_id VaultCluster#hvn_id}
 
 ---
 
@@ -1895,7 +1895,7 @@ public VaultClusterAuditLogConfig AuditLogConfig { get; set; }
 
 audit_log_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#audit_log_config VaultCluster#audit_log_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#audit_log_config VaultCluster#audit_log_config}
 
 ---
 
@@ -1907,7 +1907,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#id VaultCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#id VaultCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1924,7 +1924,7 @@ public IResolvable|VaultClusterIpAllowlistStruct[] IpAllowlist { get; set; }
 
 ip_allowlist block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#ip_allowlist VaultCluster#ip_allowlist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#ip_allowlist VaultCluster#ip_allowlist}
 
 ---
 
@@ -1938,7 +1938,7 @@ public VaultClusterMajorVersionUpgradeConfig MajorVersionUpgradeConfig { get; se
 
 major_version_upgrade_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#major_version_upgrade_config VaultCluster#major_version_upgrade_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#major_version_upgrade_config VaultCluster#major_version_upgrade_config}
 
 ---
 
@@ -1952,7 +1952,7 @@ public VaultClusterMetricsConfig MetricsConfig { get; set; }
 
 metrics_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#metrics_config VaultCluster#metrics_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#metrics_config VaultCluster#metrics_config}
 
 ---
 
@@ -1966,9 +1966,9 @@ public string MinVaultVersion { get; set; }
 
 The minimum Vault version to use when creating the cluster.
 
-If not specified, it is defaulted to the version that is currently recommended by HCP.
+If not specified, it is defaulted to the version that is currently recommended by HCP. For example, `v1.21.2`. Refer to the [HCP Vault changelog](https://developer.hashicorp.com/hcp/docs/changelog) for available versions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#min_vault_version VaultCluster#min_vault_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#min_vault_version VaultCluster#min_vault_version}
 
 ---
 
@@ -1982,7 +1982,7 @@ public string[] PathsFilter { get; set; }
 
 The performance replication [paths filter](https://developer.hashicorp.com/vault/tutorials/cloud-ops/vault-replication-terraform). Applies to performance replication secondaries only and operates in "deny" mode only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#paths_filter VaultCluster#paths_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#paths_filter VaultCluster#paths_filter}
 
 ---
 
@@ -1998,7 +1998,7 @@ The `self_link` of the HCP Vault Plus tier cluster which is the primary in the p
 
 If not specified, it is a standalone Plus tier HCP Vault cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#primary_link VaultCluster#primary_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#primary_link VaultCluster#primary_link}
 
 ---
 
@@ -2015,7 +2015,7 @@ The ID of the HCP project where the Vault cluster is located.
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#project_id VaultCluster#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#project_id VaultCluster#project_id}
 
 ---
 
@@ -2029,7 +2029,7 @@ public string ProxyEndpoint { get; set; }
 
 Denotes that the cluster has a proxy endpoint. Valid options are `ENABLED`, `DISABLED`. Defaults to `DISABLED`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#proxy_endpoint VaultCluster#proxy_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#proxy_endpoint VaultCluster#proxy_endpoint}
 
 ---
 
@@ -2043,7 +2043,7 @@ public bool|IResolvable PublicEndpoint { get; set; }
 
 Denotes that the cluster has a public endpoint. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#public_endpoint VaultCluster#public_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#public_endpoint VaultCluster#public_endpoint}
 
 ---
 
@@ -2059,7 +2059,7 @@ Tier of the HCP Vault cluster.
 
 Valid options for tiers - `dev`, `standard_small`, `standard_medium`, `standard_large`, `plus_small`, `plus_medium`, `plus_large`. See [pricing information](https://www.hashicorp.com/products/vault/pricing). Changing a cluster's size or tier is only available to admins. See [Scale a cluster](https://registry.terraform.io/providers/hashicorp/hcp/latest/docs/guides/vault-scaling).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#tier VaultCluster#tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#tier VaultCluster#tier}
 
 ---
 
@@ -2073,7 +2073,7 @@ public VaultClusterTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#timeouts VaultCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#timeouts VaultCluster#timeouts}
 
 ---
 
@@ -2109,7 +2109,7 @@ public string Address { get; set; }
 
 IP address range in CIDR notation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#address VaultCluster#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#address VaultCluster#address}
 
 ---
 
@@ -2123,7 +2123,7 @@ public string Description { get; set; }
 
 Description to help identify source (maximum 255 chars).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#description VaultCluster#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#description VaultCluster#description}
 
 ---
 
@@ -2161,7 +2161,7 @@ public string UpgradeType { get; set; }
 
 The major upgrade type for the cluster. Valid options for upgrade type - `AUTOMATIC`, `SCHEDULED`, `MANUAL`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#upgrade_type VaultCluster#upgrade_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#upgrade_type VaultCluster#upgrade_type}
 
 ---
 
@@ -2177,7 +2177,7 @@ The maintenance day of the week for scheduled upgrades.
 
 Valid options for maintenance window day - `MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`, `FRIDAY`, `SATURDAY`, `SUNDAY`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#maintenance_window_day VaultCluster#maintenance_window_day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#maintenance_window_day VaultCluster#maintenance_window_day}
 
 ---
 
@@ -2191,7 +2191,7 @@ public string MaintenanceWindowTime { get; set; }
 
 The maintenance time frame for scheduled upgrades. Valid options for maintenance window time - `WINDOW_12AM_4AM`, `WINDOW_6AM_10AM`, `WINDOW_12PM_4PM`, `WINDOW_6PM_10PM`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#maintenance_window_time VaultCluster#maintenance_window_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#maintenance_window_time VaultCluster#maintenance_window_time}
 
 ---
 
@@ -2275,7 +2275,7 @@ public string CloudwatchAccessKeyId { get; set; }
 
 CloudWatch access key ID for streaming metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#cloudwatch_access_key_id VaultCluster#cloudwatch_access_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#cloudwatch_access_key_id VaultCluster#cloudwatch_access_key_id}
 
 ---
 
@@ -2289,7 +2289,7 @@ public string CloudwatchRegion { get; set; }
 
 CloudWatch region for streaming metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#cloudwatch_region VaultCluster#cloudwatch_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#cloudwatch_region VaultCluster#cloudwatch_region}
 
 ---
 
@@ -2303,7 +2303,7 @@ public string CloudwatchSecretAccessKey { get; set; }
 
 CloudWatch secret access key for streaming metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#cloudwatch_secret_access_key VaultCluster#cloudwatch_secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#cloudwatch_secret_access_key VaultCluster#cloudwatch_secret_access_key}
 
 ---
 
@@ -2317,7 +2317,7 @@ public string DatadogApiKey { get; set; }
 
 Datadog api key for streaming metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#datadog_api_key VaultCluster#datadog_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#datadog_api_key VaultCluster#datadog_api_key}
 
 ---
 
@@ -2331,7 +2331,7 @@ public string DatadogRegion { get; set; }
 
 Datadog region for streaming metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#datadog_region VaultCluster#datadog_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#datadog_region VaultCluster#datadog_region}
 
 ---
 
@@ -2345,7 +2345,7 @@ public string ElasticsearchEndpoint { get; set; }
 
 ElasticSearch endpoint for streaming metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#elasticsearch_endpoint VaultCluster#elasticsearch_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#elasticsearch_endpoint VaultCluster#elasticsearch_endpoint}
 
 ---
 
@@ -2359,7 +2359,7 @@ public string ElasticsearchPassword { get; set; }
 
 ElasticSearch password for streaming metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#elasticsearch_password VaultCluster#elasticsearch_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#elasticsearch_password VaultCluster#elasticsearch_password}
 
 ---
 
@@ -2373,7 +2373,7 @@ public string ElasticsearchUser { get; set; }
 
 ElasticSearch user for streaming metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#elasticsearch_user VaultCluster#elasticsearch_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#elasticsearch_user VaultCluster#elasticsearch_user}
 
 ---
 
@@ -2387,7 +2387,7 @@ public string GrafanaEndpoint { get; set; }
 
 Grafana endpoint for streaming metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#grafana_endpoint VaultCluster#grafana_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#grafana_endpoint VaultCluster#grafana_endpoint}
 
 ---
 
@@ -2401,7 +2401,7 @@ public string GrafanaPassword { get; set; }
 
 Grafana password for streaming metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#grafana_password VaultCluster#grafana_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#grafana_password VaultCluster#grafana_password}
 
 ---
 
@@ -2415,7 +2415,7 @@ public string GrafanaUser { get; set; }
 
 Grafana user for streaming metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#grafana_user VaultCluster#grafana_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#grafana_user VaultCluster#grafana_user}
 
 ---
 
@@ -2429,7 +2429,7 @@ public string HttpBasicPassword { get; set; }
 
 HTTP basic authentication password for streaming metrics, one of the two available authentication methods, can be specified only if http_basic_user is also specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#http_basic_password VaultCluster#http_basic_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#http_basic_password VaultCluster#http_basic_password}
 
 ---
 
@@ -2443,7 +2443,7 @@ public string HttpBasicUser { get; set; }
 
 HTTP basic authentication username for streaming metrics, one of the two available authentication methods, can be specified only if http_basic_password is also specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#http_basic_user VaultCluster#http_basic_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#http_basic_user VaultCluster#http_basic_user}
 
 ---
 
@@ -2457,7 +2457,7 @@ public string HttpBearerToken { get; set; }
 
 HTTP bearer authentication token for streaming metrics, one of the two available authentication methods, can be specified only if http_basic_user and http_basic_password are not provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#http_bearer_token VaultCluster#http_bearer_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#http_bearer_token VaultCluster#http_bearer_token}
 
 ---
 
@@ -2471,7 +2471,7 @@ public string HttpCodec { get; set; }
 
 HTTP codec for streaming metrics, allowed values are JSON and NDJSON.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#http_codec VaultCluster#http_codec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#http_codec VaultCluster#http_codec}
 
 ---
 
@@ -2485,7 +2485,7 @@ public bool|IResolvable HttpCompression { get; set; }
 
 HTTP compression flag for streaming metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#http_compression VaultCluster#http_compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#http_compression VaultCluster#http_compression}
 
 ---
 
@@ -2499,7 +2499,7 @@ public System.Collections.Generic.IDictionary<string, string> HttpHeaders { get;
 
 HTTP headers for streaming metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#http_headers VaultCluster#http_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#http_headers VaultCluster#http_headers}
 
 ---
 
@@ -2513,7 +2513,7 @@ public string HttpMethod { get; set; }
 
 HTTP payload method for streaming metrics, allowed values are PATCH, POST, or PUT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#http_method VaultCluster#http_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#http_method VaultCluster#http_method}
 
 ---
 
@@ -2527,7 +2527,7 @@ public string HttpPayloadPrefix { get; set; }
 
 HTTP payload prefix for streaming metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#http_payload_prefix VaultCluster#http_payload_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#http_payload_prefix VaultCluster#http_payload_prefix}
 
 ---
 
@@ -2541,7 +2541,7 @@ public string HttpPayloadSuffix { get; set; }
 
 HTTP payload suffix for streaming metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#http_payload_suffix VaultCluster#http_payload_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#http_payload_suffix VaultCluster#http_payload_suffix}
 
 ---
 
@@ -2555,7 +2555,7 @@ public string HttpUri { get; set; }
 
 HTTP URI for streaming metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#http_uri VaultCluster#http_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#http_uri VaultCluster#http_uri}
 
 ---
 
@@ -2569,7 +2569,7 @@ public string NewrelicAccountId { get; set; }
 
 NewRelic Account ID for streaming metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#newrelic_account_id VaultCluster#newrelic_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#newrelic_account_id VaultCluster#newrelic_account_id}
 
 ---
 
@@ -2583,7 +2583,7 @@ public string NewrelicLicenseKey { get; set; }
 
 NewRelic license key for streaming metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#newrelic_license_key VaultCluster#newrelic_license_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#newrelic_license_key VaultCluster#newrelic_license_key}
 
 ---
 
@@ -2597,7 +2597,7 @@ public string NewrelicRegion { get; set; }
 
 NewRelic region for streaming metrics, allowed values are "US" and "EU".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#newrelic_region VaultCluster#newrelic_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#newrelic_region VaultCluster#newrelic_region}
 
 ---
 
@@ -2611,7 +2611,7 @@ public string SplunkHecendpoint { get; set; }
 
 Splunk endpoint for streaming metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#splunk_hecendpoint VaultCluster#splunk_hecendpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#splunk_hecendpoint VaultCluster#splunk_hecendpoint}
 
 ---
 
@@ -2625,7 +2625,7 @@ public string SplunkToken { get; set; }
 
 Splunk token for streaming metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#splunk_token VaultCluster#splunk_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#splunk_token VaultCluster#splunk_token}
 
 ---
 
@@ -2648,10 +2648,10 @@ new VaultClusterTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-hcp.vaultCluster.VaultClusterTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#create VaultCluster#create}. |
-| <code><a href="#@cdktn/provider-hcp.vaultCluster.VaultClusterTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#default VaultCluster#default}. |
-| <code><a href="#@cdktn/provider-hcp.vaultCluster.VaultClusterTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#delete VaultCluster#delete}. |
-| <code><a href="#@cdktn/provider-hcp.vaultCluster.VaultClusterTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#update VaultCluster#update}. |
+| <code><a href="#@cdktn/provider-hcp.vaultCluster.VaultClusterTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#create VaultCluster#create}. |
+| <code><a href="#@cdktn/provider-hcp.vaultCluster.VaultClusterTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#default VaultCluster#default}. |
+| <code><a href="#@cdktn/provider-hcp.vaultCluster.VaultClusterTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#delete VaultCluster#delete}. |
+| <code><a href="#@cdktn/provider-hcp.vaultCluster.VaultClusterTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#update VaultCluster#update}. |
 
 ---
 
@@ -2663,7 +2663,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#create VaultCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#create VaultCluster#create}.
 
 ---
 
@@ -2675,7 +2675,7 @@ public string Default { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#default VaultCluster#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#default VaultCluster#default}.
 
 ---
 
@@ -2687,7 +2687,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#delete VaultCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#delete VaultCluster#delete}.
 
 ---
 
@@ -2699,7 +2699,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_cluster#update VaultCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_cluster#update VaultCluster#update}.
 
 ---
 
