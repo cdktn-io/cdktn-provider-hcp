@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_radar_source_github_cloud
+// https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_radar_source_github_cloud
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,33 +13,39 @@ import * as cdktn from 'cdktn';
 
 export interface VaultRadarSourceGithubCloudConfig extends cdktn.TerraformMetaArguments {
   /**
-  * The detector type which will monitor this resource. The default is HCP if not specified.
+  * The detector type to use for monitoring this source. Valid values are 'hcp' (managed by HCP) or 'agent' (self-hosted agent). Defaults to 'hcp'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_radar_source_github_cloud#detector_type VaultRadarSourceGithubCloud#detector_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_radar_source_github_cloud#detector_type VaultRadarSourceGithubCloud#detector_type}
   */
   readonly detectorType?: string;
   /**
   * GitHub organization Vault Radar will monitor. Example: type "octocat" for the org https://github.com/octocat
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_radar_source_github_cloud#github_organization VaultRadarSourceGithubCloud#github_organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_radar_source_github_cloud#github_organization VaultRadarSourceGithubCloud#github_organization}
   */
   readonly githubOrganization: string;
   /**
   * The ID of the HCP project where Vault Radar is located. If not specified, the project specified in the HCP Provider config block will be used, if configured.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_radar_source_github_cloud#project_id VaultRadarSourceGithubCloud#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_radar_source_github_cloud#project_id VaultRadarSourceGithubCloud#project_id}
   */
   readonly projectId?: string;
   /**
-  * GitHub personal access token.
+  * GitHub personal access token. Required when detector_type is 'hcp' or not specified (defaults to 'hcp'). Cannot be used when detector_type is 'agent'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_radar_source_github_cloud#token VaultRadarSourceGithubCloud#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_radar_source_github_cloud#token VaultRadarSourceGithubCloud#token}
   */
-  readonly token: string;
+  readonly token?: string;
+  /**
+  * Environment variable name containing the GitHub personal access token. When detector_type is 'agent', this is required. When detector_type is 'hcp' or not specified (defaults to 'hcp'), this is optional and can be set to enable optional secret copying via the Vault Radar Agent.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_radar_source_github_cloud#token_env_var VaultRadarSourceGithubCloud#token_env_var}
+  */
+  readonly tokenEnvVar?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_radar_source_github_cloud hcp_vault_radar_source_github_cloud}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_radar_source_github_cloud hcp_vault_radar_source_github_cloud}
 */
 export class VaultRadarSourceGithubCloud extends cdktn.TerraformResource {
 
@@ -55,7 +61,7 @@ export class VaultRadarSourceGithubCloud extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a VaultRadarSourceGithubCloud resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VaultRadarSourceGithubCloud to import
-  * @param importFromId The id of the existing VaultRadarSourceGithubCloud that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_radar_source_github_cloud#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VaultRadarSourceGithubCloud that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_radar_source_github_cloud#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VaultRadarSourceGithubCloud to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +73,7 @@ export class VaultRadarSourceGithubCloud extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_radar_source_github_cloud hcp_vault_radar_source_github_cloud} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_radar_source_github_cloud hcp_vault_radar_source_github_cloud} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +84,7 @@ export class VaultRadarSourceGithubCloud extends cdktn.TerraformResource {
       terraformResourceType: 'hcp_vault_radar_source_github_cloud',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.111.0',
+        providerVersion: '0.112.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
@@ -93,6 +99,7 @@ export class VaultRadarSourceGithubCloud extends cdktn.TerraformResource {
     this._githubOrganization = config.githubOrganization;
     this._projectId = config.projectId;
     this._token = config.token;
+    this._tokenEnvVar = config.tokenEnvVar;
   }
 
   // ==========
@@ -149,7 +156,7 @@ export class VaultRadarSourceGithubCloud extends cdktn.TerraformResource {
     return this._projectId;
   }
 
-  // token - computed: false, optional: false, required: true
+  // token - computed: false, optional: true, required: false
   private _token?: string; 
   public get token() {
     return this.getStringAttribute('token');
@@ -157,9 +164,28 @@ export class VaultRadarSourceGithubCloud extends cdktn.TerraformResource {
   public set token(value: string) {
     this._token = value;
   }
+  public resetToken() {
+    this._token = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get tokenInput() {
     return this._token;
+  }
+
+  // token_env_var - computed: false, optional: true, required: false
+  private _tokenEnvVar?: string; 
+  public get tokenEnvVar() {
+    return this.getStringAttribute('token_env_var');
+  }
+  public set tokenEnvVar(value: string) {
+    this._tokenEnvVar = value;
+  }
+  public resetTokenEnvVar() {
+    this._tokenEnvVar = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tokenEnvVarInput() {
+    return this._tokenEnvVar;
   }
 
   // =========
@@ -172,6 +198,7 @@ export class VaultRadarSourceGithubCloud extends cdktn.TerraformResource {
       github_organization: cdktn.stringToTerraform(this._githubOrganization),
       project_id: cdktn.stringToTerraform(this._projectId),
       token: cdktn.stringToTerraform(this._token),
+      token_env_var: cdktn.stringToTerraform(this._tokenEnvVar),
     };
   }
 
@@ -197,6 +224,12 @@ export class VaultRadarSourceGithubCloud extends cdktn.TerraformResource {
       },
       token: {
         value: cdktn.stringToHclTerraform(this._token),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      token_env_var: {
+        value: cdktn.stringToHclTerraform(this._tokenEnvVar),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/boundary_cluster
+// https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/boundary_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataHcpBoundaryClusterConfig extends cdktn.TerraformMetaArgumen
   /**
   * The ID of the Boundary cluster
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/boundary_cluster#cluster_id DataHcpBoundaryCluster#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/boundary_cluster#cluster_id DataHcpBoundaryCluster#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/boundary_cluster#id DataHcpBoundaryCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/boundary_cluster#id DataHcpBoundaryCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -31,13 +31,13 @@ export interface DataHcpBoundaryClusterConfig extends cdktn.TerraformMetaArgumen
   * If not specified, the project specified in the HCP Provider config block will be used, if configured.
   * If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/boundary_cluster#project_id DataHcpBoundaryCluster#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/boundary_cluster#project_id DataHcpBoundaryCluster#project_id}
   */
   readonly projectId?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/boundary_cluster#timeouts DataHcpBoundaryCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/boundary_cluster#timeouts DataHcpBoundaryCluster#timeouts}
   */
   readonly timeouts?: DataHcpBoundaryClusterTimeouts;
 }
@@ -47,7 +47,7 @@ export interface DataHcpBoundaryClusterMaintenanceWindowConfig {
 export function dataHcpBoundaryClusterMaintenanceWindowConfigToTerraform(struct?: DataHcpBoundaryClusterMaintenanceWindowConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -57,7 +57,7 @@ export function dataHcpBoundaryClusterMaintenanceWindowConfigToTerraform(struct?
 export function dataHcpBoundaryClusterMaintenanceWindowConfigToHclTerraform(struct?: DataHcpBoundaryClusterMaintenanceWindowConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -133,7 +133,7 @@ export class DataHcpBoundaryClusterMaintenanceWindowConfigList extends cdktn.Com
 }
 export interface DataHcpBoundaryClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/boundary_cluster#default DataHcpBoundaryCluster#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/boundary_cluster#default DataHcpBoundaryCluster#default}
   */
   readonly default?: string;
 }
@@ -141,7 +141,7 @@ export interface DataHcpBoundaryClusterTimeouts {
 export function dataHcpBoundaryClusterTimeoutsToTerraform(struct?: DataHcpBoundaryClusterTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     default: cdktn.stringToTerraform(struct!.default),
@@ -152,7 +152,7 @@ export function dataHcpBoundaryClusterTimeoutsToTerraform(struct?: DataHcpBounda
 export function dataHcpBoundaryClusterTimeoutsToHclTerraform(struct?: DataHcpBoundaryClusterTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     default: {
@@ -227,7 +227,7 @@ export class DataHcpBoundaryClusterTimeoutsOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/boundary_cluster hcp_boundary_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/boundary_cluster hcp_boundary_cluster}
 */
 export class DataHcpBoundaryCluster extends cdktn.TerraformDataSource {
 
@@ -243,7 +243,7 @@ export class DataHcpBoundaryCluster extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataHcpBoundaryCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataHcpBoundaryCluster to import
-  * @param importFromId The id of the existing DataHcpBoundaryCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/boundary_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataHcpBoundaryCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/boundary_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataHcpBoundaryCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -255,7 +255,7 @@ export class DataHcpBoundaryCluster extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/boundary_cluster hcp_boundary_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/boundary_cluster hcp_boundary_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -266,7 +266,7 @@ export class DataHcpBoundaryCluster extends cdktn.TerraformDataSource {
       terraformResourceType: 'hcp_boundary_cluster',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.111.0',
+        providerVersion: '0.112.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

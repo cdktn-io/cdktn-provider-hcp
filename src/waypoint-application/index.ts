@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_application
+// https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,37 @@ export interface WaypointApplicationConfig extends cdktn.TerraformMetaArguments 
   /**
   * List of actions by 'ID' to assign to this Template. Applications created from this Template will have these actions assigned to them. Only 'ID' is supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_application#actions WaypointApplication#actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_application#actions WaypointApplication#actions}
   */
   readonly actions?: string[];
   /**
   * Input variables set for the application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_application#application_input_variables WaypointApplication#application_input_variables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_application#application_input_variables WaypointApplication#application_input_variables}
   */
   readonly applicationInputVariables?: WaypointApplicationApplicationInputVariables[] | cdktn.IResolvable;
   /**
   * The name of the Application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_application#name WaypointApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_application#name WaypointApplication#name}
   */
   readonly name: string;
   /**
   * The ID of the HCP project where the Waypoint Application is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_application#project_id WaypointApplication#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_application#project_id WaypointApplication#project_id}
   */
   readonly projectId?: string;
   /**
   * Instructions for using the Application (markdown format supported). Note: this is a base64 encoded string, and can only be set in configuration after initial creation. The initial version of the README is generated from the README Template from source Template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_application#readme_markdown WaypointApplication#readme_markdown}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_application#readme_markdown WaypointApplication#readme_markdown}
   */
   readonly readmeMarkdown?: string;
   /**
   * ID of the Template this Application is based on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_application#template_id WaypointApplication#template_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_application#template_id WaypointApplication#template_id}
   */
   readonly templateId: string;
 }
@@ -53,19 +53,19 @@ export interface WaypointApplicationApplicationInputVariables {
   /**
   * Variable name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_application#name WaypointApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_application#name WaypointApplication#name}
   */
   readonly name: string;
   /**
   * Variable value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_application#value WaypointApplication#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_application#value WaypointApplication#value}
   */
   readonly value: string;
   /**
   * Variable type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_application#variable_type WaypointApplication#variable_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_application#variable_type WaypointApplication#variable_type}
   */
   readonly variableType: string;
 }
@@ -73,7 +73,7 @@ export interface WaypointApplicationApplicationInputVariables {
 export function waypointApplicationApplicationInputVariablesToTerraform(struct?: WaypointApplicationApplicationInputVariables | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -86,7 +86,7 @@ export function waypointApplicationApplicationInputVariablesToTerraform(struct?:
 export function waypointApplicationApplicationInputVariablesToHclTerraform(struct?: WaypointApplicationApplicationInputVariables | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -234,7 +234,7 @@ export interface WaypointApplicationOutputValues {
 export function waypointApplicationOutputValuesToTerraform(struct?: WaypointApplicationOutputValues): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -244,7 +244,7 @@ export function waypointApplicationOutputValuesToTerraform(struct?: WaypointAppl
 export function waypointApplicationOutputValuesToHclTerraform(struct?: WaypointApplicationOutputValues): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -322,19 +322,19 @@ export interface WaypointApplicationTemplateInputVariables {
   /**
   * Variable name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_application#name WaypointApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_application#name WaypointApplication#name}
   */
   readonly name: string;
   /**
   * Variable value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_application#value WaypointApplication#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_application#value WaypointApplication#value}
   */
   readonly value: string;
   /**
   * Variable type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_application#variable_type WaypointApplication#variable_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_application#variable_type WaypointApplication#variable_type}
   */
   readonly variableType?: string;
 }
@@ -342,7 +342,7 @@ export interface WaypointApplicationTemplateInputVariables {
 export function waypointApplicationTemplateInputVariablesToTerraform(struct?: WaypointApplicationTemplateInputVariables): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -355,7 +355,7 @@ export function waypointApplicationTemplateInputVariablesToTerraform(struct?: Wa
 export function waypointApplicationTemplateInputVariablesToHclTerraform(struct?: WaypointApplicationTemplateInputVariables): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -492,7 +492,7 @@ export class WaypointApplicationTemplateInputVariablesList extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_application hcp_waypoint_application}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_application hcp_waypoint_application}
 */
 export class WaypointApplication extends cdktn.TerraformResource {
 
@@ -508,7 +508,7 @@ export class WaypointApplication extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a WaypointApplication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WaypointApplication to import
-  * @param importFromId The id of the existing WaypointApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_application#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WaypointApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WaypointApplication to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -520,7 +520,7 @@ export class WaypointApplication extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_application hcp_waypoint_application} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_application hcp_waypoint_application} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -531,7 +531,7 @@ export class WaypointApplication extends cdktn.TerraformResource {
       terraformResourceType: 'hcp_waypoint_application',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.111.0',
+        providerVersion: '0.112.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

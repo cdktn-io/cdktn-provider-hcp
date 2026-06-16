@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_radar_resources
+// https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/vault_radar_resources
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataHcpVaultRadarResourcesConfig extends cdktn.TerraformMetaArg
   /**
   * The ID of the HCP project where Vault Radar is located. If not specified, the project specified in the HCP Provider config block will be used, if configured.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_radar_resources#project_id DataHcpVaultRadarResources#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/vault_radar_resources#project_id DataHcpVaultRadarResources#project_id}
   */
   readonly projectId?: string;
   /**
   * Applies a filter to the radar resources based on their URIs. The filter uses the SQL LIKE operator, which allows for wildcard matching.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_radar_resources#uri_like_filter DataHcpVaultRadarResources#uri_like_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/vault_radar_resources#uri_like_filter DataHcpVaultRadarResources#uri_like_filter}
   */
   readonly uriLikeFilter: DataHcpVaultRadarResourcesUriLikeFilter;
 }
@@ -31,7 +31,7 @@ export interface DataHcpVaultRadarResourcesResources {
 export function dataHcpVaultRadarResourcesResourcesToTerraform(struct?: DataHcpVaultRadarResourcesResources): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -41,7 +41,7 @@ export function dataHcpVaultRadarResourcesResourcesToTerraform(struct?: DataHcpV
 export function dataHcpVaultRadarResourcesResourcesToHclTerraform(struct?: DataHcpVaultRadarResourcesResources): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -81,11 +81,6 @@ export class DataHcpVaultRadarResourcesResourcesOutputReference extends cdktn.Co
     return this.getStringAttribute('connection_url');
   }
 
-  // data_source_info - computed: true, optional: false, required: false
-  public get dataSourceInfo() {
-    return this.getStringAttribute('data_source_info');
-  }
-
   // data_source_name - computed: true, optional: false, required: false
   public get dataSourceName() {
     return this.getStringAttribute('data_source_name');
@@ -104,11 +99,6 @@ export class DataHcpVaultRadarResourcesResourcesOutputReference extends cdktn.Co
   // detector_type - computed: true, optional: false, required: false
   public get detectorType() {
     return this.getStringAttribute('detector_type');
-  }
-
-  // hcp_resource_id - computed: true, optional: false, required: false
-  public get hcpResourceId() {
-    return this.getStringAttribute('hcp_resource_id');
   }
 
   // hcp_resource_name - computed: true, optional: false, required: false
@@ -169,13 +159,13 @@ export interface DataHcpVaultRadarResourcesUriLikeFilter {
   /**
   * If true, the uri like filter will be case insensitive. Defaults to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_radar_resources#case_insensitive DataHcpVaultRadarResources#case_insensitive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/vault_radar_resources#case_insensitive DataHcpVaultRadarResources#case_insensitive}
   */
   readonly caseInsensitive?: boolean | cdktn.IResolvable;
   /**
   * URI like filters to apply radar resources. Each entry in the list will act like an or condition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_radar_resources#values DataHcpVaultRadarResources#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/vault_radar_resources#values DataHcpVaultRadarResources#values}
   */
   readonly values: string[];
 }
@@ -183,7 +173,7 @@ export interface DataHcpVaultRadarResourcesUriLikeFilter {
 export function dataHcpVaultRadarResourcesUriLikeFilterToTerraform(struct?: DataHcpVaultRadarResourcesUriLikeFilter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     case_insensitive: cdktn.booleanToTerraform(struct!.caseInsensitive),
@@ -195,7 +185,7 @@ export function dataHcpVaultRadarResourcesUriLikeFilterToTerraform(struct?: Data
 export function dataHcpVaultRadarResourcesUriLikeFilterToHclTerraform(struct?: DataHcpVaultRadarResourcesUriLikeFilter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     case_insensitive: {
@@ -295,7 +285,7 @@ export class DataHcpVaultRadarResourcesUriLikeFilterOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_radar_resources hcp_vault_radar_resources}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/vault_radar_resources hcp_vault_radar_resources}
 */
 export class DataHcpVaultRadarResources extends cdktn.TerraformDataSource {
 
@@ -311,7 +301,7 @@ export class DataHcpVaultRadarResources extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataHcpVaultRadarResources resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataHcpVaultRadarResources to import
-  * @param importFromId The id of the existing DataHcpVaultRadarResources that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_radar_resources#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataHcpVaultRadarResources that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/vault_radar_resources#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataHcpVaultRadarResources to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -323,7 +313,7 @@ export class DataHcpVaultRadarResources extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/vault_radar_resources hcp_vault_radar_resources} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/vault_radar_resources hcp_vault_radar_resources} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -334,7 +324,7 @@ export class DataHcpVaultRadarResources extends cdktn.TerraformDataSource {
       terraformResourceType: 'hcp_vault_radar_resources',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.111.0',
+        providerVersion: '0.112.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
