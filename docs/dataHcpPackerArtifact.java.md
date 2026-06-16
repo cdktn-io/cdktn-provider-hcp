@@ -4,7 +4,7 @@
 
 ### DataHcpPackerArtifact <a name="DataHcpPackerArtifact" id="@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/packer_artifact hcp_packer_artifact}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/packer_artifact hcp_packer_artifact}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.Initializer"></a>
 
@@ -24,6 +24,7 @@ DataHcpPackerArtifact.Builder.create(Construct scope, java.lang.String id)
     .region(java.lang.String)
 //  .channelName(java.lang.String)
 //  .componentType(java.lang.String)
+//  .labels(java.util.Map<java.lang.String, java.lang.String>)
 //  .projectId(java.lang.String)
 //  .versionFingerprint(java.lang.String)
     .build();
@@ -45,6 +46,7 @@ DataHcpPackerArtifact.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | The Region where the HCP Packer Artifact is stored, if any. |
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.Initializer.parameter.channelName">channelName</a></code> | <code>java.lang.String</code> | The name of the HCP Packer Channel the Version containing this Artifact is assigned to. |
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.Initializer.parameter.componentType">componentType</a></code> | <code>java.lang.String</code> | Name of the Packer builder that built this Artifact. Ex: `amazon-ebs.example`. |
+| <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | When set (non-empty) with `channel_name`, the data source uses **GetImageByBuildLabels**: the channel's current version is scanned for builds whose labels contain every key/value you supply. |
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.Initializer.parameter.projectId">projectId</a></code> | <code>java.lang.String</code> | The ID of the HCP Organization where the Artifact is located. |
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.Initializer.parameter.versionFingerprint">versionFingerprint</a></code> | <code>java.lang.String</code> | The fingerprint of the HCP Packer Version where the Artifact is located. |
 
@@ -116,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the HCP Packer Bucket where the Artifact is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/packer_artifact#bucket_name DataHcpPackerArtifact#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/packer_artifact#bucket_name DataHcpPackerArtifact#bucket_name}
 
 ---
 
@@ -126,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the platform where the HCP Packer Artifact is stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/packer_artifact#platform DataHcpPackerArtifact#platform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/packer_artifact#platform DataHcpPackerArtifact#platform}
 
 ---
 
@@ -136,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Region where the HCP Packer Artifact is stored, if any.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/packer_artifact#region DataHcpPackerArtifact#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/packer_artifact#region DataHcpPackerArtifact#region}
 
 ---
 
@@ -149,7 +151,7 @@ The name of the HCP Packer Channel the Version containing this Artifact is assig
 The Version currently assigned to the Channel will be fetched.
 Exactly one of `channel_name` or `version_fingerprint` must be provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/packer_artifact#channel_name DataHcpPackerArtifact#channel_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/packer_artifact#channel_name DataHcpPackerArtifact#channel_name}
 
 ---
 
@@ -159,7 +161,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the Packer builder that built this Artifact. Ex: `amazon-ebs.example`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/packer_artifact#component_type DataHcpPackerArtifact#component_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/packer_artifact#component_type DataHcpPackerArtifact#component_type}
+
+---
+
+##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.Initializer.parameter.labels"></a>
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+When set (non-empty) with `channel_name`, the data source uses **GetImageByBuildLabels**: the channel's current version is scanned for builds whose labels contain every key/value you supply.
+
+If more than one build matches, the HCP Packer API returns the **first** candidate in **`updated_at` descending** order that also matches the **`platform`** and **`region`** you configure (sent as cloud provider and region). Always set `platform` and `region` so the result is predictable when multiple builds or clouds exist.
+
+If several builds still match the same platform and region (for example different Packer sources), use **`component_type`** to disambiguate, consistent with the non-label lookup path.
+
+When `labels` is unset or empty, this attribute is computed from the resolved build.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/packer_artifact#labels DataHcpPackerArtifact#labels}
 
 ---
 
@@ -169,7 +187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The ID of the HCP Organization where the Artifact is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/packer_artifact#project_id DataHcpPackerArtifact#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/packer_artifact#project_id DataHcpPackerArtifact#project_id}
 
 ---
 
@@ -182,7 +200,7 @@ The fingerprint of the HCP Packer Version where the Artifact is located.
 If provided in the config, it is used to fetch the Version.
 Exactly one of `channel_name` or `version_fingerprint` must be provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/packer_artifact#version_fingerprint DataHcpPackerArtifact#version_fingerprint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/packer_artifact#version_fingerprint DataHcpPackerArtifact#version_fingerprint}
 
 ---
 
@@ -210,6 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.resetChannelName">resetChannelName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.resetComponentType">resetComponentType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.resetLabels">resetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.resetProjectId">resetProjectId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.resetVersionFingerprint">resetVersionFingerprint</a></code> | *No description.* |
 
@@ -440,6 +459,12 @@ public void resetChannelName()
 public void resetComponentType()
 ```
 
+##### `resetLabels` <a name="resetLabels" id="@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.resetLabels"></a>
+
+```java
+public void resetLabels()
+```
+
 ##### `resetProjectId` <a name="resetProjectId" id="@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.resetProjectId"></a>
 
 ```java
@@ -555,7 +580,7 @@ The construct id used in the generated config for the DataHcpPackerArtifact to i
 
 The id of the existing DataHcpPackerArtifact that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/packer_artifact#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/packer_artifact#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -587,13 +612,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.property.createdAt">createdAt</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.property.externalIdentifier">externalIdentifier</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.property.labels">labels</a></code> | <code>io.cdktn.cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.property.organizationId">organizationId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.property.packerRunUuid">packerRunUuid</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.property.revokeAt">revokeAt</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.property.bucketNameInput">bucketNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.property.channelNameInput">channelNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.property.componentTypeInput">componentTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.property.labelsInput">labelsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.property.platformInput">platformInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.property.projectIdInput">projectIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -601,6 +626,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.property.bucketName">bucketName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.property.channelName">channelName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.property.componentType">componentType</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.property.platform">platform</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.property.projectId">projectId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -770,16 +796,6 @@ public java.lang.String getId();
 
 ---
 
-##### `labels`<sup>Required</sup> <a name="labels" id="@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.property.labels"></a>
-
-```java
-public StringMap getLabels();
-```
-
-- *Type:* io.cdktn.cdktn.StringMap
-
----
-
 ##### `organizationId`<sup>Required</sup> <a name="organizationId" id="@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.property.organizationId"></a>
 
 ```java
@@ -837,6 +853,16 @@ public java.lang.String getComponentTypeInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `labelsInput`<sup>Optional</sup> <a name="labelsInput" id="@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.property.labelsInput"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getLabelsInput();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
 
 ---
 
@@ -907,6 +933,16 @@ public java.lang.String getComponentType();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `labels`<sup>Required</sup> <a name="labels" id="@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.property.labels"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getLabels();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
 
 ---
 
@@ -990,6 +1026,7 @@ DataHcpPackerArtifactConfig.builder()
     .region(java.lang.String)
 //  .channelName(java.lang.String)
 //  .componentType(java.lang.String)
+//  .labels(java.util.Map<java.lang.String, java.lang.String>)
 //  .projectId(java.lang.String)
 //  .versionFingerprint(java.lang.String)
     .build();
@@ -1011,6 +1048,7 @@ DataHcpPackerArtifactConfig.builder()
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifactConfig.property.region">region</a></code> | <code>java.lang.String</code> | The Region where the HCP Packer Artifact is stored, if any. |
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifactConfig.property.channelName">channelName</a></code> | <code>java.lang.String</code> | The name of the HCP Packer Channel the Version containing this Artifact is assigned to. |
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifactConfig.property.componentType">componentType</a></code> | <code>java.lang.String</code> | Name of the Packer builder that built this Artifact. Ex: `amazon-ebs.example`. |
+| <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifactConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | When set (non-empty) with `channel_name`, the data source uses **GetImageByBuildLabels**: the channel's current version is scanned for builds whose labels contain every key/value you supply. |
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifactConfig.property.projectId">projectId</a></code> | <code>java.lang.String</code> | The ID of the HCP Organization where the Artifact is located. |
 | <code><a href="#@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifactConfig.property.versionFingerprint">versionFingerprint</a></code> | <code>java.lang.String</code> | The fingerprint of the HCP Packer Version where the Artifact is located. |
 
@@ -1096,7 +1134,7 @@ public java.lang.String getBucketName();
 
 The name of the HCP Packer Bucket where the Artifact is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/packer_artifact#bucket_name DataHcpPackerArtifact#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/packer_artifact#bucket_name DataHcpPackerArtifact#bucket_name}
 
 ---
 
@@ -1110,7 +1148,7 @@ public java.lang.String getPlatform();
 
 Name of the platform where the HCP Packer Artifact is stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/packer_artifact#platform DataHcpPackerArtifact#platform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/packer_artifact#platform DataHcpPackerArtifact#platform}
 
 ---
 
@@ -1124,7 +1162,7 @@ public java.lang.String getRegion();
 
 The Region where the HCP Packer Artifact is stored, if any.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/packer_artifact#region DataHcpPackerArtifact#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/packer_artifact#region DataHcpPackerArtifact#region}
 
 ---
 
@@ -1141,7 +1179,7 @@ The name of the HCP Packer Channel the Version containing this Artifact is assig
 The Version currently assigned to the Channel will be fetched.
 Exactly one of `channel_name` or `version_fingerprint` must be provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/packer_artifact#channel_name DataHcpPackerArtifact#channel_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/packer_artifact#channel_name DataHcpPackerArtifact#channel_name}
 
 ---
 
@@ -1155,7 +1193,27 @@ public java.lang.String getComponentType();
 
 Name of the Packer builder that built this Artifact. Ex: `amazon-ebs.example`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/packer_artifact#component_type DataHcpPackerArtifact#component_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/packer_artifact#component_type DataHcpPackerArtifact#component_type}
+
+---
+
+##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktn/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifactConfig.property.labels"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getLabels();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+When set (non-empty) with `channel_name`, the data source uses **GetImageByBuildLabels**: the channel's current version is scanned for builds whose labels contain every key/value you supply.
+
+If more than one build matches, the HCP Packer API returns the **first** candidate in **`updated_at` descending** order that also matches the **`platform`** and **`region`** you configure (sent as cloud provider and region). Always set `platform` and `region` so the result is predictable when multiple builds or clouds exist.
+
+If several builds still match the same platform and region (for example different Packer sources), use **`component_type`** to disambiguate, consistent with the non-label lookup path.
+
+When `labels` is unset or empty, this attribute is computed from the resolved build.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/packer_artifact#labels DataHcpPackerArtifact#labels}
 
 ---
 
@@ -1169,7 +1227,7 @@ public java.lang.String getProjectId();
 
 The ID of the HCP Organization where the Artifact is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/packer_artifact#project_id DataHcpPackerArtifact#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/packer_artifact#project_id DataHcpPackerArtifact#project_id}
 
 ---
 
@@ -1186,7 +1244,7 @@ The fingerprint of the HCP Packer Version where the Artifact is located.
 If provided in the config, it is used to fetch the Version.
 Exactly one of `channel_name` or `version_fingerprint` must be provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/packer_artifact#version_fingerprint DataHcpPackerArtifact#version_fingerprint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/packer_artifact#version_fingerprint DataHcpPackerArtifact#version_fingerprint}
 
 ---
 

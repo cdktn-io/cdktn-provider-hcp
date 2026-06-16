@@ -4,7 +4,7 @@
 
 ### LogStreamingDestination <a name="LogStreamingDestination" id="@cdktn/provider-hcp.logStreamingDestination.LogStreamingDestination"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/log_streaming_destination hcp_log_streaming_destination}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/log_streaming_destination hcp_log_streaming_destination}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.logStreamingDestination.LogStreamingDestination.Initializer"></a>
 
@@ -549,7 +549,7 @@ The construct id used in the generated config for the LogStreamingDestination to
 
 The id of the existing LogStreamingDestination that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/log_streaming_destination#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/log_streaming_destination#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -879,7 +879,7 @@ ExternalId *string
 
 The external_id to provide when assuming the aws IAM role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/log_streaming_destination#external_id LogStreamingDestination#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/log_streaming_destination#external_id LogStreamingDestination#external_id}
 
 ---
 
@@ -893,7 +893,7 @@ Region *string
 
 The region the CloudWatch destination is set up to stream to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/log_streaming_destination#region LogStreamingDestination#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/log_streaming_destination#region LogStreamingDestination#region}
 
 ---
 
@@ -907,7 +907,7 @@ RoleArn *string
 
 The role_arn that will be assumed to stream logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/log_streaming_destination#role_arn LogStreamingDestination#role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/log_streaming_destination#role_arn LogStreamingDestination#role_arn}
 
 ---
 
@@ -921,7 +921,7 @@ LogGroupName *string
 
 The log_group_name of the CloudWatch destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/log_streaming_destination#log_group_name LogStreamingDestination#log_group_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/log_streaming_destination#log_group_name LogStreamingDestination#log_group_name}
 
 ---
 
@@ -959,9 +959,9 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/logstreamingdestinatio
 | <code><a href="#@cdktn/provider-hcp.logStreamingDestination.LogStreamingDestinationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.logStreamingDestination.LogStreamingDestinationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.logStreamingDestination.LogStreamingDestinationConfig.property.name">Name</a></code> | <code>*string</code> | The HCP Log Streaming Destination’s name. |
-| <code><a href="#@cdktn/provider-hcp.logStreamingDestination.LogStreamingDestinationConfig.property.cloudwatch">Cloudwatch</a></code> | <code><a href="#@cdktn/provider-hcp.logStreamingDestination.LogStreamingDestinationCloudwatch">LogStreamingDestinationCloudwatch</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/log_streaming_destination#cloudwatch LogStreamingDestination#cloudwatch}. |
-| <code><a href="#@cdktn/provider-hcp.logStreamingDestination.LogStreamingDestinationConfig.property.datadog">Datadog</a></code> | <code><a href="#@cdktn/provider-hcp.logStreamingDestination.LogStreamingDestinationDatadog">LogStreamingDestinationDatadog</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/log_streaming_destination#datadog LogStreamingDestination#datadog}. |
-| <code><a href="#@cdktn/provider-hcp.logStreamingDestination.LogStreamingDestinationConfig.property.splunkCloud">SplunkCloud</a></code> | <code><a href="#@cdktn/provider-hcp.logStreamingDestination.LogStreamingDestinationSplunkCloud">LogStreamingDestinationSplunkCloud</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/log_streaming_destination#splunk_cloud LogStreamingDestination#splunk_cloud}. |
+| <code><a href="#@cdktn/provider-hcp.logStreamingDestination.LogStreamingDestinationConfig.property.cloudwatch">Cloudwatch</a></code> | <code><a href="#@cdktn/provider-hcp.logStreamingDestination.LogStreamingDestinationCloudwatch">LogStreamingDestinationCloudwatch</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/log_streaming_destination#cloudwatch LogStreamingDestination#cloudwatch}. |
+| <code><a href="#@cdktn/provider-hcp.logStreamingDestination.LogStreamingDestinationConfig.property.datadog">Datadog</a></code> | <code><a href="#@cdktn/provider-hcp.logStreamingDestination.LogStreamingDestinationDatadog">LogStreamingDestinationDatadog</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/log_streaming_destination#datadog LogStreamingDestination#datadog}. |
+| <code><a href="#@cdktn/provider-hcp.logStreamingDestination.LogStreamingDestinationConfig.property.splunkCloud">SplunkCloud</a></code> | <code><a href="#@cdktn/provider-hcp.logStreamingDestination.LogStreamingDestinationSplunkCloud">LogStreamingDestinationSplunkCloud</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/log_streaming_destination#splunk_cloud LogStreamingDestination#splunk_cloud}. |
 
 ---
 
@@ -1045,7 +1045,7 @@ Name *string
 
 The HCP Log Streaming Destination’s name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/log_streaming_destination#name LogStreamingDestination#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/log_streaming_destination#name LogStreamingDestination#name}
 
 ---
 
@@ -1057,7 +1057,7 @@ Cloudwatch LogStreamingDestinationCloudwatch
 
 - *Type:* <a href="#@cdktn/provider-hcp.logStreamingDestination.LogStreamingDestinationCloudwatch">LogStreamingDestinationCloudwatch</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/log_streaming_destination#cloudwatch LogStreamingDestination#cloudwatch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/log_streaming_destination#cloudwatch LogStreamingDestination#cloudwatch}.
 
 ---
 
@@ -1069,7 +1069,7 @@ Datadog LogStreamingDestinationDatadog
 
 - *Type:* <a href="#@cdktn/provider-hcp.logStreamingDestination.LogStreamingDestinationDatadog">LogStreamingDestinationDatadog</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/log_streaming_destination#datadog LogStreamingDestination#datadog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/log_streaming_destination#datadog LogStreamingDestination#datadog}.
 
 ---
 
@@ -1081,7 +1081,7 @@ SplunkCloud LogStreamingDestinationSplunkCloud
 
 - *Type:* <a href="#@cdktn/provider-hcp.logStreamingDestination.LogStreamingDestinationSplunkCloud">LogStreamingDestinationSplunkCloud</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/log_streaming_destination#splunk_cloud LogStreamingDestination#splunk_cloud}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/log_streaming_destination#splunk_cloud LogStreamingDestination#splunk_cloud}.
 
 ---
 
@@ -1119,7 +1119,7 @@ ApiKey *string
 
 The value for the DD-API-KEY to send when making requests to DataDog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/log_streaming_destination#api_key LogStreamingDestination#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/log_streaming_destination#api_key LogStreamingDestination#api_key}
 
 ---
 
@@ -1133,7 +1133,7 @@ Endpoint *string
 
 The Datadog endpoint to send logs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/log_streaming_destination#endpoint LogStreamingDestination#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/log_streaming_destination#endpoint LogStreamingDestination#endpoint}
 
 ---
 
@@ -1147,7 +1147,7 @@ ApplicationKey *string
 
 The value for the DD-APPLICATION-KEY to send when making requests to DataDog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/log_streaming_destination#application_key LogStreamingDestination#application_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/log_streaming_destination#application_key LogStreamingDestination#application_key}
 
 ---
 
@@ -1183,7 +1183,7 @@ Endpoint *string
 
 The Splunk Cloud endpoint to send logs to. Streaming to free trial instances is not supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/log_streaming_destination#endpoint LogStreamingDestination#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/log_streaming_destination#endpoint LogStreamingDestination#endpoint}
 
 ---
 
@@ -1197,7 +1197,7 @@ Token *string
 
 The authentication token that will be used by the platform to access Splunk Cloud.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/log_streaming_destination#token LogStreamingDestination#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/log_streaming_destination#token LogStreamingDestination#token}
 
 ---
 

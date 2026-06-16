@@ -4,7 +4,7 @@
 
 ### VaultRadarSourceGithubEnterprise <a name="VaultRadarSourceGithubEnterprise" id="@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterprise"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_radar_source_github_enterprise hcp_vault_radar_source_github_enterprise}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_radar_source_github_enterprise hcp_vault_radar_source_github_enterprise}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterprise.Initializer"></a>
 
@@ -76,6 +76,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterprise.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterprise.resetDetectorType">ResetDetectorType</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterprise.resetProjectId">ResetProjectId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterprise.resetToken">ResetToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterprise.resetTokenEnvVar">ResetTokenEnvVar</a></code> | *No description.* |
 
 ---
 
@@ -400,6 +402,18 @@ func ResetDetectorType()
 func ResetProjectId()
 ```
 
+##### `ResetToken` <a name="ResetToken" id="@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterprise.resetToken"></a>
+
+```go
+func ResetToken()
+```
+
+##### `ResetTokenEnvVar` <a name="ResetTokenEnvVar" id="@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterprise.resetTokenEnvVar"></a>
+
+```go
+func ResetTokenEnvVar()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -503,7 +517,7 @@ The construct id used in the generated config for the VaultRadarSourceGithubEnte
 
 The id of the existing VaultRadarSourceGithubEnterprise that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_radar_source_github_enterprise#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_radar_source_github_enterprise#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -538,12 +552,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.
 | <code><a href="#@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterprise.property.domainNameInput">DomainNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterprise.property.githubOrganizationInput">GithubOrganizationInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterprise.property.projectIdInput">ProjectIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterprise.property.tokenEnvVarInput">TokenEnvVarInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterprise.property.tokenInput">TokenInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterprise.property.detectorType">DetectorType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterprise.property.domainName">DomainName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterprise.property.githubOrganization">GithubOrganization</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterprise.property.projectId">ProjectId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterprise.property.token">Token</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterprise.property.tokenEnvVar">TokenEnvVar</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -739,6 +755,16 @@ func ProjectIdInput() *string
 
 ---
 
+##### `TokenEnvVarInput`<sup>Optional</sup> <a name="TokenEnvVarInput" id="@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterprise.property.tokenEnvVarInput"></a>
+
+```go
+func TokenEnvVarInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TokenInput`<sup>Optional</sup> <a name="TokenInput" id="@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterprise.property.tokenInput"></a>
 
 ```go
@@ -799,6 +825,16 @@ func Token() *string
 
 ---
 
+##### `TokenEnvVar`<sup>Required</sup> <a name="TokenEnvVar" id="@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterprise.property.tokenEnvVar"></a>
+
+```go
+func TokenEnvVar() *string
+```
+
+- *Type:* *string
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -836,9 +872,10 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultradarsourcegithub
 	Provisioners: *[]interface{},
 	DomainName: *string,
 	GithubOrganization: *string,
-	Token: *string,
 	DetectorType: *string,
 	ProjectId: *string,
+	Token: *string,
+	TokenEnvVar: *string,
 }
 ```
 
@@ -855,9 +892,10 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultradarsourcegithub
 | <code><a href="#@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterpriseConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterpriseConfig.property.domainName">DomainName</a></code> | <code>*string</code> | Fully qualified domain name of the server. (Example: myserver.acme.com). |
 | <code><a href="#@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterpriseConfig.property.githubOrganization">GithubOrganization</a></code> | <code>*string</code> | GitHub organization Vault Radar will monitor. Example: "octocat" for the org https://yourcodeserver.com/octocat. |
-| <code><a href="#@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterpriseConfig.property.token">Token</a></code> | <code>*string</code> | GitHub personal access token. |
-| <code><a href="#@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterpriseConfig.property.detectorType">DetectorType</a></code> | <code>*string</code> | The detector type which will monitor this resource. The default is HCP if not specified. |
+| <code><a href="#@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterpriseConfig.property.detectorType">DetectorType</a></code> | <code>*string</code> | The detector type to use for monitoring this source. |
 | <code><a href="#@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterpriseConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | The ID of the HCP project where Vault Radar is located. |
+| <code><a href="#@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterpriseConfig.property.token">Token</a></code> | <code>*string</code> | GitHub personal access token. |
+| <code><a href="#@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterpriseConfig.property.tokenEnvVar">TokenEnvVar</a></code> | <code>*string</code> | Environment variable name containing the GitHub personal access token. |
 
 ---
 
@@ -941,7 +979,7 @@ DomainName *string
 
 Fully qualified domain name of the server. (Example: myserver.acme.com).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_radar_source_github_enterprise#domain_name VaultRadarSourceGithubEnterprise#domain_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_radar_source_github_enterprise#domain_name VaultRadarSourceGithubEnterprise#domain_name}
 
 ---
 
@@ -955,21 +993,7 @@ GithubOrganization *string
 
 GitHub organization Vault Radar will monitor. Example: "octocat" for the org https://yourcodeserver.com/octocat.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_radar_source_github_enterprise#github_organization VaultRadarSourceGithubEnterprise#github_organization}
-
----
-
-##### `Token`<sup>Required</sup> <a name="Token" id="@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterpriseConfig.property.token"></a>
-
-```go
-Token *string
-```
-
-- *Type:* *string
-
-GitHub personal access token.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_radar_source_github_enterprise#token VaultRadarSourceGithubEnterprise#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_radar_source_github_enterprise#github_organization VaultRadarSourceGithubEnterprise#github_organization}
 
 ---
 
@@ -981,9 +1005,11 @@ DetectorType *string
 
 - *Type:* *string
 
-The detector type which will monitor this resource. The default is HCP if not specified.
+The detector type to use for monitoring this source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_radar_source_github_enterprise#detector_type VaultRadarSourceGithubEnterprise#detector_type}
+Valid values are 'hcp' (managed by HCP) or 'agent' (self-hosted agent). Defaults to 'hcp'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_radar_source_github_enterprise#detector_type VaultRadarSourceGithubEnterprise#detector_type}
 
 ---
 
@@ -999,7 +1025,39 @@ The ID of the HCP project where Vault Radar is located.
 
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_radar_source_github_enterprise#project_id VaultRadarSourceGithubEnterprise#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_radar_source_github_enterprise#project_id VaultRadarSourceGithubEnterprise#project_id}
+
+---
+
+##### `Token`<sup>Optional</sup> <a name="Token" id="@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterpriseConfig.property.token"></a>
+
+```go
+Token *string
+```
+
+- *Type:* *string
+
+GitHub personal access token.
+
+Required when detector_type is 'hcp' or not specified (defaults to 'hcp'). Cannot be used when detector_type is 'agent'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_radar_source_github_enterprise#token VaultRadarSourceGithubEnterprise#token}
+
+---
+
+##### `TokenEnvVar`<sup>Optional</sup> <a name="TokenEnvVar" id="@cdktn/provider-hcp.vaultRadarSourceGithubEnterprise.VaultRadarSourceGithubEnterpriseConfig.property.tokenEnvVar"></a>
+
+```go
+TokenEnvVar *string
+```
+
+- *Type:* *string
+
+Environment variable name containing the GitHub personal access token.
+
+When detector_type is 'agent', this is required. When detector_type is 'hcp' or not specified (defaults to 'hcp'), this is optional and can be set to enable optional secret copying via the Vault Radar Agent.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/vault_radar_source_github_enterprise#token_env_var VaultRadarSourceGithubEnterprise#token_env_var}
 
 ---
 

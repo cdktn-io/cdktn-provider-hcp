@@ -4,7 +4,7 @@
 
 ### NotificationsWebhook <a name="NotificationsWebhook" id="@cdktn/provider-hcp.notificationsWebhook.NotificationsWebhook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/notifications_webhook hcp_notifications_webhook}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/notifications_webhook hcp_notifications_webhook}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.notificationsWebhook.NotificationsWebhook.Initializer"></a>
 
@@ -543,7 +543,7 @@ The construct id used in the generated config for the NotificationsWebhook to im
 
 The id of the existing NotificationsWebhook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/notifications_webhook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/notifications_webhook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1016,7 +1016,7 @@ Config NotificationsWebhookConfigA
 
 The webhook configuration used to deliver event payloads.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/notifications_webhook#config NotificationsWebhook#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/notifications_webhook#config NotificationsWebhook#config}
 
 ---
 
@@ -1030,7 +1030,7 @@ Name *string
 
 The webhook's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/notifications_webhook#name NotificationsWebhook#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/notifications_webhook#name NotificationsWebhook#name}
 
 ---
 
@@ -1044,7 +1044,7 @@ Description *string
 
 The webhook's description. Descriptions are useful for helping others understand the purpose of the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/notifications_webhook#description NotificationsWebhook#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/notifications_webhook#description NotificationsWebhook#description}
 
 ---
 
@@ -1058,7 +1058,7 @@ Enabled interface{}
 
 Indicates if the webhook should receive payloads for the subscribed events. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/notifications_webhook#enabled NotificationsWebhook#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/notifications_webhook#enabled NotificationsWebhook#enabled}
 
 ---
 
@@ -1074,7 +1074,7 @@ The ID of the project to create the webhook under.
 
 If unspecified, the webhook will be created in the project the provider is configured with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/notifications_webhook#project_id NotificationsWebhook#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/notifications_webhook#project_id NotificationsWebhook#project_id}
 
 ---
 
@@ -1088,7 +1088,7 @@ Subscriptions interface{}
 
 Set of events to subscribe the webhook to all resources or a specific resource in the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/notifications_webhook#subscriptions NotificationsWebhook#subscriptions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/notifications_webhook#subscriptions NotificationsWebhook#subscriptions}
 
 ---
 
@@ -1127,7 +1127,7 @@ The HTTP or HTTPS destination URL that HCP delivers the event payloads to.
 The destination must be able to use the HCP webhook
 [payload](https://developer.hashicorp.com/hcp/docs/hcp/admin/projects/webhooks#webhook-payload).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/notifications_webhook#url NotificationsWebhook#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/notifications_webhook#url NotificationsWebhook#url}
 
 ---
 
@@ -1143,7 +1143,7 @@ The arbitrary secret that HCP uses to sign all its webhook requests.
 
 This is a write-only field, it is written once and not visible thereafter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/notifications_webhook#hmac_key NotificationsWebhook#hmac_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/notifications_webhook#hmac_key NotificationsWebhook#hmac_key}
 
 ---
 
@@ -1181,7 +1181,7 @@ The information about the events of a webhook subscription.
 
 The service that owns the resource is responsible for maintaining events. Refer to the service's webhook documentation for more information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/notifications_webhook#events NotificationsWebhook#events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/notifications_webhook#events NotificationsWebhook#events}
 
 ---
 
@@ -1197,7 +1197,7 @@ Refers to the resource the webhook is subscribed to.
 
 If not set, the webhook subscribes to the emitted events listed in events for any resource in the webhook's project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/notifications_webhook#resource_id NotificationsWebhook#resource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/notifications_webhook#resource_id NotificationsWebhook#resource_id}
 
 ---
 
@@ -1235,7 +1235,7 @@ The list of event actions subscribed for the resource type set as the [source](#
 
 For example, `["create", "update"]`. When the action is '*', it means that the webhook is subscribed to all event actions for the event source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/notifications_webhook#actions NotificationsWebhook#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/notifications_webhook#actions NotificationsWebhook#actions}
 
 ---
 
@@ -1251,7 +1251,7 @@ The resource type of the source of the event.
 
 For example, `hashicorp.packer.version`. Event source might not be the same type as the resource that the webhook is subscribed to ([resource_id](#resource_id)) if the event is from a descendant resource. For example, webhooks are subscribed to a `hashicorp.packer.registry` and receive events for descendent resources such as a `hashicorp.packer.version`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/notifications_webhook#source NotificationsWebhook#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/notifications_webhook#source NotificationsWebhook#source}
 
 ---
 
