@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpServicePrincipal.DataHcpServicePrincipal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpserviceprincipal"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpserviceprincipal"
 
 datahcpserviceprincipal.NewDataHcpServicePrincipal(scope Construct, id *string, config DataHcpServicePrincipalConfig) DataHcpServicePrincipal
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.dataHcpServicePrincipal.DataHcpServicePrincipal.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpserviceprincipal"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpserviceprincipal"
 
 datahcpserviceprincipal.DataHcpServicePrincipal_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.dataHcpServicePrincipal.DataHcpServicePrincipal.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpserviceprincipal"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpserviceprincipal"
 
 datahcpserviceprincipal.DataHcpServicePrincipal_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datahcpserviceprincipal.DataHcpServicePrincipal_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-hcp.dataHcpServicePrincipal.DataHcpServicePrincipal.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpserviceprincipal"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpserviceprincipal"
 
 datahcpserviceprincipal.DataHcpServicePrincipal_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datahcpserviceprincipal.DataHcpServicePrincipal_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.dataHcpServicePrincipal.DataHcpServicePrincipal.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpserviceprincipal"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpserviceprincipal"
 
 datahcpserviceprincipal.DataHcpServicePrincipal_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -609,7 +609,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpServicePrincipal.DataHcpServicePrincipalConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpserviceprincipal"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpserviceprincipal"
 
 &datahcpserviceprincipal.DataHcpServicePrincipalConfig {
 	Connection: interface{},

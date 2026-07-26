@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/dnsforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/dnsforwardingrule"
 
 dnsforwardingrule.NewDnsForwardingRule(scope Construct, id *string, config DnsForwardingRuleConfig) DnsForwardingRule
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/dnsforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/dnsforwardingrule"
 
 dnsforwardingrule.DnsForwardingRule_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/dnsforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/dnsforwardingrule"
 
 dnsforwardingrule.DnsForwardingRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ dnsforwardingrule.DnsForwardingRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/dnsforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/dnsforwardingrule"
 
 dnsforwardingrule.DnsForwardingRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ dnsforwardingrule.DnsForwardingRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/dnsforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/dnsforwardingrule"
 
 dnsforwardingrule.DnsForwardingRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -932,7 +932,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/dnsforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/dnsforwardingrule"
 
 &dnsforwardingrule.DnsForwardingRuleConfig {
 	Connection: interface{},
@@ -949,7 +949,7 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/dnsforwardingrule"
 	RuleId: *string,
 	Id: *string,
 	ProjectId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12.dnsForwardingRule.DnsForwardingRuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13.dnsForwardingRule.DnsForwardingRuleTimeouts,
 }
 ```
 
@@ -1166,7 +1166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/dnsforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/dnsforwardingrule"
 
 &dnsforwardingrule.DnsForwardingRuleTimeouts {
 	Create: *string,
@@ -1242,7 +1242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/dnsforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/dnsforwardingrule"
 
 dnsforwardingrule.NewDnsForwardingRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DnsForwardingRuleTimeoutsOutputReference
 ```

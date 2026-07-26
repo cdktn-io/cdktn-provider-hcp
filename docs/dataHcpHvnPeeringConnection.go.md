@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpHvnPeeringConnection.DataHcpHvnPeeringConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcphvnpeeringconnection"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcphvnpeeringconnection"
 
 datahcphvnpeeringconnection.NewDataHcpHvnPeeringConnection(scope Construct, id *string, config DataHcpHvnPeeringConnectionConfig) DataHcpHvnPeeringConnection
 ```
@@ -339,7 +339,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.dataHcpHvnPeeringConnection.DataHcpHvnPeeringConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcphvnpeeringconnection"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcphvnpeeringconnection"
 
 datahcphvnpeeringconnection.DataHcpHvnPeeringConnection_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.dataHcpHvnPeeringConnection.DataHcpHvnPeeringConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcphvnpeeringconnection"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcphvnpeeringconnection"
 
 datahcphvnpeeringconnection.DataHcpHvnPeeringConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datahcphvnpeeringconnection.DataHcpHvnPeeringConnection_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-hcp.dataHcpHvnPeeringConnection.DataHcpHvnPeeringConnection.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcphvnpeeringconnection"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcphvnpeeringconnection"
 
 datahcphvnpeeringconnection.DataHcpHvnPeeringConnection_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ datahcphvnpeeringconnection.DataHcpHvnPeeringConnection_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.dataHcpHvnPeeringConnection.DataHcpHvnPeeringConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcphvnpeeringconnection"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcphvnpeeringconnection"
 
 datahcphvnpeeringconnection.DataHcpHvnPeeringConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -793,7 +793,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpHvnPeeringConnection.DataHcpHvnPeeringConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcphvnpeeringconnection"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcphvnpeeringconnection"
 
 &datahcphvnpeeringconnection.DataHcpHvnPeeringConnectionConfig {
 	Connection: interface{},
@@ -808,7 +808,7 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcphvnpeeringconne
 	Hvn2: *string,
 	Id: *string,
 	ProjectId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12.dataHcpHvnPeeringConnection.DataHcpHvnPeeringConnectionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13.dataHcpHvnPeeringConnection.DataHcpHvnPeeringConnectionTimeouts,
 }
 ```
 
@@ -996,7 +996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpHvnPeeringConnection.DataHcpHvnPeeringConnectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcphvnpeeringconnection"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcphvnpeeringconnection"
 
 &datahcphvnpeeringconnection.DataHcpHvnPeeringConnectionTimeouts {
 	Default: *string,
@@ -1030,7 +1030,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpHvnPeeringConnection.DataHcpHvnPeeringConnectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcphvnpeeringconnection"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcphvnpeeringconnection"
 
 datahcphvnpeeringconnection.NewDataHcpHvnPeeringConnectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataHcpHvnPeeringConnectionTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.awsNetworkPeering.AwsNetworkPeering.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/awsnetworkpeering"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/awsnetworkpeering"
 
 awsnetworkpeering.NewAwsNetworkPeering(scope Construct, id *string, config AwsNetworkPeeringConfig) AwsNetworkPeering
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.awsNetworkPeering.AwsNetworkPeering.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/awsnetworkpeering"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/awsnetworkpeering"
 
 awsnetworkpeering.AwsNetworkPeering_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.awsNetworkPeering.AwsNetworkPeering.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/awsnetworkpeering"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/awsnetworkpeering"
 
 awsnetworkpeering.AwsNetworkPeering_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ awsnetworkpeering.AwsNetworkPeering_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.awsNetworkPeering.AwsNetworkPeering.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/awsnetworkpeering"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/awsnetworkpeering"
 
 awsnetworkpeering.AwsNetworkPeering_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ awsnetworkpeering.AwsNetworkPeering_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.awsNetworkPeering.AwsNetworkPeering.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/awsnetworkpeering"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/awsnetworkpeering"
 
 awsnetworkpeering.AwsNetworkPeering_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -965,7 +965,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.awsNetworkPeering.AwsNetworkPeeringConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/awsnetworkpeering"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/awsnetworkpeering"
 
 &awsnetworkpeering.AwsNetworkPeeringConfig {
 	Connection: interface{},
@@ -982,7 +982,7 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/awsnetworkpeering"
 	PeerVpcRegion: *string,
 	Id: *string,
 	ProjectId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12.awsNetworkPeering.AwsNetworkPeeringTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13.awsNetworkPeering.AwsNetworkPeeringTimeouts,
 }
 ```
 
@@ -1200,7 +1200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.awsNetworkPeering.AwsNetworkPeeringTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/awsnetworkpeering"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/awsnetworkpeering"
 
 &awsnetworkpeering.AwsNetworkPeeringTimeouts {
 	Create: *string,
@@ -1262,7 +1262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.awsNetworkPeering.AwsNetworkPeeringTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/awsnetworkpeering"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/awsnetworkpeering"
 
 awsnetworkpeering.NewAwsNetworkPeeringTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AwsNetworkPeeringTimeoutsOutputReference
 ```
