@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/waypointaddondefinition"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/waypointaddondefinition"
 
 waypointaddondefinition.NewWaypointAddOnDefinition(scope Construct, id *string, config WaypointAddOnDefinitionConfig) WaypointAddOnDefinition
 ```
@@ -475,7 +475,7 @@ func ResetVariableOptions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/waypointaddondefinition"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/waypointaddondefinition"
 
 waypointaddondefinition.WaypointAddOnDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/waypointaddondefinition"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/waypointaddondefinition"
 
 waypointaddondefinition.WaypointAddOnDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ waypointaddondefinition.WaypointAddOnDefinition_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/waypointaddondefinition"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/waypointaddondefinition"
 
 waypointaddondefinition.WaypointAddOnDefinition_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ waypointaddondefinition.WaypointAddOnDefinition_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/waypointaddondefinition"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/waypointaddondefinition"
 
 waypointaddondefinition.WaypointAddOnDefinition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1072,7 +1072,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/waypointaddondefinition"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/waypointaddondefinition"
 
 &waypointaddondefinition.WaypointAddOnDefinitionConfig {
 	Connection: interface{},
@@ -1092,7 +1092,7 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/waypointaddondefinitio
 	ProjectId: *string,
 	ReadmeMarkdownTemplate: *string,
 	TerraformAgentPoolId: *string,
-	TerraformCloudWorkspaceDetails: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12.waypointAddOnDefinition.WaypointAddOnDefinitionTerraformCloudWorkspaceDetails,
+	TerraformCloudWorkspaceDetails: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13.waypointAddOnDefinition.WaypointAddOnDefinitionTerraformCloudWorkspaceDetails,
 	TerraformExecutionMode: *string,
 	VariableOptions: interface{},
 }
@@ -1388,7 +1388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinitionTerraformCloudWorkspaceDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/waypointaddondefinition"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/waypointaddondefinition"
 
 &waypointaddondefinition.WaypointAddOnDefinitionTerraformCloudWorkspaceDetails {
 	Name: *string,
@@ -1438,7 +1438,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinitionVariableOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/waypointaddondefinition"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/waypointaddondefinition"
 
 &waypointaddondefinition.WaypointAddOnDefinitionVariableOptions {
 	Name: *string,
@@ -1524,7 +1524,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinitionTerraformCloudWorkspaceDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/waypointaddondefinition"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/waypointaddondefinition"
 
 waypointaddondefinition.NewWaypointAddOnDefinitionTerraformCloudWorkspaceDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WaypointAddOnDefinitionTerraformCloudWorkspaceDetailsOutputReference
 ```
@@ -1817,7 +1817,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinitionVariableOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/waypointaddondefinition"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/waypointaddondefinition"
 
 waypointaddondefinition.NewWaypointAddOnDefinitionVariableOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WaypointAddOnDefinitionVariableOptionsList
 ```
@@ -1977,7 +1977,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinitionVariableOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/waypointaddondefinition"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/waypointaddondefinition"
 
 waypointaddondefinition.NewWaypointAddOnDefinitionVariableOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WaypointAddOnDefinitionVariableOptionsOutputReference
 ```

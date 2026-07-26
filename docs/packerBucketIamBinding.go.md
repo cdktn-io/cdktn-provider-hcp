@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.packerBucketIamBinding.PackerBucketIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/packerbucketiambinding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/packerbucketiambinding"
 
 packerbucketiambinding.NewPackerBucketIamBinding(scope Construct, id *string, config PackerBucketIamBindingConfig) PackerBucketIamBinding
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.packerBucketIamBinding.PackerBucketIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/packerbucketiambinding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/packerbucketiambinding"
 
 packerbucketiambinding.PackerBucketIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.packerBucketIamBinding.PackerBucketIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/packerbucketiambinding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/packerbucketiambinding"
 
 packerbucketiambinding.PackerBucketIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ packerbucketiambinding.PackerBucketIamBinding_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.packerBucketIamBinding.PackerBucketIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/packerbucketiambinding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/packerbucketiambinding"
 
 packerbucketiambinding.PackerBucketIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ packerbucketiambinding.PackerBucketIamBinding_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.packerBucketIamBinding.PackerBucketIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/packerbucketiambinding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/packerbucketiambinding"
 
 packerbucketiambinding.PackerBucketIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -755,7 +755,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.packerBucketIamBinding.PackerBucketIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/packerbucketiambinding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/packerbucketiambinding"
 
 &packerbucketiambinding.PackerBucketIamBindingConfig {
 	Connection: interface{},

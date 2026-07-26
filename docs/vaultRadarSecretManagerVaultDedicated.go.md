@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.vaultRadarSecretManagerVaultDedicated.VaultRadarSecretManagerVaultDedicated.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultradarsecretmanagervaultdedicated"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultradarsecretmanagervaultdedicated"
 
 vaultradarsecretmanagervaultdedicated.NewVaultRadarSecretManagerVaultDedicated(scope Construct, id *string, config VaultRadarSecretManagerVaultDedicatedConfig) VaultRadarSecretManagerVaultDedicated
 ```
@@ -474,7 +474,7 @@ func ResetToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.vaultRadarSecretManagerVaultDedicated.VaultRadarSecretManagerVaultDedicated.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultradarsecretmanagervaultdedicated"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultradarsecretmanagervaultdedicated"
 
 vaultradarsecretmanagervaultdedicated.VaultRadarSecretManagerVaultDedicated_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.vaultRadarSecretManagerVaultDedicated.VaultRadarSecretManagerVaultDedicated.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultradarsecretmanagervaultdedicated"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultradarsecretmanagervaultdedicated"
 
 vaultradarsecretmanagervaultdedicated.VaultRadarSecretManagerVaultDedicated_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ vaultradarsecretmanagervaultdedicated.VaultRadarSecretManagerVaultDedicated_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.vaultRadarSecretManagerVaultDedicated.VaultRadarSecretManagerVaultDedicated.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultradarsecretmanagervaultdedicated"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultradarsecretmanagervaultdedicated"
 
 vaultradarsecretmanagervaultdedicated.VaultRadarSecretManagerVaultDedicated_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ vaultradarsecretmanagervaultdedicated.VaultRadarSecretManagerVaultDedicated_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.vaultRadarSecretManagerVaultDedicated.VaultRadarSecretManagerVaultDedicated.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultradarsecretmanagervaultdedicated"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultradarsecretmanagervaultdedicated"
 
 vaultradarsecretmanagervaultdedicated.VaultRadarSecretManagerVaultDedicated_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -906,7 +906,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.vaultRadarSecretManagerVaultDedicated.VaultRadarSecretManagerVaultDedicatedApprolePush.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultradarsecretmanagervaultdedicated"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultradarsecretmanagervaultdedicated"
 
 &vaultradarsecretmanagervaultdedicated.VaultRadarSecretManagerVaultDedicatedApprolePush {
 	MountPath: *string,
@@ -972,7 +972,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.vaultRadarSecretManagerVaultDedicated.VaultRadarSecretManagerVaultDedicatedConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultradarsecretmanagervaultdedicated"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultradarsecretmanagervaultdedicated"
 
 &vaultradarsecretmanagervaultdedicated.VaultRadarSecretManagerVaultDedicatedConfig {
 	Connection: interface{},
@@ -984,10 +984,10 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultradarsecretmanage
 	Provisioners: *[]interface{},
 	VaultUrl: *string,
 	AccessReadWrite: interface{},
-	ApprolePush: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12.vaultRadarSecretManagerVaultDedicated.VaultRadarSecretManagerVaultDedicatedApprolePush,
-	Kubernetes: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12.vaultRadarSecretManagerVaultDedicated.VaultRadarSecretManagerVaultDedicatedKubernetes,
+	ApprolePush: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13.vaultRadarSecretManagerVaultDedicated.VaultRadarSecretManagerVaultDedicatedApprolePush,
+	Kubernetes: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13.vaultRadarSecretManagerVaultDedicated.VaultRadarSecretManagerVaultDedicatedKubernetes,
 	ProjectId: *string,
-	Token: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12.vaultRadarSecretManagerVaultDedicated.VaultRadarSecretManagerVaultDedicatedToken,
+	Token: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13.vaultRadarSecretManagerVaultDedicated.VaultRadarSecretManagerVaultDedicatedToken,
 }
 ```
 
@@ -1174,7 +1174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.vaultRadarSecretManagerVaultDedicated.VaultRadarSecretManagerVaultDedicatedKubernetes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultradarsecretmanagervaultdedicated"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultradarsecretmanagervaultdedicated"
 
 &vaultradarsecretmanagervaultdedicated.VaultRadarSecretManagerVaultDedicatedKubernetes {
 	MountPath: *string,
@@ -1224,7 +1224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.vaultRadarSecretManagerVaultDedicated.VaultRadarSecretManagerVaultDedicatedToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultradarsecretmanagervaultdedicated"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultradarsecretmanagervaultdedicated"
 
 &vaultradarsecretmanagervaultdedicated.VaultRadarSecretManagerVaultDedicatedToken {
 	TokenEnvVar: *string,
@@ -1260,7 +1260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.vaultRadarSecretManagerVaultDedicated.VaultRadarSecretManagerVaultDedicatedApprolePushOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultradarsecretmanagervaultdedicated"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultradarsecretmanagervaultdedicated"
 
 vaultradarsecretmanagervaultdedicated.NewVaultRadarSecretManagerVaultDedicatedApprolePushOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultRadarSecretManagerVaultDedicatedApprolePushOutputReference
 ```
@@ -1575,7 +1575,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.vaultRadarSecretManagerVaultDedicated.VaultRadarSecretManagerVaultDedicatedKubernetesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultradarsecretmanagervaultdedicated"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultradarsecretmanagervaultdedicated"
 
 vaultradarsecretmanagervaultdedicated.NewVaultRadarSecretManagerVaultDedicatedKubernetesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultRadarSecretManagerVaultDedicatedKubernetesOutputReference
 ```
@@ -1868,7 +1868,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.vaultRadarSecretManagerVaultDedicated.VaultRadarSecretManagerVaultDedicatedTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultradarsecretmanagervaultdedicated"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultradarsecretmanagervaultdedicated"
 
 vaultradarsecretmanagervaultdedicated.NewVaultRadarSecretManagerVaultDedicatedTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultRadarSecretManagerVaultDedicatedTokenOutputReference
 ```

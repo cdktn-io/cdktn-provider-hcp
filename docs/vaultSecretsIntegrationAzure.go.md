@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.vaultSecretsIntegrationAzure.VaultSecretsIntegrationAzure.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultsecretsintegrationazure"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultsecretsintegrationazure"
 
 vaultsecretsintegrationazure.NewVaultSecretsIntegrationAzure(scope Construct, id *string, config VaultSecretsIntegrationAzureConfig) VaultSecretsIntegrationAzure
 ```
@@ -447,7 +447,7 @@ func ResetProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.vaultSecretsIntegrationAzure.VaultSecretsIntegrationAzure.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultsecretsintegrationazure"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultsecretsintegrationazure"
 
 vaultsecretsintegrationazure.VaultSecretsIntegrationAzure_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.vaultSecretsIntegrationAzure.VaultSecretsIntegrationAzure.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultsecretsintegrationazure"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultsecretsintegrationazure"
 
 vaultsecretsintegrationazure.VaultSecretsIntegrationAzure_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ vaultsecretsintegrationazure.VaultSecretsIntegrationAzure_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.vaultSecretsIntegrationAzure.VaultSecretsIntegrationAzure.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultsecretsintegrationazure"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultsecretsintegrationazure"
 
 vaultsecretsintegrationazure.VaultSecretsIntegrationAzure_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ vaultsecretsintegrationazure.VaultSecretsIntegrationAzure_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.vaultSecretsIntegrationAzure.VaultSecretsIntegrationAzure.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultsecretsintegrationazure"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultsecretsintegrationazure"
 
 vaultsecretsintegrationazure.VaultSecretsIntegrationAzure_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -879,7 +879,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.vaultSecretsIntegrationAzure.VaultSecretsIntegrationAzureClientSecretA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultsecretsintegrationazure"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultsecretsintegrationazure"
 
 &vaultsecretsintegrationazure.VaultSecretsIntegrationAzureClientSecretA {
 	ClientId: *string,
@@ -945,7 +945,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.vaultSecretsIntegrationAzure.VaultSecretsIntegrationAzureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultsecretsintegrationazure"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultsecretsintegrationazure"
 
 &vaultsecretsintegrationazure.VaultSecretsIntegrationAzureConfig {
 	Connection: interface{},
@@ -957,8 +957,8 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultsecretsintegratio
 	Provisioners: *[]interface{},
 	Capabilities: *[]*string,
 	Name: *string,
-	ClientSecret: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12.vaultSecretsIntegrationAzure.VaultSecretsIntegrationAzureClientSecretA,
-	FederatedWorkloadIdentity: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12.vaultSecretsIntegrationAzure.VaultSecretsIntegrationAzureFederatedWorkloadIdentityA,
+	ClientSecret: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13.vaultSecretsIntegrationAzure.VaultSecretsIntegrationAzureClientSecretA,
+	FederatedWorkloadIdentity: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13.vaultSecretsIntegrationAzure.VaultSecretsIntegrationAzureFederatedWorkloadIdentityA,
 	ProjectId: *string,
 }
 ```
@@ -1127,7 +1127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.vaultSecretsIntegrationAzure.VaultSecretsIntegrationAzureFederatedWorkloadIdentityA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultsecretsintegrationazure"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultsecretsintegrationazure"
 
 &vaultsecretsintegrationazure.VaultSecretsIntegrationAzureFederatedWorkloadIdentityA {
 	Audience: *string,
@@ -1195,7 +1195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.vaultSecretsIntegrationAzure.VaultSecretsIntegrationAzureClientSecretAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultsecretsintegrationazure"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultsecretsintegrationazure"
 
 vaultsecretsintegrationazure.NewVaultSecretsIntegrationAzureClientSecretAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultSecretsIntegrationAzureClientSecretAOutputReference
 ```
@@ -1510,7 +1510,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.vaultSecretsIntegrationAzure.VaultSecretsIntegrationAzureFederatedWorkloadIdentityAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultsecretsintegrationazure"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultsecretsintegrationazure"
 
 vaultsecretsintegrationazure.NewVaultSecretsIntegrationAzureFederatedWorkloadIdentityAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultSecretsIntegrationAzureFederatedWorkloadIdentityAOutputReference
 ```

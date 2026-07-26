@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpHvnRoute.DataHcpHvnRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcphvnroute"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcphvnroute"
 
 datahcphvnroute.NewDataHcpHvnRoute(scope Construct, id *string, config DataHcpHvnRouteConfig) DataHcpHvnRoute
 ```
@@ -332,7 +332,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.dataHcpHvnRoute.DataHcpHvnRoute.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcphvnroute"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcphvnroute"
 
 datahcphvnroute.DataHcpHvnRoute_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.dataHcpHvnRoute.DataHcpHvnRoute.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcphvnroute"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcphvnroute"
 
 datahcphvnroute.DataHcpHvnRoute_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datahcphvnroute.DataHcpHvnRoute_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-hcp.dataHcpHvnRoute.DataHcpHvnRoute.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcphvnroute"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcphvnroute"
 
 datahcphvnroute.DataHcpHvnRoute_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ datahcphvnroute.DataHcpHvnRoute_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.dataHcpHvnRoute.DataHcpHvnRoute.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcphvnroute"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcphvnroute"
 
 datahcphvnroute.DataHcpHvnRoute_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -775,7 +775,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpHvnRoute.DataHcpHvnRouteAzureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcphvnroute"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcphvnroute"
 
 &datahcphvnroute.DataHcpHvnRouteAzureConfig {
 
@@ -788,7 +788,7 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcphvnroute"
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpHvnRoute.DataHcpHvnRouteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcphvnroute"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcphvnroute"
 
 &datahcphvnroute.DataHcpHvnRouteConfig {
 	Connection: interface{},
@@ -802,7 +802,7 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcphvnroute"
 	HvnRouteId: *string,
 	Id: *string,
 	ProjectId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12.dataHcpHvnRoute.DataHcpHvnRouteTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13.dataHcpHvnRoute.DataHcpHvnRouteTimeouts,
 }
 ```
 
@@ -973,7 +973,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpHvnRoute.DataHcpHvnRouteTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcphvnroute"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcphvnroute"
 
 &datahcphvnroute.DataHcpHvnRouteTimeouts {
 	Default: *string,
@@ -1007,7 +1007,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpHvnRoute.DataHcpHvnRouteAzureConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcphvnroute"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcphvnroute"
 
 datahcphvnroute.NewDataHcpHvnRouteAzureConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataHcpHvnRouteAzureConfigList
 ```
@@ -1156,7 +1156,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpHvnRoute.DataHcpHvnRouteAzureConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcphvnroute"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcphvnroute"
 
 datahcphvnroute.NewDataHcpHvnRouteAzureConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataHcpHvnRouteAzureConfigOutputReference
 ```
@@ -1445,7 +1445,7 @@ func InternalValue() DataHcpHvnRouteAzureConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpHvnRoute.DataHcpHvnRouteTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcphvnroute"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcphvnroute"
 
 datahcphvnroute.NewDataHcpHvnRouteTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataHcpHvnRouteTimeoutsOutputReference
 ```

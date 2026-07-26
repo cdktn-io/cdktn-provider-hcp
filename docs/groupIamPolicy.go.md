@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.groupIamPolicy.GroupIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/groupiampolicy"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/groupiampolicy"
 
 groupiampolicy.NewGroupIamPolicy(scope Construct, id *string, config GroupIamPolicyConfig) GroupIamPolicy
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.groupIamPolicy.GroupIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/groupiampolicy"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/groupiampolicy"
 
 groupiampolicy.GroupIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.groupIamPolicy.GroupIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/groupiampolicy"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/groupiampolicy"
 
 groupiampolicy.GroupIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ groupiampolicy.GroupIamPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.groupIamPolicy.GroupIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/groupiampolicy"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/groupiampolicy"
 
 groupiampolicy.GroupIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ groupiampolicy.GroupIamPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.groupIamPolicy.GroupIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/groupiampolicy"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/groupiampolicy"
 
 groupiampolicy.GroupIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -744,7 +744,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.groupIamPolicy.GroupIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/groupiampolicy"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/groupiampolicy"
 
 &groupiampolicy.GroupIamPolicyConfig {
 	Connection: interface{},
