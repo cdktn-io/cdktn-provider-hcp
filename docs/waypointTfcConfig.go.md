@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.waypointTfcConfig.WaypointTfcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/waypointtfcconfig"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/waypointtfcconfig"
 
 waypointtfcconfig.NewWaypointTfcConfig(scope Construct, id *string, config WaypointTfcConfigConfig) WaypointTfcConfig
 ```
@@ -407,7 +407,7 @@ func ResetProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.waypointTfcConfig.WaypointTfcConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/waypointtfcconfig"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/waypointtfcconfig"
 
 waypointtfcconfig.WaypointTfcConfig_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.waypointTfcConfig.WaypointTfcConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/waypointtfcconfig"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/waypointtfcconfig"
 
 waypointtfcconfig.WaypointTfcConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ waypointtfcconfig.WaypointTfcConfig_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.waypointTfcConfig.WaypointTfcConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/waypointtfcconfig"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/waypointtfcconfig"
 
 waypointtfcconfig.WaypointTfcConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ waypointtfcconfig.WaypointTfcConfig_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.waypointTfcConfig.WaypointTfcConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/waypointtfcconfig"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/waypointtfcconfig"
 
 waypointtfcconfig.WaypointTfcConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.waypointTfcConfig.WaypointTfcConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/waypointtfcconfig"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/waypointtfcconfig"
 
 &waypointtfcconfig.WaypointTfcConfigConfig {
 	Connection: interface{},

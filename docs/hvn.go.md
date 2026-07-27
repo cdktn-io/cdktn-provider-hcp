@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.hvn.Hvn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/hvn"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/hvn"
 
 hvn.NewHvn(scope Construct, id *string, config HvnConfig) Hvn
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.hvn.Hvn.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/hvn"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/hvn"
 
 hvn.Hvn_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.hvn.Hvn.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/hvn"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/hvn"
 
 hvn.Hvn_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ hvn.Hvn_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.hvn.Hvn.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/hvn"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/hvn"
 
 hvn.Hvn_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ hvn.Hvn_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.hvn.Hvn.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/hvn"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/hvn"
 
 hvn.Hvn_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -939,7 +939,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.hvn.HvnConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/hvn"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/hvn"
 
 &hvn.HvnConfig {
 	Connection: interface{},
@@ -955,7 +955,7 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/hvn"
 	CidrBlock: *string,
 	Id: *string,
 	ProjectId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13.hvn.HvnTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12.hvn.HvnTimeouts,
 }
 ```
 
@@ -1157,7 +1157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.hvn.HvnTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/hvn"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/hvn"
 
 &hvn.HvnTimeouts {
 	Create: *string,
@@ -1219,7 +1219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.hvn.HvnTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/hvn"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/hvn"
 
 hvn.NewHvnTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) HvnTimeoutsOutputReference
 ```

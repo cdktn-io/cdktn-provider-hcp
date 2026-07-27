@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpAwsTransitGatewayAttachment.DataHcpAwsTransitGatewayAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpawstransitgatewayattachment"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpawstransitgatewayattachment"
 
 datahcpawstransitgatewayattachment.NewDataHcpAwsTransitGatewayAttachment(scope Construct, id *string, config DataHcpAwsTransitGatewayAttachmentConfig) DataHcpAwsTransitGatewayAttachment
 ```
@@ -339,7 +339,7 @@ func ResetWaitForActiveState()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.dataHcpAwsTransitGatewayAttachment.DataHcpAwsTransitGatewayAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpawstransitgatewayattachment"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpawstransitgatewayattachment"
 
 datahcpawstransitgatewayattachment.DataHcpAwsTransitGatewayAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.dataHcpAwsTransitGatewayAttachment.DataHcpAwsTransitGatewayAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpawstransitgatewayattachment"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpawstransitgatewayattachment"
 
 datahcpawstransitgatewayattachment.DataHcpAwsTransitGatewayAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datahcpawstransitgatewayattachment.DataHcpAwsTransitGatewayAttachment_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-hcp.dataHcpAwsTransitGatewayAttachment.DataHcpAwsTransitGatewayAttachment.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpawstransitgatewayattachment"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpawstransitgatewayattachment"
 
 datahcpawstransitgatewayattachment.DataHcpAwsTransitGatewayAttachment_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ datahcpawstransitgatewayattachment.DataHcpAwsTransitGatewayAttachment_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.dataHcpAwsTransitGatewayAttachment.DataHcpAwsTransitGatewayAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpawstransitgatewayattachment"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpawstransitgatewayattachment"
 
 datahcpawstransitgatewayattachment.DataHcpAwsTransitGatewayAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -815,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpAwsTransitGatewayAttachment.DataHcpAwsTransitGatewayAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpawstransitgatewayattachment"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpawstransitgatewayattachment"
 
 &datahcpawstransitgatewayattachment.DataHcpAwsTransitGatewayAttachmentConfig {
 	Connection: interface{},
@@ -829,7 +829,7 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpawstransitgatew
 	TransitGatewayAttachmentId: *string,
 	Id: *string,
 	ProjectId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13.dataHcpAwsTransitGatewayAttachment.DataHcpAwsTransitGatewayAttachmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12.dataHcpAwsTransitGatewayAttachment.DataHcpAwsTransitGatewayAttachmentTimeouts,
 	WaitForActiveState: interface{},
 }
 ```
@@ -1017,7 +1017,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpAwsTransitGatewayAttachment.DataHcpAwsTransitGatewayAttachmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpawstransitgatewayattachment"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpawstransitgatewayattachment"
 
 &datahcpawstransitgatewayattachment.DataHcpAwsTransitGatewayAttachmentTimeouts {
 	Default: *string,
@@ -1051,7 +1051,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpAwsTransitGatewayAttachment.DataHcpAwsTransitGatewayAttachmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpawstransitgatewayattachment"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpawstransitgatewayattachment"
 
 datahcpawstransitgatewayattachment.NewDataHcpAwsTransitGatewayAttachmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataHcpAwsTransitGatewayAttachmentTimeoutsOutputReference
 ```
