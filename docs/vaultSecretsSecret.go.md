@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.vaultSecretsSecret.VaultSecretsSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultsecretssecret"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultsecretssecret"
 
 vaultsecretssecret.NewVaultSecretsSecret(scope Construct, id *string, config VaultSecretsSecretConfig) VaultSecretsSecret
 ```
@@ -407,7 +407,7 @@ func ResetProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.vaultSecretsSecret.VaultSecretsSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultsecretssecret"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultsecretssecret"
 
 vaultsecretssecret.VaultSecretsSecret_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.vaultSecretsSecret.VaultSecretsSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultsecretssecret"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultsecretssecret"
 
 vaultsecretssecret.VaultSecretsSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ vaultsecretssecret.VaultSecretsSecret_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.vaultSecretsSecret.VaultSecretsSecret.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultsecretssecret"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultsecretssecret"
 
 vaultsecretssecret.VaultSecretsSecret_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ vaultsecretssecret.VaultSecretsSecret_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.vaultSecretsSecret.VaultSecretsSecret.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultsecretssecret"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultsecretssecret"
 
 vaultsecretssecret.VaultSecretsSecret_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -806,7 +806,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.vaultSecretsSecret.VaultSecretsSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultsecretssecret"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultsecretssecret"
 
 &vaultsecretssecret.VaultSecretsSecretConfig {
 	Connection: interface{},

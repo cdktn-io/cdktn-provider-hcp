@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.groupIamBinding.GroupIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/groupiambinding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/groupiambinding"
 
 groupiambinding.NewGroupIamBinding(scope Construct, id *string, config GroupIamBindingConfig) GroupIamBinding
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.groupIamBinding.GroupIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/groupiambinding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/groupiambinding"
 
 groupiambinding.GroupIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.groupIamBinding.GroupIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/groupiambinding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/groupiambinding"
 
 groupiambinding.GroupIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ groupiambinding.GroupIamBinding_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.groupIamBinding.GroupIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/groupiambinding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/groupiambinding"
 
 groupiambinding.GroupIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ groupiambinding.GroupIamBinding_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.groupIamBinding.GroupIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/groupiambinding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/groupiambinding"
 
 groupiambinding.GroupIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -755,7 +755,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.groupIamBinding.GroupIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/groupiambinding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/groupiambinding"
 
 &groupiambinding.GroupIamBindingConfig {
 	Connection: interface{},
