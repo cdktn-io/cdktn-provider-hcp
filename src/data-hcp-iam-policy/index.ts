@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/iam_policy
+// https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/data-sources/iam_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataHcpIamPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * A binding associates a set of principals to a role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/iam_policy#bindings DataHcpIamPolicy#bindings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/data-sources/iam_policy#bindings DataHcpIamPolicy#bindings}
   */
   readonly bindings: DataHcpIamPolicyBindings[] | cdktn.IResolvable;
 }
@@ -23,13 +23,13 @@ export interface DataHcpIamPolicyBindings {
   /**
   * The set of principals to bind to the given role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/iam_policy#principals DataHcpIamPolicy#principals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/data-sources/iam_policy#principals DataHcpIamPolicy#principals}
   */
   readonly principals: string[];
   /**
   * The role name to bind to the given principals.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/iam_policy#role DataHcpIamPolicy#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/data-sources/iam_policy#role DataHcpIamPolicy#role}
   */
   readonly role: string;
 }
@@ -168,7 +168,7 @@ export class DataHcpIamPolicyBindingsList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/iam_policy hcp_iam_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/data-sources/iam_policy hcp_iam_policy}
 */
 export class DataHcpIamPolicy extends cdktn.TerraformDataSource {
 
@@ -184,7 +184,7 @@ export class DataHcpIamPolicy extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataHcpIamPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataHcpIamPolicy to import
-  * @param importFromId The id of the existing DataHcpIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/iam_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataHcpIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/data-sources/iam_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataHcpIamPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -196,7 +196,7 @@ export class DataHcpIamPolicy extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/iam_policy hcp_iam_policy} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/data-sources/iam_policy hcp_iam_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -207,7 +207,7 @@ export class DataHcpIamPolicy extends cdktn.TerraformDataSource {
       terraformResourceType: 'hcp_iam_policy',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.112.0',
+        providerVersion: '0.113.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

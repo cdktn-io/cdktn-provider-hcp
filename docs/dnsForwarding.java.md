@@ -4,7 +4,7 @@
 
 ### DnsForwarding <a name="DnsForwarding" id="@cdktn/provider-hcp.dnsForwarding.DnsForwarding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/dns_forwarding hcp_dns_forwarding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/dns_forwarding hcp_dns_forwarding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dnsForwarding.DnsForwarding.Initializer"></a>
 
@@ -46,7 +46,7 @@ DnsForwarding.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-hcp.dnsForwarding.DnsForwarding.Initializer.parameter.forwardingRule">forwardingRule</a></code> | <code><a href="#@cdktn/provider-hcp.dnsForwarding.DnsForwardingForwardingRule">DnsForwardingForwardingRule</a></code> | forwarding_rule block. |
 | <code><a href="#@cdktn/provider-hcp.dnsForwarding.DnsForwarding.Initializer.parameter.hvnId">hvnId</a></code> | <code>java.lang.String</code> | The ID of the HVN that this DNS forwarding belongs to. |
 | <code><a href="#@cdktn/provider-hcp.dnsForwarding.DnsForwarding.Initializer.parameter.peeringId">peeringId</a></code> | <code>java.lang.String</code> | The ID of the peering connection for DNS forwarding. |
-| <code><a href="#@cdktn/provider-hcp.dnsForwarding.DnsForwarding.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/dns_forwarding#id DnsForwarding#id}. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwarding.DnsForwarding.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/dns_forwarding#id DnsForwarding#id}. |
 | <code><a href="#@cdktn/provider-hcp.dnsForwarding.DnsForwarding.Initializer.parameter.projectId">projectId</a></code> | <code>java.lang.String</code> | The ID of the HCP project where the DNS forwarding is located. |
 | <code><a href="#@cdktn/provider-hcp.dnsForwarding.DnsForwarding.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-hcp.dnsForwarding.DnsForwardingTimeouts">DnsForwardingTimeouts</a></code> | timeouts block. |
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The connection type for DNS forwarding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/dns_forwarding#connection_type DnsForwarding#connection_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/dns_forwarding#connection_type DnsForwarding#connection_type}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The ID of the DNS forwarding configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/dns_forwarding#dns_forwarding_id DnsForwarding#dns_forwarding_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/dns_forwarding#dns_forwarding_id DnsForwarding#dns_forwarding_id}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 forwarding_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/dns_forwarding#forwarding_rule DnsForwarding#forwarding_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/dns_forwarding#forwarding_rule DnsForwarding#forwarding_rule}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The ID of the HVN that this DNS forwarding belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/dns_forwarding#hvn_id DnsForwarding#hvn_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/dns_forwarding#hvn_id DnsForwarding#hvn_id}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The ID of the peering connection for DNS forwarding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/dns_forwarding#peering_id DnsForwarding#peering_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/dns_forwarding#peering_id DnsForwarding#peering_id}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/dns_forwarding#id DnsForwarding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/dns_forwarding#id DnsForwarding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -182,7 +182,7 @@ The ID of the HCP project where the DNS forwarding is located.
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/dns_forwarding#project_id DnsForwarding#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/dns_forwarding#project_id DnsForwarding#project_id}
 
 ---
 
@@ -192,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/dns_forwarding#timeouts DnsForwarding#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/dns_forwarding#timeouts DnsForwarding#timeouts}
 
 ---
 
@@ -688,7 +688,7 @@ The construct id used in the generated config for the DnsForwarding to import.
 
 The id of the existing DnsForwarding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/dns_forwarding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/dns_forwarding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1134,7 +1134,7 @@ DnsForwardingConfig.builder()
 | <code><a href="#@cdktn/provider-hcp.dnsForwarding.DnsForwardingConfig.property.forwardingRule">forwardingRule</a></code> | <code><a href="#@cdktn/provider-hcp.dnsForwarding.DnsForwardingForwardingRule">DnsForwardingForwardingRule</a></code> | forwarding_rule block. |
 | <code><a href="#@cdktn/provider-hcp.dnsForwarding.DnsForwardingConfig.property.hvnId">hvnId</a></code> | <code>java.lang.String</code> | The ID of the HVN that this DNS forwarding belongs to. |
 | <code><a href="#@cdktn/provider-hcp.dnsForwarding.DnsForwardingConfig.property.peeringId">peeringId</a></code> | <code>java.lang.String</code> | The ID of the peering connection for DNS forwarding. |
-| <code><a href="#@cdktn/provider-hcp.dnsForwarding.DnsForwardingConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/dns_forwarding#id DnsForwarding#id}. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwarding.DnsForwardingConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/dns_forwarding#id DnsForwarding#id}. |
 | <code><a href="#@cdktn/provider-hcp.dnsForwarding.DnsForwardingConfig.property.projectId">projectId</a></code> | <code>java.lang.String</code> | The ID of the HCP project where the DNS forwarding is located. |
 | <code><a href="#@cdktn/provider-hcp.dnsForwarding.DnsForwardingConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-hcp.dnsForwarding.DnsForwardingTimeouts">DnsForwardingTimeouts</a></code> | timeouts block. |
 
@@ -1220,7 +1220,7 @@ public java.lang.String getConnectionType();
 
 The connection type for DNS forwarding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/dns_forwarding#connection_type DnsForwarding#connection_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/dns_forwarding#connection_type DnsForwarding#connection_type}
 
 ---
 
@@ -1234,7 +1234,7 @@ public java.lang.String getDnsForwardingId();
 
 The ID of the DNS forwarding configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/dns_forwarding#dns_forwarding_id DnsForwarding#dns_forwarding_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/dns_forwarding#dns_forwarding_id DnsForwarding#dns_forwarding_id}
 
 ---
 
@@ -1248,7 +1248,7 @@ public DnsForwardingForwardingRule getForwardingRule();
 
 forwarding_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/dns_forwarding#forwarding_rule DnsForwarding#forwarding_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/dns_forwarding#forwarding_rule DnsForwarding#forwarding_rule}
 
 ---
 
@@ -1262,7 +1262,7 @@ public java.lang.String getHvnId();
 
 The ID of the HVN that this DNS forwarding belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/dns_forwarding#hvn_id DnsForwarding#hvn_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/dns_forwarding#hvn_id DnsForwarding#hvn_id}
 
 ---
 
@@ -1276,7 +1276,7 @@ public java.lang.String getPeeringId();
 
 The ID of the peering connection for DNS forwarding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/dns_forwarding#peering_id DnsForwarding#peering_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/dns_forwarding#peering_id DnsForwarding#peering_id}
 
 ---
 
@@ -1288,7 +1288,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/dns_forwarding#id DnsForwarding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/dns_forwarding#id DnsForwarding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1308,7 +1308,7 @@ The ID of the HCP project where the DNS forwarding is located.
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/dns_forwarding#project_id DnsForwarding#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/dns_forwarding#project_id DnsForwarding#project_id}
 
 ---
 
@@ -1322,7 +1322,7 @@ public DnsForwardingTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/dns_forwarding#timeouts DnsForwarding#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/dns_forwarding#timeouts DnsForwarding#timeouts}
 
 ---
 
@@ -1360,7 +1360,7 @@ public java.lang.String getDomainName();
 
 The domain name for DNS forwarding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/dns_forwarding#domain_name DnsForwarding#domain_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/dns_forwarding#domain_name DnsForwarding#domain_name}
 
 ---
 
@@ -1374,7 +1374,7 @@ public java.util.List<java.lang.String> getInboundEndpointIps();
 
 The list of inbound endpoint IP addresses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/dns_forwarding#inbound_endpoint_ips DnsForwarding#inbound_endpoint_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/dns_forwarding#inbound_endpoint_ips DnsForwarding#inbound_endpoint_ips}
 
 ---
 
@@ -1388,7 +1388,7 @@ public java.lang.String getRuleId();
 
 The ID of the forwarding rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/dns_forwarding#rule_id DnsForwarding#rule_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/dns_forwarding#rule_id DnsForwarding#rule_id}
 
 ---
 
@@ -1411,10 +1411,10 @@ DnsForwardingTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-hcp.dnsForwarding.DnsForwardingTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/dns_forwarding#create DnsForwarding#create}. |
-| <code><a href="#@cdktn/provider-hcp.dnsForwarding.DnsForwardingTimeouts.property.default">default</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/dns_forwarding#default DnsForwarding#default}. |
-| <code><a href="#@cdktn/provider-hcp.dnsForwarding.DnsForwardingTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/dns_forwarding#delete DnsForwarding#delete}. |
-| <code><a href="#@cdktn/provider-hcp.dnsForwarding.DnsForwardingTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/dns_forwarding#read DnsForwarding#read}. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwarding.DnsForwardingTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/dns_forwarding#create DnsForwarding#create}. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwarding.DnsForwardingTimeouts.property.default">default</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/dns_forwarding#default DnsForwarding#default}. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwarding.DnsForwardingTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/dns_forwarding#delete DnsForwarding#delete}. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwarding.DnsForwardingTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/dns_forwarding#read DnsForwarding#read}. |
 
 ---
 
@@ -1426,7 +1426,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/dns_forwarding#create DnsForwarding#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/dns_forwarding#create DnsForwarding#create}.
 
 ---
 
@@ -1438,7 +1438,7 @@ public java.lang.String getDefault();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/dns_forwarding#default DnsForwarding#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/dns_forwarding#default DnsForwarding#default}.
 
 ---
 
@@ -1450,7 +1450,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/dns_forwarding#delete DnsForwarding#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/dns_forwarding#delete DnsForwarding#delete}.
 
 ---
 
@@ -1462,7 +1462,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/dns_forwarding#read DnsForwarding#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/dns_forwarding#read DnsForwarding#read}.
 
 ---
 

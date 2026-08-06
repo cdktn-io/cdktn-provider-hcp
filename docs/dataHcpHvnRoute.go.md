@@ -4,7 +4,7 @@
 
 ### DataHcpHvnRoute <a name="DataHcpHvnRoute" id="@cdktn/provider-hcp.dataHcpHvnRoute.DataHcpHvnRoute"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/hvn_route hcp_hvn_route}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/data-sources/hvn_route hcp_hvn_route}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpHvnRoute.DataHcpHvnRoute.Initializer"></a>
 
@@ -421,7 +421,7 @@ The construct id used in the generated config for the DataHcpHvnRoute to import.
 
 The id of the existing DataHcpHvnRoute that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/hvn_route#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/data-sources/hvn_route#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -819,7 +819,7 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcphvnroute"
 | <code><a href="#@cdktn/provider-hcp.dataHcpHvnRoute.DataHcpHvnRouteConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpHvnRoute.DataHcpHvnRouteConfig.property.hvnLink">HvnLink</a></code> | <code>*string</code> | The `self_link` of the HashiCorp Virtual Network (HVN). |
 | <code><a href="#@cdktn/provider-hcp.dataHcpHvnRoute.DataHcpHvnRouteConfig.property.hvnRouteId">HvnRouteId</a></code> | <code>*string</code> | The ID of the HVN route. |
-| <code><a href="#@cdktn/provider-hcp.dataHcpHvnRoute.DataHcpHvnRouteConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/hvn_route#id DataHcpHvnRoute#id}. |
+| <code><a href="#@cdktn/provider-hcp.dataHcpHvnRoute.DataHcpHvnRouteConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/data-sources/hvn_route#id DataHcpHvnRoute#id}. |
 | <code><a href="#@cdktn/provider-hcp.dataHcpHvnRoute.DataHcpHvnRouteConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | The ID of the HCP project where the HVN route is located. |
 | <code><a href="#@cdktn/provider-hcp.dataHcpHvnRoute.DataHcpHvnRouteConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-hcp.dataHcpHvnRoute.DataHcpHvnRouteTimeouts">DataHcpHvnRouteTimeouts</a></code> | timeouts block. |
 
@@ -905,7 +905,7 @@ HvnLink *string
 
 The `self_link` of the HashiCorp Virtual Network (HVN).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/hvn_route#hvn_link DataHcpHvnRoute#hvn_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/data-sources/hvn_route#hvn_link DataHcpHvnRoute#hvn_link}
 
 ---
 
@@ -919,7 +919,7 @@ HvnRouteId *string
 
 The ID of the HVN route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/hvn_route#hvn_route_id DataHcpHvnRoute#hvn_route_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/data-sources/hvn_route#hvn_route_id DataHcpHvnRoute#hvn_route_id}
 
 ---
 
@@ -931,7 +931,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/hvn_route#id DataHcpHvnRoute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/data-sources/hvn_route#id DataHcpHvnRoute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -950,7 +950,7 @@ The ID of the HCP project where the HVN route is located.
 
 Always matches the project ID in `hvn_link`. Setting this attribute is deprecated, but it will remain usable in read-only form.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/hvn_route#project_id DataHcpHvnRoute#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/data-sources/hvn_route#project_id DataHcpHvnRoute#project_id}
 
 ---
 
@@ -964,7 +964,7 @@ Timeouts DataHcpHvnRouteTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/hvn_route#timeouts DataHcpHvnRoute#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/data-sources/hvn_route#timeouts DataHcpHvnRoute#timeouts}
 
 ---
 
@@ -984,7 +984,7 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcphvnroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-hcp.dataHcpHvnRoute.DataHcpHvnRouteTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/hvn_route#default DataHcpHvnRoute#default}. |
+| <code><a href="#@cdktn/provider-hcp.dataHcpHvnRoute.DataHcpHvnRouteTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/data-sources/hvn_route#default DataHcpHvnRoute#default}. |
 
 ---
 
@@ -996,7 +996,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/data-sources/hvn_route#default DataHcpHvnRoute#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/data-sources/hvn_route#default DataHcpHvnRoute#default}.
 
 ---
 

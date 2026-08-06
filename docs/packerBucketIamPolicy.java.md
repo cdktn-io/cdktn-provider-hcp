@@ -4,7 +4,7 @@
 
 ### PackerBucketIamPolicy <a name="PackerBucketIamPolicy" id="@cdktn/provider-hcp.packerBucketIamPolicy.PackerBucketIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/packer_bucket_iam_policy hcp_packer_bucket_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/packer_bucket_iam_policy hcp_packer_bucket_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.packerBucketIamPolicy.PackerBucketIamPolicy.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 The policy to apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/packer_bucket_iam_policy#policy_data PackerBucketIamPolicy#policy_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/packer_bucket_iam_policy#policy_data PackerBucketIamPolicy#policy_data}
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The bucket's resource name in the format packer/project/<project ID>/bucket/<bucket name>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/packer_bucket_iam_policy#resource_name PackerBucketIamPolicy#resource_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/packer_bucket_iam_policy#resource_name PackerBucketIamPolicy#resource_name}
 
 ---
 
@@ -565,7 +565,7 @@ The construct id used in the generated config for the PackerBucketIamPolicy to i
 
 The id of the existing PackerBucketIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/packer_bucket_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/packer_bucket_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -931,7 +931,7 @@ public java.lang.String getPolicyData();
 
 The policy to apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/packer_bucket_iam_policy#policy_data PackerBucketIamPolicy#policy_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/packer_bucket_iam_policy#policy_data PackerBucketIamPolicy#policy_data}
 
 ---
 
@@ -945,7 +945,7 @@ public java.lang.String getResourceName();
 
 The bucket's resource name in the format packer/project/<project ID>/bucket/<bucket name>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/packer_bucket_iam_policy#resource_name PackerBucketIamPolicy#resource_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/packer_bucket_iam_policy#resource_name PackerBucketIamPolicy#resource_name}
 
 ---
 

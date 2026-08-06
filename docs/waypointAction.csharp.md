@@ -4,7 +4,7 @@
 
 ### WaypointAction <a name="WaypointAction" id="@cdktn/provider-hcp.waypointAction.WaypointAction"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_action hcp_waypoint_action}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/waypoint_action hcp_waypoint_action}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.waypointAction.WaypointAction.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the WaypointAction to import.
 
 The id of the existing WaypointAction that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_action#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/waypoint_action#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -941,7 +941,7 @@ public string Name { get; set; }
 
 The name of the Action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_action#name WaypointAction#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/waypoint_action#name WaypointAction#name}
 
 ---
 
@@ -955,7 +955,7 @@ public WaypointActionRequest Request { get; set; }
 
 The kind of HTTP request this should trigger.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_action#request WaypointAction#request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/waypoint_action#request WaypointAction#request}
 
 ---
 
@@ -969,7 +969,7 @@ public string Description { get; set; }
 
 A description of the Action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_action#description WaypointAction#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/waypoint_action#description WaypointAction#description}
 
 ---
 
@@ -983,7 +983,7 @@ public string ProjectId { get; set; }
 
 The ID of the HCP project where the Action is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_action#project_id WaypointAction#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/waypoint_action#project_id WaypointAction#project_id}
 
 ---
 
@@ -1019,7 +1019,7 @@ public WaypointActionRequestAgent Agent { get; set; }
 
 Agent mode allows users to define the agent to use for the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_action#agent WaypointAction#agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/waypoint_action#agent WaypointAction#agent}
 
 ---
 
@@ -1033,7 +1033,7 @@ public WaypointActionRequestCustom Custom { get; set; }
 
 Custom mode allows users to define the HTTP method, the request body, etc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_action#custom WaypointAction#custom}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/waypoint_action#custom WaypointAction#custom}
 
 ---
 
@@ -1073,7 +1073,7 @@ public string Group { get; set; }
 
 The name of the group that the operation is in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_action#group WaypointAction#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/waypoint_action#group WaypointAction#group}
 
 ---
 
@@ -1087,7 +1087,7 @@ public string OperationId { get; set; }
 
 The identifying name of the operation in the agent config file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_action#operation_id WaypointAction#operation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/waypoint_action#operation_id WaypointAction#operation_id}
 
 ---
 
@@ -1101,7 +1101,7 @@ public string ActionRunId { get; set; }
 
 An optional action run id. If specified the agent will interact with the actions subsystem.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_action#action_run_id WaypointAction#action_run_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/waypoint_action#action_run_id WaypointAction#action_run_id}
 
 ---
 
@@ -1115,7 +1115,7 @@ public string Body { get; set; }
 
 Arguments to the operation, specified as JSON.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_action#body WaypointAction#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/waypoint_action#body WaypointAction#body}
 
 ---
 
@@ -1155,7 +1155,7 @@ public string Method { get; set; }
 
 The HTTP method to use for the request. Must be one of: 'GET', 'POST', 'PUT', 'DELETE', or 'PATCH'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_action#method WaypointAction#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/waypoint_action#method WaypointAction#method}
 
 ---
 
@@ -1169,7 +1169,7 @@ public string Body { get; set; }
 
 The body to be submitted with the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_action#body WaypointAction#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/waypoint_action#body WaypointAction#body}
 
 ---
 
@@ -1183,7 +1183,7 @@ public System.Collections.Generic.IDictionary<string, string> Headers { get; set
 
 Key value headers to send with the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_action#headers WaypointAction#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/waypoint_action#headers WaypointAction#headers}
 
 ---
 
@@ -1197,7 +1197,7 @@ public string Url { get; set; }
 
 The full URL this request should make when invoked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_action#url WaypointAction#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/waypoint_action#url WaypointAction#url}
 
 ---
 
