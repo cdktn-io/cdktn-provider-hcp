@@ -4,7 +4,7 @@
 
 ### WaypointAgentGroup <a name="WaypointAgentGroup" id="@cdktn/provider-hcp.waypointAgentGroup.WaypointAgentGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_agent_group hcp_waypoint_agent_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/waypoint_agent_group hcp_waypoint_agent_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.waypointAgentGroup.WaypointAgentGroup.Initializer"></a>
 
@@ -510,7 +510,7 @@ The construct id used in the generated config for the WaypointAgentGroup to impo
 
 The id of the existing WaypointAgentGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_agent_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/waypoint_agent_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -901,7 +901,7 @@ public readonly name: string;
 
 The name of the Agent Group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_agent_group#name WaypointAgentGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/waypoint_agent_group#name WaypointAgentGroup#name}
 
 ---
 
@@ -915,7 +915,7 @@ public readonly description: string;
 
 A description of the Agent Group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_agent_group#description WaypointAgentGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/waypoint_agent_group#description WaypointAgentGroup#description}
 
 ---
 
@@ -929,7 +929,7 @@ public readonly organizationId: string;
 
 The ID of the Waypoint organization to which the Agent Group belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_agent_group#organization_id WaypointAgentGroup#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/waypoint_agent_group#organization_id WaypointAgentGroup#organization_id}
 
 ---
 
@@ -943,7 +943,7 @@ public readonly projectId: string;
 
 The ID of the Waypoint project to which the Agent Group belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.112.0/docs/resources/waypoint_agent_group#project_id WaypointAgentGroup#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/resources/waypoint_agent_group#project_id WaypointAgentGroup#project_id}
 
 ---
 
