@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulversions"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulversions"
 
 datahcpconsulversions.NewDataHcpConsulVersions(scope Construct, id *string, config DataHcpConsulVersionsConfig) DataHcpConsulVersions
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersions.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulversions"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulversions"
 
 datahcpconsulversions.DataHcpConsulVersions_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulversions"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulversions"
 
 datahcpconsulversions.DataHcpConsulVersions_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ datahcpconsulversions.DataHcpConsulVersions_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulversions"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulversions"
 
 datahcpconsulversions.DataHcpConsulVersions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datahcpconsulversions.DataHcpConsulVersions_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulversions"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulversions"
 
 datahcpconsulversions.DataHcpConsulVersions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -669,7 +669,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulversions"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulversions"
 
 &datahcpconsulversions.DataHcpConsulVersionsConfig {
 	Connection: interface{},
@@ -680,7 +680,7 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulversions"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12.dataHcpConsulVersions.DataHcpConsulVersionsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13.dataHcpConsulVersions.DataHcpConsulVersionsTimeouts,
 }
 ```
 
@@ -804,7 +804,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersionsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulversions"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulversions"
 
 &datahcpconsulversions.DataHcpConsulVersionsTimeouts {
 	Default: *string,
@@ -838,7 +838,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersionsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulversions"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulversions"
 
 datahcpconsulversions.NewDataHcpConsulVersionsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataHcpConsulVersionsTimeoutsOutputReference
 ```

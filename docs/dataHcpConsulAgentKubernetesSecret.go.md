@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpConsulAgentKubernetesSecret.DataHcpConsulAgentKubernetesSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulagentkubernetessecret"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulagentkubernetessecret"
 
 datahcpconsulagentkubernetessecret.NewDataHcpConsulAgentKubernetesSecret(scope Construct, id *string, config DataHcpConsulAgentKubernetesSecretConfig) DataHcpConsulAgentKubernetesSecret
 ```
@@ -332,7 +332,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.dataHcpConsulAgentKubernetesSecret.DataHcpConsulAgentKubernetesSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulagentkubernetessecret"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulagentkubernetessecret"
 
 datahcpconsulagentkubernetessecret.DataHcpConsulAgentKubernetesSecret_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.dataHcpConsulAgentKubernetesSecret.DataHcpConsulAgentKubernetesSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulagentkubernetessecret"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulagentkubernetessecret"
 
 datahcpconsulagentkubernetessecret.DataHcpConsulAgentKubernetesSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datahcpconsulagentkubernetessecret.DataHcpConsulAgentKubernetesSecret_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-hcp.dataHcpConsulAgentKubernetesSecret.DataHcpConsulAgentKubernetesSecret.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulagentkubernetessecret"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulagentkubernetessecret"
 
 datahcpconsulagentkubernetessecret.DataHcpConsulAgentKubernetesSecret_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ datahcpconsulagentkubernetessecret.DataHcpConsulAgentKubernetesSecret_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.dataHcpConsulAgentKubernetesSecret.DataHcpConsulAgentKubernetesSecret.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulagentkubernetessecret"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulagentkubernetessecret"
 
 datahcpconsulagentkubernetessecret.DataHcpConsulAgentKubernetesSecret_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -698,7 +698,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpConsulAgentKubernetesSecret.DataHcpConsulAgentKubernetesSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulagentkubernetessecret"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulagentkubernetessecret"
 
 &datahcpconsulagentkubernetessecret.DataHcpConsulAgentKubernetesSecretConfig {
 	Connection: interface{},
@@ -711,7 +711,7 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulagentkube
 	ClusterId: *string,
 	Id: *string,
 	ProjectId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12.dataHcpConsulAgentKubernetesSecret.DataHcpConsulAgentKubernetesSecretTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13.dataHcpConsulAgentKubernetesSecret.DataHcpConsulAgentKubernetesSecretTimeouts,
 }
 ```
 
@@ -868,7 +868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpConsulAgentKubernetesSecret.DataHcpConsulAgentKubernetesSecretTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulagentkubernetessecret"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulagentkubernetessecret"
 
 &datahcpconsulagentkubernetessecret.DataHcpConsulAgentKubernetesSecretTimeouts {
 	Default: *string,
@@ -902,7 +902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpConsulAgentKubernetesSecret.DataHcpConsulAgentKubernetesSecretTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulagentkubernetessecret"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulagentkubernetessecret"
 
 datahcpconsulagentkubernetessecret.NewDataHcpConsulAgentKubernetesSecretTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataHcpConsulAgentKubernetesSecretTimeoutsOutputReference
 ```

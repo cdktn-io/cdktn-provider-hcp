@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.packerChannel.PackerChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/packerchannel"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/packerchannel"
 
 packerchannel.NewPackerChannel(scope Construct, id *string, config PackerChannelConfig) PackerChannel
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.packerChannel.PackerChannel.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/packerchannel"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/packerchannel"
 
 packerchannel.PackerChannel_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.packerChannel.PackerChannel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/packerchannel"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/packerchannel"
 
 packerchannel.PackerChannel_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ packerchannel.PackerChannel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.packerChannel.PackerChannel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/packerchannel"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/packerchannel"
 
 packerchannel.PackerChannel_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ packerchannel.PackerChannel_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.packerChannel.PackerChannel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/packerchannel"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/packerchannel"
 
 packerchannel.PackerChannel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -917,7 +917,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.packerChannel.PackerChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/packerchannel"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/packerchannel"
 
 &packerchannel.PackerChannelConfig {
 	Connection: interface{},
@@ -932,7 +932,7 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/packerchannel"
 	Id: *string,
 	ProjectId: *string,
 	Restricted: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12.packerChannel.PackerChannelTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13.packerChannel.PackerChannelTimeouts,
 }
 ```
 
@@ -1121,7 +1121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.packerChannel.PackerChannelTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/packerchannel"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/packerchannel"
 
 &packerchannel.PackerChannelTimeouts {
 	Create: *string,
@@ -1197,7 +1197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.packerChannel.PackerChannelTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/packerchannel"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/packerchannel"
 
 packerchannel.NewPackerChannelTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PackerChannelTimeoutsOutputReference
 ```

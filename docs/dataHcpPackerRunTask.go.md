@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpPackerRunTask.DataHcpPackerRunTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcppackerruntask"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcppackerruntask"
 
 datahcppackerruntask.NewDataHcpPackerRunTask(scope Construct, id *string, config DataHcpPackerRunTaskConfig) DataHcpPackerRunTask
 ```
@@ -332,7 +332,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.dataHcpPackerRunTask.DataHcpPackerRunTask.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcppackerruntask"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcppackerruntask"
 
 datahcppackerruntask.DataHcpPackerRunTask_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.dataHcpPackerRunTask.DataHcpPackerRunTask.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcppackerruntask"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcppackerruntask"
 
 datahcppackerruntask.DataHcpPackerRunTask_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datahcppackerruntask.DataHcpPackerRunTask_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-hcp.dataHcpPackerRunTask.DataHcpPackerRunTask.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcppackerruntask"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcppackerruntask"
 
 datahcppackerruntask.DataHcpPackerRunTask_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ datahcppackerruntask.DataHcpPackerRunTask_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.dataHcpPackerRunTask.DataHcpPackerRunTask.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcppackerruntask"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcppackerruntask"
 
 datahcppackerruntask.DataHcpPackerRunTask_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -698,7 +698,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpPackerRunTask.DataHcpPackerRunTaskConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcppackerruntask"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcppackerruntask"
 
 &datahcppackerruntask.DataHcpPackerRunTaskConfig {
 	Connection: interface{},
@@ -710,7 +710,7 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcppackerruntask"
 	Provisioners: *[]interface{},
 	Id: *string,
 	ProjectId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12.dataHcpPackerRunTask.DataHcpPackerRunTaskTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13.dataHcpPackerRunTask.DataHcpPackerRunTaskTimeouts,
 }
 ```
 
@@ -852,7 +852,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpPackerRunTask.DataHcpPackerRunTaskTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcppackerruntask"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcppackerruntask"
 
 &datahcppackerruntask.DataHcpPackerRunTaskTimeouts {
 	Default: *string,
@@ -886,7 +886,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpPackerRunTask.DataHcpPackerRunTaskTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcppackerruntask"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcppackerruntask"
 
 datahcppackerruntask.NewDataHcpPackerRunTaskTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataHcpPackerRunTaskTimeoutsOutputReference
 ```

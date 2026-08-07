@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpWaypointAction.DataHcpWaypointAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpwaypointaction"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpwaypointaction"
 
 datahcpwaypointaction.NewDataHcpWaypointAction(scope Construct, id *string, config DataHcpWaypointActionConfig) DataHcpWaypointAction
 ```
@@ -312,7 +312,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.dataHcpWaypointAction.DataHcpWaypointAction.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpwaypointaction"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpwaypointaction"
 
 datahcpwaypointaction.DataHcpWaypointAction_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.dataHcpWaypointAction.DataHcpWaypointAction.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpwaypointaction"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpwaypointaction"
 
 datahcpwaypointaction.DataHcpWaypointAction_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datahcpwaypointaction.DataHcpWaypointAction_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-hcp.dataHcpWaypointAction.DataHcpWaypointAction.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpwaypointaction"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpwaypointaction"
 
 datahcpwaypointaction.DataHcpWaypointAction_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datahcpwaypointaction.DataHcpWaypointAction_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.dataHcpWaypointAction.DataHcpWaypointAction.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpwaypointaction"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpwaypointaction"
 
 datahcpwaypointaction.DataHcpWaypointAction_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -667,7 +667,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpWaypointAction.DataHcpWaypointActionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpwaypointaction"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpwaypointaction"
 
 &datahcpwaypointaction.DataHcpWaypointActionConfig {
 	Connection: interface{},
@@ -804,10 +804,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpWaypointAction.DataHcpWaypointActionRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpwaypointaction"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpwaypointaction"
 
 &datahcpwaypointaction.DataHcpWaypointActionRequest {
-	Agent: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12.dataHcpWaypointAction.DataHcpWaypointActionRequestAgent,
+	Agent: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13.dataHcpWaypointAction.DataHcpWaypointActionRequestAgent,
 }
 ```
 
@@ -838,7 +838,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpWaypointAction.DataHcpWaypointActionRequestAgent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpwaypointaction"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpwaypointaction"
 
 &datahcpwaypointaction.DataHcpWaypointActionRequestAgent {
 
@@ -851,7 +851,7 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpwaypointaction"
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpWaypointAction.DataHcpWaypointActionRequestCustom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpwaypointaction"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpwaypointaction"
 
 &datahcpwaypointaction.DataHcpWaypointActionRequestCustom {
 
@@ -866,7 +866,7 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpwaypointaction"
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpWaypointAction.DataHcpWaypointActionRequestAgentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpwaypointaction"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpwaypointaction"
 
 datahcpwaypointaction.NewDataHcpWaypointActionRequestAgentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataHcpWaypointActionRequestAgentOutputReference
 ```
@@ -1159,7 +1159,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpWaypointAction.DataHcpWaypointActionRequestCustomOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpwaypointaction"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpwaypointaction"
 
 datahcpwaypointaction.NewDataHcpWaypointActionRequestCustomOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataHcpWaypointActionRequestCustomOutputReference
 ```
@@ -1452,7 +1452,7 @@ func InternalValue() DataHcpWaypointActionRequestCustom
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpWaypointAction.DataHcpWaypointActionRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpwaypointaction"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpwaypointaction"
 
 datahcpwaypointaction.NewDataHcpWaypointActionRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataHcpWaypointActionRequestOutputReference
 ```

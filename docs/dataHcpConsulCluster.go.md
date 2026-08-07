@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpConsulCluster.DataHcpConsulCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulcluster"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulcluster"
 
 datahcpconsulcluster.NewDataHcpConsulCluster(scope Construct, id *string, config DataHcpConsulClusterConfig) DataHcpConsulCluster
 ```
@@ -332,7 +332,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.dataHcpConsulCluster.DataHcpConsulCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulcluster"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulcluster"
 
 datahcpconsulcluster.DataHcpConsulCluster_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.dataHcpConsulCluster.DataHcpConsulCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulcluster"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulcluster"
 
 datahcpconsulcluster.DataHcpConsulCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datahcpconsulcluster.DataHcpConsulCluster_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-hcp.dataHcpConsulCluster.DataHcpConsulCluster.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulcluster"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulcluster"
 
 datahcpconsulcluster.DataHcpConsulCluster_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ datahcpconsulcluster.DataHcpConsulCluster_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.dataHcpConsulCluster.DataHcpConsulCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulcluster"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulcluster"
 
 datahcpconsulcluster.DataHcpConsulCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -940,7 +940,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulcluster"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulcluster"
 
 &datahcpconsulcluster.DataHcpConsulClusterConfig {
 	Connection: interface{},
@@ -953,7 +953,7 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulcluster"
 	ClusterId: *string,
 	Id: *string,
 	ProjectId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12.dataHcpConsulCluster.DataHcpConsulClusterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13.dataHcpConsulCluster.DataHcpConsulClusterTimeouts,
 }
 ```
 
@@ -1110,7 +1110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulcluster"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulcluster"
 
 &datahcpconsulcluster.DataHcpConsulClusterIpAllowlistStruct {
 
@@ -1123,7 +1123,7 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulcluster"
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulcluster"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulcluster"
 
 &datahcpconsulcluster.DataHcpConsulClusterTimeouts {
 	Default: *string,
@@ -1157,7 +1157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulcluster"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulcluster"
 
 datahcpconsulcluster.NewDataHcpConsulClusterIpAllowlistStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataHcpConsulClusterIpAllowlistStructList
 ```
@@ -1306,7 +1306,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulcluster"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulcluster"
 
 datahcpconsulcluster.NewDataHcpConsulClusterIpAllowlistStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataHcpConsulClusterIpAllowlistStructOutputReference
 ```
@@ -1595,7 +1595,7 @@ func InternalValue() DataHcpConsulClusterIpAllowlistStruct
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulcluster"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulcluster"
 
 datahcpconsulcluster.NewDataHcpConsulClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataHcpConsulClusterTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpAwsNetworkPeering.DataHcpAwsNetworkPeering.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpawsnetworkpeering"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpawsnetworkpeering"
 
 datahcpawsnetworkpeering.NewDataHcpAwsNetworkPeering(scope Construct, id *string, config DataHcpAwsNetworkPeeringConfig) DataHcpAwsNetworkPeering
 ```
@@ -339,7 +339,7 @@ func ResetWaitForActiveState()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.dataHcpAwsNetworkPeering.DataHcpAwsNetworkPeering.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpawsnetworkpeering"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpawsnetworkpeering"
 
 datahcpawsnetworkpeering.DataHcpAwsNetworkPeering_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.dataHcpAwsNetworkPeering.DataHcpAwsNetworkPeering.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpawsnetworkpeering"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpawsnetworkpeering"
 
 datahcpawsnetworkpeering.DataHcpAwsNetworkPeering_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datahcpawsnetworkpeering.DataHcpAwsNetworkPeering_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-hcp.dataHcpAwsNetworkPeering.DataHcpAwsNetworkPeering.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpawsnetworkpeering"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpawsnetworkpeering"
 
 datahcpawsnetworkpeering.DataHcpAwsNetworkPeering_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ datahcpawsnetworkpeering.DataHcpAwsNetworkPeering_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.dataHcpAwsNetworkPeering.DataHcpAwsNetworkPeering.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpawsnetworkpeering"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpawsnetworkpeering"
 
 datahcpawsnetworkpeering.DataHcpAwsNetworkPeering_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpAwsNetworkPeering.DataHcpAwsNetworkPeeringConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpawsnetworkpeering"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpawsnetworkpeering"
 
 &datahcpawsnetworkpeering.DataHcpAwsNetworkPeeringConfig {
 	Connection: interface{},
@@ -851,7 +851,7 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpawsnetworkpeeri
 	PeeringId: *string,
 	Id: *string,
 	ProjectId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12.dataHcpAwsNetworkPeering.DataHcpAwsNetworkPeeringTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13.dataHcpAwsNetworkPeering.DataHcpAwsNetworkPeeringTimeouts,
 	WaitForActiveState: interface{},
 }
 ```
@@ -1040,7 +1040,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpAwsNetworkPeering.DataHcpAwsNetworkPeeringTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpawsnetworkpeering"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpawsnetworkpeering"
 
 &datahcpawsnetworkpeering.DataHcpAwsNetworkPeeringTimeouts {
 	Read: *string,
@@ -1074,7 +1074,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpAwsNetworkPeering.DataHcpAwsNetworkPeeringTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpawsnetworkpeering"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpawsnetworkpeering"
 
 datahcpawsnetworkpeering.NewDataHcpAwsNetworkPeeringTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataHcpAwsNetworkPeeringTimeoutsOutputReference
 ```

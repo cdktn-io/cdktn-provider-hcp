@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dnsForwarding.DnsForwarding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/dnsforwarding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/dnsforwarding"
 
 dnsforwarding.NewDnsForwarding(scope Construct, id *string, config DnsForwardingConfig) DnsForwarding
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.dnsForwarding.DnsForwarding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/dnsforwarding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/dnsforwarding"
 
 dnsforwarding.DnsForwarding_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.dnsForwarding.DnsForwarding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/dnsforwarding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/dnsforwarding"
 
 dnsforwarding.DnsForwarding_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ dnsforwarding.DnsForwarding_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.dnsForwarding.DnsForwarding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/dnsforwarding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/dnsforwarding"
 
 dnsforwarding.DnsForwarding_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ dnsforwarding.DnsForwarding_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.dnsForwarding.DnsForwarding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/dnsforwarding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/dnsforwarding"
 
 dnsforwarding.DnsForwarding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -945,7 +945,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dnsForwarding.DnsForwardingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/dnsforwarding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/dnsforwarding"
 
 &dnsforwarding.DnsForwardingConfig {
 	Connection: interface{},
@@ -957,12 +957,12 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/dnsforwarding"
 	Provisioners: *[]interface{},
 	ConnectionType: *string,
 	DnsForwardingId: *string,
-	ForwardingRule: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12.dnsForwarding.DnsForwardingForwardingRule,
+	ForwardingRule: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13.dnsForwarding.DnsForwardingForwardingRule,
 	HvnId: *string,
 	PeeringId: *string,
 	Id: *string,
 	ProjectId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12.dnsForwarding.DnsForwardingTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13.dnsForwarding.DnsForwardingTimeouts,
 }
 ```
 
@@ -1179,7 +1179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dnsForwarding.DnsForwardingForwardingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/dnsforwarding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/dnsforwarding"
 
 &dnsforwarding.DnsForwardingForwardingRule {
 	DomainName: *string,
@@ -1245,7 +1245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dnsForwarding.DnsForwardingTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/dnsforwarding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/dnsforwarding"
 
 &dnsforwarding.DnsForwardingTimeouts {
 	Create: *string,
@@ -1321,7 +1321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dnsForwarding.DnsForwardingForwardingRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/dnsforwarding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/dnsforwarding"
 
 dnsforwarding.NewDnsForwardingForwardingRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DnsForwardingForwardingRuleOutputReference
 ```
@@ -1636,7 +1636,7 @@ func InternalValue() DnsForwardingForwardingRule
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dnsForwarding.DnsForwardingTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/dnsforwarding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/dnsforwarding"
 
 dnsforwarding.NewDnsForwardingTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DnsForwardingTimeoutsOutputReference
 ```

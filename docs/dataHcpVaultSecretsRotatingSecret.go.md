@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpVaultSecretsRotatingSecret.DataHcpVaultSecretsRotatingSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpvaultsecretsrotatingsecret"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpvaultsecretsrotatingsecret"
 
 datahcpvaultsecretsrotatingsecret.NewDataHcpVaultSecretsRotatingSecret(scope Construct, id *string, config DataHcpVaultSecretsRotatingSecretConfig) DataHcpVaultSecretsRotatingSecret
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.dataHcpVaultSecretsRotatingSecret.DataHcpVaultSecretsRotatingSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpvaultsecretsrotatingsecret"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpvaultsecretsrotatingsecret"
 
 datahcpvaultsecretsrotatingsecret.DataHcpVaultSecretsRotatingSecret_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.dataHcpVaultSecretsRotatingSecret.DataHcpVaultSecretsRotatingSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpvaultsecretsrotatingsecret"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpvaultsecretsrotatingsecret"
 
 datahcpvaultsecretsrotatingsecret.DataHcpVaultSecretsRotatingSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datahcpvaultsecretsrotatingsecret.DataHcpVaultSecretsRotatingSecret_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-hcp.dataHcpVaultSecretsRotatingSecret.DataHcpVaultSecretsRotatingSecret.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpvaultsecretsrotatingsecret"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpvaultsecretsrotatingsecret"
 
 datahcpvaultsecretsrotatingsecret.DataHcpVaultSecretsRotatingSecret_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datahcpvaultsecretsrotatingsecret.DataHcpVaultSecretsRotatingSecret_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.dataHcpVaultSecretsRotatingSecret.DataHcpVaultSecretsRotatingSecret.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpvaultsecretsrotatingsecret"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpvaultsecretsrotatingsecret"
 
 datahcpvaultsecretsrotatingsecret.DataHcpVaultSecretsRotatingSecret_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -675,7 +675,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpVaultSecretsRotatingSecret.DataHcpVaultSecretsRotatingSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpvaultsecretsrotatingsecret"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpvaultsecretsrotatingsecret"
 
 &datahcpvaultsecretsrotatingsecret.DataHcpVaultSecretsRotatingSecretConfig {
 	Connection: interface{},
