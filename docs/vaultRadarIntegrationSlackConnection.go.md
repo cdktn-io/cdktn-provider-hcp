@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.vaultRadarIntegrationSlackConnection.VaultRadarIntegrationSlackConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultradarintegrationslackconnection"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultradarintegrationslackconnection"
 
 vaultradarintegrationslackconnection.NewVaultRadarIntegrationSlackConnection(scope Construct, id *string, config VaultRadarIntegrationSlackConnectionConfig) VaultRadarIntegrationSlackConnection
 ```
@@ -407,7 +407,7 @@ func ResetProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.vaultRadarIntegrationSlackConnection.VaultRadarIntegrationSlackConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultradarintegrationslackconnection"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultradarintegrationslackconnection"
 
 vaultradarintegrationslackconnection.VaultRadarIntegrationSlackConnection_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.vaultRadarIntegrationSlackConnection.VaultRadarIntegrationSlackConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultradarintegrationslackconnection"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultradarintegrationslackconnection"
 
 vaultradarintegrationslackconnection.VaultRadarIntegrationSlackConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ vaultradarintegrationslackconnection.VaultRadarIntegrationSlackConnection_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.vaultRadarIntegrationSlackConnection.VaultRadarIntegrationSlackConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultradarintegrationslackconnection"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultradarintegrationslackconnection"
 
 vaultradarintegrationslackconnection.VaultRadarIntegrationSlackConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ vaultradarintegrationslackconnection.VaultRadarIntegrationSlackConnection_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.vaultRadarIntegrationSlackConnection.VaultRadarIntegrationSlackConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultradarintegrationslackconnection"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultradarintegrationslackconnection"
 
 vaultradarintegrationslackconnection.VaultRadarIntegrationSlackConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.vaultRadarIntegrationSlackConnection.VaultRadarIntegrationSlackConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultradarintegrationslackconnection"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultradarintegrationslackconnection"
 
 &vaultradarintegrationslackconnection.VaultRadarIntegrationSlackConnectionConfig {
 	Connection: interface{},

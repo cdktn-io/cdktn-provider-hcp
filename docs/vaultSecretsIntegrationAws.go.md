@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.vaultSecretsIntegrationAws.VaultSecretsIntegrationAws.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultsecretsintegrationaws"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultsecretsintegrationaws"
 
 vaultsecretsintegrationaws.NewVaultSecretsIntegrationAws(scope Construct, id *string, config VaultSecretsIntegrationAwsConfig) VaultSecretsIntegrationAws
 ```
@@ -447,7 +447,7 @@ func ResetProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.vaultSecretsIntegrationAws.VaultSecretsIntegrationAws.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultsecretsintegrationaws"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultsecretsintegrationaws"
 
 vaultsecretsintegrationaws.VaultSecretsIntegrationAws_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.vaultSecretsIntegrationAws.VaultSecretsIntegrationAws.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultsecretsintegrationaws"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultsecretsintegrationaws"
 
 vaultsecretsintegrationaws.VaultSecretsIntegrationAws_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ vaultsecretsintegrationaws.VaultSecretsIntegrationAws_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.vaultSecretsIntegrationAws.VaultSecretsIntegrationAws.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultsecretsintegrationaws"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultsecretsintegrationaws"
 
 vaultsecretsintegrationaws.VaultSecretsIntegrationAws_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ vaultsecretsintegrationaws.VaultSecretsIntegrationAws_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.vaultSecretsIntegrationAws.VaultSecretsIntegrationAws.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultsecretsintegrationaws"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultsecretsintegrationaws"
 
 vaultsecretsintegrationaws.VaultSecretsIntegrationAws_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -879,7 +879,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.vaultSecretsIntegrationAws.VaultSecretsIntegrationAwsAccessKeysA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultsecretsintegrationaws"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultsecretsintegrationaws"
 
 &vaultsecretsintegrationaws.VaultSecretsIntegrationAwsAccessKeysA {
 	AccessKeyId: *string,
@@ -929,7 +929,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.vaultSecretsIntegrationAws.VaultSecretsIntegrationAwsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultsecretsintegrationaws"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultsecretsintegrationaws"
 
 &vaultsecretsintegrationaws.VaultSecretsIntegrationAwsConfig {
 	Connection: interface{},
@@ -941,8 +941,8 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultsecretsintegratio
 	Provisioners: *[]interface{},
 	Capabilities: *[]*string,
 	Name: *string,
-	AccessKeys: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12.vaultSecretsIntegrationAws.VaultSecretsIntegrationAwsAccessKeysA,
-	FederatedWorkloadIdentity: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12.vaultSecretsIntegrationAws.VaultSecretsIntegrationAwsFederatedWorkloadIdentityA,
+	AccessKeys: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13.vaultSecretsIntegrationAws.VaultSecretsIntegrationAwsAccessKeysA,
+	FederatedWorkloadIdentity: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13.vaultSecretsIntegrationAws.VaultSecretsIntegrationAwsFederatedWorkloadIdentityA,
 	ProjectId: *string,
 }
 ```
@@ -1111,7 +1111,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.vaultSecretsIntegrationAws.VaultSecretsIntegrationAwsFederatedWorkloadIdentityA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultsecretsintegrationaws"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultsecretsintegrationaws"
 
 &vaultsecretsintegrationaws.VaultSecretsIntegrationAwsFederatedWorkloadIdentityA {
 	Audience: *string,
@@ -1163,7 +1163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.vaultSecretsIntegrationAws.VaultSecretsIntegrationAwsAccessKeysAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultsecretsintegrationaws"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultsecretsintegrationaws"
 
 vaultsecretsintegrationaws.NewVaultSecretsIntegrationAwsAccessKeysAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultSecretsIntegrationAwsAccessKeysAOutputReference
 ```
@@ -1456,7 +1456,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.vaultSecretsIntegrationAws.VaultSecretsIntegrationAwsFederatedWorkloadIdentityAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/vaultsecretsintegrationaws"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultsecretsintegrationaws"
 
 vaultsecretsintegrationaws.NewVaultSecretsIntegrationAwsFederatedWorkloadIdentityAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultSecretsIntegrationAwsFederatedWorkloadIdentityAOutputReference
 ```

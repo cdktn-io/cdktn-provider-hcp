@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.organizationIamPolicy.OrganizationIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/organizationiampolicy"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/organizationiampolicy"
 
 organizationiampolicy.NewOrganizationIamPolicy(scope Construct, id *string, config OrganizationIamPolicyConfig) OrganizationIamPolicy
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.organizationIamPolicy.OrganizationIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/organizationiampolicy"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/organizationiampolicy"
 
 organizationiampolicy.OrganizationIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.organizationIamPolicy.OrganizationIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/organizationiampolicy"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/organizationiampolicy"
 
 organizationiampolicy.OrganizationIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ organizationiampolicy.OrganizationIamPolicy_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.organizationIamPolicy.OrganizationIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/organizationiampolicy"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/organizationiampolicy"
 
 organizationiampolicy.OrganizationIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ organizationiampolicy.OrganizationIamPolicy_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.organizationIamPolicy.OrganizationIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/organizationiampolicy"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/organizationiampolicy"
 
 organizationiampolicy.OrganizationIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.organizationIamPolicy.OrganizationIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/organizationiampolicy"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/organizationiampolicy"
 
 &organizationiampolicy.OrganizationIamPolicyConfig {
 	Connection: interface{},

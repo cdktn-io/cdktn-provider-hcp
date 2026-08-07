@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpConsulAgentHelmConfig.DataHcpConsulAgentHelmConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulagenthelmconfig"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulagenthelmconfig"
 
 datahcpconsulagenthelmconfig.NewDataHcpConsulAgentHelmConfig(scope Construct, id *string, config DataHcpConsulAgentHelmConfigConfig) DataHcpConsulAgentHelmConfig
 ```
@@ -339,7 +339,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.dataHcpConsulAgentHelmConfig.DataHcpConsulAgentHelmConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulagenthelmconfig"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulagenthelmconfig"
 
 datahcpconsulagenthelmconfig.DataHcpConsulAgentHelmConfig_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.dataHcpConsulAgentHelmConfig.DataHcpConsulAgentHelmConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulagenthelmconfig"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulagenthelmconfig"
 
 datahcpconsulagenthelmconfig.DataHcpConsulAgentHelmConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datahcpconsulagenthelmconfig.DataHcpConsulAgentHelmConfig_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-hcp.dataHcpConsulAgentHelmConfig.DataHcpConsulAgentHelmConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulagenthelmconfig"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulagenthelmconfig"
 
 datahcpconsulagenthelmconfig.DataHcpConsulAgentHelmConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ datahcpconsulagenthelmconfig.DataHcpConsulAgentHelmConfig_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.dataHcpConsulAgentHelmConfig.DataHcpConsulAgentHelmConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulagenthelmconfig"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulagenthelmconfig"
 
 datahcpconsulagenthelmconfig.DataHcpConsulAgentHelmConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -749,7 +749,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpConsulAgentHelmConfig.DataHcpConsulAgentHelmConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulagenthelmconfig"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulagenthelmconfig"
 
 &datahcpconsulagenthelmconfig.DataHcpConsulAgentHelmConfigConfig {
 	Connection: interface{},
@@ -764,7 +764,7 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulagenthelm
 	ExposeGossipPorts: interface{},
 	Id: *string,
 	ProjectId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12.dataHcpConsulAgentHelmConfig.DataHcpConsulAgentHelmConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13.dataHcpConsulAgentHelmConfig.DataHcpConsulAgentHelmConfigTimeouts,
 }
 ```
 
@@ -951,7 +951,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpConsulAgentHelmConfig.DataHcpConsulAgentHelmConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulagenthelmconfig"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulagenthelmconfig"
 
 &datahcpconsulagenthelmconfig.DataHcpConsulAgentHelmConfigTimeouts {
 	Default: *string,
@@ -985,7 +985,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpConsulAgentHelmConfig.DataHcpConsulAgentHelmConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v12/datahcpconsulagenthelmconfig"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpconsulagenthelmconfig"
 
 datahcpconsulagenthelmconfig.NewDataHcpConsulAgentHelmConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataHcpConsulAgentHelmConfigTimeoutsOutputReference
 ```
