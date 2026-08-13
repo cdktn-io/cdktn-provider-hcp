@@ -4,7 +4,7 @@
 
 ### DataHcpWaypointAgentGroup <a name="DataHcpWaypointAgentGroup" id="@cdktn/provider-hcp.dataHcpWaypointAgentGroup.DataHcpWaypointAgentGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/data-sources/waypoint_agent_group hcp_waypoint_agent_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/data-sources/waypoint_agent_group hcp_waypoint_agent_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpWaypointAgentGroup.DataHcpWaypointAgentGroup.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the Agent Group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/data-sources/waypoint_agent_group#name DataHcpWaypointAgentGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/data-sources/waypoint_agent_group#name DataHcpWaypointAgentGroup#name}
 
 ---
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the DataHcpWaypointAgentGroup 
 
 The id of the existing DataHcpWaypointAgentGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/data-sources/waypoint_agent_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/data-sources/waypoint_agent_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -831,7 +831,7 @@ name: str
 
 The name of the Agent Group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.113.0/docs/data-sources/waypoint_agent_group#name DataHcpWaypointAgentGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/data-sources/waypoint_agent_group#name DataHcpWaypointAgentGroup#name}
 
 ---
 

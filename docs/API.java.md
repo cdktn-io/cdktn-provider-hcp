@@ -73,6 +73,7 @@ The following submodules are available:
 - [projectIamBinding](./projectIamBinding.java.md)
 - [projectIamPolicy](./projectIamPolicy.java.md)
 - [provider](./provider.java.md)
+- [resourceControlPolicy](./resourceControlPolicy.java.md)
 - [servicePrincipal](./servicePrincipal.java.md)
 - [servicePrincipalKey](./servicePrincipalKey.java.md)
 - [vaultCluster](./vaultCluster.java.md)

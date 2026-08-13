@@ -73,6 +73,7 @@ The following submodules are available:
 - [projectIamBinding](./projectIamBinding.go.md)
 - [projectIamPolicy](./projectIamPolicy.go.md)
 - [provider](./provider.go.md)
+- [resourceControlPolicy](./resourceControlPolicy.go.md)
 - [servicePrincipal](./servicePrincipal.go.md)
 - [servicePrincipalKey](./servicePrincipalKey.go.md)
 - [vaultCluster](./vaultCluster.go.md)
