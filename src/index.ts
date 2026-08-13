@@ -35,6 +35,7 @@ export * as privateLink from './private-link/index';
 export * as project from './project/index';
 export * as projectIamBinding from './project-iam-binding/index';
 export * as projectIamPolicy from './project-iam-policy/index';
+export * as resourceControlPolicy from './resource-control-policy/index';
 export * as servicePrincipal from './service-principal/index';
 export * as servicePrincipalKey from './service-principal-key/index';
 export * as vaultCluster from './vault-cluster/index';
