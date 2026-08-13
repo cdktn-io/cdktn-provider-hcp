@@ -35,6 +35,7 @@ Object.defineProperty(exports, 'privateLink', { get: function () { return requir
 Object.defineProperty(exports, 'project', { get: function () { return require('./project'); } });
 Object.defineProperty(exports, 'projectIamBinding', { get: function () { return require('./project-iam-binding'); } });
 Object.defineProperty(exports, 'projectIamPolicy', { get: function () { return require('./project-iam-policy'); } });
+Object.defineProperty(exports, 'resourceControlPolicy', { get: function () { return require('./resource-control-policy'); } });
 Object.defineProperty(exports, 'servicePrincipal', { get: function () { return require('./service-principal'); } });
 Object.defineProperty(exports, 'servicePrincipalKey', { get: function () { return require('./service-principal-key'); } });
 Object.defineProperty(exports, 'vaultCluster', { get: function () { return require('./vault-cluster'); } });

@@ -73,6 +73,7 @@ The following submodules are available:
 - [projectIamBinding](./projectIamBinding.csharp.md)
 - [projectIamPolicy](./projectIamPolicy.csharp.md)
 - [provider](./provider.csharp.md)
+- [resourceControlPolicy](./resourceControlPolicy.csharp.md)
 - [servicePrincipal](./servicePrincipal.csharp.md)
 - [servicePrincipalKey](./servicePrincipalKey.csharp.md)
 - [vaultCluster](./vaultCluster.csharp.md)

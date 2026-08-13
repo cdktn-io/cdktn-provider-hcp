@@ -73,6 +73,7 @@ The following submodules are available:
 - [projectIamBinding](./projectIamBinding.typescript.md)
 - [projectIamPolicy](./projectIamPolicy.typescript.md)
 - [provider](./provider.typescript.md)
+- [resourceControlPolicy](./resourceControlPolicy.typescript.md)
 - [servicePrincipal](./servicePrincipal.typescript.md)
 - [servicePrincipalKey](./servicePrincipalKey.typescript.md)
 - [vaultCluster](./vaultCluster.typescript.md)

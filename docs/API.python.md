@@ -73,6 +73,7 @@ The following submodules are available:
 - [projectIamBinding](./projectIamBinding.python.md)
 - [projectIamPolicy](./projectIamPolicy.python.md)
 - [provider](./provider.python.md)
+- [resourceControlPolicy](./resourceControlPolicy.python.md)
 - [servicePrincipal](./servicePrincipal.python.md)
 - [servicePrincipalKey](./servicePrincipalKey.python.md)
 - [vaultCluster](./vaultCluster.python.md)
