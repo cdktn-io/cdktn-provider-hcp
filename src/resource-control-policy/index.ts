@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/resource_control_policy
+// https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/resource_control_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface ResourceControlPolicyConfig extends cdktn.TerraformMetaArgument
   /**
   * The list of constraint IDs to enable for the organization. Each constraint ID must be a recognized constraint returned by ListConstraints.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/resource_control_policy#enabled_constraints ResourceControlPolicy#enabled_constraints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/resource_control_policy#enabled_constraints ResourceControlPolicy#enabled_constraints}
   */
   readonly enabledConstraints: string[];
   /**
   * The ID of the organization to manage the resource control policy for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/resource_control_policy#organization_id ResourceControlPolicy#organization_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/resource_control_policy#organization_id ResourceControlPolicy#organization_id}
   */
   readonly organizationId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/resource_control_policy hcp_resource_control_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/resource_control_policy hcp_resource_control_policy}
 */
 export class ResourceControlPolicy extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class ResourceControlPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ResourceControlPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ResourceControlPolicy to import
-  * @param importFromId The id of the existing ResourceControlPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/resource_control_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ResourceControlPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/resource_control_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ResourceControlPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class ResourceControlPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/resource_control_policy hcp_resource_control_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/resource_control_policy hcp_resource_control_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class ResourceControlPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'hcp_resource_control_policy',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.114.0',
+        providerVersion: '0.115.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
