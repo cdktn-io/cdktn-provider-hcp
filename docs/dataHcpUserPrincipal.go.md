@@ -4,12 +4,12 @@
 
 ### DataHcpUserPrincipal <a name="DataHcpUserPrincipal" id="@cdktn/provider-hcp.dataHcpUserPrincipal.DataHcpUserPrincipal"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/data-sources/user_principal hcp_user_principal}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/data-sources/user_principal hcp_user_principal}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpUserPrincipal.DataHcpUserPrincipal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpuserprincipal"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpuserprincipal"
 
 datahcpuserprincipal.NewDataHcpUserPrincipal(scope Construct, id *string, config DataHcpUserPrincipalConfig) DataHcpUserPrincipal
 ```
@@ -312,7 +312,7 @@ func ResetUserId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.dataHcpUserPrincipal.DataHcpUserPrincipal.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpuserprincipal"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpuserprincipal"
 
 datahcpuserprincipal.DataHcpUserPrincipal_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.dataHcpUserPrincipal.DataHcpUserPrincipal.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpuserprincipal"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpuserprincipal"
 
 datahcpuserprincipal.DataHcpUserPrincipal_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datahcpuserprincipal.DataHcpUserPrincipal_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-hcp.dataHcpUserPrincipal.DataHcpUserPrincipal.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpuserprincipal"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpuserprincipal"
 
 datahcpuserprincipal.DataHcpUserPrincipal_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datahcpuserprincipal.DataHcpUserPrincipal_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.dataHcpUserPrincipal.DataHcpUserPrincipal.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpuserprincipal"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpuserprincipal"
 
 datahcpuserprincipal.DataHcpUserPrincipal_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataHcpUserPrincipal to im
 
 The id of the existing DataHcpUserPrincipal that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/data-sources/user_principal#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/data-sources/user_principal#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -623,7 +623,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpUserPrincipal.DataHcpUserPrincipalConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpuserprincipal"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpuserprincipal"
 
 &datahcpuserprincipal.DataHcpUserPrincipalConfig {
 	Connection: interface{},
@@ -734,7 +734,7 @@ Email *string
 
 The user's email. Can not be combined with user_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/data-sources/user_principal#email DataHcpUserPrincipal#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/data-sources/user_principal#email DataHcpUserPrincipal#email}
 
 ---
 
@@ -748,7 +748,7 @@ UserId *string
 
 The user's unique identifier. Can not be combined with email.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/data-sources/user_principal#user_id DataHcpUserPrincipal#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/data-sources/user_principal#user_id DataHcpUserPrincipal#user_id}
 
 ---
 

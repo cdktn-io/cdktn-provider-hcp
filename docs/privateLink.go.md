@@ -4,12 +4,12 @@
 
 ### PrivateLink <a name="PrivateLink" id="@cdktn/provider-hcp.privateLink.PrivateLink"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/private_link hcp_private_link}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/private_link hcp_private_link}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.privateLink.PrivateLink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/privatelink"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/privatelink"
 
 privatelink.NewPrivateLink(scope Construct, id *string, config PrivateLinkConfig) PrivateLink
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.privateLink.PrivateLink.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/privatelink"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/privatelink"
 
 privatelink.PrivateLink_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.privateLink.PrivateLink.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/privatelink"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/privatelink"
 
 privatelink.PrivateLink_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ privatelink.PrivateLink_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.privateLink.PrivateLink.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/privatelink"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/privatelink"
 
 privatelink.PrivateLink_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ privatelink.PrivateLink_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.privateLink.PrivateLink.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/privatelink"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/privatelink"
 
 privatelink.PrivateLink_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -544,7 +544,7 @@ The construct id used in the generated config for the PrivateLink to import.
 
 The id of the existing PrivateLink that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/private_link#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/private_link#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1019,7 +1019,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.privateLink.PrivateLinkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/privatelink"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/privatelink"
 
 &privatelink.PrivateLinkConfig {
 	Connection: interface{},
@@ -1037,7 +1037,7 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/privatelink"
 	ConsumerRegions: *[]*string,
 	Id: *string,
 	ProjectId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13.privateLink.PrivateLinkTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14.privateLink.PrivateLinkTimeouts,
 }
 ```
 
@@ -1058,7 +1058,7 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/privatelink"
 | <code><a href="#@cdktn/provider-hcp.privateLink.PrivateLinkConfig.property.consumerAccounts">ConsumerAccounts</a></code> | <code>*[]*string</code> | The list of consumer accounts allowed to connect to the private link. |
 | <code><a href="#@cdktn/provider-hcp.privateLink.PrivateLinkConfig.property.consumerIpRanges">ConsumerIpRanges</a></code> | <code>*[]*string</code> | The list of consumer IP ranges or CIDRs allowed to connect to the HVD cluster associated with the private link. |
 | <code><a href="#@cdktn/provider-hcp.privateLink.PrivateLinkConfig.property.consumerRegions">ConsumerRegions</a></code> | <code>*[]*string</code> | The cloud provider regions from which consumers can connect to the private link. |
-| <code><a href="#@cdktn/provider-hcp.privateLink.PrivateLinkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/private_link#id PrivateLink#id}. |
+| <code><a href="#@cdktn/provider-hcp.privateLink.PrivateLinkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/private_link#id PrivateLink#id}. |
 | <code><a href="#@cdktn/provider-hcp.privateLink.PrivateLinkConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | The ID of the HCP project where the private link is located. |
 | <code><a href="#@cdktn/provider-hcp.privateLink.PrivateLinkConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-hcp.privateLink.PrivateLinkTimeouts">PrivateLinkTimeouts</a></code> | timeouts block. |
 
@@ -1144,7 +1144,7 @@ HvnId *string
 
 The ID of the HVN associated with the private link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/private_link#hvn_id PrivateLink#hvn_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/private_link#hvn_id PrivateLink#hvn_id}
 
 ---
 
@@ -1158,7 +1158,7 @@ PrivateLinkId *string
 
 The ID of the private link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/private_link#private_link_id PrivateLink#private_link_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/private_link#private_link_id PrivateLink#private_link_id}
 
 ---
 
@@ -1172,7 +1172,7 @@ VaultClusterId *string
 
 The ID of the HCP Vault cluster associated with the private link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/private_link#vault_cluster_id PrivateLink#vault_cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/private_link#vault_cluster_id PrivateLink#vault_cluster_id}
 
 ---
 
@@ -1188,7 +1188,7 @@ The list of consumer accounts allowed to connect to the private link.
 
 In AWS, these are IAM Principals. In Azure, these are Azure Subscription/Resource IDs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/private_link#consumer_accounts PrivateLink#consumer_accounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/private_link#consumer_accounts PrivateLink#consumer_accounts}
 
 ---
 
@@ -1202,7 +1202,7 @@ ConsumerIpRanges *[]*string
 
 The list of consumer IP ranges or CIDRs allowed to connect to the HVD cluster associated with the private link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/private_link#consumer_ip_ranges PrivateLink#consumer_ip_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/private_link#consumer_ip_ranges PrivateLink#consumer_ip_ranges}
 
 ---
 
@@ -1216,7 +1216,7 @@ ConsumerRegions *[]*string
 
 The cloud provider regions from which consumers can connect to the private link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/private_link#consumer_regions PrivateLink#consumer_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/private_link#consumer_regions PrivateLink#consumer_regions}
 
 ---
 
@@ -1228,7 +1228,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/private_link#id PrivateLink#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/private_link#id PrivateLink#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1247,7 +1247,7 @@ The ID of the HCP project where the private link is located.
 
 If not specified, the project configured in the provider is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/private_link#project_id PrivateLink#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/private_link#project_id PrivateLink#project_id}
 
 ---
 
@@ -1261,7 +1261,7 @@ Timeouts PrivateLinkTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/private_link#timeouts PrivateLink#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/private_link#timeouts PrivateLink#timeouts}
 
 ---
 
@@ -1270,7 +1270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.privateLink.PrivateLinkTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/privatelink"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/privatelink"
 
 &privatelink.PrivateLinkTimeouts {
 	Create: *string,
@@ -1284,10 +1284,10 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/privatelink"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-hcp.privateLink.PrivateLinkTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/private_link#create PrivateLink#create}. |
-| <code><a href="#@cdktn/provider-hcp.privateLink.PrivateLinkTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/private_link#default PrivateLink#default}. |
-| <code><a href="#@cdktn/provider-hcp.privateLink.PrivateLinkTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/private_link#delete PrivateLink#delete}. |
-| <code><a href="#@cdktn/provider-hcp.privateLink.PrivateLinkTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/private_link#update PrivateLink#update}. |
+| <code><a href="#@cdktn/provider-hcp.privateLink.PrivateLinkTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/private_link#create PrivateLink#create}. |
+| <code><a href="#@cdktn/provider-hcp.privateLink.PrivateLinkTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/private_link#default PrivateLink#default}. |
+| <code><a href="#@cdktn/provider-hcp.privateLink.PrivateLinkTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/private_link#delete PrivateLink#delete}. |
+| <code><a href="#@cdktn/provider-hcp.privateLink.PrivateLinkTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/private_link#update PrivateLink#update}. |
 
 ---
 
@@ -1299,7 +1299,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/private_link#create PrivateLink#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/private_link#create PrivateLink#create}.
 
 ---
 
@@ -1311,7 +1311,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/private_link#default PrivateLink#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/private_link#default PrivateLink#default}.
 
 ---
 
@@ -1323,7 +1323,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/private_link#delete PrivateLink#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/private_link#delete PrivateLink#delete}.
 
 ---
 
@@ -1335,7 +1335,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/private_link#update PrivateLink#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/private_link#update PrivateLink#update}.
 
 ---
 
@@ -1346,7 +1346,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.privateLink.PrivateLinkTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/privatelink"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/privatelink"
 
 privatelink.NewPrivateLinkTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrivateLinkTimeoutsOutputReference
 ```

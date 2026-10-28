@@ -4,12 +4,12 @@
 
 ### VaultRadarIntegrationSlackConnection <a name="VaultRadarIntegrationSlackConnection" id="@cdktn/provider-hcp.vaultRadarIntegrationSlackConnection.VaultRadarIntegrationSlackConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/vault_radar_integration_slack_connection hcp_vault_radar_integration_slack_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/vault_radar_integration_slack_connection hcp_vault_radar_integration_slack_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.vaultRadarIntegrationSlackConnection.VaultRadarIntegrationSlackConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultradarintegrationslackconnection"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/vaultradarintegrationslackconnection"
 
 vaultradarintegrationslackconnection.NewVaultRadarIntegrationSlackConnection(scope Construct, id *string, config VaultRadarIntegrationSlackConnectionConfig) VaultRadarIntegrationSlackConnection
 ```
@@ -407,7 +407,7 @@ func ResetProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.vaultRadarIntegrationSlackConnection.VaultRadarIntegrationSlackConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultradarintegrationslackconnection"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/vaultradarintegrationslackconnection"
 
 vaultradarintegrationslackconnection.VaultRadarIntegrationSlackConnection_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.vaultRadarIntegrationSlackConnection.VaultRadarIntegrationSlackConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultradarintegrationslackconnection"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/vaultradarintegrationslackconnection"
 
 vaultradarintegrationslackconnection.VaultRadarIntegrationSlackConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ vaultradarintegrationslackconnection.VaultRadarIntegrationSlackConnection_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.vaultRadarIntegrationSlackConnection.VaultRadarIntegrationSlackConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultradarintegrationslackconnection"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/vaultradarintegrationslackconnection"
 
 vaultradarintegrationslackconnection.VaultRadarIntegrationSlackConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ vaultradarintegrationslackconnection.VaultRadarIntegrationSlackConnection_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.vaultRadarIntegrationSlackConnection.VaultRadarIntegrationSlackConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultradarintegrationslackconnection"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/vaultradarintegrationslackconnection"
 
 vaultradarintegrationslackconnection.VaultRadarIntegrationSlackConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -496,7 +496,7 @@ The construct id used in the generated config for the VaultRadarIntegrationSlack
 
 The id of the existing VaultRadarIntegrationSlackConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/vault_radar_integration_slack_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/vault_radar_integration_slack_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.vaultRadarIntegrationSlackConnection.VaultRadarIntegrationSlackConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultradarintegrationslackconnection"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/vaultradarintegrationslackconnection"
 
 &vaultradarintegrationslackconnection.VaultRadarIntegrationSlackConnectionConfig {
 	Connection: interface{},
@@ -886,7 +886,7 @@ Name *string
 
 Name of connection. Name must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/vault_radar_integration_slack_connection#name VaultRadarIntegrationSlackConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/vault_radar_integration_slack_connection#name VaultRadarIntegrationSlackConnection#name}
 
 ---
 
@@ -900,7 +900,7 @@ Token *string
 
 Slack bot user OAuth token. Example: Bot token strings begin with 'xoxb'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/vault_radar_integration_slack_connection#token VaultRadarIntegrationSlackConnection#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/vault_radar_integration_slack_connection#token VaultRadarIntegrationSlackConnection#token}
 
 ---
 
@@ -916,7 +916,7 @@ The ID of the HCP project where Vault Radar is located.
 
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/vault_radar_integration_slack_connection#project_id VaultRadarIntegrationSlackConnection#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/vault_radar_integration_slack_connection#project_id VaultRadarIntegrationSlackConnection#project_id}
 
 ---
 

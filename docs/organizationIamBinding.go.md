@@ -4,12 +4,12 @@
 
 ### OrganizationIamBinding <a name="OrganizationIamBinding" id="@cdktn/provider-hcp.organizationIamBinding.OrganizationIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/organization_iam_binding hcp_organization_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/organization_iam_binding hcp_organization_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.organizationIamBinding.OrganizationIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/organizationiambinding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/organizationiambinding"
 
 organizationiambinding.NewOrganizationIamBinding(scope Construct, id *string, config OrganizationIamBindingConfig) OrganizationIamBinding
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.organizationIamBinding.OrganizationIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/organizationiambinding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/organizationiambinding"
 
 organizationiambinding.OrganizationIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.organizationIamBinding.OrganizationIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/organizationiambinding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/organizationiambinding"
 
 organizationiambinding.OrganizationIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ organizationiambinding.OrganizationIamBinding_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.organizationIamBinding.OrganizationIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/organizationiambinding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/organizationiambinding"
 
 organizationiambinding.OrganizationIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ organizationiambinding.OrganizationIamBinding_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.organizationIamBinding.OrganizationIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/organizationiambinding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/organizationiambinding"
 
 organizationiambinding.OrganizationIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the OrganizationIamBinding to 
 
 The id of the existing OrganizationIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/organization_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/organization_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.organizationIamBinding.OrganizationIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/organizationiambinding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/organizationiambinding"
 
 &organizationiambinding.OrganizationIamBindingConfig {
 	Connection: interface{},
@@ -844,7 +844,7 @@ PrincipalId *string
 
 The principal to bind to the given role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/organization_iam_binding#principal_id OrganizationIamBinding#principal_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/organization_iam_binding#principal_id OrganizationIamBinding#principal_id}
 
 ---
 
@@ -858,7 +858,7 @@ Role *string
 
 The role name to bind to the given principal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/organization_iam_binding#role OrganizationIamBinding#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/organization_iam_binding#role OrganizationIamBinding#role}
 
 ---
 

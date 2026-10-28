@@ -4,12 +4,12 @@
 
 ### DataHcpGroup <a name="DataHcpGroup" id="@cdktn/provider-hcp.dataHcpGroup.DataHcpGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/data-sources/group hcp_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/data-sources/group hcp_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpGroup.DataHcpGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpgroup"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpgroup"
 
 datahcpgroup.NewDataHcpGroup(scope Construct, id *string, config DataHcpGroupConfig) DataHcpGroup
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.dataHcpGroup.DataHcpGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpgroup"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpgroup"
 
 datahcpgroup.DataHcpGroup_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.dataHcpGroup.DataHcpGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpgroup"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpgroup"
 
 datahcpgroup.DataHcpGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datahcpgroup.DataHcpGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-hcp.dataHcpGroup.DataHcpGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpgroup"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpgroup"
 
 datahcpgroup.DataHcpGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datahcpgroup.DataHcpGroup_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.dataHcpGroup.DataHcpGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpgroup"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpgroup"
 
 datahcpgroup.DataHcpGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataHcpGroup to import.
 
 The id of the existing DataHcpGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/data-sources/group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/data-sources/group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -620,7 +620,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpGroup.DataHcpGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpgroup"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpgroup"
 
 &datahcpgroup.DataHcpGroupConfig {
 	Connection: interface{},
@@ -729,7 +729,7 @@ ResourceName *string
 
 The group's resource name in format `iam/organization/<organization_id>/group/<group_name>`. The shortened `<group_name>` version can be used for input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/data-sources/group#resource_name DataHcpGroup#resource_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/data-sources/group#resource_name DataHcpGroup#resource_name}
 
 ---
 

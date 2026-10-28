@@ -4,12 +4,12 @@
 
 ### GroupIamPolicy <a name="GroupIamPolicy" id="@cdktn/provider-hcp.groupIamPolicy.GroupIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/group_iam_policy hcp_group_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/group_iam_policy hcp_group_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.groupIamPolicy.GroupIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/groupiampolicy"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/groupiampolicy"
 
 groupiampolicy.NewGroupIamPolicy(scope Construct, id *string, config GroupIamPolicyConfig) GroupIamPolicy
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.groupIamPolicy.GroupIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/groupiampolicy"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/groupiampolicy"
 
 groupiampolicy.GroupIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.groupIamPolicy.GroupIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/groupiampolicy"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/groupiampolicy"
 
 groupiampolicy.GroupIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ groupiampolicy.GroupIamPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.groupIamPolicy.GroupIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/groupiampolicy"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/groupiampolicy"
 
 groupiampolicy.GroupIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ groupiampolicy.GroupIamPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.groupIamPolicy.GroupIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/groupiampolicy"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/groupiampolicy"
 
 groupiampolicy.GroupIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the GroupIamPolicy to import.
 
 The id of the existing GroupIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/group_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/group_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -744,7 +744,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.groupIamPolicy.GroupIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/groupiampolicy"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/groupiampolicy"
 
 &groupiampolicy.GroupIamPolicyConfig {
 	Connection: interface{},
@@ -855,7 +855,7 @@ Name *string
 
 The group's resource name in format `iam/organization/<organization_id>/group/<group_name>`. The shortened `<group_name>` version can be used for input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/group_iam_policy#name GroupIamPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/group_iam_policy#name GroupIamPolicy#name}
 
 ---
 
@@ -869,7 +869,7 @@ PolicyData *string
 
 The policy to apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/group_iam_policy#policy_data GroupIamPolicy#policy_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/group_iam_policy#policy_data GroupIamPolicy#policy_data}
 
 ---
 

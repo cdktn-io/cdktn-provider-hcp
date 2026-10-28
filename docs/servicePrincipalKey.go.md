@@ -4,12 +4,12 @@
 
 ### ServicePrincipalKey <a name="ServicePrincipalKey" id="@cdktn/provider-hcp.servicePrincipalKey.ServicePrincipalKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/service_principal_key hcp_service_principal_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/service_principal_key hcp_service_principal_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.servicePrincipalKey.ServicePrincipalKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/serviceprincipalkey"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/serviceprincipalkey"
 
 serviceprincipalkey.NewServicePrincipalKey(scope Construct, id *string, config ServicePrincipalKeyConfig) ServicePrincipalKey
 ```
@@ -407,7 +407,7 @@ func ResetRotateTriggers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.servicePrincipalKey.ServicePrincipalKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/serviceprincipalkey"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/serviceprincipalkey"
 
 serviceprincipalkey.ServicePrincipalKey_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.servicePrincipalKey.ServicePrincipalKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/serviceprincipalkey"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/serviceprincipalkey"
 
 serviceprincipalkey.ServicePrincipalKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ serviceprincipalkey.ServicePrincipalKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.servicePrincipalKey.ServicePrincipalKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/serviceprincipalkey"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/serviceprincipalkey"
 
 serviceprincipalkey.ServicePrincipalKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ serviceprincipalkey.ServicePrincipalKey_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.servicePrincipalKey.ServicePrincipalKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/serviceprincipalkey"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/serviceprincipalkey"
 
 serviceprincipalkey.ServicePrincipalKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -496,7 +496,7 @@ The construct id used in the generated config for the ServicePrincipalKey to imp
 
 The id of the existing ServicePrincipalKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/service_principal_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/service_principal_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.servicePrincipalKey.ServicePrincipalKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/serviceprincipalkey"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/serviceprincipalkey"
 
 &serviceprincipalkey.ServicePrincipalKeyConfig {
 	Connection: interface{},
@@ -884,7 +884,7 @@ ServicePrincipal *string
 
 The service principal's resource name for which a key should be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/service_principal_key#service_principal ServicePrincipalKey#service_principal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/service_principal_key#service_principal ServicePrincipalKey#service_principal}
 
 ---
 
@@ -900,7 +900,7 @@ A map of arbitrary string key/value pairs that will force recreation of the key 
 
 Changing this forces a new resource to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/service_principal_key#rotate_triggers ServicePrincipalKey#rotate_triggers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/service_principal_key#rotate_triggers ServicePrincipalKey#rotate_triggers}
 
 ---
 

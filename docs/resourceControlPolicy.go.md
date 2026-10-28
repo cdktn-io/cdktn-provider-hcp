@@ -4,12 +4,12 @@
 
 ### ResourceControlPolicy <a name="ResourceControlPolicy" id="@cdktn/provider-hcp.resourceControlPolicy.ResourceControlPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/resource_control_policy hcp_resource_control_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/resource_control_policy hcp_resource_control_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.resourceControlPolicy.ResourceControlPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/resourcecontrolpolicy"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/resourcecontrolpolicy"
 
 resourcecontrolpolicy.NewResourceControlPolicy(scope Construct, id *string, config ResourceControlPolicyConfig) ResourceControlPolicy
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.resourceControlPolicy.ResourceControlPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/resourcecontrolpolicy"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/resourcecontrolpolicy"
 
 resourcecontrolpolicy.ResourceControlPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.resourceControlPolicy.ResourceControlPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/resourcecontrolpolicy"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/resourcecontrolpolicy"
 
 resourcecontrolpolicy.ResourceControlPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ resourcecontrolpolicy.ResourceControlPolicy_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.resourceControlPolicy.ResourceControlPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/resourcecontrolpolicy"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/resourcecontrolpolicy"
 
 resourcecontrolpolicy.ResourceControlPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ resourcecontrolpolicy.ResourceControlPolicy_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.resourceControlPolicy.ResourceControlPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/resourcecontrolpolicy"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/resourcecontrolpolicy"
 
 resourcecontrolpolicy.ResourceControlPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the ResourceControlPolicy to i
 
 The id of the existing ResourceControlPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/resource_control_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/resource_control_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -755,7 +755,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.resourceControlPolicy.ResourceControlPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/resourcecontrolpolicy"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/resourcecontrolpolicy"
 
 &resourcecontrolpolicy.ResourceControlPolicyConfig {
 	Connection: interface{},
@@ -868,7 +868,7 @@ The list of constraint IDs to enable for the organization.
 
 Each constraint ID must be a recognized constraint returned by ListConstraints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/resource_control_policy#enabled_constraints ResourceControlPolicy#enabled_constraints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/resource_control_policy#enabled_constraints ResourceControlPolicy#enabled_constraints}
 
 ---
 
@@ -882,7 +882,7 @@ OrganizationId *string
 
 The ID of the organization to manage the resource control policy for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/resource_control_policy#organization_id ResourceControlPolicy#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/resource_control_policy#organization_id ResourceControlPolicy#organization_id}
 
 ---
 

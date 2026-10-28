@@ -4,12 +4,12 @@
 
 ### HvnRoute <a name="HvnRoute" id="@cdktn/provider-hcp.hvnRoute.HvnRoute"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/hvn_route hcp_hvn_route}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/hvn_route hcp_hvn_route}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.hvnRoute.HvnRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/hvnroute"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/hvnroute"
 
 hvnroute.NewHvnRoute(scope Construct, id *string, config HvnRouteConfig) HvnRoute
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.hvnRoute.HvnRoute.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/hvnroute"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/hvnroute"
 
 hvnroute.HvnRoute_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.hvnRoute.HvnRoute.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/hvnroute"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/hvnroute"
 
 hvnroute.HvnRoute_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ hvnroute.HvnRoute_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.hvnRoute.HvnRoute.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/hvnroute"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/hvnroute"
 
 hvnroute.HvnRoute_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ hvnroute.HvnRoute_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.hvnRoute.HvnRoute.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/hvnroute"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/hvnroute"
 
 hvnroute.HvnRoute_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -543,7 +543,7 @@ The construct id used in the generated config for the HvnRoute to import.
 
 The id of the existing HvnRoute that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/hvn_route#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/hvn_route#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -952,7 +952,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.hvnRoute.HvnRouteAzureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/hvnroute"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/hvnroute"
 
 &hvnroute.HvnRouteAzureConfig {
 	NextHopType: *string,
@@ -981,7 +981,7 @@ The type of Azure hop the packet should be sent to.
 
 Valid options for Next Hop Type - `VIRTUAL_APPLIANCE` or `VIRTUAL_NETWORK_GATEWAY`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/hvn_route#next_hop_type HvnRoute#next_hop_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/hvn_route#next_hop_type HvnRoute#next_hop_type}
 
 ---
 
@@ -997,7 +997,7 @@ Contains the IP address packets should be forwarded to.
 
 Next hop values are only allowed in routes where the next hop type is VIRTUAL_APPLIANCE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/hvn_route#next_hop_ip_address HvnRoute#next_hop_ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/hvn_route#next_hop_ip_address HvnRoute#next_hop_ip_address}
 
 ---
 
@@ -1006,7 +1006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.hvnRoute.HvnRouteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/hvnroute"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/hvnroute"
 
 &hvnroute.HvnRouteConfig {
 	Connection: interface{},
@@ -1020,10 +1020,10 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/hvnroute"
 	HvnLink: *string,
 	HvnRouteId: *string,
 	TargetLink: *string,
-	AzureConfig: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13.hvnRoute.HvnRouteAzureConfig,
+	AzureConfig: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14.hvnRoute.HvnRouteAzureConfig,
 	Id: *string,
 	ProjectId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13.hvnRoute.HvnRouteTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14.hvnRoute.HvnRouteTimeouts,
 }
 ```
 
@@ -1043,7 +1043,7 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/hvnroute"
 | <code><a href="#@cdktn/provider-hcp.hvnRoute.HvnRouteConfig.property.hvnRouteId">HvnRouteId</a></code> | <code>*string</code> | The ID of the HVN route. |
 | <code><a href="#@cdktn/provider-hcp.hvnRoute.HvnRouteConfig.property.targetLink">TargetLink</a></code> | <code>*string</code> | A unique URL identifying the target of the HVN route. Examples of the target: [`aws_network_peering`](aws_network_peering.md), [`aws_transit_gateway_attachment`](aws_transit_gateway_attachment.md). |
 | <code><a href="#@cdktn/provider-hcp.hvnRoute.HvnRouteConfig.property.azureConfig">AzureConfig</a></code> | <code><a href="#@cdktn/provider-hcp.hvnRoute.HvnRouteAzureConfig">HvnRouteAzureConfig</a></code> | azure_config block. |
-| <code><a href="#@cdktn/provider-hcp.hvnRoute.HvnRouteConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/hvn_route#id HvnRoute#id}. |
+| <code><a href="#@cdktn/provider-hcp.hvnRoute.HvnRouteConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/hvn_route#id HvnRoute#id}. |
 | <code><a href="#@cdktn/provider-hcp.hvnRoute.HvnRouteConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | The ID of the HCP project where the HVN route is located. |
 | <code><a href="#@cdktn/provider-hcp.hvnRoute.HvnRouteConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-hcp.hvnRoute.HvnRouteTimeouts">HvnRouteTimeouts</a></code> | timeouts block. |
 
@@ -1129,7 +1129,7 @@ DestinationCidr *string
 
 The destination CIDR of the HVN route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/hvn_route#destination_cidr HvnRoute#destination_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/hvn_route#destination_cidr HvnRoute#destination_cidr}
 
 ---
 
@@ -1143,7 +1143,7 @@ HvnLink *string
 
 The `self_link` of the HashiCorp Virtual Network (HVN).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/hvn_route#hvn_link HvnRoute#hvn_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/hvn_route#hvn_link HvnRoute#hvn_link}
 
 ---
 
@@ -1157,7 +1157,7 @@ HvnRouteId *string
 
 The ID of the HVN route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/hvn_route#hvn_route_id HvnRoute#hvn_route_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/hvn_route#hvn_route_id HvnRoute#hvn_route_id}
 
 ---
 
@@ -1171,7 +1171,7 @@ TargetLink *string
 
 A unique URL identifying the target of the HVN route. Examples of the target: [`aws_network_peering`](aws_network_peering.md), [`aws_transit_gateway_attachment`](aws_transit_gateway_attachment.md).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/hvn_route#target_link HvnRoute#target_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/hvn_route#target_link HvnRoute#target_link}
 
 ---
 
@@ -1185,7 +1185,7 @@ AzureConfig HvnRouteAzureConfig
 
 azure_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/hvn_route#azure_config HvnRoute#azure_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/hvn_route#azure_config HvnRoute#azure_config}
 
 ---
 
@@ -1197,7 +1197,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/hvn_route#id HvnRoute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/hvn_route#id HvnRoute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1216,7 +1216,7 @@ The ID of the HCP project where the HVN route is located.
 
 Always matches the project ID in `hvn_link`. Setting this attribute is deprecated, but it will remain usable in read-only form.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/hvn_route#project_id HvnRoute#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/hvn_route#project_id HvnRoute#project_id}
 
 ---
 
@@ -1230,7 +1230,7 @@ Timeouts HvnRouteTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/hvn_route#timeouts HvnRoute#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/hvn_route#timeouts HvnRoute#timeouts}
 
 ---
 
@@ -1239,7 +1239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.hvnRoute.HvnRouteTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/hvnroute"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/hvnroute"
 
 &hvnroute.HvnRouteTimeouts {
 	Create: *string,
@@ -1252,9 +1252,9 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/hvnroute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-hcp.hvnRoute.HvnRouteTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/hvn_route#create HvnRoute#create}. |
-| <code><a href="#@cdktn/provider-hcp.hvnRoute.HvnRouteTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/hvn_route#default HvnRoute#default}. |
-| <code><a href="#@cdktn/provider-hcp.hvnRoute.HvnRouteTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/hvn_route#delete HvnRoute#delete}. |
+| <code><a href="#@cdktn/provider-hcp.hvnRoute.HvnRouteTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/hvn_route#create HvnRoute#create}. |
+| <code><a href="#@cdktn/provider-hcp.hvnRoute.HvnRouteTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/hvn_route#default HvnRoute#default}. |
+| <code><a href="#@cdktn/provider-hcp.hvnRoute.HvnRouteTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/hvn_route#delete HvnRoute#delete}. |
 
 ---
 
@@ -1266,7 +1266,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/hvn_route#create HvnRoute#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/hvn_route#create HvnRoute#create}.
 
 ---
 
@@ -1278,7 +1278,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/hvn_route#default HvnRoute#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/hvn_route#default HvnRoute#default}.
 
 ---
 
@@ -1290,7 +1290,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/hvn_route#delete HvnRoute#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/hvn_route#delete HvnRoute#delete}.
 
 ---
 
@@ -1301,7 +1301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.hvnRoute.HvnRouteAzureConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/hvnroute"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/hvnroute"
 
 hvnroute.NewHvnRouteAzureConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) HvnRouteAzureConfigOutputReference
 ```
@@ -1601,7 +1601,7 @@ func InternalValue() HvnRouteAzureConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.hvnRoute.HvnRouteTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/hvnroute"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/hvnroute"
 
 hvnroute.NewHvnRouteTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) HvnRouteTimeoutsOutputReference
 ```

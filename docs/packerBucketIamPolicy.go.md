@@ -4,12 +4,12 @@
 
 ### PackerBucketIamPolicy <a name="PackerBucketIamPolicy" id="@cdktn/provider-hcp.packerBucketIamPolicy.PackerBucketIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/packer_bucket_iam_policy hcp_packer_bucket_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/packer_bucket_iam_policy hcp_packer_bucket_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.packerBucketIamPolicy.PackerBucketIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/packerbucketiampolicy"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/packerbucketiampolicy"
 
 packerbucketiampolicy.NewPackerBucketIamPolicy(scope Construct, id *string, config PackerBucketIamPolicyConfig) PackerBucketIamPolicy
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.packerBucketIamPolicy.PackerBucketIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/packerbucketiampolicy"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/packerbucketiampolicy"
 
 packerbucketiampolicy.PackerBucketIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.packerBucketIamPolicy.PackerBucketIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/packerbucketiampolicy"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/packerbucketiampolicy"
 
 packerbucketiampolicy.PackerBucketIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ packerbucketiampolicy.PackerBucketIamPolicy_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.packerBucketIamPolicy.PackerBucketIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/packerbucketiampolicy"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/packerbucketiampolicy"
 
 packerbucketiampolicy.PackerBucketIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ packerbucketiampolicy.PackerBucketIamPolicy_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.packerBucketIamPolicy.PackerBucketIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/packerbucketiampolicy"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/packerbucketiampolicy"
 
 packerbucketiampolicy.PackerBucketIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the PackerBucketIamPolicy to i
 
 The id of the existing PackerBucketIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/packer_bucket_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/packer_bucket_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -744,7 +744,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.packerBucketIamPolicy.PackerBucketIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/packerbucketiampolicy"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/packerbucketiampolicy"
 
 &packerbucketiampolicy.PackerBucketIamPolicyConfig {
 	Connection: interface{},
@@ -855,7 +855,7 @@ PolicyData *string
 
 The policy to apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/packer_bucket_iam_policy#policy_data PackerBucketIamPolicy#policy_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/packer_bucket_iam_policy#policy_data PackerBucketIamPolicy#policy_data}
 
 ---
 
@@ -869,7 +869,7 @@ ResourceName *string
 
 The bucket's resource name in the format packer/project/<project ID>/bucket/<bucket name>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/packer_bucket_iam_policy#resource_name PackerBucketIamPolicy#resource_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/packer_bucket_iam_policy#resource_name PackerBucketIamPolicy#resource_name}
 
 ---
 

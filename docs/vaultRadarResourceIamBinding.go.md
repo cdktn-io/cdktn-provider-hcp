@@ -4,12 +4,12 @@
 
 ### VaultRadarResourceIamBinding <a name="VaultRadarResourceIamBinding" id="@cdktn/provider-hcp.vaultRadarResourceIamBinding.VaultRadarResourceIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/vault_radar_resource_iam_binding hcp_vault_radar_resource_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/vault_radar_resource_iam_binding hcp_vault_radar_resource_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.vaultRadarResourceIamBinding.VaultRadarResourceIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultradarresourceiambinding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/vaultradarresourceiambinding"
 
 vaultradarresourceiambinding.NewVaultRadarResourceIamBinding(scope Construct, id *string, config VaultRadarResourceIamBindingConfig) VaultRadarResourceIamBinding
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.vaultRadarResourceIamBinding.VaultRadarResourceIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultradarresourceiambinding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/vaultradarresourceiambinding"
 
 vaultradarresourceiambinding.VaultRadarResourceIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.vaultRadarResourceIamBinding.VaultRadarResourceIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultradarresourceiambinding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/vaultradarresourceiambinding"
 
 vaultradarresourceiambinding.VaultRadarResourceIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ vaultradarresourceiambinding.VaultRadarResourceIamBinding_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.vaultRadarResourceIamBinding.VaultRadarResourceIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultradarresourceiambinding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/vaultradarresourceiambinding"
 
 vaultradarresourceiambinding.VaultRadarResourceIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ vaultradarresourceiambinding.VaultRadarResourceIamBinding_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.vaultRadarResourceIamBinding.VaultRadarResourceIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultradarresourceiambinding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/vaultradarresourceiambinding"
 
 vaultradarresourceiambinding.VaultRadarResourceIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the VaultRadarResourceIamBindi
 
 The id of the existing VaultRadarResourceIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/vault_radar_resource_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/vault_radar_resource_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -755,7 +755,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.vaultRadarResourceIamBinding.VaultRadarResourceIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/vaultradarresourceiambinding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/vaultradarresourceiambinding"
 
 &vaultradarresourceiambinding.VaultRadarResourceIamBindingConfig {
 	Connection: interface{},
@@ -868,7 +868,7 @@ PrincipalId *string
 
 The principal to bind to the given role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/vault_radar_resource_iam_binding#principal_id VaultRadarResourceIamBinding#principal_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/vault_radar_resource_iam_binding#principal_id VaultRadarResourceIamBinding#principal_id}
 
 ---
 
@@ -884,7 +884,7 @@ The HCP resource name associated with the Radar resource.
 
 This is the name of the resource in the format `vault-radar/project/<project_id>/scan-target/<scan_target_id>`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/vault_radar_resource_iam_binding#resource_name VaultRadarResourceIamBinding#resource_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/vault_radar_resource_iam_binding#resource_name VaultRadarResourceIamBinding#resource_name}
 
 ---
 
@@ -898,7 +898,7 @@ Role *string
 
 The role name to bind to the given principal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/vault_radar_resource_iam_binding#role VaultRadarResourceIamBinding#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/vault_radar_resource_iam_binding#role VaultRadarResourceIamBinding#role}
 
 ---
 

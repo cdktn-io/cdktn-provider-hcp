@@ -4,12 +4,12 @@
 
 ### DataHcpWaypointAddOn <a name="DataHcpWaypointAddOn" id="@cdktn/provider-hcp.dataHcpWaypointAddOn.DataHcpWaypointAddOn"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/data-sources/waypoint_add_on hcp_waypoint_add_on}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/data-sources/waypoint_add_on hcp_waypoint_add_on}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpWaypointAddOn.DataHcpWaypointAddOn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpwaypointaddon"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpwaypointaddon"
 
 datahcpwaypointaddon.NewDataHcpWaypointAddOn(scope Construct, id *string, config DataHcpWaypointAddOnConfig) DataHcpWaypointAddOn
 ```
@@ -332,7 +332,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.dataHcpWaypointAddOn.DataHcpWaypointAddOn.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpwaypointaddon"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpwaypointaddon"
 
 datahcpwaypointaddon.DataHcpWaypointAddOn_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.dataHcpWaypointAddOn.DataHcpWaypointAddOn.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpwaypointaddon"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpwaypointaddon"
 
 datahcpwaypointaddon.DataHcpWaypointAddOn_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datahcpwaypointaddon.DataHcpWaypointAddOn_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-hcp.dataHcpWaypointAddOn.DataHcpWaypointAddOn.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpwaypointaddon"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpwaypointaddon"
 
 datahcpwaypointaddon.DataHcpWaypointAddOn_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ datahcpwaypointaddon.DataHcpWaypointAddOn_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.dataHcpWaypointAddOn.DataHcpWaypointAddOn.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpwaypointaddon"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpwaypointaddon"
 
 datahcpwaypointaddon.DataHcpWaypointAddOn_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -421,7 +421,7 @@ The construct id used in the generated config for the DataHcpWaypointAddOn to im
 
 The id of the existing DataHcpWaypointAddOn that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/data-sources/waypoint_add_on#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/data-sources/waypoint_add_on#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -808,7 +808,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpWaypointAddOn.DataHcpWaypointAddOnConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpwaypointaddon"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpwaypointaddon"
 
 &datahcpwaypointaddon.DataHcpWaypointAddOnConfig {
 	Connection: interface{},
@@ -921,7 +921,7 @@ Id *string
 
 The ID of the Add-on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/data-sources/waypoint_add_on#id DataHcpWaypointAddOn#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/data-sources/waypoint_add_on#id DataHcpWaypointAddOn#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -938,7 +938,7 @@ InputVariables interface{}
 
 Input variables for the Add-on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/data-sources/waypoint_add_on#input_variables DataHcpWaypointAddOn#input_variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/data-sources/waypoint_add_on#input_variables DataHcpWaypointAddOn#input_variables}
 
 ---
 
@@ -952,7 +952,7 @@ Name *string
 
 The name of the Add-on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/data-sources/waypoint_add_on#name DataHcpWaypointAddOn#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/data-sources/waypoint_add_on#name DataHcpWaypointAddOn#name}
 
 ---
 
@@ -961,7 +961,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpWaypointAddOn.DataHcpWaypointAddOnInputVariables.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpwaypointaddon"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpwaypointaddon"
 
 &datahcpwaypointaddon.DataHcpWaypointAddOnInputVariables {
 
@@ -974,7 +974,7 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpwaypointaddon"
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpWaypointAddOn.DataHcpWaypointAddOnOutputValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpwaypointaddon"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpwaypointaddon"
 
 &datahcpwaypointaddon.DataHcpWaypointAddOnOutputValues {
 
@@ -989,7 +989,7 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpwaypointaddon"
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpWaypointAddOn.DataHcpWaypointAddOnInputVariablesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpwaypointaddon"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpwaypointaddon"
 
 datahcpwaypointaddon.NewDataHcpWaypointAddOnInputVariablesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataHcpWaypointAddOnInputVariablesList
 ```
@@ -1149,7 +1149,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpWaypointAddOn.DataHcpWaypointAddOnInputVariablesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpwaypointaddon"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpwaypointaddon"
 
 datahcpwaypointaddon.NewDataHcpWaypointAddOnInputVariablesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataHcpWaypointAddOnInputVariablesOutputReference
 ```
@@ -1449,7 +1449,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpWaypointAddOn.DataHcpWaypointAddOnOutputValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpwaypointaddon"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpwaypointaddon"
 
 datahcpwaypointaddon.NewDataHcpWaypointAddOnOutputValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataHcpWaypointAddOnOutputValuesList
 ```
@@ -1598,7 +1598,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpWaypointAddOn.DataHcpWaypointAddOnOutputValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpwaypointaddon"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpwaypointaddon"
 
 datahcpwaypointaddon.NewDataHcpWaypointAddOnOutputValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataHcpWaypointAddOnOutputValuesOutputReference
 ```

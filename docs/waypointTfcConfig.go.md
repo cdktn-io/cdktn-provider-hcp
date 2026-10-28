@@ -4,12 +4,12 @@
 
 ### WaypointTfcConfig <a name="WaypointTfcConfig" id="@cdktn/provider-hcp.waypointTfcConfig.WaypointTfcConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/waypoint_tfc_config hcp_waypoint_tfc_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/waypoint_tfc_config hcp_waypoint_tfc_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.waypointTfcConfig.WaypointTfcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/waypointtfcconfig"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/waypointtfcconfig"
 
 waypointtfcconfig.NewWaypointTfcConfig(scope Construct, id *string, config WaypointTfcConfigConfig) WaypointTfcConfig
 ```
@@ -407,7 +407,7 @@ func ResetProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.waypointTfcConfig.WaypointTfcConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/waypointtfcconfig"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/waypointtfcconfig"
 
 waypointtfcconfig.WaypointTfcConfig_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.waypointTfcConfig.WaypointTfcConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/waypointtfcconfig"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/waypointtfcconfig"
 
 waypointtfcconfig.WaypointTfcConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ waypointtfcconfig.WaypointTfcConfig_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.waypointTfcConfig.WaypointTfcConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/waypointtfcconfig"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/waypointtfcconfig"
 
 waypointtfcconfig.WaypointTfcConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ waypointtfcconfig.WaypointTfcConfig_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.waypointTfcConfig.WaypointTfcConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/waypointtfcconfig"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/waypointtfcconfig"
 
 waypointtfcconfig.WaypointTfcConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -496,7 +496,7 @@ The construct id used in the generated config for the WaypointTfcConfig to impor
 
 The id of the existing WaypointTfcConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/waypoint_tfc_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/waypoint_tfc_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.waypointTfcConfig.WaypointTfcConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/waypointtfcconfig"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/waypointtfcconfig"
 
 &waypointtfcconfig.WaypointTfcConfigConfig {
 	Connection: interface{},
@@ -886,7 +886,7 @@ TfcOrgName *string
 
 The Terraform Cloud Organization with which the token is associated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/waypoint_tfc_config#tfc_org_name WaypointTfcConfig#tfc_org_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/waypoint_tfc_config#tfc_org_name WaypointTfcConfig#tfc_org_name}
 
 ---
 
@@ -900,7 +900,7 @@ Token *string
 
 Terraform Cloud team token. The token must include permissions to manage workspaces and applications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/waypoint_tfc_config#token WaypointTfcConfig#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/waypoint_tfc_config#token WaypointTfcConfig#token}
 
 ---
 
@@ -914,7 +914,7 @@ ProjectId *string
 
 Waypoint Project ID to associate with the TFC config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/waypoint_tfc_config#project_id WaypointTfcConfig#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/waypoint_tfc_config#project_id WaypointTfcConfig#project_id}
 
 ---
 

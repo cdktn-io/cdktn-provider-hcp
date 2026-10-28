@@ -4,12 +4,12 @@
 
 ### DataHcpDnsForwarding <a name="DataHcpDnsForwarding" id="@cdktn/provider-hcp.dataHcpDnsForwarding.DataHcpDnsForwarding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/data-sources/dns_forwarding hcp_dns_forwarding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/data-sources/dns_forwarding hcp_dns_forwarding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpDnsForwarding.DataHcpDnsForwarding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpdnsforwarding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpdnsforwarding"
 
 datahcpdnsforwarding.NewDataHcpDnsForwarding(scope Construct, id *string, config DataHcpDnsForwardingConfig) DataHcpDnsForwarding
 ```
@@ -332,7 +332,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.dataHcpDnsForwarding.DataHcpDnsForwarding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpdnsforwarding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpdnsforwarding"
 
 datahcpdnsforwarding.DataHcpDnsForwarding_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.dataHcpDnsForwarding.DataHcpDnsForwarding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpdnsforwarding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpdnsforwarding"
 
 datahcpdnsforwarding.DataHcpDnsForwarding_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datahcpdnsforwarding.DataHcpDnsForwarding_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-hcp.dataHcpDnsForwarding.DataHcpDnsForwarding.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpdnsforwarding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpdnsforwarding"
 
 datahcpdnsforwarding.DataHcpDnsForwarding_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ datahcpdnsforwarding.DataHcpDnsForwarding_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.dataHcpDnsForwarding.DataHcpDnsForwarding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpdnsforwarding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpdnsforwarding"
 
 datahcpdnsforwarding.DataHcpDnsForwarding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -421,7 +421,7 @@ The construct id used in the generated config for the DataHcpDnsForwarding to im
 
 The id of the existing DataHcpDnsForwarding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/data-sources/dns_forwarding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/data-sources/dns_forwarding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -797,7 +797,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpDnsForwarding.DataHcpDnsForwardingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpdnsforwarding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpdnsforwarding"
 
 &datahcpdnsforwarding.DataHcpDnsForwardingConfig {
 	Connection: interface{},
@@ -811,7 +811,7 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpdnsforwarding"
 	HvnId: *string,
 	Id: *string,
 	ProjectId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13.dataHcpDnsForwarding.DataHcpDnsForwardingTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14.dataHcpDnsForwarding.DataHcpDnsForwardingTimeouts,
 }
 ```
 
@@ -828,7 +828,7 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpdnsforwarding"
 | <code><a href="#@cdktn/provider-hcp.dataHcpDnsForwarding.DataHcpDnsForwardingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-hcp.dataHcpDnsForwarding.DataHcpDnsForwardingConfig.property.dnsForwardingId">DnsForwardingId</a></code> | <code>*string</code> | The ID of the DNS forwarding. |
 | <code><a href="#@cdktn/provider-hcp.dataHcpDnsForwarding.DataHcpDnsForwardingConfig.property.hvnId">HvnId</a></code> | <code>*string</code> | The ID of the HashiCorp Virtual Network (HVN). |
-| <code><a href="#@cdktn/provider-hcp.dataHcpDnsForwarding.DataHcpDnsForwardingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/data-sources/dns_forwarding#id DataHcpDnsForwarding#id}. |
+| <code><a href="#@cdktn/provider-hcp.dataHcpDnsForwarding.DataHcpDnsForwardingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/data-sources/dns_forwarding#id DataHcpDnsForwarding#id}. |
 | <code><a href="#@cdktn/provider-hcp.dataHcpDnsForwarding.DataHcpDnsForwardingConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | The ID of the HCP project where the DNS forwarding is located. |
 | <code><a href="#@cdktn/provider-hcp.dataHcpDnsForwarding.DataHcpDnsForwardingConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-hcp.dataHcpDnsForwarding.DataHcpDnsForwardingTimeouts">DataHcpDnsForwardingTimeouts</a></code> | timeouts block. |
 
@@ -914,7 +914,7 @@ DnsForwardingId *string
 
 The ID of the DNS forwarding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/data-sources/dns_forwarding#dns_forwarding_id DataHcpDnsForwarding#dns_forwarding_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/data-sources/dns_forwarding#dns_forwarding_id DataHcpDnsForwarding#dns_forwarding_id}
 
 ---
 
@@ -928,7 +928,7 @@ HvnId *string
 
 The ID of the HashiCorp Virtual Network (HVN).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/data-sources/dns_forwarding#hvn_id DataHcpDnsForwarding#hvn_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/data-sources/dns_forwarding#hvn_id DataHcpDnsForwarding#hvn_id}
 
 ---
 
@@ -940,7 +940,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/data-sources/dns_forwarding#id DataHcpDnsForwarding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/data-sources/dns_forwarding#id DataHcpDnsForwarding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -959,7 +959,7 @@ The ID of the HCP project where the DNS forwarding is located.
 
 If not specified, the project specified in the HCP Provider config block will be used, if configured. If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/data-sources/dns_forwarding#project_id DataHcpDnsForwarding#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/data-sources/dns_forwarding#project_id DataHcpDnsForwarding#project_id}
 
 ---
 
@@ -973,7 +973,7 @@ Timeouts DataHcpDnsForwardingTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/data-sources/dns_forwarding#timeouts DataHcpDnsForwarding#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/data-sources/dns_forwarding#timeouts DataHcpDnsForwarding#timeouts}
 
 ---
 
@@ -982,7 +982,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpDnsForwarding.DataHcpDnsForwardingForwardingRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpdnsforwarding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpdnsforwarding"
 
 &datahcpdnsforwarding.DataHcpDnsForwardingForwardingRules {
 
@@ -995,7 +995,7 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpdnsforwarding"
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpDnsForwarding.DataHcpDnsForwardingTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpdnsforwarding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpdnsforwarding"
 
 &datahcpdnsforwarding.DataHcpDnsForwardingTimeouts {
 	Read: *string,
@@ -1006,7 +1006,7 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpdnsforwarding"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-hcp.dataHcpDnsForwarding.DataHcpDnsForwardingTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/data-sources/dns_forwarding#read DataHcpDnsForwarding#read}. |
+| <code><a href="#@cdktn/provider-hcp.dataHcpDnsForwarding.DataHcpDnsForwardingTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/data-sources/dns_forwarding#read DataHcpDnsForwarding#read}. |
 
 ---
 
@@ -1018,7 +1018,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/data-sources/dns_forwarding#read DataHcpDnsForwarding#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/data-sources/dns_forwarding#read DataHcpDnsForwarding#read}.
 
 ---
 
@@ -1029,7 +1029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpDnsForwarding.DataHcpDnsForwardingForwardingRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpdnsforwarding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpdnsforwarding"
 
 datahcpdnsforwarding.NewDataHcpDnsForwardingForwardingRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataHcpDnsForwardingForwardingRulesList
 ```
@@ -1178,7 +1178,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpDnsForwarding.DataHcpDnsForwardingForwardingRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpdnsforwarding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpdnsforwarding"
 
 datahcpdnsforwarding.NewDataHcpDnsForwardingForwardingRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataHcpDnsForwardingForwardingRulesOutputReference
 ```
@@ -1478,7 +1478,7 @@ func InternalValue() DataHcpDnsForwardingForwardingRules
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpDnsForwarding.DataHcpDnsForwardingTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpdnsforwarding"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpdnsforwarding"
 
 datahcpdnsforwarding.NewDataHcpDnsForwardingTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataHcpDnsForwardingTimeoutsOutputReference
 ```
