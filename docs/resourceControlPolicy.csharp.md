@@ -4,7 +4,7 @@
 
 ### ResourceControlPolicy <a name="ResourceControlPolicy" id="@cdktn/provider-hcp.resourceControlPolicy.ResourceControlPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/resource_control_policy hcp_resource_control_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/resource_control_policy hcp_resource_control_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.resourceControlPolicy.ResourceControlPolicy.Initializer"></a>
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the ResourceControlPolicy to i
 
 The id of the existing ResourceControlPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/resource_control_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/resource_control_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -868,7 +868,7 @@ The list of constraint IDs to enable for the organization.
 
 Each constraint ID must be a recognized constraint returned by ListConstraints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/resource_control_policy#enabled_constraints ResourceControlPolicy#enabled_constraints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/resource_control_policy#enabled_constraints ResourceControlPolicy#enabled_constraints}
 
 ---
 
@@ -882,7 +882,7 @@ public string OrganizationId { get; set; }
 
 The ID of the organization to manage the resource control policy for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/resource_control_policy#organization_id ResourceControlPolicy#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/resource_control_policy#organization_id ResourceControlPolicy#organization_id}
 
 ---
 

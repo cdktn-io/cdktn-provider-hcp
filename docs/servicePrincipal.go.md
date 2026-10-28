@@ -4,12 +4,12 @@
 
 ### ServicePrincipal <a name="ServicePrincipal" id="@cdktn/provider-hcp.servicePrincipal.ServicePrincipal"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/service_principal hcp_service_principal}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/service_principal hcp_service_principal}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.servicePrincipal.ServicePrincipal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/serviceprincipal"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/serviceprincipal"
 
 serviceprincipal.NewServicePrincipal(scope Construct, id *string, config ServicePrincipalConfig) ServicePrincipal
 ```
@@ -407,7 +407,7 @@ func ResetParent()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.servicePrincipal.ServicePrincipal.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/serviceprincipal"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/serviceprincipal"
 
 serviceprincipal.ServicePrincipal_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.servicePrincipal.ServicePrincipal.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/serviceprincipal"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/serviceprincipal"
 
 serviceprincipal.ServicePrincipal_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ serviceprincipal.ServicePrincipal_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.servicePrincipal.ServicePrincipal.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/serviceprincipal"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/serviceprincipal"
 
 serviceprincipal.ServicePrincipal_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ serviceprincipal.ServicePrincipal_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.servicePrincipal.ServicePrincipal.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/serviceprincipal"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/serviceprincipal"
 
 serviceprincipal.ServicePrincipal_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -496,7 +496,7 @@ The construct id used in the generated config for the ServicePrincipal to import
 
 The id of the existing ServicePrincipal that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/service_principal#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/service_principal#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.servicePrincipal.ServicePrincipalConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/serviceprincipal"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/serviceprincipal"
 
 &serviceprincipal.ServicePrincipalConfig {
 	Connection: interface{},
@@ -873,7 +873,7 @@ Name *string
 
 The service principal's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/service_principal#name ServicePrincipal#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/service_principal#name ServicePrincipal#name}
 
 ---
 
@@ -889,7 +889,7 @@ The parent location to create the service principal under.
 
 If unspecified, the service principal will be created in the project the provider is configured with. If specified, the accepted values are "project/<project_id>" or "organization/<organization_id>"
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/service_principal#parent ServicePrincipal#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/service_principal#parent ServicePrincipal#parent}
 
 ---
 

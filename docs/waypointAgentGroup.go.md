@@ -4,12 +4,12 @@
 
 ### WaypointAgentGroup <a name="WaypointAgentGroup" id="@cdktn/provider-hcp.waypointAgentGroup.WaypointAgentGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/waypoint_agent_group hcp_waypoint_agent_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/waypoint_agent_group hcp_waypoint_agent_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.waypointAgentGroup.WaypointAgentGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/waypointagentgroup"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/waypointagentgroup"
 
 waypointagentgroup.NewWaypointAgentGroup(scope Construct, id *string, config WaypointAgentGroupConfig) WaypointAgentGroup
 ```
@@ -421,7 +421,7 @@ func ResetProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.waypointAgentGroup.WaypointAgentGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/waypointagentgroup"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/waypointagentgroup"
 
 waypointagentgroup.WaypointAgentGroup_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.waypointAgentGroup.WaypointAgentGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/waypointagentgroup"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/waypointagentgroup"
 
 waypointagentgroup.WaypointAgentGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ waypointagentgroup.WaypointAgentGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.waypointAgentGroup.WaypointAgentGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/waypointagentgroup"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/waypointagentgroup"
 
 waypointagentgroup.WaypointAgentGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ waypointagentgroup.WaypointAgentGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.waypointAgentGroup.WaypointAgentGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/waypointagentgroup"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/waypointagentgroup"
 
 waypointagentgroup.WaypointAgentGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -510,7 +510,7 @@ The construct id used in the generated config for the WaypointAgentGroup to impo
 
 The id of the existing WaypointAgentGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/waypoint_agent_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/waypoint_agent_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -798,7 +798,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.waypointAgentGroup.WaypointAgentGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/waypointagentgroup"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/waypointagentgroup"
 
 &waypointagentgroup.WaypointAgentGroupConfig {
 	Connection: interface{},
@@ -913,7 +913,7 @@ Name *string
 
 The name of the Agent Group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/waypoint_agent_group#name WaypointAgentGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/waypoint_agent_group#name WaypointAgentGroup#name}
 
 ---
 
@@ -927,7 +927,7 @@ Description *string
 
 A description of the Agent Group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/waypoint_agent_group#description WaypointAgentGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/waypoint_agent_group#description WaypointAgentGroup#description}
 
 ---
 
@@ -941,7 +941,7 @@ OrganizationId *string
 
 The ID of the Waypoint organization to which the Agent Group belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/waypoint_agent_group#organization_id WaypointAgentGroup#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/waypoint_agent_group#organization_id WaypointAgentGroup#organization_id}
 
 ---
 
@@ -955,7 +955,7 @@ ProjectId *string
 
 The ID of the Waypoint project to which the Agent Group belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/waypoint_agent_group#project_id WaypointAgentGroup#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/waypoint_agent_group#project_id WaypointAgentGroup#project_id}
 
 ---
 

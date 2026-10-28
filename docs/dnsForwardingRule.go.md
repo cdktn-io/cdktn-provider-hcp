@@ -4,12 +4,12 @@
 
 ### DnsForwardingRule <a name="DnsForwardingRule" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/dns_forwarding_rule hcp_dns_forwarding_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/dns_forwarding_rule hcp_dns_forwarding_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/dnsforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/dnsforwardingrule"
 
 dnsforwardingrule.NewDnsForwardingRule(scope Construct, id *string, config DnsForwardingRuleConfig) DnsForwardingRule
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/dnsforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/dnsforwardingrule"
 
 dnsforwardingrule.DnsForwardingRule_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/dnsforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/dnsforwardingrule"
 
 dnsforwardingrule.DnsForwardingRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ dnsforwardingrule.DnsForwardingRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/dnsforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/dnsforwardingrule"
 
 dnsforwardingrule.DnsForwardingRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ dnsforwardingrule.DnsForwardingRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/dnsforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/dnsforwardingrule"
 
 dnsforwardingrule.DnsForwardingRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -523,7 +523,7 @@ The construct id used in the generated config for the DnsForwardingRule to impor
 
 The id of the existing DnsForwardingRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/dns_forwarding_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/dns_forwarding_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -932,7 +932,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/dnsforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/dnsforwardingrule"
 
 &dnsforwardingrule.DnsForwardingRuleConfig {
 	Connection: interface{},
@@ -949,7 +949,7 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/dnsforwardingrule"
 	RuleId: *string,
 	Id: *string,
 	ProjectId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13.dnsForwardingRule.DnsForwardingRuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14.dnsForwardingRule.DnsForwardingRuleTimeouts,
 }
 ```
 
@@ -969,7 +969,7 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/dnsforwardingrule"
 | <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.hvnId">HvnId</a></code> | <code>*string</code> | The ID of the HVN that this DNS forwarding rule belongs to. |
 | <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.inboundEndpointIps">InboundEndpointIps</a></code> | <code>*[]*string</code> | The IP addresses of the target customer network inbound endpoints to which the DNS requests for the above domain will be forwarded. |
 | <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.ruleId">RuleId</a></code> | <code>*string</code> | The ID of the DNS forwarding rule. |
-| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/dns_forwarding_rule#id DnsForwardingRule#id}. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/dns_forwarding_rule#id DnsForwardingRule#id}. |
 | <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | The ID of the HCP project where the DNS forwarding rule is located. |
 | <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts">DnsForwardingRuleTimeouts</a></code> | timeouts block. |
 
@@ -1055,7 +1055,7 @@ DnsForwardingId *string
 
 The ID of the DNS forwarding configuration this rule belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/dns_forwarding_rule#dns_forwarding_id DnsForwardingRule#dns_forwarding_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/dns_forwarding_rule#dns_forwarding_id DnsForwardingRule#dns_forwarding_id}
 
 ---
 
@@ -1069,7 +1069,7 @@ DomainName *string
 
 The domain name for which DNS forwarding rule needs to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/dns_forwarding_rule#domain_name DnsForwardingRule#domain_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/dns_forwarding_rule#domain_name DnsForwardingRule#domain_name}
 
 ---
 
@@ -1083,7 +1083,7 @@ HvnId *string
 
 The ID of the HVN that this DNS forwarding rule belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/dns_forwarding_rule#hvn_id DnsForwardingRule#hvn_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/dns_forwarding_rule#hvn_id DnsForwardingRule#hvn_id}
 
 ---
 
@@ -1097,7 +1097,7 @@ InboundEndpointIps *[]*string
 
 The IP addresses of the target customer network inbound endpoints to which the DNS requests for the above domain will be forwarded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/dns_forwarding_rule#inbound_endpoint_ips DnsForwardingRule#inbound_endpoint_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/dns_forwarding_rule#inbound_endpoint_ips DnsForwardingRule#inbound_endpoint_ips}
 
 ---
 
@@ -1111,7 +1111,7 @@ RuleId *string
 
 The ID of the DNS forwarding rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/dns_forwarding_rule#rule_id DnsForwardingRule#rule_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/dns_forwarding_rule#rule_id DnsForwardingRule#rule_id}
 
 ---
 
@@ -1123,7 +1123,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/dns_forwarding_rule#id DnsForwardingRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/dns_forwarding_rule#id DnsForwardingRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1143,7 +1143,7 @@ The ID of the HCP project where the DNS forwarding rule is located.
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/dns_forwarding_rule#project_id DnsForwardingRule#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/dns_forwarding_rule#project_id DnsForwardingRule#project_id}
 
 ---
 
@@ -1157,7 +1157,7 @@ Timeouts DnsForwardingRuleTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/dns_forwarding_rule#timeouts DnsForwardingRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/dns_forwarding_rule#timeouts DnsForwardingRule#timeouts}
 
 ---
 
@@ -1166,7 +1166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/dnsforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/dnsforwardingrule"
 
 &dnsforwardingrule.DnsForwardingRuleTimeouts {
 	Create: *string,
@@ -1180,10 +1180,10 @@ import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/dnsforwardingrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/dns_forwarding_rule#create DnsForwardingRule#create}. |
-| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/dns_forwarding_rule#default DnsForwardingRule#default}. |
-| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/dns_forwarding_rule#delete DnsForwardingRule#delete}. |
-| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/dns_forwarding_rule#read DnsForwardingRule#read}. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/dns_forwarding_rule#create DnsForwardingRule#create}. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/dns_forwarding_rule#default DnsForwardingRule#default}. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/dns_forwarding_rule#delete DnsForwardingRule#delete}. |
+| <code><a href="#@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/dns_forwarding_rule#read DnsForwardingRule#read}. |
 
 ---
 
@@ -1195,7 +1195,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/dns_forwarding_rule#create DnsForwardingRule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/dns_forwarding_rule#create DnsForwardingRule#create}.
 
 ---
 
@@ -1207,7 +1207,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/dns_forwarding_rule#default DnsForwardingRule#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/dns_forwarding_rule#default DnsForwardingRule#default}.
 
 ---
 
@@ -1219,7 +1219,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/dns_forwarding_rule#delete DnsForwardingRule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/dns_forwarding_rule#delete DnsForwardingRule#delete}.
 
 ---
 
@@ -1231,7 +1231,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/resources/dns_forwarding_rule#read DnsForwardingRule#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/resources/dns_forwarding_rule#read DnsForwardingRule#read}.
 
 ---
 
@@ -1242,7 +1242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/dnsforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/dnsforwardingrule"
 
 dnsforwardingrule.NewDnsForwardingRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DnsForwardingRuleTimeoutsOutputReference
 ```

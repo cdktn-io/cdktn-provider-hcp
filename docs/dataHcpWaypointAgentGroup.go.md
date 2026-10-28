@@ -4,12 +4,12 @@
 
 ### DataHcpWaypointAgentGroup <a name="DataHcpWaypointAgentGroup" id="@cdktn/provider-hcp.dataHcpWaypointAgentGroup.DataHcpWaypointAgentGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/data-sources/waypoint_agent_group hcp_waypoint_agent_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/data-sources/waypoint_agent_group hcp_waypoint_agent_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-hcp.dataHcpWaypointAgentGroup.DataHcpWaypointAgentGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpwaypointagentgroup"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpwaypointagentgroup"
 
 datahcpwaypointagentgroup.NewDataHcpWaypointAgentGroup(scope Construct, id *string, config DataHcpWaypointAgentGroupConfig) DataHcpWaypointAgentGroup
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-hcp.dataHcpWaypointAgentGroup.DataHcpWaypointAgentGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpwaypointagentgroup"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpwaypointagentgroup"
 
 datahcpwaypointagentgroup.DataHcpWaypointAgentGroup_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-hcp.dataHcpWaypointAgentGroup.DataHcpWaypointAgentGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpwaypointagentgroup"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpwaypointagentgroup"
 
 datahcpwaypointagentgroup.DataHcpWaypointAgentGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datahcpwaypointagentgroup.DataHcpWaypointAgentGroup_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-hcp.dataHcpWaypointAgentGroup.DataHcpWaypointAgentGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpwaypointagentgroup"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpwaypointagentgroup"
 
 datahcpwaypointagentgroup.DataHcpWaypointAgentGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datahcpwaypointagentgroup.DataHcpWaypointAgentGroup_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-hcp.dataHcpWaypointAgentGroup.DataHcpWaypointAgentGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpwaypointagentgroup"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpwaypointagentgroup"
 
 datahcpwaypointagentgroup.DataHcpWaypointAgentGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataHcpWaypointAgentGroup 
 
 The id of the existing DataHcpWaypointAgentGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/data-sources/waypoint_agent_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/data-sources/waypoint_agent_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -620,7 +620,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-hcp.dataHcpWaypointAgentGroup.DataHcpWaypointAgentGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13/datahcpwaypointagentgroup"
+import "github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v14/datahcpwaypointagentgroup"
 
 &datahcpwaypointagentgroup.DataHcpWaypointAgentGroupConfig {
 	Connection: interface{},
@@ -729,7 +729,7 @@ Name *string
 
 The name of the Agent Group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.114.0/docs/data-sources/waypoint_agent_group#name DataHcpWaypointAgentGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.115.0/docs/data-sources/waypoint_agent_group#name DataHcpWaypointAgentGroup#name}
 
 ---
 
